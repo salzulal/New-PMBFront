@@ -1,0 +1,57 @@
+/**
+
+	VARIABLE:
+	- Color Palletes
+	- Typography
+
+ */
+
+/**
+=========================
+	- Color Palletes
+=========================
+*/
+$color-primary: #3656a1;
+$color-secondary: #f57c00;
+$color-ternary: #0097a7;
+$color-disabled: #bec2c3;
+
+$color-black: #222222;
+$color-black-alpha: #7a7a7a;
+$color-dark-900: #424242;
+$color-alert: #fd3259;
+$color-success: #009688;
+$color-separator: #f5f6f8;
+
+/**
+=========================
+	- Typography
+=========================
+*/
+$font-family: "Poppins", sans-serif;
+
+@font-face {
+  font-family: Nec;
+  src: url(../../fonts/nec.TTF);
+}
+$font-sevima: "Nec", sans-serif;
+$font-number: "DM Mono", monospace;
+/**
+=========================
+	- Shadow
+=========================
+*/
+
+$main-shadow: 0px 8px 16px rgba(234, 234, 234, 0.25);
+
+/**
+=========================
+	- Font Size
+=========================
+*/
+
+$font-size-xs: 12px;
+$font-size-sm: 16px;
+$font-size-md: 20px;
+$font-size-lg: 24px;
+$font-size-xl: 28px;

@@ -1,0 +1,4393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Load CSS -->
+    <link
+      rel="stylesheet"
+      href="../assets/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.css"
+    />
+    <link rel="stylesheet" href="../assets/air-datepicker/css/datepicker.css" />
+
+    <link
+      rel="stylesheet"
+      href="../assets/owl-carousel/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/owl-carousel/dist/assets/owl.theme.default.min.css"
+    />
+
+    <link href="../css/main.css" rel="stylesheet" />
+
+    <link href="../assets/introjs/introjs.css" rel="stylesheet" />
+
+    <!-- Title -->
+    <title>Dashboard Akademik SiakadCloud Mahasiswa</title>
+  </head>
+
+  <body>
+    <header id="header-pmb">
+      <div class="bg">
+        <nav class="navbar" id="header">
+          <div class="container-xxl">
+            <div class="left">
+              <div class="button-helper">
+                <button
+                  class="header-menu-mobile"
+                  data-bs-toggle="modal"
+                  data-bs-target="#sidebar-menu"
+                >
+                  <img src="../img/header/icons/menu-mobile.svg" alt="" />
+                </button>
+              </div>
+              <div class="img-helper">
+                <img src="../img/header/logo-kampus4.png" alt="" />
+              </div>
+              <div id="title">
+                <h4>Sistem Informasi Akademik</h4>
+                <h1>Universitas Airlangga Surabaya</h1>
+              </div>
+            </div>
+            <div class="" id="header-mainmenu">
+              <div class="dropdown dim" id="notif">
+                <button
+                  class="dropdown-toggle"
+                  id="toggle-notif"
+                  role="button"
+                  data-bs-auto-close="outside"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img src="../img/header/icons/Notification.svg" alt="" />
+                  <span id="notif-count"><h5>12</h5></span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-end" id="menu-notif">
+                  <div class="" id="notif-dialog">
+                    <div class="" id="notif-content">
+                      <button
+                        type="button"
+                        class="btn closebtn"
+                        data-bs-dismiss="modal"
+                      >
+                        <img src="../img/header/icons/close.svg" alt="" />
+                      </button>
+                      <div class="notif exist">
+                        <div class="header">
+                          <h4>Notifikasi</h4>
+                          <a href="">Tandai sudah dibaca</a>
+                        </div>
+                        <div class="notif-list">
+                          <a class="notif-item unread" href="#">
+                            <div class="notif-wrapper">
+                              <!-- <div class="photo">
+                              <img
+                                src="../img/header/photo-profile.jpg"
+                                alt=""
+                              />
+                              <span class="mark"></span>
+                            </div> -->
+                              <!-- no photo (initial) -->
+                              <div class="photo no-photo">
+                                <div
+                                  class="helper"
+                                  style="background-color: green"
+                                >
+                                  <h4 class="initial">TM</h4>
+                                  <span class="mark"></span>
+                                </div>
+                              </div>
+                              <div class="content">
+                                <p>
+                                  <b>Timothy</b> menambahkan komentar baru pada
+                                  post forum
+                                </p>
+                                <p id="timestamp">20 menit yang lalu</p>
+                              </div>
+                            </div>
+                            <div class="clear-item">Lihat</div>
+                          </a>
+                          <a class="notif-item unread" href="#">
+                            <div class="notif-wrapper">
+                              <div class="photo">
+                                <img
+                                  src="../img/header/photo-profile.jpg"
+                                  alt=""
+                                />
+                                <span class="mark"></span>
+                              </div>
+
+                              <!-- no photo (initial) -->
+                              <!-- <div class="photo no-photo">
+                              <div class="helper" style="background-color: cyan;">
+                                <h4 class="initial">IF</h4>
+                                <span class="mark"></span>
+                              </div>
+                            </div> -->
+
+                              <div class="content">
+                                <p>Integer feugiat.</p>
+                                <p id="timestamp">30 menit yang lalu</p>
+                              </div>
+                            </div>
+                            <div class="clear-item">Lihat</div>
+                          </a>
+                          <!-- notif read -->
+                          <a class="notif-item read" href="#">
+                            <div class="notif-wrapper">
+                              <div class="photo">
+                                <img
+                                  src="../img/header/photo-profile.jpg"
+                                  alt=""
+                                />
+                                <span class="mark"></span>
+                              </div>
+                              <!-- no photo (initial) -->
+                              <!-- <div class="photo no-photo">
+                              <div class="helper" style="background-color: blue;">
+                                <h4 class="initial">LI</h4>
+                                <span class="mark"></span>
+                              </div>
+                            </div> -->
+                              <div class="content">
+                                <p>
+                                  Lorem ipsum, dolor sit amet consectetur
+                                  adipisicing elit. Repellat libero dolorum
+                                  aperiam cumque inventore quae.
+                                </p>
+                                <p id="timestamp">40 menit yang lalu</p>
+                              </div>
+                            </div>
+                            <div class="clear-item">Lihat</div>
+                          </a>
+                        </div>
+                        <div class="footer">
+                          <a href="">Lihat semua notifikasi</a>
+                        </div>
+                      </div>
+                      <!-- <div class="notif empty">
+                    <div class="header">
+                      <h4>Notifikasi</h4>
+                      <a href="" style="display: none">Tandai sudah dibaca</a>
+                    </div>
+                    <div class="item-empty">
+                      <img
+                        src="../img/header/icons/Empty States_ Notification.svg"
+                        alt=""
+                      />
+                      <h3>Hooray! You're up to date</h3>
+                      <h4>
+                        Kami akan segera memberi tahu Anda apabila ada informasi
+                        baru
+                      </h4>
+                    </div>
+
+                    <div class="footer">
+                      <a href="">Lihat semua notifikasi</a>
+                    </div>
+                  </div> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="dropdown dim" id="menu">
+                <button
+                  class="dropdown-toggle"
+                  id="toggle-menu"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  data-bs-auto-close="outside"
+                  aria-expanded="false"
+                >
+                  <img src="../img/header/icons/Menu.svg" alt="" />
+                </button>
+                <div class="dropdown-menu dropdown-menu-end" id="menu-menu">
+                  <div class="" id="menu-dialog">
+                    <div class="" id="menu-content">
+                      <button
+                        type="button"
+                        class="btn closebtn"
+                        data-bs-dismiss="modal"
+                      >
+                        <img src="../img/header/icons/close.svg" alt="" />
+                      </button>
+                      <div class="scroll-wrapper">
+                        <div class="menu-group">
+                          <h4>Modul SiakadCloud</h4>
+                          <div class="row">
+                            <div class="col-4 col-sm-3">
+                              <img
+                                src="../img/header/icons/Seleksi Maba.svg"
+                                alt=""
+                              />
+                              <h5>Seleksi Maba</h5>
+                            </div>
+                            <div class="col-4 col-sm-3">
+                              <img src="../img/header/icons/CBT.svg" alt="" />
+                              <h5>CBT</h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="menu-group">
+                          <h4>E-Learning</h4>
+                          <div class="row">
+                            <div class="col-4 col-sm-3">
+                              <img
+                                src="../img/header/icons/Kelas Edlink.svg"
+                                alt=""
+                              />
+                              <h5>Kelas Edlink</h5>
+                            </div>
+                            <div class="col-4 col-sm-3">
+                              <img
+                                src="../img/header/icons/Kampus Merdeka.svg"
+                                alt=""
+                              />
+                              <h5>Kampus Merdeka</h5>
+                            </div>
+                            <div class="col-4 col-sm-3">
+                              <img
+                                src="../img/header/icons/Forum Kelas.svg"
+                                alt=""
+                              />
+                              <h5>Forum Kelas</h5>
+                            </div>
+                            <div class="col-4 col-sm-3">
+                              <img
+                                src="../img/header/icons/Kuesioner.svg"
+                                alt=""
+                              />
+                              <h5>Kuesioner</h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="dropdown dim" id="profile">
+                <button
+                  class="dropdown-toggle"
+                  id="toggle-profile"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  data-bs-auto-close="outside"
+                  aria-expanded="false"
+                >
+                  <!-- <div class="profile-img">
+                    <img src="../img/header/photo-profile.jpg" alt="" />
+                  </div> -->
+                  <!-- no photo (initial) -->
+                  <div class="profile-img no-photo">
+                    <div class="helper" style="background-color: blue">
+                      <h4 class="initial">MK</h4>
+                    </div>
+                  </div>
+                  <span class="dropdown-arrow"></span>
+                </button>
+
+                <div class="dropdown-menu dropdown-menu-end" id="menu-profile">
+                  <div class="" id="profile-dialog">
+                    <div class="" id="profile-content">
+                      <button
+                        type="button"
+                        class="btn closebtn"
+                        data-bs-dismiss="modal"
+                      >
+                        <img src="../img/header/icons/close.svg" alt="" />
+                      </button>
+                      <div class="scroll-wrapper">
+                        <div class="header">
+                          <div class="profile">
+                            <!-- <div class="profile-img">
+                              <img
+                                src="../img/header/photo-profile.jpg"
+                                alt=""
+                              />
+                            </div> -->
+                            <div class="profile-img no-photo">
+                              <div
+                                class="helper"
+                                style="background-color: blue"
+                              >
+                                <h3 class="initial">MK</h3>
+                              </div>
+                            </div>
+                            <div>
+                              <h4>Melati Kusuma Putri</h4>
+                              <a href=""
+                                >Lihat Profile
+                                <img
+                                  src="../img/header/icons/arrow forward.svg"
+                                  alt=""
+                              /></a>
+                            </div>
+                          </div>
+                          <a
+                            class="btn modulbtn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#menu-menu"
+                            data-bs-dismiss="modal"
+                          >
+                            <img
+                              src="../img/header/icons/mobile Menu.svg"
+                              alt=""
+                            />
+                          </a>
+                        </div>
+                        <ul class="menu-group">
+                          <li class="menu-item" id="mobile-notif">
+                            <a
+                              data-bs-toggle="modal"
+                              data-bs-target="#menu-notif"
+                              data-bs-dismiss="modal"
+                            >
+                              Notifikasi<span class="counter"><p>20+</p></span>
+                            </a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="">Data Mahasiswa</a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="">Status Semester</a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="">Kemajuan Belajar</a>
+                          </li>
+                          <li class="menu-item"><a href="">Mengulang</a></li>
+                          <li class="menu-item">
+                            <a href="">Berhenti Studi</a>
+                          </li>
+                        </ul>
+                        <ul class="menu-group">
+                          <li class="menu-item">
+                            <a href="">Aktivitas & Prestasi</a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="">Riwayat Keuangan</a>
+                          </li>
+                        </ul>
+                        <div class="footer">
+                          <div class="menu-footer">
+                            <a
+                              id="pilih-bahasa"
+                              href=""
+                              data-bs-toggle="modal"
+                              data-bs-target="#modalBahasa"
+                              data-bs-dismiss="modal"
+                            >
+                              <div>
+                                <img
+                                  src="../img/header/icons/Bahasa Aplikasi.svg"
+                                  alt=""
+                                />
+                                Bahasa Aplikasi
+                              </div>
+                              <div id="lang">
+                                IND
+                                <img
+                                  src="../img/header/icons/Indonesia.svg"
+                                  alt=""
+                                />
+                              </div>
+                            </a>
+                          </div>
+                          <div class="menu-footer">
+                            <a href="">
+                              <div>
+                                <img
+                                  src="../img/header/icons/Bantuan.svg"
+                                  alt=""
+                                />
+                                Bantuan
+                              </div>
+                            </a>
+                          </div>
+                          <div class="menu-footer">
+                            <a href="" id="logout">
+                              <div>
+                                <img
+                                  src="../img/header/icons/Keluar.svg"
+                                  alt=""
+                                />
+                                Keluar
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <nav class="navbar navbar-expand-md" id="menu">
+          <div class="container-xxl">
+            <div class="collapse navbar-collapse">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Beranda</a
+                  >
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >Jadwal<span class="dropdown-arrow"></span>
+                  </a>
+                  <div class="dropdown-menu">
+                    <h5 class="sub-menu">JADWAL</h5>
+                    <ul class="item-wrapper">
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <div class="icon-menu">
+                            <img
+                              src="../img/header/icons/Pengumuman.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="text-menu">
+                            <h4>Pengumuman</h4>
+                            <h5>Informasi kegiatan kampus</h5>
+                          </div>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <div class="icon-menu">
+                            <img
+                              src="../img/header/icons/Kalender Akademik.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="text-menu">
+                            <h4>Kalender Akademik</h4>
+                            <h5>Periksa kegiatan perkuliahan</h5>
+                          </div>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <div class="icon-menu">
+                            <img
+                              src="../img/header/icons/Jadwal Minggu Ini.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="text-menu">
+                            <h4>Jadwal Minggu Ini</h4>
+                            <h5>Aktivitas seminggu kedepan</h5>
+                          </div>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <div class="icon-menu">
+                            <img
+                              src="../img/header/icons/Jadwal Semester.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="text-menu">
+                            <h4>Jadwal Semester</h4>
+                            <h5>Kegiatan Anda satu semester</h5>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >Akademik<span class="dropdown-arrow"></span>
+                  </a>
+                  <div class="dropdown-menu">
+                    <h5 class="sub-menu">AKADEMIK</h5>
+                    <ul class="item-wrapper">
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <div class="icon-menu">
+                            <img
+                              src="../img/header/icons/Pengisian KRS.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="text-menu">
+                            <h4>Pengisian KRS</h4>
+                            <h5>Tentukan rencana kuliah</h5>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <div class="icon-menu">
+                            <img
+                              src="../img/header/icons/Kartu Rencana Studi.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="text-menu">
+                            <h4>Kartu Rencana Studi</h4>
+                            <h5>Rekap rencana kuliah Anda</h5>
+                          </div>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <div class="icon-menu">
+                            <img
+                              src="../img/header/icons/Kurikulum Prodi.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="text-menu">
+                            <h4>Kurikulum Prodi</h4>
+                            <h5>Ketentuan proses perkuliahan</h5>
+                          </div>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <div class="icon-menu">
+                            <img
+                              src="../img/header/icons/Mengulang.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="text-menu">
+                            <h4>Mengulang</h4>
+                            <h5>Histori perbaikan matakuliah</h5>
+                          </div>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <div class="icon-menu">
+                            <img
+                              src="../img/header/icons/Nilai Mahasiswa.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="text-menu">
+                            <h4>Nilai Mahasiswa</h4>
+                            <h5>Kualitas perkuliahan Anda</h5>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >Tingkat Akhir<span class="dropdown-arrow"></span>
+                  </a>
+                  <div class="dropdown-menu">
+                    <h5 class="sub-menu">TINGKAT AKHIR</h5>
+                    <ul class="item-wrapper">
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <div class="icon-menu">
+                            <img
+                              src="../img/header/icons/Kegiatan Pendukung.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="text-menu">
+                            <h4>Kegiatan Pendukung</h4>
+                            <h5>Salurkan bakat Anda di sini</h5>
+                          </div>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <div class="icon-menu">
+                            <img
+                              src="../img/header/icons/Pengajuan Wisuda.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="text-menu">
+                            <h4>Pengajuan Wisuda</h4>
+                            <h5>Konfirmasi kehadiran Anda</h5>
+                          </div>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <div class="icon-menu">
+                            <img src="../img/header/icons/SKPI.svg" alt="" />
+                          </div>
+                          <div class="text-menu">
+                            <h4>SKPI</h4>
+                            <h5>Bukti keterampilan ANda</h5>
+                          </div>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <div class="icon-menu">
+                            <img
+                              src="../img/header/icons/Konsultasi.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="text-menu">
+                            <h4>Konsultasi</h4>
+                            <h5>Temukan solusi masalah Anda</h5>
+                          </div>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <div class="icon-menu">
+                            <img
+                              src="../img/header/icons/Daftar Proposal.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="text-menu">
+                            <h4>Daftar Proposal</h4>
+                            <h5>Buat karya Anda sekarang juga</h5>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <div class="icon-menu">
+                            <img
+                              src="../img/header/icons/daftar skripsi.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="text-menu">
+                            <h4>Daftar Skripsi</h4>
+                            <h5>Selesaikan karya Anda saat ini</h5>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >Hasil Studi<span class="dropdown-arrow"></span>
+                  </a>
+                  <div class="dropdown-menu">
+                    <h5 class="sub-menu">HASIL STUDI</h5>
+                    <ul class="item-wrapper">
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <div class="icon-menu">
+                            <img
+                              src="../img/header/icons/Kartu Hasil Studi.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="text-menu">
+                            <h4>Kartu Hasil Studi</h4>
+                            <h5>Laporan periode Anda</h5>
+                          </div>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <div class="icon-menu">
+                            <img
+                              src="../img/header/icons/Transkrip.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="text-menu">
+                            <h4>Transkrip</h4>
+                            <h5>Hasil perkuliahan Anda</h5>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- modal pilihan bahasa -->
+      <div
+        class="modal fade"
+        id="modalBahasa"
+        tabindex="-1"
+        aria-labelledby="modalBahasa"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Pilih Bahasa</h4>
+            </div>
+            <div class="modal-body">
+              <a class="pilihan-bahasa" href="">
+                <img src="../img/header/ID.svg" alt="" />
+                <div class="bahasa">
+                  <p>Bahasa Indonesia</p>
+                  <h5>Indonesia</h5>
+                </div>
+              </a>
+              <hr />
+              <a class="pilihan-bahasa" href="">
+                <img src="../img/header/US.svg" alt="" />
+                <div class="bahasa">
+                  <p>English</p>
+                  <h5>United States (USA)</h5>
+                </div>
+              </a>
+              <hr />
+              <a class="pilihan-bahasa" href="">
+                <img src="../img/header/UK.svg" alt="" />
+                <div class="bahasa">
+                  <p>English</p>
+                  <h5>United Kingdom (UK)</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div
+      id="sidebar-menu"
+      class="sidebar modal fade"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" class="btn closebtn" data-bs-dismiss="modal">
+            <img src="../img/header/icons/close.svg" alt="" />
+          </button>
+          <div class="kampus">
+            <div class="img-helper">
+              <img src="../img/header/logo-kampus4.png" alt="" />
+            </div>
+            <div id="title">
+              <h4>Sistem Informasi Akademik</h4>
+              <h1>Universitas Airlangga Surabaya</h1>
+            </div>
+          </div>
+
+          <div class="accordion accordion-flush" id="accordion-sidebar">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <a
+                  class="accordion-button collapsed"
+                  type="button"
+                  id="beranda"
+                >
+                  <p>Beranda</p>
+                </a>
+              </h2>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  <p>Jadwal</p>
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordion-sidebar"
+              >
+                <div class="accordion-body">
+                  <a class="child-menu" href="#">
+                    <div class="icon-menu">
+                      <img
+                        src="../img/header/icons/mobile menus/Pengumuman.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="text-menu">
+                      <h4>Pengumuman</h4>
+                      <h5>Informasi kegiatan kampus</h5>
+                    </div>
+                  </a>
+
+                  <a class="child-menu" href="#">
+                    <div class="icon-menu">
+                      <img
+                        src="../img/header/icons/mobile menus/Kalendar Akademik.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="text-menu">
+                      <h4>Kalender Akademik</h4>
+                      <h5>Periksa kegiatan perkuliahan</h5>
+                    </div>
+                  </a>
+
+                  <a class="child-menu" href="#">
+                    <div class="icon-menu">
+                      <img
+                        src="../img/header/icons/mobile menus/Jadwal Minggu Ini.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="text-menu">
+                      <h4>Jadwal Minggu Ini</h4>
+                      <h5>aktivitas seminggu kedepan</h5>
+                    </div>
+                  </a>
+
+                  <a class="child-menu" href="#">
+                    <div class="icon-menu">
+                      <img
+                        src="../img/header/icons/mobile menus/Jadwal Semester.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="text-menu">
+                      <h4>Jadwal Semester</h4>
+                      <h5>Kegiatan Anda satu semester</h5>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  <p>Akademik</p>
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordion-sidebar"
+              >
+                <div class="accordion-body">
+                  <a class="child-menu" href="#">
+                    <div class="icon-menu">
+                      <img
+                        src="../img/header/icons/mobile menus/Pengisian KRS.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="text-menu">
+                      <h4>Pengisian KRS</h4>
+                      <h5>Tentukan rencana kuliah</h5>
+                    </div>
+                  </a>
+
+                  <a class="child-menu" href="#">
+                    <div class="icon-menu">
+                      <img
+                        src="../img/header/icons/mobile menus/Kartu Rencana Studi.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="text-menu">
+                      <h4>Kartu Rencana Studi</h4>
+                      <h5>Rekap rencana kuliah Anda</h5>
+                    </div>
+                  </a>
+
+                  <a class="child-menu" href="#">
+                    <div class="icon-menu">
+                      <img
+                        src="../img/header/icons/mobile menus/Kurikulum Prodi.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="text-menu">
+                      <h4>Kurikulum Prodi</h4>
+                      <h5>Ketentuan proses perkuliahan</h5>
+                    </div>
+                  </a>
+
+                  <a class="child-menu" href="#">
+                    <div class="icon-menu">
+                      <img
+                        src="../img/header/icons/mobile menus/Mengulang.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="text-menu">
+                      <h4>Mengulang</h4>
+                      <h5>Histori perbaikan matakuliah</h5>
+                    </div>
+                  </a>
+
+                  <a class="child-menu" href="#">
+                    <div class="icon-menu">
+                      <img
+                        src="../img/header/icons/mobile menus/Nilai Mahasiswa.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="text-menu">
+                      <h4>Nilai Mahasiswa</h4>
+                      <h5>Kualitas perkuliahan Anda</h5>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  <p>Tingkat Akhir</p>
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingFour"
+                data-bs-parent="#accordion-sidebar"
+              >
+                <div class="accordion-body">
+                  <a class="child-menu" href="#">
+                    <div class="icon-menu">
+                      <img
+                        src="../img/header/icons/mobile menus/Kegiatan Pendukung.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="text-menu">
+                      <h4>Kegiatan Pendukung</h4>
+                      <h5>Salurkan bakat Anda di sini</h5>
+                    </div>
+                  </a>
+
+                  <a class="child-menu" href="#">
+                    <div class="icon-menu">
+                      <img
+                        src="../img/header/icons/mobile menus/Pengajuan Wisuda.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="text-menu">
+                      <h4>Pengajuan Wisuda</h4>
+                      <h5>Konfirmasi kehadiran Anda</h5>
+                    </div>
+                  </a>
+
+                  <a class="child-menu" href="#">
+                    <div class="icon-menu">
+                      <img
+                        src="../img/header/icons/mobile menus/SKPI.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="text-menu">
+                      <h4>SKPI</h4>
+                      <h5>Bukti keterampilan Anda</h5>
+                    </div>
+                  </a>
+
+                  <a class="child-menu" href="#">
+                    <div class="icon-menu">
+                      <img
+                        src="../img/header/icons/mobile menus/Konsultasi.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="text-menu">
+                      <h4>Konsultasi</h4>
+                      <h5>Temukan solusi masalah Anda</h5>
+                    </div>
+                  </a>
+
+                  <a class="child-menu" href="#">
+                    <div class="icon-menu">
+                      <img
+                        src="../img/header/icons/mobile menus/Daftar Proposal.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="text-menu">
+                      <h4>Daftar Proposal</h4>
+                    </div>
+                  </a>
+
+                  <a class="child-menu" href="#">
+                    <div class="icon-menu">
+                      <img
+                        src="../img/header/icons/mobile menus/daftar skripsi.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="text-menu">
+                      <h4>Daftar Skripsi</h4>
+                      <h5>Selesaikan karya Anda saat ini</h5>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive"
+                  aria-expanded="false"
+                  aria-controls="collapseFive"
+                >
+                  <p>Hasil Studi</p>
+                </button>
+              </h2>
+              <div
+                id="collapseFive"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingFive"
+                data-bs-parent="#accordion-sidebar"
+              >
+                <div class="accordion-body">
+                  <a class="child-menu" href="#">
+                    <div class="icon-menu">
+                      <img
+                        src="../img/header/icons/mobile menus/Kartu Hasil Studi.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="text-menu">
+                      <h4>Kartu Hasil Studi</h4>
+                      <h5>Laporan periode Anda</h5>
+                    </div>
+                  </a>
+
+                  <a class="child-menu" href="#">
+                    <div class="icon-menu">
+                      <img
+                        src="../img/header/icons/mobile menus/Transkrip.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="text-menu">
+                      <h4>Transkrip</h4>
+                      <h5>Hasil perkuliahan Anda</h5>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <div class="container-xxl dashboard">
+        <div class="row">
+          <div class="card" id="info-mhs">
+            <div class="row" id="content">
+              <div class="col col-12 col-lg-6 main-content" id="left">
+                <div class="row">
+                  <div class="col col-3 col-sm-4" id="sevi">
+                    <img src="../img/dashboard/Sevi.svg" alt="" />
+                  </div>
+                  <div class="col col-9 col-sm-8">
+                    <div class="" id="info-carousel">
+                      <div class="owl-carousel owl-theme">
+                        <div class="item">
+                          <h3>Hai, Nicholas Saputra</h3>
+                          <p>
+                            Saat ini Anda berada di Semester 3 dengan hasil IPS
+                            & IPK sebagai berikut. Untuk melihat detail
+                            perkuliahan silahkan klik
+                            <span><a href="">lihat detail</a></span
+                            >.
+                          </p>
+                        </div>
+                        <div class="item">
+                          <h3>Lorem ipsum dolor sit amet.</h3>
+                          <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Accusamus, officia dolorum natus tempore
+                            explicabo quibusdam ipsa doloremque esse cumque
+                            illum!
+                            <span><a href="">lihat detail</a></span
+                            >.
+                          </p>
+                        </div>
+                        <div class="item"><h4>koshyong</h4></div>
+                      </div>
+                      <div class="btns">
+                        <a class="PreviousBtn" id="PreviousBtn">
+                          <img src="../img/icon/slider arrow.svg" alt="" /><span
+                            >Sebelumnya</span
+                          >
+                        </a>
+                        <a class="NextBtn" id="NextBtn">
+                          <span>Selanjutnya</span
+                          ><img src="../img/icon/slider arrow.svg" alt="" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col col-12 col-sm-4 col-md-3 col-lg-2"
+                id="detail-chart"
+              >
+                <div class="row">
+                  <div class="trend-ip col-4 col-sm-12" id="ips">
+                    <div class="row main">
+                      <div class="row helper">
+                        <div class="col-12 col-sm-7 nilai">
+                          <p>IPS</p>
+                          <h1>3,56</h1>
+                        </div>
+                        <div class="col-12 col-sm-5 trend up">
+                          <div class="helper">
+                            <img src="../img/icon/up-indicator.svg" alt="" />
+                          </div>
+                          <p>+0,28</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="trend-ip col-4 col-sm-12" id="ipk">
+                    <div class="row main">
+                      <div class="row helper">
+                        <div class="col-12 col-sm-7 nilai">
+                          <p>IPK</p>
+                          <h1>3,56</h1>
+                        </div>
+                        <div class="col-12 col-sm-5 trend down">
+                          <div class="helper">
+                            <img src="../img/icon/down-indicator.svg" alt="" />
+                          </div>
+                          <p>-0,28</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="trend-ip col-4 col-sm-12" id="ipk-lulus">
+                    <div class="row main">
+                      <div class="row helper">
+                        <div class="col-12 col-sm-7 nilai">
+                          <p>IPK Lulus</p>
+                          <h1>3,56</h1>
+                        </div>
+                        <div class="col-12 col-sm-5 trend down">
+                          <div class="helper">
+                            <img src="../img/icon/down-indicator.svg" alt="" />
+                          </div>
+                          <p>-0,28</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col col-12 col-sm-8 col-md-9 col-lg-4" id="chart">
+                <div id="chart-ip-container">
+                  <!-- <div class="collapse show" id="chart-ip-container"> -->
+                  <div class="chart-container">
+                    <canvas id="chart-ip"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <a
+              class="btn"
+              data-bs-toggle="collapse"
+              href="#chart-ip-container"
+              role="button"
+              aria-expanded="true"
+              aria-controls="chart-ip-container"
+              id="chart-ip-toggler"
+            >
+              Lihat Informasi Lainnya
+            </a> -->
+          </div>
+        </div>
+
+        <div class="row layout-with-aside">
+          <div class="col-lg-8">
+            <div class="card jadwal-kuliah">
+              <div class="card-title">
+                <div class="dropdown" id="filter-jadwal">
+                  <button
+                    class="btn"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <h3>Jadwal Kuliah</h3>
+                    <span class="dropdown-arrow"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <button
+                        class="dropdown-item"
+                        type="button"
+                        onclick="showDiv1()"
+                        id="select-jadwal-kuliah"
+                      >
+                        Jadwal Kuliah
+                        <div class="check"></div>
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="dropdown-item"
+                        type="button"
+                        onclick="showDiv2()"
+                        id="select-jadwal-ta"
+                      >
+                        Jadwal Ujian TA
+                        <div class="check"></div>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button
+                        class="dropdown-item"
+                        type="button"
+                        onclick="showDiv3()"
+                        id="select-jadwal-ujian"
+                      >
+                        Jadwal Ujian Semester
+                        <div class="check"></div>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- 
+                    docs datepicker:
+                    http://t1m0n.name/air-datepicker/docs/ 
+                  -->
+                <div id="filter-date">
+                  <div class="dropdown">
+                    <button
+                      class="btn"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      data-bs-auto-close="outside"
+                      id="datepicker-dropdown-toggle"
+                    >
+                      <img src="../img/icon/Calendar.svg" alt="" />
+                      <p>Senin, 26 April 2021</p>
+                      <span class="dropdown-arrow"></span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-end">
+                      <div
+                        data-range="true"
+                        data-multiple-dates-separator=" - "
+                        data-language="id"
+                        id="jadwal-datepicker-multiple"
+                      ></div>
+                      <div data-language="id" id="jadwal-datepicker"></div>
+                      <hr />
+                      <div class="helper">
+                        <p>Pilih Beberapa Hari</p>
+                        <div class="form-check form-switch" class="form-switch">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="switcher"
+                          />
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="footer">
+                        <button class="btn" id="batal">Batal</button>
+                        <button class="btn" id="apply">Terapkan</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-slider">
+                  <ul class="tab-slider--tabs">
+                    <li class="tab-slider--trigger active" rel="tab1">UTS</li>
+                    <li class="tab-slider--trigger" rel="tab2">UAS</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!------ empty: ------>
+              <!-- <div class="jadwal-content empty" id="div1"> -->
+              <div class="jadwal-content" id="div1">
+                <p class="aktivitas">Anda memiliki 5 aktivitas hari ini</p>
+                <p class="aktivitas empty">
+                  Tidak ada aktivitas perkuliahan saat ini
+                </p>
+
+                <div class="empty-state">
+                  <img
+                    class="illustrasi"
+                    src="../img/dashboard/illustrasi empty jadwal kuliah.svg"
+                    alt=""
+                  />
+                  <div class="title">
+                    <h4>Tidak ada jadwal Kuliah saat ini</h4>
+                  </div>
+                  <p class="caption">
+                    Istirahat dulu ya, tidak ada jadwal kuliah di hari ini. Tapi
+                    jangan lupa, tetap belajar dan kerjakan tugas.
+                  </p>
+                </div>
+
+                <div class="title-hari">
+                  <p>Senin, 26 April 2021</p>
+                </div>
+
+                <div class="card item-jadwal online">
+                  <div class="row">
+                    <div class="col-12 col-sm info-kelas">
+                      <div class="item-title">
+                        <h4>KALKULUS (KAL)</h4>
+                        <div class="badge-group">
+                          <span class="badge badge-pengganti">PENGGANTI</span>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="detail-item jam">
+                            <img src="../img/icon/Clock.svg" alt="" />
+                            <p>12:30 - 13:15 WIB</p>
+                          </div>
+                          <div class="detail-item dosen dropdown">
+                            <a
+                              class=""
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <img src="../img/icon/Profile.svg" alt="" />
+                              <p>Siti Nurhalimah Setyono., M ..</p>
+                              <span class="dropdown-arrow"></span>
+                            </a>
+                            <div class="dropdown-menu">
+                              <div class="nama-dosen">
+                                <p>Cristian sugihanro, S.Kom., M.Kom</p>
+                              </div>
+                              <hr />
+                              <div class="nama-dosen">
+                                <p>Melisa putri sakti, S.Kom., M.Kom</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="detail-item ruang">
+                            <img src="../img/icon/Door.svg" alt="" />
+                            <p>Perkuliahan Online</p>
+                          </div>
+                        </div>
+
+                        <div class="col-md-6 mobile-hide">
+                          <div class="detail-item sks">
+                            <img src="../img/icon/Bookmark.svg" alt="" />
+                            <p>3 SKS</p>
+                          </div>
+                          <div class="detail-item pertemuan">
+                            <img src="../img/icon/List.svg" alt="" />
+                            <p>Pertemuan ke 4</p>
+                          </div>
+                          <!-- <div class="detail-item kehadiran alpha">
+                            <img src="../img/icon/alpha icon.svg" alt="" />
+                            <p>Alpha (04 / 14)</p>
+                          </div> -->
+                          <div class="detail-item kehadiran">
+                            <img src="../img/icon/Check Active.svg" alt="" />
+                            <p>Hadir (04 / 14)</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm col-button">
+                      <div
+                        class="collapse show collapse-jadwal"
+                        id="collapseitemjadwal1"
+                      >
+                        <div class="mobile-show">
+                          <div class="detail-item sks">
+                            <img src="../img/icon/Bookmark.svg" alt="" />
+                            <p>3 SKS</p>
+                          </div>
+                          <div class="detail-item pertemuan">
+                            <img src="../img/icon/List.svg" alt="" />
+                            <p>Pertemuan ke 4</p>
+                          </div>
+                          <!-- <div class="detail-item kehadiran alpha">
+                            <img src="../img/icon/alpha icon.svg" alt="" />
+                            <p>Alpha (04 / 14)</p>
+                          </div> -->
+                          <div class="detail-item kehadiran">
+                            <img src="../img/icon/Check Active.svg" alt="" />
+                            <p>Hadir (04 / 14)</p>
+                          </div>
+                        </div>
+                        <div class="button-helper">
+                          <!-- not started -->
+                          <a
+                            class="button btn-kelas-online"
+                            data-bs-toggle="modal"
+                            data-bs-target="#kelas-unavailable"
+                          >
+                            <img src="../img/icon/Camera-outline.svg" alt="" />
+                            <p>Ruang Kelas Online</p>
+                          </a>
+                          <!-- started -->
+                          <!-- <a class="button btn-kelas-online">
+                            <img src="../img/icon/Camera-outline.svg" alt="" />
+                            <p>Ruang Kelas Online</p>
+                          </a> -->
+                          <a class="button btn-kelas-edlink">
+                            <img src="../img/icon/Edlink.svg" alt="" />
+                            <p>Buka Kelas Edlink</p>
+                          </a>
+                          <div class="dropdown" id="opsi-lain">
+                            <button
+                              class="button btn-more"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <p>Opsi Lainnya</p>
+                              <span class="arrow">
+                                <div id="border-left"></div>
+                                <span class="dropdown-arrow"></span>
+                              </span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end">
+                              <div
+                                class="opsi-item"
+                                data-bs-toggle="modal"
+                                data-bs-target="#daftarpeserta"
+                              >
+                                <img
+                                  src="../img/icon/Lihat Mahasiswa.svg"
+                                  alt=""
+                                />
+                                <p>Lihat Mahasiswa</p>
+                              </div>
+                              <hr />
+                              <div
+                                class="opsi-item"
+                                data-bs-toggle="modal"
+                                data-bs-target="#daftarsesi"
+                              >
+                                <img src="../img/icon/Daftar Sesi.svg" alt="" />
+                                <p>Daftar Sesi</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a
+                    class="btn item-jadwal-collapse"
+                    data-bs-toggle="collapse"
+                    href="#collapseitemjadwal1"
+                    role="button"
+                    aria-expanded="true"
+                    aria-controls="collapseitemjadwal1"
+                  >
+                    Lihat Informasi Lainnya
+                  </a>
+                </div>
+
+                <div class="card item-jadwal">
+                  <div class="row">
+                    <div class="col-12 col-sm info-kelas">
+                      <div class="item-title">
+                        <h4>PENGANTAR MANAJEMEN & ORGANISASI (A)</h4>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="detail-item jam">
+                            <img src="../img/icon/Clock.svg" alt="" />
+                            <p>08:30 - 10:00 WIB</p>
+                          </div>
+                          <div class="detail-item dosen dropdown">
+                            <a
+                              class=""
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <img src="../img/icon/Profile.svg" alt="" />
+                              <p>Siti Nurhalimah Setyono., M ..</p>
+                              <span class="dropdown-arrow"></span>
+                            </a>
+                            <div class="dropdown-menu">
+                              <div class="nama-dosen">
+                                <p>Cristian sugihanro, S.Kom., M.Kom</p>
+                              </div>
+                              <hr />
+                              <div class="nama-dosen">
+                                <p>Melisa putri sakti, S.Kom., M.Kom</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="detail-item ruang">
+                            <img src="../img/icon/Door.svg" alt="" />
+                            <p>Ruang B309</p>
+                          </div>
+                        </div>
+
+                        <div class="col-md-6 mobile-hide">
+                          <div class="detail-item sks">
+                            <img src="../img/icon/Bookmark.svg" alt="" />
+                            <p>3 SKS</p>
+                          </div>
+                          <div class="detail-item pertemuan">
+                            <img src="../img/icon/List.svg" alt="" />
+                            <p>Pertemuan ke 3</p>
+                          </div>
+                          <div class="detail-item kehadiran alpha">
+                            <img src="../img/icon/alpha icon.svg" alt="" />
+                            <p>Alpha (04 / 14)</p>
+                          </div>
+                          <!-- <div class="detail-item kehadiran">
+                            <img src="../img/icon/Check Active.svg" alt="" />
+                            <p>Hadir (04 / 14)</p>
+                          </div> -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm col-button">
+                      <div
+                        class="collapse show collapse-jadwal"
+                        id="collapseitemjadwal2"
+                      >
+                        <div class="mobile-show">
+                          <div class="detail-item sks">
+                            <img src="../img/icon/Bookmark.svg" alt="" />
+                            <p>3 SKS</p>
+                          </div>
+                          <div class="detail-item pertemuan">
+                            <img src="../img/icon/List.svg" alt="" />
+                            <p>Pertemuan ke 3</p>
+                          </div>
+                          <div class="detail-item kehadiran alpha">
+                            <img src="../img/icon/alpha icon.svg" alt="" />
+                            <p>Alpha (04 / 14)</p>
+                          </div>
+                          <!-- <div class="detail-item kehadiran">
+                            <img src="../img/icon/Check Active.svg" alt="" />
+                            <p>Hadir (04 / 14)</p>
+                          </div> -->
+                        </div>
+                        <div class="button-helper">
+                          <!-- not started -->
+                          <!-- <button
+                            class="button btn-kelas-online"
+                            data-bs-toggle="modal"
+                            data-bs-target="#kelas-unavailable"
+                          >
+                            <img src="../img/icon/Camera-outline.svg" alt="" />
+                            <p>Ruang Kelas Online</p>
+                          </button> -->
+                          <!-- started -->
+                          <a class="button btn-kelas-online">
+                            <img src="../img/icon/Camera-outline.svg" alt="" />
+                            <p>Ruang Kelas Online</p>
+                          </a>
+                          <a class="button btn-kelas-edlink">
+                            <img src="../img/icon/Edlink.svg" alt="" />
+                            <p>Buka Kelas Edlink</p>
+                          </a>
+                          <div class="dropdown" id="opsi-lain">
+                            <button
+                              class="button btn-more"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <p>Opsi Lainnya</p>
+                              <span class="arrow">
+                                <div id="border-left"></div>
+                                <span class="dropdown-arrow"></span>
+                              </span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end">
+                              <div
+                                class="opsi-item"
+                                data-bs-toggle="modal"
+                                data-bs-target="#daftarpeserta"
+                              >
+                                <img
+                                  src="../img/icon/Lihat Mahasiswa.svg"
+                                  alt=""
+                                />
+                                <p>Lihat Mahasiswa</p>
+                              </div>
+                              <hr />
+                              <div
+                                class="opsi-item"
+                                data-bs-toggle="modal"
+                                data-bs-target="#daftarsesi"
+                              >
+                                <img src="../img/icon/Daftar Sesi.svg" alt="" />
+                                <p>Daftar Sesi</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a
+                    class="btn item-jadwal-collapse"
+                    data-bs-toggle="collapse"
+                    href="#collapseitemjadwal2"
+                    role="button"
+                    aria-expanded="true"
+                    aria-controls="collapseitemjadwal2"
+                  >
+                    Lihat Informasi Lainnya
+                  </a>
+                </div>
+
+                <div class="title-hari">
+                  <p>Selasa, 27 April 2021</p>
+                </div>
+
+                <div class="card item-jadwal online live">
+                  <div class="row">
+                    <div class="col-12 col-sm info-kelas">
+                      <div class="item-title">
+                        <h4>PENGANTAR MANAJEMEN & ORGANISASI (A)</h4>
+                        <div class="badge-group">
+                          <span class="badge badge-uts">UTS</span>
+                          <span class="badge badge-live"
+                            ><img
+                              src="../img/icon/icon live.svg"
+                              alt=""
+                            />LIVE</span
+                          >
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="detail-item jam">
+                            <img src="../img/icon/Clock.svg" alt="" />
+                            <p>12:30 - 13:15 WIB</p>
+                          </div>
+                          <div class="detail-item dosen dropdown">
+                            <a
+                              class=""
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <img src="../img/icon/Profile.svg" alt="" />
+                              <p>Siti Nurhalimah Setyono., M ..</p>
+                              <span class="dropdown-arrow"></span>
+                            </a>
+                            <div class="dropdown-menu">
+                              <div class="nama-dosen">
+                                <p>Cristian sugihanro, S.Kom., M.Kom</p>
+                              </div>
+                              <hr />
+                              <div class="nama-dosen">
+                                <p>Melisa putri sakti, S.Kom., M.Kom</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="detail-item ruang">
+                            <img src="../img/icon/Door.svg" alt="" />
+                            <p>Perkuliahan Online</p>
+                          </div>
+                        </div>
+
+                        <div class="col-md-6 mobile-hide">
+                          <div class="detail-item sks">
+                            <img src="../img/icon/Bookmark.svg" alt="" />
+                            <p>3 SKS</p>
+                          </div>
+                          <div class="detail-item pertemuan">
+                            <img src="../img/icon/List.svg" alt="" />
+                            <p>Pertemuan ke 3</p>
+                          </div>
+                          <div class="detail-item kehadiran">
+                            <img src="../img/icon/Check.svg" alt="" />
+                            <p>Kehadiran Belum Tercatat</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm col-button">
+                      <div
+                        class="collapse show collapse-jadwal"
+                        id="collapseitemjadwal3"
+                      >
+                        <div class="mobile-show">
+                          <div class="detail-item sks">
+                            <img src="../img/icon/Bookmark.svg" alt="" />
+                            <p>3 SKS</p>
+                          </div>
+                          <div class="detail-item pertemuan">
+                            <img src="../img/icon/List.svg" alt="" />
+                            <p>Pertemuan ke 3</p>
+                          </div>
+                          <div class="detail-item kehadiran">
+                            <img src="../img/icon/Check.svg" alt="" />
+                            <p>Kehadiran Belum Tercatat</p>
+                          </div>
+                        </div>
+                        <div class="button-helper">
+                          <!-- not started -->
+                          <!-- <button
+                            class="button btn-kelas-online"
+                            data-bs-toggle="modal"
+                            data-bs-target="#kelas-unavailable"
+                          >
+                            <img src="../img/icon/Camera-outline.svg" alt="" />
+                            <p>Ruang Kelas Online</p>
+                          </button> -->
+                          <!-- started -->
+                          <a class="button btn-kelas-online">
+                            <img src="../img/icon/Camera-outline.svg" alt="" />
+                            <p>Ruang Kelas Online</p>
+                          </a>
+                          <a class="button btn-kelas-edlink">
+                            <img src="../img/icon/Edlink.svg" alt="" />
+                            <p>Buka Kelas Edlink</p>
+                          </a>
+                          <div class="dropdown" id="opsi-lain">
+                            <button
+                              class="button btn-more"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <p>Opsi Lainnya</p>
+                              <span class="arrow">
+                                <div id="border-left"></div>
+                                <span class="dropdown-arrow"></span>
+                              </span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end">
+                              <div
+                                class="opsi-item"
+                                data-bs-toggle="modal"
+                                data-bs-target="#daftarpeserta"
+                              >
+                                <img
+                                  src="../img/icon/Lihat Mahasiswa.svg"
+                                  alt=""
+                                />
+                                <p>Lihat Mahasiswa</p>
+                              </div>
+                              <hr />
+                              <div
+                                class="opsi-item"
+                                data-bs-toggle="modal"
+                                data-bs-target="#daftarsesi"
+                              >
+                                <img src="../img/icon/Daftar Sesi.svg" alt="" />
+                                <p>Daftar Sesi</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a
+                    class="btn item-jadwal-collapse"
+                    data-bs-toggle="collapse"
+                    href="#collapseitemjadwal3"
+                    role="button"
+                    aria-expanded="true"
+                    aria-controls="collapseitemjadwal3"
+                  >
+                    Lihat Informasi Lainnya
+                  </a>
+                </div>
+
+                <div class="card item-jadwal">
+                  <div class="row">
+                    <div class="col-12 col-sm info-kelas">
+                      <div class="item-title">
+                        <h4>KALKULUS (KAL)</h4>
+                        <div class="badge-group">
+                          <span class="badge badge-uts">UTS</span>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="detail-item jam">
+                            <img src="../img/icon/Clock.svg" alt="" />
+                            <p>12:30 - 13:15 WIB</p>
+                          </div>
+                          <div class="detail-item dosen dropdown">
+                            <a
+                              class=""
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <img src="../img/icon/Profile.svg" alt="" />
+                              <p>Siti Nurhalimah Setyono., M ..</p>
+                              <span class="dropdown-arrow"></span>
+                            </a>
+                            <div class="dropdown-menu">
+                              <div class="nama-dosen">
+                                <p>Cristian sugihanro, S.Kom., M.Kom</p>
+                              </div>
+                              <hr />
+                              <div class="nama-dosen">
+                                <p>Melisa putri sakti, S.Kom., M.Kom</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="detail-item ruang">
+                            <img src="../img/icon/Door.svg" alt="" />
+                            <p>Ruang M305</p>
+                          </div>
+                        </div>
+
+                        <div class="col-md-6 mobile-hide">
+                          <div class="detail-item sks">
+                            <img src="../img/icon/Bookmark.svg" alt="" />
+                            <p>3 SKS</p>
+                          </div>
+                          <div class="detail-item pertemuan">
+                            <img src="../img/icon/List.svg" alt="" />
+                            <p>Pertemuan ke 4</p>
+                          </div>
+                          <div class="detail-item kehadiran">
+                            <img src="../img/icon/Check.svg" alt="" />
+                            <p>Kehadiran Belum Tercatat</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm col-button">
+                      <div
+                        class="collapse show collapse-jadwal"
+                        id="collapseitemjadwal4"
+                      >
+                        <div class="mobile-show">
+                          <div class="detail-item sks">
+                            <img src="../img/icon/Bookmark.svg" alt="" />
+                            <p>3 SKS</p>
+                          </div>
+                          <div class="detail-item pertemuan">
+                            <img src="../img/icon/List.svg" alt="" />
+                            <p>Pertemuan ke 4</p>
+                          </div>
+                          <div class="detail-item kehadiran">
+                            <img src="../img/icon/Check.svg" alt="" />
+                            <p>Kehadiran Belum Tercatat</p>
+                          </div>
+                        </div>
+                        <div class="button-helper">
+                          <!-- not started -->
+                          <!-- <button
+                            class="button btn-kelas-online"
+                            data-bs-toggle="modal"
+                            data-bs-target="#kelas-unavailable"
+                          >
+                            <img src="../img/icon/Camera-outline.svg" alt="" />
+                            <p>Ruang Kelas Online</p>
+                          </button> -->
+                          <!-- started -->
+                          <a class="button btn-kelas-online">
+                            <img src="../img/icon/Camera-outline.svg" alt="" />
+                            <p>Ruang Kelas Online</p>
+                          </a>
+                          <a class="button btn-kelas-edlink">
+                            <img src="../img/icon/Edlink.svg" alt="" />
+                            <p>Buka Kelas Edlink</p>
+                          </a>
+                          <div class="dropdown" id="opsi-lain">
+                            <button
+                              class="button btn-more"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <p>Opsi Lainnya</p>
+                              <span class="arrow">
+                                <div id="border-left"></div>
+                                <span class="dropdown-arrow"></span>
+                              </span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end">
+                              <div
+                                class="opsi-item"
+                                data-bs-toggle="modal"
+                                data-bs-target="#daftarpeserta"
+                              >
+                                <img
+                                  src="../img/icon/Lihat Mahasiswa.svg"
+                                  alt=""
+                                />
+                                <p>Lihat Mahasiswa</p>
+                              </div>
+                              <hr />
+                              <div
+                                class="opsi-item"
+                                data-bs-toggle="modal"
+                                data-bs-target="#daftarsesi"
+                              >
+                                <img src="../img/icon/Daftar Sesi.svg" alt="" />
+                                <p>Daftar Sesi</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a
+                    class="btn item-jadwal-collapse"
+                    data-bs-toggle="collapse"
+                    href="#collapseitemjadwal4"
+                    role="button"
+                    aria-expanded="true"
+                    aria-controls="collapseitemjadwal4"
+                  >
+                    Lihat Informasi Lainnya
+                  </a>
+                </div>
+
+                <div class="card item-jadwal">
+                  <div class="row">
+                    <div class="col-12 col-sm info-kelas">
+                      <div class="item-title">
+                        <h4>KALKULUS (KAL)</h4>
+                        <div class="badge-group">
+                          <span class="badge badge-uts">UTS</span>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="detail-item jam">
+                            <img src="../img/icon/Clock.svg" alt="" />
+                            <p>12:30 - 13:15 WIB</p>
+                          </div>
+                          <div class="detail-item dosen dropdown">
+                            <a
+                              class=""
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <img src="../img/icon/Profile.svg" alt="" />
+                              <p>Siti Nurhalimah Setyono., M ..</p>
+                              <span class="dropdown-arrow"></span>
+                            </a>
+                            <div class="dropdown-menu">
+                              <div class="nama-dosen">
+                                <p>Cristian sugihanro, S.Kom., M.Kom</p>
+                              </div>
+                              <hr />
+                              <div class="nama-dosen">
+                                <p>Melisa putri sakti, S.Kom., M.Kom</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="detail-item ruang">
+                            <img src="../img/icon/Door.svg" alt="" />
+                            <p>Ruang M305</p>
+                          </div>
+                        </div>
+
+                        <div class="col-md-6 mobile-hide">
+                          <div class="detail-item sks">
+                            <img src="../img/icon/Bookmark.svg" alt="" />
+                            <p>3 SKS</p>
+                          </div>
+                          <div class="detail-item pertemuan">
+                            <img src="../img/icon/List.svg" alt="" />
+                            <p>Pertemuan ke 4</p>
+                          </div>
+                          <div class="detail-item kehadiran">
+                            <img src="../img/icon/Check.svg" alt="" />
+                            <p>Kehadiran Belum Tercatat</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm col-button">
+                      <div
+                        class="collapse show collapse-jadwal"
+                        id="collapseitemjadwal5"
+                      >
+                        <div class="mobile-show">
+                          <div class="detail-item sks">
+                            <img src="../img/icon/Bookmark.svg" alt="" />
+                            <p>3 SKS</p>
+                          </div>
+                          <div class="detail-item pertemuan">
+                            <img src="../img/icon/List.svg" alt="" />
+                            <p>Pertemuan ke 4</p>
+                          </div>
+                          <div class="detail-item kehadiran">
+                            <img src="../img/icon/Check.svg" alt="" />
+                            <p>Kehadiran Belum Tercatat</p>
+                          </div>
+                        </div>
+                        <div class="button-helper">
+                          <!-- not started -->
+                          <!-- <button
+                            class="button btn-kelas-online"
+                            data-bs-toggle="modal"
+                            data-bs-target="#kelas-unavailable"
+                          >
+                            <img src="../img/icon/Camera-outline.svg" alt="" />
+                            <p>Ruang Kelas Online</p>
+                          </button> -->
+                          <!-- started -->
+                          <a class="button btn-kelas-online">
+                            <img src="../img/icon/Camera-outline.svg" alt="" />
+                            <p>Ruang Kelas Online</p>
+                          </a>
+                          <a class="button btn-kelas-edlink">
+                            <img src="../img/icon/Edlink.svg" alt="" />
+                            <p>Buka Kelas Edlink</p>
+                          </a>
+                          <div class="dropdown" id="opsi-lain">
+                            <button
+                              class="button btn-more"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <p>Opsi Lainnya</p>
+                              <span class="arrow">
+                                <div id="border-left"></div>
+                                <span class="dropdown-arrow"></span>
+                              </span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end">
+                              <div
+                                class="opsi-item"
+                                data-bs-toggle="modal"
+                                data-bs-target="#daftarpeserta"
+                              >
+                                <img
+                                  src="../img/icon/Lihat Mahasiswa.svg"
+                                  alt=""
+                                />
+                                <p>Lihat Mahasiswa</p>
+                              </div>
+                              <hr />
+                              <div
+                                class="opsi-item"
+                                data-bs-toggle="modal"
+                                data-bs-target="#daftarsesi"
+                              >
+                                <img src="../img/icon/Daftar Sesi.svg" alt="" />
+                                <p>Daftar Sesi</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a
+                    class="btn item-jadwal-collapse"
+                    data-bs-toggle="collapse"
+                    href="#collapseitemjadwal5"
+                    role="button"
+                    aria-expanded="true"
+                    aria-controls="collapseitemjadwal5"
+                  >
+                    Lihat Informasi Lainnya
+                  </a>
+                </div>
+              </div>
+              <!------ empty: ------>
+              <!-- <div class="jadwal-content tugas-akhir empty" id="div2"> -->
+              <div class="jadwal-content tugas-akhir" id="div2">
+                <p class="aktivitas">Anda memiliki 2 aktivitas hari ini</p>
+
+                <p class="aktivitas empty">
+                  Tidak ada aktivitas perkuliahan saat ini
+                </p>
+
+                <div class="empty-state">
+                  <img
+                    class="illustrasi"
+                    src="../img/dashboard/illustrasi empty ujian ta.svg"
+                    alt=""
+                  />
+                  <div class="title">
+                    <h4>Tidak ada jadwal TA</h4>
+                  </div>
+                  <p class="caption">
+                    Saat ini Anda tidak meiliki jadwal TA karena belum memenuhi
+                    pesyaratan atau jadwal sedang diproses oleh pihak
+                    administrasi
+                  </p>
+                </div>
+
+                <div class="title-hari">
+                  <p>Senin, 26 April 2021</p>
+                </div>
+
+                <div class="card item-jadwal">
+                  <div class="row">
+                    <div class="col-12 col-sm-4" id="info-ujian">
+                      <div class="jam">
+                        <img src="../img/icon/Clock.svg" alt="" />
+                        <p>08:30 - 10:00 WIB</p>
+                      </div>
+                      <h4 class="judul-ta">
+                        Rancang Bangun Aplikasi SDM Berbasis Mobile Version
+                      </h4>
+                      <a class="button btn-ujian-ta">
+                        <img src="../img/icon/Camera-outline.svg" alt="" />
+                        <p>Mulai Ujian Online</p>
+                      </a>
+                    </div>
+                    <div class="col-12 col-sm-4 info-dosen" id="pembimbing">
+                      <p class="title">Pembimbing</p>
+                      <div class="daftar-nama">
+                        <div class="nama">
+                          <!-- <div class="photo">
+                              <img
+                                src="../img/header/photo-profile.jpg"
+                                alt=""
+                              />
+                            </div> -->
+                          <!-- no photo (initial) -->
+                          <div class="photo no-photo">
+                            <div class="helper">
+                              <h4 class="initial">BW</h4>
+                            </div>
+                          </div>
+
+                          <p>Buddi WIbowo, S.E., M.M., Dr</p>
+                        </div>
+                        <div class="nama">
+                          <div class="photo">
+                            <img src="../img/header/photo-profile.jpg" alt="" />
+                          </div>
+                          <!-- no photo (initial) -->
+                          <!-- <div class="photo no-photo">
+                            <div class="helper">
+                              <h4 class="initial">BW</h4>
+                            </div>
+                          </div> -->
+
+                          <p>Aswin Dewanto Hadisuwarno</p>
+                        </div>
+                        <!-- collapsed -->
+                        <div class="collapse" id="lihatdospem1">
+                          <div class="nama">
+                            <!-- <div class="photo">
+                                <img
+                                  src="../img/header/photo-profile.jpg"
+                                  alt=""
+                                />
+                              </div> -->
+                            <!-- no photo (initial) -->
+                            <div class="photo no-photo">
+                              <div class="helper">
+                                <h4 class="initial">BW</h4>
+                              </div>
+                            </div>
+
+                            <p>Buddi WIbowo, S.E., M.M., Dr</p>
+                          </div>
+                          <div class="nama">
+                            <div class="photo">
+                              <img
+                                src="../img/header/photo-profile.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <!-- no photo (initial) -->
+                            <!-- <div class="photo no-photo">
+                              <div class="helper">
+                                <h4 class="initial">BW</h4>
+                              </div>
+                            </div> -->
+
+                            <p>Aswin Dewanto Hadisuwarno</p>
+                          </div>
+                        </div>
+                        <div class="" id="name-expander">
+                          <a
+                            data-bs-toggle="collapse"
+                            href="#lihatdospem1"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="lihatdospem1"
+                            ><span class="lihatsemuanya">Lihat Semuanya</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-4 info-dosen" id="penguji">
+                      <p class="title">Penguji</p>
+                      <div class="daftar-nama">
+                        <div class="nama">
+                          <!-- <div class="photo">
+                              <img
+                                src="../img/header/photo-profile.jpg"
+                                alt=""
+                              />
+                            </div> -->
+                          <!-- no photo (initial) -->
+                          <div class="photo no-photo">
+                            <div class="helper">
+                              <h4 class="initial">BW</h4>
+                            </div>
+                          </div>
+
+                          <p>Buddi WIbowo, S.E., M.M., Dr</p>
+                        </div>
+                        <div class="nama">
+                          <div class="photo">
+                            <img src="../img/header/photo-profile.jpg" alt="" />
+                          </div>
+                          <!-- no photo (initial) -->
+                          <!-- <div class="photo no-photo">
+                            <div class="helper">
+                              <h4 class="initial">BW</h4>
+                            </div>
+                          </div> -->
+
+                          <p>Aswin Dewanto Hadisuwarno</p>
+                        </div>
+                        <!-- collapsed -->
+                        <div class="collapse" id="lihatdospeng1">
+                          <div class="nama">
+                            <!-- <div class="photo">
+                                <img
+                                  src="../img/header/photo-profile.jpg"
+                                  alt=""
+                                />
+                              </div> -->
+                            <!-- no photo (initial) -->
+                            <div class="photo no-photo">
+                              <div class="helper">
+                                <h4 class="initial">BW</h4>
+                              </div>
+                            </div>
+
+                            <p>Buddi WIbowo, S.E., M.M., Dr</p>
+                          </div>
+                          <div class="nama">
+                            <div class="photo">
+                              <img
+                                src="../img/header/photo-profile.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <!-- no photo (initial) -->
+                            <!-- <div class="photo no-photo">
+                              <div class="helper">
+                                <h4 class="initial">BW</h4>
+                              </div>
+                            </div> -->
+
+                            <p>Aswin Dewanto Hadisuwarno</p>
+                          </div>
+                          <div class="nama">
+                            <!-- <div class="photo">
+                                <img
+                                  src="../img/header/photo-profile.jpg"
+                                  alt=""
+                                />
+                              </div> -->
+                            <!-- no photo (initial) -->
+                            <div class="photo no-photo">
+                              <div class="helper">
+                                <h4 class="initial">BW</h4>
+                              </div>
+                            </div>
+
+                            <p>Buddi WIbowo, S.E., M.M., Dr</p>
+                          </div>
+                          <div class="nama">
+                            <div class="photo">
+                              <img
+                                src="../img/header/photo-profile.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <!-- no photo (initial) -->
+                            <!-- <div class="photo no-photo">
+                              <div class="helper">
+                                <h4 class="initial">BW</h4>
+                              </div>
+                            </div> -->
+
+                            <p>Aswin Dewanto Hadisuwarno</p>
+                          </div>
+                        </div>
+                        <div class="" id="name-expander">
+                          <a
+                            data-bs-toggle="collapse"
+                            href="#lihatdospeng1"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="lihatdospeng1"
+                            ><span class="lihatsemuanya">Lihat Semuanya</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card item-jadwal">
+                  <div class="row">
+                    <div class="col-12 col-sm-4" id="info-ujian">
+                      <div class="jam">
+                        <img src="../img/icon/Clock.svg" alt="" />
+                        <p>08:30 - 10:00 WIB</p>
+                      </div>
+                      <h4 class="judul-ta">
+                        Rancang Bangun Aplikasi SDM Berbasis Mobile Version
+                      </h4>
+                      <a class="button btn-ujian-ta">
+                        <img src="../img/icon/Camera-outline.svg" alt="" />
+                        <p>Mulai Ujian Online</p>
+                      </a>
+                    </div>
+                    <div class="col-12 col-sm-4 info-dosen" id="pembimbing">
+                      <p class="title">Pembimbing</p>
+                      <div class="daftar-nama">
+                        <div class="nama">
+                          <!-- <div class="photo">
+                              <img
+                                src="../img/header/photo-profile.jpg"
+                                alt=""
+                              />
+                            </div> -->
+                          <!-- no photo (initial) -->
+                          <div class="photo no-photo">
+                            <div class="helper">
+                              <h4 class="initial">BW</h4>
+                            </div>
+                          </div>
+
+                          <p>Buddi WIbowo, S.E., M.M., Dr</p>
+                        </div>
+                        <div class="nama">
+                          <div class="photo">
+                            <img src="../img/header/photo-profile.jpg" alt="" />
+                          </div>
+                          <!-- no photo (initial) -->
+                          <!-- <div class="photo no-photo">
+                            <div class="helper">
+                              <h4 class="initial">BW</h4>
+                            </div>
+                          </div> -->
+
+                          <p>Aswin Dewanto Hadisuwarno</p>
+                        </div>
+                        <!-- collapsed -->
+                        <div class="collapse" id="lihatdospem2">
+                          <div class="nama">
+                            <!-- <div class="photo">
+                                <img
+                                  src="../img/header/photo-profile.jpg"
+                                  alt=""
+                                />
+                              </div> -->
+                            <!-- no photo (initial) -->
+                            <div class="photo no-photo">
+                              <div class="helper">
+                                <h4 class="initial">BW</h4>
+                              </div>
+                            </div>
+
+                            <p>Buddi WIbowo, S.E., M.M., Dr</p>
+                          </div>
+                          <div class="nama">
+                            <div class="photo">
+                              <img
+                                src="../img/header/photo-profile.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <!-- no photo (initial) -->
+                            <!-- <div class="photo no-photo">
+                              <div class="helper">
+                                <h4 class="initial">BW</h4>
+                              </div>
+                            </div> -->
+
+                            <p>Aswin Dewanto Hadisuwarno</p>
+                          </div>
+                        </div>
+                        <div class="" id="name-expander">
+                          <a
+                            data-bs-toggle="collapse"
+                            href="#lihatdospem2"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="lihatdospem2"
+                            ><span class="lihatsemuanya">Lihat Semuanya</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-4 info-dosen" id="penguji">
+                      <p class="title">Penguji</p>
+                      <div class="daftar-nama">
+                        <div class="nama">
+                          <!-- <div class="photo">
+                              <img
+                                src="../img/header/photo-profile.jpg"
+                                alt=""
+                              />
+                            </div> -->
+                          <!-- no photo (initial) -->
+                          <div class="photo no-photo">
+                            <div class="helper">
+                              <h4 class="initial">BW</h4>
+                            </div>
+                          </div>
+
+                          <p>Buddi WIbowo, S.E., M.M., Dr</p>
+                        </div>
+                        <div class="nama">
+                          <div class="photo">
+                            <img src="../img/header/photo-profile.jpg" alt="" />
+                          </div>
+                          <!-- no photo (initial) -->
+                          <!-- <div class="photo no-photo">
+                            <div class="helper">
+                              <h4 class="initial">BW</h4>
+                            </div>
+                          </div> -->
+
+                          <p>Aswin Dewanto Hadisuwarno</p>
+                        </div>
+                        <!-- collapsed -->
+                        <div class="collapse" id="lihatdospeng2">
+                          <div class="nama">
+                            <!-- <div class="photo">
+                                <img
+                                  src="../img/header/photo-profile.jpg"
+                                  alt=""
+                                />
+                              </div> -->
+                            <!-- no photo (initial) -->
+                            <div class="photo no-photo">
+                              <div class="helper">
+                                <h4 class="initial">BW</h4>
+                              </div>
+                            </div>
+
+                            <p>Buddi WIbowo, S.E., M.M., Dr</p>
+                          </div>
+                          <div class="nama">
+                            <div class="photo">
+                              <img
+                                src="../img/header/photo-profile.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <!-- no photo (initial) -->
+                            <!-- <div class="photo no-photo">
+                              <div class="helper">
+                                <h4 class="initial">BW</h4>
+                              </div>
+                            </div> -->
+
+                            <p>Aswin Dewanto Hadisuwarno</p>
+                          </div>
+                          <div class="nama">
+                            <!-- <div class="photo">
+                                <img
+                                  src="../img/header/photo-profile.jpg"
+                                  alt=""
+                                />
+                              </div> -->
+                            <!-- no photo (initial) -->
+                            <div class="photo no-photo">
+                              <div class="helper">
+                                <h4 class="initial">BW</h4>
+                              </div>
+                            </div>
+
+                            <p>Buddi WIbowo, S.E., M.M., Dr</p>
+                          </div>
+                          <div class="nama">
+                            <div class="photo">
+                              <img
+                                src="../img/header/photo-profile.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <!-- no photo (initial) -->
+                            <!-- <div class="photo no-photo">
+                              <div class="helper">
+                                <h4 class="initial">BW</h4>
+                              </div>
+                            </div> -->
+
+                            <p>Aswin Dewanto Hadisuwarno</p>
+                          </div>
+                        </div>
+                        <div class="" id="name-expander">
+                          <a
+                            data-bs-toggle="collapse"
+                            href="#lihatdospeng2"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="lihatdospeng2"
+                            ><span class="lihatsemuanya">Lihat Semuanya</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="jadwal-content ujian-semester tab-slider--container"
+                id="div3"
+              >
+                <!-- empty -->
+                <!-- <div id="tab1" class="tab-slider--body uts empty"> -->
+                <div id="tab1" class="tab-slider--body uts">
+                  <p class="aktivitas">Anda memiliki 1 aktivitas hari ini</p>
+
+                  <p class="aktivitas empty">
+                    Tidak ada aktivitas perkuliahan saat ini
+                  </p>
+
+                  <div class="empty-state">
+                    <img
+                      class="illustrasi"
+                      src="../img/dashboard/illustrasi empty jadwal ujian.svg"
+                      alt=""
+                    />
+                    <div class="title">
+                      <h4>Tidak Ada Jadwal Ujian Saat Ini</h4>
+                    </div>
+                    <p class="caption">
+                      Saat ini Anda belum memiliki jadwal Ujian Tengah Semester
+                      (UTS), tetap persiapkan diri Anda untuk hasil yang terbaik
+                      dan jangan lupa belajar.
+                    </p>
+                  </div>
+
+                  <div class="title-hari">
+                    <p>Senin, 26 April 2021</p>
+                  </div>
+                  <!-- tambah class online untuk ujian online -->
+                  <div class="card item-jadwal online">
+                    <div class="row">
+                      <div class="item-title">
+                        <div class="title kelas">
+                          <img src="../img/icon/ujian.svg" alt="" />
+                          <h4>KALKULUS (KAL)</h4>
+                        </div>
+                        <div class="title jenis">
+                          <p>Ujian Tengah Semester</p>
+                        </div>
+                      </div>
+                      <div class="separator"></div>
+                      <div class="col-12 col-sm info-kelas">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="detail-item jam">
+                              <img src="../img/icon/Clock.svg" alt="" />
+                              <p>12:30 - 13:15 WIB</p>
+                            </div>
+                            <div class="detail-item dosen dropdown">
+                              <a
+                                class=""
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <img src="../img/icon/Profile.svg" alt="" />
+                                <p>Siti Nurhalimah Setyono., M ..</p>
+                                <span class="dropdown-arrow"></span>
+                              </a>
+                              <div class="dropdown-menu">
+                                <div class="nama-dosen">
+                                  <p>Cristian sugihanro, S.Kom., M.Kom</p>
+                                </div>
+                                <hr />
+                                <div class="nama-dosen">
+                                  <p>Melisa putri sakti, S.Kom., M.Kom</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-6">
+                            <div class="detail-item ruang">
+                              <img src="../img/icon/Door.svg" alt="" />
+                              <p>Ruang M303</p>
+                            </div>
+                            <div class="detail-item sks">
+                              <img src="../img/icon/Bookmark.svg" alt="" />
+                              <p>3 SKS</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm col-button">
+                        <div class="button-helper">
+                          <h5>Status</h5>
+                          <a class="button btn-ujian-semester">
+                            <p>Ujian Online</p>
+                            <img src="../img/icon/link.svg" alt="" />
+                          </a>
+                          <div class="ujian-offline">
+                            <p>Ujian Offline</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card item-jadwal">
+                    <div class="row">
+                      <div class="item-title">
+                        <div class="title kelas">
+                          <img src="../img/icon/ujian.svg" alt="" />
+                          <h4>KALKULUS (KAL)</h4>
+                        </div>
+                        <div class="title jenis">
+                          <p>Ujian Tengah Semester</p>
+                        </div>
+                      </div>
+                      <div class="separator"></div>
+                      <div class="col-12 col-sm info-kelas">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="detail-item jam">
+                              <img src="../img/icon/Clock.svg" alt="" />
+                              <p>12:30 - 13:15 WIB</p>
+                            </div>
+                            <div class="detail-item dosen dropdown">
+                              <a
+                                class=""
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <img src="../img/icon/Profile.svg" alt="" />
+                                <p>Siti Nurhalimah Setyono., M ..</p>
+                                <span class="dropdown-arrow"></span>
+                              </a>
+                              <div class="dropdown-menu">
+                                <div class="nama-dosen">
+                                  <p>Cristian sugihanro, S.Kom., M.Kom</p>
+                                </div>
+                                <hr />
+                                <div class="nama-dosen">
+                                  <p>Melisa putri sakti, S.Kom., M.Kom</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-6">
+                            <div class="detail-item ruang">
+                              <img src="../img/icon/Door.svg" alt="" />
+                              <p>Ruang M303</p>
+                            </div>
+                            <div class="detail-item sks">
+                              <img src="../img/icon/Bookmark.svg" alt="" />
+                              <p>3 SKS</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm col-button">
+                        <div class="button-helper">
+                          <h5>Status</h5>
+                          <a class="button btn-ujian-semester">
+                            <p>Ujian Online</p>
+                            <img src="../img/icon/link.svg" alt="" />
+                          </a>
+                          <div class="ujian-offline">
+                            <p>Ujian Offline</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- empty -->
+                <!-- <div id="tab2" class="tab-slider--body uas empty"> -->
+                <div id="tab2" class="tab-slider--body uas">
+                  <p class="aktivitas">Anda memiliki 1 aktivitas hari ini</p>
+
+                  <p class="aktivitas empty">
+                    Tidak ada aktivitas perkuliahan saat ini
+                  </p>
+
+                  <div class="empty-state">
+                    <img
+                      class="illustrasi"
+                      src="../img/dashboard/illustrasi empty jadwal ujian.svg"
+                      alt=""
+                    />
+                    <div class="title">
+                      <h4>Tidak Ada Jadwal Ujian Saat Ini</h4>
+                    </div>
+                    <p class="caption">
+                      Saat ini Anda belum memiliki jadwal Ujian Akhir Semester
+                      (UAS), tetap persiapkan diri Anda untuk hasil yang terbaik
+                      dan jangan lupa belajar.
+                    </p>
+                  </div>
+
+                  <div class="title-hari">
+                    <p>Jumat, 19 April 2021</p>
+                  </div>
+                  <div class="card item-jadwal">
+                    <div class="row">
+                      <div class="item-title">
+                        <div class="title kelas">
+                          <img src="../img/icon/ujian.svg" alt="" />
+                          <h4>KALKULUS (KAL)</h4>
+                        </div>
+                        <div class="title jenis">
+                          <p>Ujian Akhir Semester</p>
+                        </div>
+                      </div>
+                      <div class="separator"></div>
+                      <div class="col-12 col-sm info-kelas">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="detail-item jam">
+                              <img src="../img/icon/Clock.svg" alt="" />
+                              <p>12:30 - 13:15 WIB</p>
+                            </div>
+                            <div class="detail-item dosen dropdown">
+                              <a
+                                class=""
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <img src="../img/icon/Profile.svg" alt="" />
+                                <p>Siti Nurhalimah Setyono., M ..</p>
+                                <span class="dropdown-arrow"></span>
+                              </a>
+                              <div class="dropdown-menu">
+                                <div class="nama-dosen">
+                                  <p>Cristian sugihanro, S.Kom., M.Kom</p>
+                                </div>
+                                <hr />
+                                <div class="nama-dosen">
+                                  <p>Melisa putri sakti, S.Kom., M.Kom</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-6">
+                            <div class="detail-item ruang">
+                              <img src="../img/icon/Door.svg" alt="" />
+                              <p>Ruang M303</p>
+                            </div>
+                            <div class="detail-item sks">
+                              <img src="../img/icon/Bookmark.svg" alt="" />
+                              <p>3 SKS</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm col-button">
+                        <div class="button-helper">
+                          <h5>Status</h5>
+                          <a class="button btn-ujian-semester">
+                            <p>Ujian Online</p>
+                            <img src="../img/icon/link.svg" alt="" />
+                          </a>
+                          <div class="ujian-offline">
+                            <p>Ujian Offline</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- tambah class online untuk ujian online -->
+                  <div class="card item-jadwal online">
+                    <div class="row">
+                      <div class="item-title">
+                        <div class="title kelas">
+                          <img src="../img/icon/ujian.svg" alt="" />
+                          <h4>KALKULUS (KAL)</h4>
+                        </div>
+                        <div class="title jenis">
+                          <p>Ujian Akhir Semester</p>
+                        </div>
+                      </div>
+                      <div class="separator"></div>
+                      <div class="col-12 col-sm info-kelas">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="detail-item jam">
+                              <img src="../img/icon/Clock.svg" alt="" />
+                              <p>12:30 - 13:15 WIB</p>
+                            </div>
+                            <div class="detail-item dosen dropdown">
+                              <a
+                                class=""
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <img src="../img/icon/Profile.svg" alt="" />
+                                <p>Siti Nurhalimah Setyono., M ..</p>
+                                <span class="dropdown-arrow"></span>
+                              </a>
+                              <div class="dropdown-menu">
+                                <div class="nama-dosen">
+                                  <p>Cristian sugihanro, S.Kom., M.Kom</p>
+                                </div>
+                                <hr />
+                                <div class="nama-dosen">
+                                  <p>Melisa putri sakti, S.Kom., M.Kom</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-6">
+                            <div class="detail-item ruang">
+                              <img src="../img/icon/Door.svg" alt="" />
+                              <p>Ruang M303</p>
+                            </div>
+                            <div class="detail-item sks">
+                              <img src="../img/icon/Bookmark.svg" alt="" />
+                              <p>3 SKS</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm col-button">
+                        <div class="button-helper">
+                          <h5>Status</h5>
+                          <a class="button btn-ujian-semester">
+                            <p>Ujian Online</p>
+                            <img src="../img/icon/link.svg" alt="" />
+                          </a>
+                          <div class="ujian-offline">
+                            <p>Ujian Offline</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- modal kelas belum dimulai -->
+              <div
+                class="modal fade modal-kelas"
+                id="kelas-unavailable"
+                tabindex="-1"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <button
+                      type="button"
+                      class="btn closebtn"
+                      data-bs-dismiss="modal"
+                    >
+                      <img src="../img/icon/modal-close.svg" alt="" />
+                    </button>
+                    <img
+                      class="illustrasi"
+                      src="../img/dashboard/illustrasi kelas unavailable.svg"
+                      alt=""
+                    />
+                    <div class="tunggu">
+                      <span class="spinner-border" role="status"></span>
+                      <h4>Silahkan Tunggu Sebentar</h4>
+                    </div>
+                    <h5 class="caption">
+                      Saat ini kelas online yang Anda pilih belum dimulai
+                      silahkan tunggu sebentar atau Anda dapat kembali lagi pada
+                    </h5>
+                    <div class="jadwal-kelas">
+                      <h4>Senin, 26 April 2021</h4>
+                      <h5>Pukul 08:30 WIB</h5>
+                    </div>
+                    <h5 class="reload">
+                      Sistem Akan Reload Otomatis Setelah
+                      <span id="countdown-reload">00:10 Detik</span>
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <!-- modal daftar peserta -->
+              <!-- class="modal fade modal-info-kelas loading" untuk loading state -->
+
+              <div
+                class="modal fade modal-info-kelas"
+                id="daftarpeserta"
+                tabindex="-1"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="header">
+                      <div class="kelas">
+                        <h3>Pengantar Manajemen Komunikasi (P1)</h3>
+                        <h5>
+                          <img src="../img/icon/flag.svg" alt="" />
+                          S1 Sistem Informasi
+                        </h5>
+                      </div>
+
+                      <button
+                        type="button"
+                        class="btn closebtn"
+                        data-bs-dismiss="modal"
+                      >
+                        <img src="../img/icon/modal-close-2.svg" alt="" />
+                      </button>
+                    </div>
+                    <div class="body main">
+                      <h4>Daftar Peserta</h4>
+                      <div class="list-peserta">
+                        <div class="row item">
+                          <div class="photo">
+                            <img src="../img/header/photo-profile.jpg" alt="" />
+                          </div>
+                          <!-- no photo (initial) -->
+                          <!-- <div class="col photo no-photo">
+                            <div class="helper" style="background-color: blue">
+                              <h4 class="initial">BW</h4>
+                            </div>
+                          </div> -->
+                          <div class="col id">
+                            <h5 class="nim">204101000112</h5>
+                            <h3 class="nama">Eleanor Pena</h3>
+                          </div>
+                          <div class="col jk">
+                            <p>Perempuan</p>
+                          </div>
+                          <div class="col angkatan">
+                            <p>2020</p>
+                          </div>
+                          <div class="col prodi">
+                            <p>Sistem Informasi</p>
+                          </div>
+                          <div class="col mobile">
+                            <h5>SI - 2020</h5>
+                          </div>
+                        </div>
+                        <div class="row item">
+                          <!-- <div class="photo">
+                              <img
+                                src="../img/header/photo-profile.jpg"
+                                alt=""
+                              />
+                            </div> -->
+                          <!-- no photo (initial) -->
+                          <div class="col photo no-photo">
+                            <div class="helper" style="background-color: blue">
+                              <h4 class="initial">BW</h4>
+                            </div>
+                          </div>
+                          <div class="col id">
+                            <h5 class="nim">204101000112</h5>
+                            <h3 class="nama">
+                              Eleanor Pena Eleanor Pena Eleanor Pena Eleanor
+                              Pena
+                            </h3>
+                          </div>
+                          <div class="col jk">
+                            <p>Perempuan</p>
+                          </div>
+                          <div class="col angkatan">
+                            <p>2020</p>
+                          </div>
+                          <div class="col prodi">
+                            <p>Sistem Informasi</p>
+                          </div>
+                          <div class="col mobile">
+                            <h5>SI - 2020</h5>
+                          </div>
+                        </div>
+                        <div class="row item">
+                          <!-- <div class="photo">
+                              <img
+                                src="../img/header/photo-profile.jpg"
+                                alt=""
+                              />
+                            </div> -->
+                          <!-- no photo (initial) -->
+                          <div class="col photo no-photo">
+                            <div class="helper" style="background-color: blue">
+                              <h4 class="initial">BW</h4>
+                            </div>
+                          </div>
+                          <div class="col id">
+                            <h5 class="nim">204101000112</h5>
+                            <h3 class="nama">Eleanor Pena</h3>
+                          </div>
+                          <div class="col jk">
+                            <p>Perempuan</p>
+                          </div>
+                          <div class="col angkatan">
+                            <p>2020</p>
+                          </div>
+                          <div class="col prodi">
+                            <p>Sistem Informasi</p>
+                          </div>
+                          <div class="col mobile">
+                            <h5>SI - 2020</h5>
+                          </div>
+                        </div>
+                        <div class="row item">
+                          <div class="photo">
+                            <img src="../img/header/photo-profile.jpg" alt="" />
+                          </div>
+                          <!-- no photo (initial) -->
+                          <!-- <div class="col photo no-photo">
+                            <div class="helper" style="background-color: blue">
+                              <h4 class="initial">BW</h4>
+                            </div>
+                          </div> -->
+                          <div class="col id">
+                            <h5 class="nim">204101000112</h5>
+                            <h3 class="nama">Eleanor Pena</h3>
+                          </div>
+                          <div class="col jk">
+                            <p>Perempuan</p>
+                          </div>
+                          <div class="col angkatan">
+                            <p>2020</p>
+                          </div>
+                          <div class="col prodi">
+                            <p>Sistem Informasi</p>
+                          </div>
+                          <div class="col mobile">
+                            <h5>SI - 2020</h5>
+                          </div>
+                        </div>
+                        <div class="row item">
+                          <!-- <div class="photo">
+                              <img
+                                src="../img/header/photo-profile.jpg"
+                                alt=""
+                              />
+                            </div> -->
+                          <!-- no photo (initial) -->
+                          <div class="col photo no-photo">
+                            <div class="helper" style="background-color: blue">
+                              <h4 class="initial">BW</h4>
+                            </div>
+                          </div>
+                          <div class="col id">
+                            <h5 class="nim">204101000112</h5>
+                            <h3 class="nama">
+                              Eleanor Pena Eleanor Pena Eleanor Pena Eleanor
+                              Pena
+                            </h3>
+                          </div>
+                          <div class="col jk">
+                            <p>Perempuan</p>
+                          </div>
+                          <div class="col angkatan">
+                            <p>2020</p>
+                          </div>
+                          <div class="col prodi">
+                            <p>Sistem Informasi</p>
+                          </div>
+                          <div class="col mobile">
+                            <h5>SI - 2020</h5>
+                          </div>
+                        </div>
+                        <div class="row item">
+                          <!-- <div class="photo">
+                              <img
+                                src="../img/header/photo-profile.jpg"
+                                alt=""
+                              />
+                            </div> -->
+                          <!-- no photo (initial) -->
+                          <div class="col photo no-photo">
+                            <div class="helper" style="background-color: blue">
+                              <h4 class="initial">BW</h4>
+                            </div>
+                          </div>
+                          <div class="col id">
+                            <h5 class="nim">204101000112</h5>
+                            <h3 class="nama">Eleanor Pena</h3>
+                          </div>
+                          <div class="col jk">
+                            <p>Perempuan</p>
+                          </div>
+                          <div class="col angkatan">
+                            <p>2020</p>
+                          </div>
+                          <div class="col prodi">
+                            <p>Sistem Informasi</p>
+                          </div>
+                          <div class="col mobile">
+                            <h5>SI - 2020</h5>
+                          </div>
+                        </div>
+                        <div class="row item">
+                          <div class="photo">
+                            <img src="../img/header/photo-profile.jpg" alt="" />
+                          </div>
+                          <!-- no photo (initial) -->
+                          <!-- <div class="col photo no-photo">
+                            <div class="helper" style="background-color: blue">
+                              <h4 class="initial">BW</h4>
+                            </div>
+                          </div> -->
+                          <div class="col id">
+                            <h5 class="nim">204101000112</h5>
+                            <h3 class="nama">Eleanor Pena</h3>
+                          </div>
+                          <div class="col jk">
+                            <p>Perempuan</p>
+                          </div>
+                          <div class="col angkatan">
+                            <p>2020</p>
+                          </div>
+                          <div class="col prodi">
+                            <p>Sistem Informasi</p>
+                          </div>
+                          <div class="col mobile">
+                            <h5>SI - 2020</h5>
+                          </div>
+                        </div>
+                        <div class="row item">
+                          <!-- <div class="photo">
+                              <img
+                                src="../img/header/photo-profile.jpg"
+                                alt=""
+                              />
+                            </div> -->
+                          <!-- no photo (initial) -->
+                          <div class="col photo no-photo">
+                            <div class="helper" style="background-color: blue">
+                              <h4 class="initial">BW</h4>
+                            </div>
+                          </div>
+                          <div class="col id">
+                            <h5 class="nim">204101000112</h5>
+                            <h3 class="nama">
+                              Eleanor Pena Eleanor Pena Eleanor Pena Eleanor
+                              Pena
+                            </h3>
+                          </div>
+                          <div class="col jk">
+                            <p>Perempuan</p>
+                          </div>
+                          <div class="col angkatan">
+                            <p>2020</p>
+                          </div>
+                          <div class="col prodi">
+                            <p>Sistem Informasi</p>
+                          </div>
+                          <div class="col mobile">
+                            <h5>SI - 2020</h5>
+                          </div>
+                        </div>
+                        <div class="row item">
+                          <!-- <div class="photo">
+                              <img
+                                src="../img/header/photo-profile.jpg"
+                                alt=""
+                              />
+                            </div> -->
+                          <!-- no photo (initial) -->
+                          <div class="col photo no-photo">
+                            <div class="helper" style="background-color: blue">
+                              <h4 class="initial">BW</h4>
+                            </div>
+                          </div>
+                          <div class="col id">
+                            <h5 class="nim">204101000112</h5>
+                            <h3 class="nama">Eleanor Pena</h3>
+                          </div>
+                          <div class="col jk">
+                            <p>Perempuan</p>
+                          </div>
+                          <div class="col angkatan">
+                            <p>2020</p>
+                          </div>
+                          <div class="col prodi">
+                            <p>Sistem Informasi</p>
+                          </div>
+                          <div class="col mobile">
+                            <h5>SI - 2020</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="body loading-body">
+                      <img
+                        class="illustrasi"
+                        src="../img/dashboard/illustrasi loading.svg"
+                        alt=""
+                      />
+                      <div class="title">
+                        <span class="spinner-border" role="status"></span>
+                        <h4>Silahkan Tunggu Sebentar</h4>
+                      </div>
+                      <p class="caption">
+                        Kami sedang menyiapkan halaman yang Anda butuhkan.
+                        Sebentar lagi Anda dapat menggunakan layanan kami
+                      </p>
+                    </div>
+                    <div class="footer">
+                      <div class="left">
+                        <p>Total 80 Peserta</p>
+                      </div>
+                      <div class="jml-jk">
+                        <div class="jk">
+                          <span class="mark lakilaki"></span>
+                          <p>
+                            60
+                            <span class="desktop">Laki - Laki</span>
+                            <span class="mobile">L</span>
+                          </p>
+                        </div>
+                        <div class="jk">
+                          <span class="mark perempuan"></span>
+                          <p>
+                            20
+                            <span class="desktop">Perempuan</span>
+                            <span class="mobile">P</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- modal daftar sesi -->
+              <!-- class="modal fade modal-info-kelas empty" untuk empty state -->
+              <!-- class="modal fade modal-info-kelas loading" untuk loading state -->
+              <div
+                class="modal fade modal-info-kelas"
+                id="daftarsesi"
+                tabindex="-1"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="header">
+                      <div class="header-helper">
+                        <div class="circle-chart" data-percent="27">
+                          <div class="chart-box">
+                            <div class="chart-circle-base"></div>
+                            <svg>
+                              <circle
+                                r="50%"
+                                cx="50%"
+                                cy="50%"
+                                class="chart-circle-progress"
+                                stroke-linecap="round"
+                                stroke="url(#paint0_linear)"
+                              ></circle>
+                              <defs xmlns="http://www.w3.org/2000/svg">
+                                <linearGradient
+                                  id="paint0_linear"
+                                  x1="88"
+                                  y1="44"
+                                  x2="0"
+                                  y2="44"
+                                  gradientUnits="userSpaceOnUse"
+                                >
+                                  <stop offset="0%" stop-color="#6B50F0" />
+                                  <stop offset="0.01%" stop-color="#3656A1" />
+                                  <stop offset="100%" stop-color="#32AEEF" />
+                                </linearGradient>
+                              </defs>
+                            </svg>
+                            <div class="per-num"><span>0</span>%</div>
+                            <div class="label">realisasi</div>
+                          </div>
+                        </div>
+                        <div class="kelas">
+                          <h3>Pengantar Manajemen Komunikasi</h3>
+                          <h5>
+                            <img src="../img/icon/flag.svg" alt="" />
+                            S1 Sistem Informasi
+                          </h5>
+                        </div>
+                      </div>
+
+                      <button
+                        type="button"
+                        class="btn closebtn"
+                        data-bs-dismiss="modal"
+                      >
+                        <img src="../img/icon/modal-close-2.svg" alt="" />
+                      </button>
+                    </div>
+                    <div class="body main">
+                      <div class="body-header">
+                        <h4>Daftar Sesi</h4>
+                        <h4 class="presensi">Presensi 04 / 16</h4>
+                      </div>
+                      <div class="table-responsive">
+                        <table class="table table-borderless">
+                          <tbody class="item">
+                            <tr class="main">
+                              <td class="expand-arrow">
+                                <img
+                                  src="../img/icon/expand arrow sesi.svg"
+                                  alt=""
+                                />
+                              </td>
+                              <td class="no-sesi"><span>01</span></td>
+                              <td class="jadwal">
+                                <p>Senin, 07 Juni 2021</p>
+                                <h5>08:00 - 10:30 WIB</h5>
+                              </td>
+                              <td class="materi">
+                                <p>
+                                  Introduction about pengantar manajemen
+                                  komunikasi
+                                </p>
+                              </td>
+                              <td class="label">
+                                <span class="blue">Hadir</span>
+                                <!-- <span class="red">Alpha</span> -->
+                              </td>
+                            </tr>
+                            <tr class="detail">
+                              <td colspan="2"></td>
+                              <td class="ruang">
+                                <p class="title">Ruang</p>
+                                <p class="ruang">M301</p>
+                                <p class="jenis">Perkuliahan</p>
+                              </td>
+                              <td class="dosen">
+                                <p class="title">Dosen</p>
+                                <p class="nama-dosen">
+                                  Esther Howard, S. Kom, M. pd.
+                                </p>
+                                <p class="nama-dosen">
+                                  Brooklyn Simmons, M. Kom, OCA
+                                </p>
+                              </td>
+                            </tr>
+                            <tr class="mobile dosen">
+                              <td></td>
+                              <td class="title"><p>Dosen</p></td>
+                              <td class="nama-dosen" colspan="2">
+                                <p>Esther Howard, S. Kom, M. pd.</p>
+                                <p>Brooklyn Simmons, M. Kom, OCA</p>
+                              </td>
+                            </tr>
+                            <tr class="mobile kelas">
+                              <td></td>
+                              <td class="title"><p>Ruang</p></td>
+                              <td class="info" colspan="2">
+                                <p class="ruang">M301</p>
+                                <p>Perkuliahan</p>
+                              </td>
+                            </tr>
+                          </tbody>
+                          <tbody class="item">
+                            <tr class="main">
+                              <td class="expand-arrow">
+                                <img
+                                  src="../img/icon/expand arrow sesi.svg"
+                                  alt=""
+                                />
+                              </td>
+                              <td class="no-sesi"><span>02</span></td>
+                              <td class="jadwal">
+                                <p>Senin, 07 Juni 2021</p>
+                                <h5>08:00 - 10:30 WIB</h5>
+                              </td>
+                              <td class="materi">
+                                <p>
+                                  Introduction about pengantar manajemen
+                                  komunikasi
+                                </p>
+                              </td>
+                              <td class="label">
+                                <!-- <span class="blue">Hadir</span> -->
+                                <span class="red">Alpha</span>
+                              </td>
+                            </tr>
+                            <tr class="detail">
+                              <td colspan="2"></td>
+                              <td class="ruang">
+                                <p class="title">Ruang</p>
+                                <p class="ruang">M301</p>
+                                <p class="jenis">Perkuliahan</p>
+                              </td>
+                              <td class="dosen">
+                                <p class="title">Dosen</p>
+                                <p class="nama-dosen">
+                                  Esther Howard, S. Kom, M. pd.
+                                </p>
+                                <p class="nama-dosen">
+                                  Brooklyn Simmons, M. Kom, OCA
+                                </p>
+                              </td>
+                            </tr>
+                            <tr class="mobile dosen">
+                              <td></td>
+                              <td class="title"><p>Dosen</p></td>
+                              <td class="nama-dosen" colspan="2">
+                                <p>Esther Howard, S. Kom, M. pd.</p>
+                                <p>Brooklyn Simmons, M. Kom, OCA</p>
+                              </td>
+                            </tr>
+                            <tr class="mobile kelas">
+                              <td></td>
+                              <td class="title"><p>Ruang</p></td>
+                              <td class="info" colspan="2">
+                                <p class="ruang">M301</p>
+                                <p>Perkuliahan</p>
+                              </td>
+                            </tr>
+                          </tbody>
+                          <tbody class="item" id="kelas-active">
+                            <tr class="main">
+                              <td class="expand-arrow">
+                                <img
+                                  src="../img/icon/expand arrow sesi.svg"
+                                  alt=""
+                                />
+                              </td>
+                              <td class="no-sesi"><span>03</span></td>
+                              <td class="jadwal">
+                                <p>Senin, 07 Juni 2021</p>
+                                <h5>08:00 - 10:30 WIB</h5>
+                              </td>
+                              <td class="materi">
+                                <p>
+                                  Introduction about pengantar manajemen
+                                  komunikasi Introduction about pengantar
+                                  manajemen komunikasi Introduction about
+                                  pengantar manajemen komunikasi
+                                </p>
+                              </td>
+                              <td class="label">
+                                <span class="blue">Hadir</span>
+                                <!-- <span class="red">Alpha</span> -->
+                              </td>
+                            </tr>
+                            <tr class="detail">
+                              <td colspan="2"></td>
+                              <td class="ruang">
+                                <p class="title">Ruang</p>
+                                <p class="ruang">M301</p>
+                                <p class="jenis">Perkuliahan</p>
+                              </td>
+                              <td class="dosen">
+                                <p class="title">Dosen</p>
+                                <p class="nama-dosen">
+                                  Esther Howard, S. Kom, M. pd.
+                                </p>
+                                <p class="nama-dosen">
+                                  Brooklyn Simmons, M. Kom, OCA
+                                </p>
+                              </td>
+                            </tr>
+                            <tr class="mobile dosen">
+                              <td></td>
+                              <td class="title"><p>Dosen</p></td>
+                              <td class="nama-dosen" colspan="2">
+                                <p>Esther Howard, S. Kom, M. pd.</p>
+                                <p>Brooklyn Simmons, M. Kom, OCA</p>
+                              </td>
+                            </tr>
+                            <tr class="mobile kelas">
+                              <td></td>
+                              <td class="title"><p>Ruang</p></td>
+                              <td class="info" colspan="2">
+                                <p class="ruang">M301</p>
+                                <p>Perkuliahan</p>
+                              </td>
+                            </tr>
+                          </tbody>
+                          <tbody class="item">
+                            <tr class="main">
+                              <td class="expand-arrow">
+                                <img
+                                  src="../img/icon/expand arrow sesi.svg"
+                                  alt=""
+                                />
+                              </td>
+                              <td class="no-sesi"><span>04</span></td>
+                              <td class="jadwal">
+                                <p>Senin, 07 Juni 2021</p>
+                                <h5>08:00 - 10:30 WIB</h5>
+                              </td>
+                              <td class="materi kosong">
+                                <p>Materi belum diisi oleh dosen</p>
+                              </td>
+                              <td class="label">
+                                <span class="blue">-</span>
+                                <!-- <span class="red">Alpha</span> -->
+                              </td>
+                            </tr>
+                            <tr class="detail">
+                              <td colspan="2"></td>
+                              <td class="ruang">
+                                <p class="title">Ruang</p>
+                                <p class="ruang">M301</p>
+                                <p class="jenis">Perkuliahan</p>
+                              </td>
+                              <td class="dosen">
+                                <p class="title">Dosen</p>
+                                <p class="nama-dosen">
+                                  Esther Howard, S. Kom, M. pd.
+                                </p>
+                                <p class="nama-dosen">
+                                  Brooklyn Simmons, M. Kom, OCA
+                                </p>
+                              </td>
+                            </tr>
+                            <tr class="mobile dosen">
+                              <td></td>
+                              <td class="title"><p>Dosen</p></td>
+                              <td class="nama-dosen" colspan="2">
+                                <p>Esther Howard, S. Kom, M. pd.</p>
+                                <p>Brooklyn Simmons, M. Kom, OCA</p>
+                              </td>
+                            </tr>
+                            <tr class="mobile kelas">
+                              <td></td>
+                              <td class="title"><p>Ruang</p></td>
+                              <td class="info" colspan="2">
+                                <p class="ruang">M301</p>
+                                <p>Perkuliahan</p>
+                              </td>
+                            </tr>
+                          </tbody>
+                          <tbody class="item">
+                            <tr class="main">
+                              <td class="expand-arrow">
+                                <img
+                                  src="../img/icon/expand arrow sesi.svg"
+                                  alt=""
+                                />
+                              </td>
+                              <td class="no-sesi"><span>05</span></td>
+                              <td class="jadwal">
+                                <p>Senin, 07 Juni 2021</p>
+                                <h5>08:00 - 10:30 WIB</h5>
+                              </td>
+                              <td class="materi kosong">
+                                <p>Materi belum diisi oleh dosen</p>
+                              </td>
+                              <td class="label">
+                                <span class="blue">-</span>
+                                <!-- <span class="red">Alpha</span> -->
+                              </td>
+                            </tr>
+                            <tr class="detail">
+                              <td colspan="2"></td>
+                              <td class="ruang">
+                                <p class="title">Ruang</p>
+                                <p class="ruang">M301</p>
+                                <p class="jenis">Perkuliahan</p>
+                              </td>
+                              <td class="dosen">
+                                <p class="title">Dosen</p>
+                                <p class="nama-dosen">
+                                  Esther Howard, S. Kom, M. pd.
+                                </p>
+                                <p class="nama-dosen">
+                                  Brooklyn Simmons, M. Kom, OCA
+                                </p>
+                              </td>
+                            </tr>
+                            <tr class="mobile dosen">
+                              <td></td>
+                              <td class="title"><p>Dosen</p></td>
+                              <td class="nama-dosen" colspan="2">
+                                <p>Esther Howard, S. Kom, M. pd.</p>
+                                <p>Brooklyn Simmons, M. Kom, OCA</p>
+                              </td>
+                            </tr>
+                            <tr class="mobile kelas">
+                              <td></td>
+                              <td class="title"><p>Ruang</p></td>
+                              <td class="info" colspan="2">
+                                <p class="ruang">M301</p>
+                                <p>Perkuliahan</p>
+                              </td>
+                            </tr>
+                          </tbody>
+                          <tbody class="item">
+                            <tr class="main">
+                              <td class="expand-arrow">
+                                <img
+                                  src="../img/icon/expand arrow sesi.svg"
+                                  alt=""
+                                />
+                              </td>
+                              <td class="no-sesi"><span>06</span></td>
+                              <td class="jadwal">
+                                <p>Senin, 07 Juni 2021</p>
+                                <h5>08:00 - 10:30 WIB</h5>
+                              </td>
+                              <td class="materi kosong">
+                                <p>Materi belum diisi oleh dosen</p>
+                              </td>
+                              <td class="label">
+                                <span class="blue">-</span>
+                                <!-- <span class="red">Alpha</span> -->
+                              </td>
+                            </tr>
+                            <tr class="detail">
+                              <td colspan="2"></td>
+                              <td class="ruang">
+                                <p class="title">Ruang</p>
+                                <p class="ruang">M301</p>
+                                <p class="jenis">Perkuliahan</p>
+                              </td>
+                              <td class="dosen">
+                                <p class="title">Dosen</p>
+                                <p class="nama-dosen">
+                                  Esther Howard, S. Kom, M. pd.
+                                </p>
+                                <p class="nama-dosen">
+                                  Brooklyn Simmons, M. Kom, OCA
+                                </p>
+                              </td>
+                            </tr>
+                            <tr class="mobile dosen">
+                              <td></td>
+                              <td class="title"><p>Dosen</p></td>
+                              <td class="nama-dosen" colspan="2">
+                                <p>Esther Howard, S. Kom, M. pd.</p>
+                                <p>Brooklyn Simmons, M. Kom, OCA</p>
+                              </td>
+                            </tr>
+                            <tr class="mobile kelas">
+                              <td></td>
+                              <td class="title"><p>Ruang</p></td>
+                              <td class="info" colspan="2">
+                                <p class="ruang">M301</p>
+                                <p>Perkuliahan</p>
+                              </td>
+                            </tr>
+                          </tbody>
+                          <tbody class="item">
+                            <tr class="main">
+                              <td class="expand-arrow">
+                                <img
+                                  src="../img/icon/expand arrow sesi.svg"
+                                  alt=""
+                                />
+                              </td>
+                              <td class="no-sesi"><span>07</span></td>
+                              <td class="jadwal">
+                                <p>Senin, 07 Juni 2021</p>
+                                <h5>08:00 - 10:30 WIB</h5>
+                              </td>
+                              <td class="materi kosong">
+                                <p>Materi belum diisi oleh dosen</p>
+                              </td>
+                              <td class="label">
+                                <span class="blue">-</span>
+                                <!-- <span class="red">Alpha</span> -->
+                              </td>
+                            </tr>
+                            <tr class="detail">
+                              <td colspan="2"></td>
+                              <td class="ruang">
+                                <p class="title">Ruang</p>
+                                <p class="ruang">M301</p>
+                                <p class="jenis">Perkuliahan</p>
+                              </td>
+                              <td class="dosen">
+                                <p class="title">Dosen</p>
+                                <p class="nama-dosen">
+                                  Esther Howard, S. Kom, M. pd.
+                                </p>
+                                <p class="nama-dosen">
+                                  Brooklyn Simmons, M. Kom, OCA
+                                </p>
+                              </td>
+                            </tr>
+                            <tr class="mobile dosen">
+                              <td></td>
+                              <td class="title"><p>Dosen</p></td>
+                              <td class="nama-dosen" colspan="2">
+                                <p>Esther Howard, S. Kom, M. pd.</p>
+                                <p>Brooklyn Simmons, M. Kom, OCA</p>
+                              </td>
+                            </tr>
+                            <tr class="mobile kelas">
+                              <td></td>
+                              <td class="title"><p>Ruang</p></td>
+                              <td class="info" colspan="2">
+                                <p class="ruang">M301</p>
+                                <p>Perkuliahan</p>
+                              </td>
+                            </tr>
+                          </tbody>
+                          <tbody class="item">
+                            <tr class="main">
+                              <td class="expand-arrow">
+                                <img
+                                  src="../img/icon/expand arrow sesi.svg"
+                                  alt=""
+                                />
+                              </td>
+                              <td class="no-sesi"><span>08</span></td>
+                              <td class="jadwal">
+                                <p>Senin, 07 Juni 2021</p>
+                                <h5>08:00 - 10:30 WIB</h5>
+                              </td>
+                              <td class="materi kosong">
+                                <p>Materi belum diisi oleh dosen</p>
+                              </td>
+                              <td class="label">
+                                <span class="blue">-</span>
+                                <!-- <span class="red">Alpha</span> -->
+                              </td>
+                            </tr>
+                            <tr class="detail">
+                              <td colspan="2"></td>
+                              <td class="ruang">
+                                <p class="title">Ruang</p>
+                                <p class="ruang">M301</p>
+                                <p class="jenis">Perkuliahan</p>
+                              </td>
+                              <td class="dosen">
+                                <p class="title">Dosen</p>
+                                <p class="nama-dosen">
+                                  Esther Howard, S. Kom, M. pd.
+                                </p>
+                                <p class="nama-dosen">
+                                  Brooklyn Simmons, M. Kom, OCA
+                                </p>
+                              </td>
+                            </tr>
+                            <tr class="mobile dosen">
+                              <td></td>
+                              <td class="title"><p>Dosen</p></td>
+                              <td class="nama-dosen" colspan="2">
+                                <p>Esther Howard, S. Kom, M. pd.</p>
+                                <p>Brooklyn Simmons, M. Kom, OCA</p>
+                              </td>
+                            </tr>
+                            <tr class="mobile kelas">
+                              <td></td>
+                              <td class="title"><p>Ruang</p></td>
+                              <td class="info" colspan="2">
+                                <p class="ruang">M301</p>
+                                <p>Perkuliahan</p>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="body empty-body">
+                      <img
+                        class="illustrasi"
+                        src="../img/dashboard/illustrasi empty daftarsesi.svg"
+                        alt=""
+                      />
+                      <div class="title">
+                        <h4>Daftar Sesi Belum Tersedia</h4>
+                      </div>
+                      <p class="caption">
+                        Saat ini belum terdapat sesi apapun untuk perkuliahan
+                        ini, daftar sesi otomatis muncul saat sudah tersedia
+                      </p>
+                    </div>
+                    <div class="body loading-body">
+                      <img
+                        class="illustrasi"
+                        src="../img/dashboard/illustrasi loading.svg"
+                        alt=""
+                      />
+                      <div class="title">
+                        <span class="spinner-border" role="status"></span>
+                        <h4>Silahkan Tunggu Sebentar</h4>
+                      </div>
+                      <p class="caption">
+                        Kami sedang menyiapkan halaman yang Anda butuhkan.
+                        Sebentar lagi Anda dapat menggunakan layanan kami
+                      </p>
+                    </div>
+                    <div class="footer">
+                      <div class="left">
+                        <p>Total Presensi 03 / 16</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 side-dashboard">
+            <div class="side-item" id="menunggu-pembayaran">
+              <h4>Menunggu Pembayaran</h4>
+              <div class="card">
+                <div class="row detail-va">
+                  <div class="col col-7" id="left">
+                    <div id="va">
+                      <h5>Nomor Virtual Account</h5>
+                      <h4>8489992993292328001</h4>
+                    </div>
+                    <div id="metode">
+                      <h5>Metode Pembayaran</h5>
+                      <h4>Mandiri Virtual Account</h4>
+                    </div>
+                  </div>
+                  <div class="col col-5" id="right">
+                    <div id="nominal">
+                      <h5>Total Bayar</h5>
+                      <h3>Rp. 3.000.000</h3>
+                    </div>
+                    <!-- <a
+                      href=""
+                      id="tutorial"
+                      data-bs-toggle="modal"
+                      data-bs-target="#cara-pembayaran"
+                      >Bantuan Pembayaran</a
+                    > -->
+                    <a
+                      href=""
+                      id="tutorial"
+                      data-bs-toggle="modal"
+                      data-bs-target="#sevimapay-linktree"
+                      >Bantuan Pembayaran</a
+                    >
+                    <div
+                      class="modal fade"
+                      id="sevimapay-linktree"
+                      tabindex="-1"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <iframe
+                            src="https://linktr.ee/sevimapay"
+                            width="640"
+                            height="360"
+                            frameborder="0"
+                          ></iframe>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="modal fade"
+                      id="cara-pembayaran"
+                      tabindex="-1"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="header">
+                            <h3 class="title">Petunjuk Pembayaran</h3>
+                            <button
+                              type="button"
+                              class="btn closebtn"
+                              data-bs-dismiss="modal"
+                            >
+                              <img src="../img/icon/modal-close.svg" alt="" />
+                            </button>
+                          </div>
+                          <div class="body">
+                            <div
+                              class="accordion accordion-flush"
+                              id="accordion-cara-pembayaran"
+                            >
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                  <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne"
+                                    aria-expanded="false"
+                                    aria-controls="collapseOne"
+                                  >
+                                    <p>ATM Mandiri</p>
+                                  </button>
+                                </h2>
+                                <div
+                                  id="collapseOne"
+                                  class="accordion-collapse collapse"
+                                  data-bs-parent="#accordion-cara-pembayaran"
+                                >
+                                  <div class="accordion-body">
+                                    <ol
+                                      class="
+                                        list-group
+                                        list-group-numbered
+                                        list-group-flush
+                                      "
+                                    >
+                                      <li class="list-group-item">
+                                        <p>Masukkan Kartu ATM BCA & PIN</p>
+                                      </li>
+                                      <li class="list-group-item">
+                                        <p>
+                                          Pilih menu Transaksi Lainnya >
+                                          Transfer > ke Rekening BCA Virtual
+                                          Account
+                                        </p>
+                                      </li>
+                                      <li class="list-group-item">
+                                        <p>
+                                          Masukkan 5 angka kode perusahaan untuk
+                                          Tokopedia (80777) dan Nomor HP yang
+                                          terdaftar di akun Tokopedia Anda
+                                          (Contoh: 8077708612345xxx)
+                                        </p>
+                                      </li>
+                                    </ol>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                  <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo"
+                                    aria-expanded="false"
+                                    aria-controls="collapseTwo"
+                                  >
+                                    <p>Livin' by Mandiri (mBanking)</p>
+                                  </button>
+                                </h2>
+                                <div
+                                  id="collapseTwo"
+                                  class="accordion-collapse collapse"
+                                  aria-labelledby="headingTwo"
+                                  data-bs-parent="#accordion-cara-pembayaran"
+                                >
+                                  <div class="accordion-body">ngeng</div>
+                                </div>
+                              </div>
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                  <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree"
+                                    aria-expanded="false"
+                                    aria-controls="collapseThree"
+                                  >
+                                    <p>ATM Mandiri</p>
+                                  </button>
+                                </h2>
+                                <div
+                                  id="collapseThree"
+                                  class="accordion-collapse collapse"
+                                  aria-labelledby="headingThree"
+                                  data-bs-parent="#accordion-cara-pembayaran"
+                                >
+                                  <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Culpa, quaerat.
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="footer">
+                  <h5>Bayar Sebelum: Rabu, 31 Juni 2021 - Pukul 23:59 WIB</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="side-item" id="tagihan">
+              <h4>Total Tagihan</h4>
+              <div class="card">
+                <div class="tagihan-main">
+                  <div class="" id="title">
+                    <h1>Rp 3.750.000</h1>
+
+                    <div class="" id="detail-expander">
+                      <a
+                        data-bs-toggle="collapse"
+                        href="#rinciantagihan"
+                        role="button"
+                        aria-expanded="false"
+                        aria-controls="rinciantagihan"
+                        ><span id="lihatrincian">Lihat Rincian</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="progress" id="bar-progress">
+                    <div
+                      class="progress-bar progress-bar-striped"
+                      role="progressbar"
+                      aria-valuenow="35"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      style="width: 35%"
+                    ></div>
+                  </div>
+                  <div class="footer">
+                    <p>Kamu sudah membayar Rp 1.470.000 dari Rp5.220.000</p>
+                  </div>
+                </div>
+                <div class="collapse" id="rinciantagihan">
+                  <hr />
+                  <div class="tagihan-detail">
+                    <h5>Rincian Tagihan</h5>
+                    <div class="daftar-tagihan">
+                      <div class="item-tagihan">
+                        <div class="helper tooltip-tagihan">
+                          <img
+                            src="../img/icon/Info Circle.svg"
+                            alt=""
+                            data-bs-toggle="tooltip"
+                            data-bs-html="true"
+                            title="<em>Batas Waktu Pembayaran</em> : <b>Senin, 03 Mei 2021</b>"
+                          />
+                          <p>Dana Pengembangan Pembangunan</p>
+                        </div>
+                        <p class="number">Rp 3.500.000</p>
+                      </div>
+                      <div class="item-tagihan">
+                        <div class="helper tooltip-tagihan">
+                          <img
+                            src="../img/icon/Info Circle.svg"
+                            alt=""
+                            data-bs-toggle="tooltip"
+                            data-bs-html="true"
+                            title="<em>Batas Waktu Pembayaran</em> : <b>Senin, 03 Mei 2021</b>"
+                          />
+                          <p>Praktikum: Kewirausahaan</p>
+                        </div>
+                        <p class="number">Rp 250.000</p>
+                      </div>
+                      <div class="item-tagihan lunas">
+                        <div class="helper">
+                          <img src="../img/icon/Tick Square.svg" alt="" />
+                          <p>Operasional Semester</p>
+                        </div>
+                        <p class="number">Rp 1.120.000</p>
+                      </div>
+                      <div class="item-tagihan lunas">
+                        <div class="helper">
+                          <img src="../img/icon/Tick Square.svg" alt="" />
+                          <p>Perpustakaan</p>
+                        </div>
+                        <p class="number">Rp 350.000</p>
+                      </div>
+                    </div>
+                    <a class="btn">
+                      <h5>Bayar Tagihan</h5>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- state tagihan lunas -->
+              <!-- <div class="card lunas">
+                <div class="tagihan-main">
+                  <div class="item-empty">
+                    <img
+                      src="../img/dashboard/tagihan-lunas.svg"
+                      alt=""
+                    />
+                    <h3>Belum Ada Tagihan Baru</h3>
+                    <h5>
+                      Terima kasih telah melunasi tagihan akademik di periode ini.
+                    </h5>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+
+            <div class="side-item" id="kalendar-akademik">
+              <h4>Kalendar Akademik</h4>
+              <div class="card">
+                <div id="custom-cells"></div>
+                <div id="custom-cells-events">
+                  <p></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="side-item" id="aktivitas-prestasi">
+              <h4>Poin Aktivitas dan Prestasi</h4>
+              <!-- exist -->
+              <div class="card">
+                <div class="row">
+                  <div class="col-6">
+                    <canvas id="chart-poin" height="150"></canvas>
+                  </div>
+                  <div class="col-6">
+                    <div id="legend" class="chart-legend"></div>
+                  </div>
+                </div>
+                <hr />
+                <div class="footer">
+                  <a href="">
+                    Lihat Aktivitas dan Prestasi
+                    <img src="../img/icon/Arrow Right-primary.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <!-- empty state-->
+              <!-- <div class="card empty">
+                <div class="img-wrapper">
+                  <img
+                    src="../img/dashboard/empty aktivitas prestasi.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="caption-wrapper">
+                  <div class="caption">
+                    <p>
+                      Yuk, segera isi kegiatan kuliah Anda dengan aktivitas dan
+                      prestasi
+                    </p>
+                    <a href="">
+                      Lihat Aktivitas dan Prestasi
+                      <img src="../img/icon/Arrow Right-primary.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+
+            <div class="side-item" id="ad-edlink">
+              <div class="card">
+                <div class="bg">
+                  <div class="row">
+                    <div class="col-8">
+                      <h3>Platform Pembelajaran Inovatif Kreasi Anak Bangsa</h3>
+                      <a href="">
+                        <img
+                          src="../img/dashboard/ad edlink/button.svg"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="col-4">
+                      <img
+                        src="../img/dashboard/ad edlink/ed-logo 1.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- modal slider pengumuman -->
+        <div
+          class="modal fade modal-pengumuman"
+          id="modal-pengumuman-slider"
+          tabindex="-1"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <button
+                type="button"
+                class="btn closebtn"
+                data-bs-dismiss="modal"
+              >
+                <img src="../img/icon/modal-close.svg" alt="" />
+              </button>
+
+              <div class="" id="pengumuman-carousel">
+                <div class="owl-carousel owl-theme">
+                  <div class="item" id="krs">
+                    <div class="content">
+                      <div class="img-wrapper">
+                        <img src="../img/dashboard/illustrasi frs.svg" alt="" />
+                      </div>
+                      <div class="caption-wrapper">
+                        <h1>Waktunya Menyusun KRS!</h1>
+                        <h4>
+                          Gak terasa ya, sudah memasuki semester baru. Jangan
+                          lupa, periode penyusunan KRS sudah dibuka, dari
+                          tanggal 14-21 Mei 2019.
+                        </h4>
+                        <a id="mulai-krs" class="btn">
+                          <h4>Mulai KRS</h4>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="content">
+                      <div class="img-wrapper">
+                        <img src="../img/dashboard/illustrasi frs.svg" alt="" />
+                      </div>
+                      <div class="caption-wrapper">
+                        <h1>Waktunya YKS!</h1>
+                        <h4></h4>
+                        <a id="mulai-krs" class="btn">
+                          <h4>Mulai YKS</h4>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="content">
+                      <h4>koshyong</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="btns PreviousBtn" id="PreviousBtn">
+                  <a>
+                    <img src="../img/icon/slider arrow.svg" alt="" />
+                  </a>
+                </div>
+                <div class="btns NextBtn" id="NextBtn">
+                  <a>
+                    <img src="../img/icon/slider arrow.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- modal onboarding -->
+        <div
+          class="modal fade modal-pengumuman"
+          id="modal-onboarding"
+          tabindex="-1"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="header">
+                <img src="../img/dashboard/new dashboard.svg" alt="" />
+              </div>
+              <div class="body">
+                <h1>Tinggalkan yang Lama, Kenalan Dengan yang Baru</h1>
+                <p>
+                  Ucapkan selamat tinggal pada tampilan lama dan katakan hai
+                  pada SiakadCloud terbaru. Kini kami hadir dengan nuasa yang
+                  baru untuk memenuhi kebutuhan dan membantu proses belajar
+                  Anda.
+                </p>
+                <button class="btn" data-bs-dismiss="modal" id="start-tour">
+                  <h5>Mulai Jelajahi</h5>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer mt-auto">
+      <div class="container-xxl">
+        <p>
+          © 2021 <b>SEVIMA</b> All Right Reserved, Powered by <b>siAkadCloud</b>
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../assets/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- datepicker -->
+    <script src="../assets/air-datepicker/js/datepicker.min.js"></script>
+    <script src="../assets/air-datepicker/js/datepicker.id.js"></script>
+    <script src="../js/dashboard/kalendar-akademik.js"></script>
+    <!-- chartjs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <script src="../js/dashboard/chart-ip.js"></script>
+    <script src="../js/dashboard/chart-poin-aktivitas.js"></script>
+    <!-- info carousel -->
+    <script src="../assets/owl-carousel/dist/owl.carousel.min.js"></script>
+    <script src="../js/dashboard/info-carousel.js"></script>
+
+    <script src="../js/dashboard/dashboard.js"></script>
+    <script src="../js/dashboard/circular-progress.js"></script>
+
+    <!-- onboarding -->
+    <script src="../assets/introjs/intro.js"></script>
+    <script src="../js/onboarding.js"></script>
+
+    <!-- dim background -->
+    <script src="../js/background-dim.js"></script>
+
+    <!-- header -->
+    <script src="../js/header.js"></script>
+  </body>
+</html>

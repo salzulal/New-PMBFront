@@ -1,0 +1,30 @@
+// Components
+.card {
+  padding: 24px 32px;
+  background: #ffffff;
+  border: 1px solid #eceff1;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 2px #c9d6df;
+  border-radius: 8px;
+}
+
+/* Designing for scroll-bar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #dedede;
+  outline: 1px solid #dedede;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: adjust-color(#dedede, $lightness: -2%);
+}
