@@ -961,7 +961,6 @@ main#landingpage .hero .bg-overlay {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 120px;
 }
 
 main#landingpage .hero .bg-overlay .title {
@@ -1002,8 +1001,11 @@ main#landingpage .hero .bg-overlay .title h4 {
 
 main#landingpage .search-bar {
   height: 112px;
-  width: 980px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   max-width: 100%;
+  padding: 0 28px;
   position: relative;
   top: -56px;
   display: -webkit-box;
@@ -1013,6 +1015,82 @@ main#landingpage .search-bar {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ffffff;
+  border: 1px solid #eceff1;
+  -webkit-box-shadow: 0px 10px 30px rgba(64, 72, 82, 0.2);
+          box-shadow: 0px 10px 30px rgba(64, 72, 82, 0.2);
+  border-radius: 16px;
+  /* Use custom arrow */
+}
+
+main#landingpage .search-bar input,
+main#landingpage .search-bar textarea,
+main#landingpage .search-bar select {
+  border: none;
+  color: #404852;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: #fff;
+  font-size: 0.875rem;
+  line-height: 1.313rem;
+  padding: 18px 24px;
+  display: block;
+  border-radius: 6px;
+}
+
+main#landingpage .search-bar input:focus,
+main#landingpage .search-bar textarea:focus,
+main#landingpage .search-bar select:focus {
+  outline: none;
+  border-color: #3656a1;
+}
+
+main#landingpage .search-bar input:focus ~ label,
+main#landingpage .search-bar input:valid ~ label,
+main#landingpage .search-bar textarea:focus ~ label,
+main#landingpage .search-bar textarea:valid ~ label,
+main#landingpage .search-bar select:focus ~ label,
+main#landingpage .search-bar select:valid ~ label {
+  background-color: #fff;
+  padding: 0 10px;
+  margin-left: -10px;
+  top: -0.3725rem;
+  font-size: 0.625rem;
+  line-height: 0.9375rem;
+  color: #424242;
+}
+
+main#landingpage .search-bar input:focus ~ label,
+main#landingpage .search-bar textarea:focus ~ label,
+main#landingpage .search-bar select:focus ~ label {
+  color: #3656a1;
+}
+
+main#landingpage .search-bar input[type="password"] {
+  letter-spacing: 0.3em;
+}
+
+main#landingpage .search-bar label {
+  color: #80868b;
+  font-size: 0.875rem;
+  line-height: 1.313rem;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 24px;
+  top: 18px;
+  -webkit-transition: 300ms ease all;
+  transition: 300ms ease all;
+}
+
+main#landingpage .search-bar .select-text {
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
 }
 
 @media (max-width: 767.98px) {
