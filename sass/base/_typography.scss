@@ -1,3 +1,9 @@
+html {
+  font-size: 16px;
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
+}
 // typography
 h1 {
   font-weight: 600;
