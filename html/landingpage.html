@@ -4,14 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mobile Template</title>
+    <title>Home</title>
 
     <!-- bootstrap v5 -->
     <link
       rel="stylesheet"
       href="../assets/bootstrap/dist/css/bootstrap.min.css"
     />
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons+Round"
+      rel="stylesheet"
+    />
     <!-- custom css -->
     <link href="../css/main.css" rel="stylesheet" />
   </head>
@@ -25,7 +28,7 @@
             </div>
             <div class="search-bar" id="header-search-bar">
               <input
-                class="form-control dim"
+                class="form-control"
                 type="search"
                 placeholder="Cari Pendaftaran"
               />
@@ -59,58 +62,374 @@
           </div>
         </nav>
       </div>
-      <div
-        class="modal fade"
-        id="modalBahasa"
-        tabindex="-1"
-        aria-labelledby="modalBahasa"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title">Pilih Bahasa</h4>
-            </div>
-            <div class="modal-body">
-              <a class="pilihan-bahasa" href="">
-                <img src="../img/header/ID.svg" alt="" />
-                <div class="bahasa">
-                  <p>Bahasa Indonesia</p>
-                  <h5>Indonesia</h5>
-                </div>
-              </a>
-              <hr />
-              <a class="pilihan-bahasa" href="">
-                <img src="../img/header/US.svg" alt="" />
-                <div class="bahasa">
-                  <p>English</p>
-                  <h5>United States (USA)</h5>
-                </div>
-              </a>
-              <hr />
-              <a class="pilihan-bahasa" href="">
-                <img src="../img/header/UK.svg" alt="" />
-                <div class="bahasa">
-                  <p>English</p>
-                  <h5>United Kingdom (UK)</h5>
-                </div>
-              </a>
+    </header>
+
+    <main id="landingpage">
+      <!-- section hero -->
+      <section class="hero">
+        <div class="bg-overlay">
+          <div class="container-xxl">
+            <div class="title">
+              <h1>
+                Portal <span>Pendaftaran</span> Mahasiswa Baru Tahun Ajaran
+                2021/2022
+              </h1>
+              <h4>
+                Sebuah perguruan tinggi yang memiliki standar Internasional
+                berbasis Teknologi Informasi dan Komunikasi untuk membuat
+                mahasiswa siap dalam membuat karya dan bersaing global
+              </h4>
             </div>
           </div>
         </div>
-      </div>
-    </header>
+      </section>
+      <div class="container-xxl">
+        <!-- section search -->
+        <section class="search-bar" id="page-search-bar">
+          <img src="../img/landingpage/icon/search-icon.svg" alt="" />
+          <div class="group search-group">
+            <input
+              class="form-control search"
+              type="search"
+              placeholder="Temukan Jalur Anda di Sini"
+            />
+          </div>
+          <div class="vr"></div>
+          <div class="group"></div>
+          <div class="vr"></div>
+          <div class="group"></div>
+          <a href="" class="search-submit">Cari Sekarang</a>
 
-    <main>
-      <div style="height: 70vh">ngeng</div>
-      <div class="search-bar" id="page-search-bar">
-        <input
-          class="form-control dim"
-          type="search"
-          placeholder="Cari Pendaftaran"
-        />
+          <div class="jenjang"></div>
+        </section>
+        <!-- section jalur seleksi -->
+        <section class="row jalur-seleksi equalize">
+          <div class="jalur-item col-md-4 col-sm-6">
+            <div class="image-jalur equalize-this">
+              <img src="../img/landingpage/hero-bg.jpg" alt="" />
+            </div>
+            <div class="detail-jalur">
+              <div class="periode">
+                <img src="../img/landingpage/icon/time-icon.svg" alt="" />
+                <p>01 januari - 31 maret 2021</p>
+              </div>
+              <h4 class="nama-jalur">
+                Jalur Mandiri Periode 2021/2022 Gelombang 01
+              </h4>
+              <h5 class="ket-jalur">
+                Sebuah jalur ditujukan kepada para pendaftar atau calon
+                mahasiswa yang blablablab ablbal ablalb
+              </h5>
+              <h5 class="biaya-formulir">Rp 300.000 / Formulir</h5>
+            </div>
+          </div>
+          <div class="jalur-item col-md-4 col-sm-6">
+            <div class="image-jalur equalize-this">
+              <img src="../img/landingpage/jalur-seleksi.jpg" alt="" />
+            </div>
+            <div class="detail-jalur">
+              <div class="periode">
+                <img src="../img/landingpage/icon/time-icon.svg" alt="" />
+                <p>01 januari - 31 maret 2021</p>
+              </div>
+              <h4 class="nama-jalur">
+                Jalur Mandiri Periode 2021/2022 Gelombang 01
+              </h4>
+              <h5 class="ket-jalur">
+                Sebuah jalur ditujukan kepada para pendaftar atau calon
+                mahasiswa yang blablablab ablbal ablalb
+              </h5>
+              <h5 class="biaya-formulir">Bebas Biaya Formulir</h5>
+            </div>
+          </div>
+          <div class="jalur-item col-md-4 col-sm-6">
+            <div class="image-jalur equalize-this">
+              <img src="../img/landingpage/hero-bg.jpg" alt="" />
+            </div>
+            <div class="detail-jalur">
+              <div class="periode">
+                <img src="../img/landingpage/icon/time-icon.svg" alt="" />
+                <p>01 januari - 31 maret 2021</p>
+              </div>
+              <h4 class="nama-jalur">
+                Jalur Mandiri Periode 2021/2022 Gelombang 01
+              </h4>
+              <h5 class="ket-jalur">
+                Sebuah jalur ditujukan kepada para pendaftar atau calon
+                mahasiswa yang blablablab ablbal ablalb
+              </h5>
+              <h5 class="biaya-formulir">Rp 300.000 / Formulir</h5>
+            </div>
+          </div>
+          <div class="jalur-item col-md-4 col-sm-6">
+            <div class="image-jalur equalize-this">
+              <img src="../img/landingpage/jalur-seleksi.jpg" alt="" />
+            </div>
+            <div class="detail-jalur">
+              <div class="periode">
+                <img src="../img/landingpage/icon/time-icon.svg" alt="" />
+                <p>01 januari - 31 maret 2021</p>
+              </div>
+              <h4 class="nama-jalur">
+                Jalur Mandiri Periode 2021/2022 Gelombang 01
+              </h4>
+              <h5 class="ket-jalur">
+                Sebuah jalur ditujukan kepada para pendaftar atau calon
+                mahasiswa yang blablablab ablbal ablalb
+              </h5>
+              <h5 class="biaya-formulir">Bebas Biaya Formulir</h5>
+            </div>
+          </div>
+          <div class="jalur-item col-md-4 col-sm-6">
+            <div class="image-jalur equalize-this">
+              <img src="../img/landingpage/hero-bg.jpg" alt="" />
+            </div>
+            <div class="detail-jalur">
+              <div class="periode">
+                <img src="../img/landingpage/icon/time-icon.svg" alt="" />
+                <p>01 januari - 31 maret 2021</p>
+              </div>
+              <h4 class="nama-jalur">
+                Jalur Mandiri Periode 2021/2022 Gelombang 01
+              </h4>
+              <h5 class="ket-jalur">
+                Sebuah jalur ditujukan kepada para pendaftar atau calon
+                mahasiswa yang blablablab ablbal ablalb
+              </h5>
+              <h5 class="biaya-formulir">Rp 300.000 / Formulir</h5>
+            </div>
+          </div>
+          <div class="jalur-item col-md-4 col-sm-6">
+            <div class="image-jalur equalize-this">
+              <img src="../img/landingpage/jalur-seleksi.jpg" alt="" />
+            </div>
+            <div class="detail-jalur">
+              <div class="periode">
+                <img src="../img/landingpage/icon/time-icon.svg" alt="" />
+                <p>01 januari - 31 maret 2021</p>
+              </div>
+              <h4 class="nama-jalur">
+                Jalur Mandiri Periode 2021/2022 Gelombang 01
+              </h4>
+              <h5 class="ket-jalur">
+                Sebuah jalur ditujukan kepada para pendaftar atau calon
+                mahasiswa yang blablablab ablbal ablalb
+              </h5>
+              <h5 class="biaya-formulir">Bebas Biaya Formulir</h5>
+            </div>
+          </div>
+        </section>
       </div>
-      <div style="height: 70vh">ngeng</div>
+      <!-- section fasilitas kampus desktop-->
+      <section class="fasilitas-kampus-desktop">
+        <div class="fasilitas-detail">
+          <h3 class="title">Fasilitas Kampus</h3>
+          <p class="subtitle">
+            Selama menjadi mahasiswa terdapat banyak fasilitas yang dapat Anda
+            gunakan untuk mendukung perkuliahan
+          </p>
+          <div class="row">
+            <div class="col-sm-4">
+              <img src="../img/landingpage/icon/laboratorium.svg" alt="" />
+              <h5>Laboratorium</h5>
+            </div>
+            <div class="col-sm-4">
+              <img src="../img/landingpage/icon/sarana-olah-raga.svg" alt="" />
+              <h5>Sarana Olah Raga</h5>
+            </div>
+            <div class="col-sm-4">
+              <img src="../img/landingpage/icon/kantin-kampus.svg" alt="" />
+              <h5>Kantin Kampus</h5>
+            </div>
+            <div class="col-sm-4">
+              <img src="../img/landingpage/icon/perpustakaan.svg" alt="" />
+              <h5>Perpustakaan</h5>
+            </div>
+            <div class="col-sm-4">
+              <img src="../img/landingpage/icon/tempat-ibadah.svg" alt="" />
+              <h5>Tempat Ibadah</h5>
+            </div>
+            <div class="col-sm-4">
+              <img src="../img/landingpage/icon/layanan-internet.svg" alt="" />
+              <h5>Layanan Internet</h5>
+            </div>
+            <div class="col-sm-4">
+              <img
+                src="../img/landingpage/icon/ruang-kelas-modern.svg"
+                alt=""
+              />
+              <h5>Ruang Kelas Modern</h5>
+            </div>
+            <div class="col-sm-4">
+              <img src="../img/landingpage/icon/gazebo.svg" alt="" />
+              <h5>Gazebo (Tempat Istirahat)</h5>
+            </div>
+            <div class="col-sm-4">
+              <img src="../img/landingpage/icon/auditorium.svg" alt="" />
+              <h5>Auditorium</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="row fasilitas-images">
+          <div class="col-sm-6">
+            <div class="row">
+              <div class="col-sm-3">
+                <div
+                  class="img small"
+                  style="background-image: url(../img/landingpage/fasil-1.jpg)"
+                  id="fasil-1"
+                ></div>
+                <div
+                  class="img large"
+                  style="background-image: url(../img/landingpage/fasil-2.jpg)"
+                  id="fasil-2"
+                ></div>
+              </div>
+              <div class="col-sm-3">
+                <div
+                  class="img small"
+                  style="background-image: url(../img/landingpage/fasil-3.jpg)"
+                  id="fasil-3"
+                ></div>
+                <div
+                  class="img small"
+                  style="background-image: url(../img/landingpage/fasil-4.jpg)"
+                  id="fasil-4"
+                ></div>
+              </div>
+              <div class="col-sm-3">
+                <div
+                  class="img large"
+                  style="background-image: url(../img/landingpage/fasil-5.jpg)"
+                  id="fasil-5"
+                ></div>
+              </div>
+              <div class="col-sm-3">
+                <div
+                  class="img large"
+                  style="background-image: url(../img/landingpage/fasil-6.jpg)"
+                  id="fasil-6"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="row">
+              <div class="col-sm-3">
+                <div
+                  class="img large"
+                  style="background-image: url(../img/landingpage/fasil-7.jpg)"
+                  id="fasil-7"
+                ></div>
+              </div>
+              <div class="col-sm-3">
+                <div
+                  class="img large"
+                  style="background-image: url(../img/landingpage/fasil-8.jpg)"
+                  id="fasil-8"
+                ></div>
+              </div>
+              <div class="col-sm-3">
+                <div
+                  class="img small"
+                  style="background-image: url(../img/landingpage/fasil-9.jpg)"
+                  id="fasil-9"
+                ></div>
+                <div
+                  class="img small"
+                  style="background-image: url(../img/landingpage/fasil-10.jpg)"
+                  id="fasil-10"
+                ></div>
+              </div>
+              <div class="col-sm-3">
+                <div
+                  class="img small"
+                  style="background-image: url(../img/landingpage/fasil-11.jpg)"
+                  id="fasil-11"
+                ></div>
+                <div
+                  class="img large"
+                  style="background-image: url(../img/landingpage/fasil-12.jpg)"
+                  id="fasil-12"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section testimoni (max 5)-->
+      <section class="row testimoni">
+        <div class="col-sm-6 texts">
+          <img src="../img/landingpage/icon/quote-icon.svg" alt="" />
+          <h3 class="title">Ulasan Tentang Kita</h3>
+          <h5 class=""></h5>
+        </div>
+        <div class="col-sm-6 images highlight-3">
+          <div class="avatar-list">
+            <div class="avatar-container" id="avatar-1">
+              <div
+                class="img"
+                style="background-image: url('../img/landingpage/avatar-1.png')"
+              ></div>
+            </div>
+            <div class="avatar-container" id="avatar-2">
+              <div
+                class="img"
+                style="background-image: url('../img/landingpage/avatar-2.png')"
+              ></div>
+            </div>
+            <div class="avatar-container" id="avatar-3">
+              <div
+                class="img"
+                style="background-image: url('../img/landingpage/avatar-3.png')"
+              ></div>
+            </div>
+            <div class="avatar-container" id="avatar-4">
+              <div
+                class="img"
+                style="background-image: url('../img/landingpage/avatar-4.png')"
+              ></div>
+            </div>
+            <div class="avatar-container" id="avatar-5">
+              <div
+                class="img"
+                style="background-image: url('../img/landingpage/avatar-5.png')"
+              ></div>
+            </div>
+          </div>
+          <div class="avatar-highlight">
+            <div
+              class="img"
+              id="highlight-1"
+              style="background-image: url('../img/landingpage/avatar-1.png')"
+            ></div>
+            <div
+              class="img"
+              id="highlight-2"
+              style="background-image: url('../img/landingpage/avatar-2.png')"
+            ></div>
+            <div
+              class="img"
+              id="highlight-3"
+              style="
+                background-image: url('../img/landingpage/avatar-main.png');
+              "
+            ></div>
+            <div
+              class="img"
+              id="highlight-4"
+              style="background-image: url('../img/landingpage/avatar-4.png')"
+            ></div>
+            <div
+              class="img"
+              id="highlight-5"
+              style="background-image: url('../img/landingpage/avatar-5.png')"
+            ></div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer mt-auto">
@@ -191,5 +510,6 @@
     <!-- chartjs -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
     <script src="../js/circular-progress.js"></script>
+    <script src="../js/landingpage.js"></script>
   </body>
 </html>
