@@ -1,0 +1,150 @@
+.auth-test{
+    margin: 4rem 0;
+}
+
+.modal-auth{
+    width: 512px !important;
+    max-width: 512px !important;
+    .modal-content{
+        background: #FFFFFF;
+        border-radius: 8px;
+        box-shadow: none;
+        border: none;
+        .modal-header{
+            padding: 32px 56px 16px 56px;
+            border: none;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            align-items: flex-start;
+            position: relative;
+            .logo-kampus{
+                img{
+                    height: 48px;
+                    width: auto;
+                }
+            }
+            .btn-close {
+                font-size: 14px;
+                padding: 0;
+                color: #7A7A7A;
+                border: 0;
+                outline: none;
+                position: absolute;
+                right: 1.5rem;
+                top: 1.5rem;
+                margin: 0;
+            }
+        }
+        .modal-body{
+            padding: 28px 56px;
+            .heading-modal{
+                text-align: left;
+                margin-bottom: 1.75rem;
+                h1{
+                    font-weight: 600;
+                    font-size: 1.111rem;
+                    line-height: 30px;
+                    letter-spacing: 0.25px;
+                    color: $color-text;
+                    margin-bottom: 8px;
+                }
+                p{
+                    font-weight: normal;
+                    font-size: 0.778rem;
+                    line-height: 24px;
+                    color: #404852;
+                    opacity: 0.64;
+                    margin-bottom: 0;
+                    font-family: $font-mulish;
+                }
+            }
+            form{
+                width: 100%;
+                .group{
+                    margin: 0 0 20px 0;
+                    input{
+                        width: 100%;
+                        font-size: 0.778rem;
+                        font-family: $font-family;
+                    }
+                    span{
+                        position: absolute;
+                        color: #7A7A7A;
+                        opacity: 0.64;
+                        top: 20px;
+                        right: 18px;
+                        font-size: 20px;
+                        cursor: pointer;
+                    }
+                }
+                .cta-auth{
+                    margin-bottom: 4.444rem;
+                    .btn-primary-auth{
+                        margin: 12px 0 20px 0;
+                        width: 100%;
+                        color: #fff;
+                        text-align: center;
+                        background: #1959A9;
+                        border-radius: 6px;
+                        height: 60px;
+                        border: none;
+                        user-select: none;
+                        transition: all 0.2s ease;
+                        text-decoration: none;
+                        font-weight: 600;
+                        font-size: 0.778rem;
+                        line-height: 22px;
+                        text-transform: capitalize;
+                        color: #FFFFFF;
+                        &:hover {
+                            background: darken(#1959A9, 5%);
+                        }
+                        &.disabled{
+                            background: #BEC2C3;
+                            cursor: not-allowed;
+                        }
+                    }
+                    p{
+                        font-weight: normal;
+                        font-size: 0.722rem;
+                        line-height: 24px;
+                        text-align: center;
+                        text-transform: capitalize;
+                        color: #404852;
+                        margin-bottom: 0;
+                        a{
+                            color: #F57C00;
+                            font-weight: 600;
+                            text-decoration: none;
+                            &:hover{
+                                color: darken(#F57C00, 5%);
+                            }
+                        }
+                    }
+                }
+                .terms-condition{
+                    p{
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 0.667rem;
+                        line-height: 24px;
+                        text-align: center;
+                        color: #404852;
+                        opacity: 0.64;
+                        margin: 0;
+                        a{
+                            color: #404852;
+                            font-weight: 600;
+                            text-decoration: none;
+                            text-transform: capitalize;
+                            &:hover{
+                                color: darken(#404852, 5%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

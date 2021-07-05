@@ -1,6 +1,6 @@
 // VARIABLES // ============================== //
 $trans-time: 300ms;
-$width: 320px;
+$width: 400px;
 
 // FORM // ============================== //
 form {
@@ -11,7 +11,90 @@ form {
   position: relative;
   margin: 12px 0;
 }
-
+.phone-number {
+  position: relative;
+  margin: 0 0 20px 0;
+  input[type="number"]{
+    padding-left: 90px !important;
+  }
+  #list-select{
+    position: absolute;
+    top: 105%;
+    z-index: 99;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 12px 32px rgba(34, 34, 34, 0.12);
+    border-radius: 6px;
+    border: 1px solid #F5F6F8;
+    max-height: 200px;
+    overflow-y: hidden;
+    display: none;
+    &.show{
+      display: block;
+    }
+    &:hover {
+      overflow-y: auto;
+      transition: 200ms;
+    }
+    &::-webkit-scrollbar-track {
+      border-radius: 10px;
+      background-color: #f5f5f5;
+    }
+  
+    &::-webkit-scrollbar {
+      width: 3px;
+      background-color: #f5f5f5;
+      visibility: hidden;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: rgba(13, 71, 161, 0.16);
+    }
+    .option{
+      padding: 12px;
+      border-bottom: 1px solid #F5F6F8;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 19px;
+      text-transform: capitalize;
+      color: #404852;
+      cursor: pointer;
+      &:hover{
+        background-color: #EFF1F7;
+      }
+    }
+  }
+}
+.city-select{
+  position: absolute;
+  top: 20px;
+  left: 22px;
+  width: 60px;
+  // display: none;
+  cursor: pointer;
+  &.show{
+    display: block;
+  }
+  span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #BEC2C3;
+  }
+  select[disabled]{
+    width: 60px;
+    padding: 0;
+    cursor: pointer;
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    appearance:none;
+  }
+}
 // INPUTS // ============================== //
 
 input,
@@ -27,13 +110,16 @@ select {
   border: none;
   border-radius: 6px;
   border: 1px solid #dadce0;
+  &::placeholder{
+    opacity: 0;
+  }
   &:focus {
     outline: none;
     border-color: $color-primary;
   }
 
   &:focus ~ label,
-  &:valid ~ label {
+  &:not(:placeholder-shown) ~ label {
     background-color: #fff;
     padding: 0 10px;
     margin-left: -10px;
@@ -48,12 +134,14 @@ select {
   }
 }
 
-input[type="password"] {
-  letter-spacing: 0.3em;
-}
+// input[type="password"] {
+//   letter-spacing: 0.3em;
+// }
 
 label {
+  background-color: #fff;
   color: #80868b;
+  padding: 0;
   font-size: 0.875rem;
   line-height: 1.313rem;
   font-weight: normal;
