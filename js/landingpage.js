@@ -14,6 +14,7 @@ $(".city-select").mousedown(function(e) {
 });
 $(".city-select").click(function(e) { 
 	$("#list-select").toggleClass('show');
+  $('.phone-number input').focus();
 });
 var listoptions = $("#list-select").hasClass("option");
 
@@ -46,20 +47,35 @@ $(".showhide").click(function () {
 });
 // End Input Password Eye 
 
-// Validate Input 
-$(".group input").on("keyup", function () {
-  let empty = false;
-  let invalid = false;
-
-  $(".group input").each(function () {
-    empty = $(this).val().length == 0;
-  });
-
-  if (empty) {
-    $(".btn-primary-auth").addClass("disabled");
-    $(".btn-primary-auth").attr("disabled", "disabled");
-  } else {
-    $(".btn-primary-auth").removeClass("disabled");
-    $(".btn-primary-auth").attr("disabled", false);
-  }
+// KODE OTP 
+$('.digit-group').find('input').each(function() {
+	$(this).attr('maxlength', 1);
+	$(this).on('keyup', function(e) {
+		var parent = $($(this).parent());
+		
+		if(e.keyCode === 8 || e.keyCode === 37) {
+			var prev = parent.find('input#' + $(this).data('previous'));
+			
+			if(prev.length) {
+				$(prev).select();
+			}
+		} else if((e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode >= 65 && e.keyCode <= 90) || (e.keyCode >= 96 && e.keyCode <= 105) || e.keyCode === 39) {
+			var next = parent.find('input#' + $(this).data('next'));
+			
+			if(next.length) {
+				$(next).select();
+			} else {
+				if(parent.data('autosubmit')) {
+					parent.submit();
+				}
+			}
+		}
+	});
 });
+
+setInterval(function(){
+  $('#modalLoading').modal('hide');
+  $('#modalLoading').on('hidden.bs.modal', function () {
+    $('#modalBerhasilDaftar').modal('show')
+  })
+}, 3000);
