@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap");
 /**
@@ -1478,7 +1478,20 @@ main#landingpage .testimoni .col-sm-6 {
 }
 
 main#landingpage .testimoni .texts {
+  max-width: 660px;
+  margin-left: auto;
+  padding: 100px 0;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main#landingpage .testimoni .texts img {
@@ -1494,6 +1507,97 @@ main#landingpage .testimoni .texts .title {
   font-weight: bold;
 }
 
+main#landingpage .testimoni .texts #carousel-testimoni {
+  max-width: 500px;
+}
+
+main#landingpage .testimoni .texts #carousel-testimoni .item {
+  padding: 40px 0;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main#landingpage .testimoni .texts #carousel-testimoni .item .text-testimoni {
+  margin: 0 auto;
+  margin-bottom: 88px;
+  line-height: 1.75rem;
+  font-weight: normal;
+  text-align: center;
+  font-style: italic;
+  opacity: 0.64;
+}
+
+main#landingpage .testimoni .texts #carousel-testimoni .item .nama {
+  height: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main#landingpage .testimoni .texts #carousel-testimoni .item .nama .nama-testimoni {
+  font-weight: 500;
+  opacity: 0.8;
+  text-transform: capitalize;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+main#landingpage .testimoni .texts #carousel-testimoni .item .nama .nama-detail {
+  margin-top: 4px;
+  font-weight: 500;
+  text-transform: lowercase;
+  opacity: 0.64;
+}
+
+main#landingpage .testimoni .texts .btns {
+  width: 100%;
+  max-width: 524px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  z-index: +1;
+}
+
+main#landingpage .testimoni .texts .btns a {
+  position: absolute;
+  top: -80px;
+}
+
+main#landingpage .testimoni .texts .btns a#PreviousBtn {
+  left: 0;
+}
+
+main#landingpage .testimoni .texts .btns a#NextBtn {
+  right: 0;
+}
+
+main#landingpage .testimoni .texts .btns a:hover {
+  cursor: pointer;
+}
+
 main#landingpage .testimoni .images {
   background: #f6fafa;
   border-radius: 16px 0px 0px 16px;
@@ -1504,9 +1608,9 @@ main#landingpage .testimoni .images {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
 }
 
 main#landingpage .testimoni .images .avatar-list {
@@ -1545,7 +1649,7 @@ main#landingpage .testimoni .images .avatar-list .avatar-container .img {
 main#landingpage .testimoni .images .avatar-highlight {
   height: 500px;
   width: 340px;
-  margin: 0 32px;
+  margin-right: 32px;
 }
 
 main#landingpage .testimoni .images .avatar-highlight .img {
@@ -1573,12 +1677,119 @@ main#landingpage .testimoni .images.highlight-3 .avatar-highlight .img:not(#high
   display: none;
 }
 
-main#landingpage .testimoni .images.highlight-4 .avatar-highlight .img:not(#highlight-43) {
+main#landingpage .testimoni .images.highlight-4 .avatar-highlight .img:not(#highlight-4) {
   display: none;
 }
 
 main#landingpage .testimoni .images.highlight-5 .avatar-highlight .img:not(#highlight-5) {
   display: none;
+}
+
+main#landingpage .berita {
+  padding: 82px 0;
+}
+
+main#landingpage .berita .section-title {
+  margin-bottom: 82px;
+}
+
+main#landingpage .berita .section-title .col-6 h1 {
+  font-family: "Mulish", sans-serif;
+  font-size: 1.556rem;
+  line-height: 2.333rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  width: 350px;
+}
+
+main#landingpage .berita .section-title .col-6 p {
+  letter-spacing: 0.346154px;
+}
+
+main#landingpage .berita .section-title .col-6 a {
+  text-decoration: none;
+}
+
+main#landingpage .berita .section-title .col-6 a p {
+  margin-top: 12px;
+  font-weight: 600;
+  color: #f57c00;
+}
+
+@media (max-width: 575.98px) {
+  main#landingpage .berita #carousel-berita {
+    display: none;
+  }
+}
+
+main#landingpage .berita #carousel-berita .item {
+  background: #fafafa;
+  border: 1px solid #eceff1;
+  -webkit-box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  margin: 0 12px;
+  padding: 12px;
+}
+
+main#landingpage .berita #carousel-berita .item .img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+}
+
+main#landingpage .berita #carousel-berita .item .img .arrow {
+  z-index: +1;
+  position: absolute;
+  right: 20px;
+  bottom: -20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #f57c00;
+  border: 2px solid #ffffff;
+}
+
+main#landingpage .berita #carousel-berita .item .img .arrow img {
+  height: 14px;
+  width: 14px;
+}
+
+main#landingpage .berita #carousel-berita .item .text {
+  padding: 16px 0;
+}
+
+main#landingpage .berita #carousel-berita .item .text h5 {
+  font-weight: normal;
+  line-height: 1.5rem;
+  color: #7a7a7a;
+  letter-spacing: 0.346154px;
+}
+
+main#landingpage .berita #carousel-berita .item .text h5.isi-berita {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+main#landingpage .berita #carousel-berita .item .text h4 {
+  letter-spacing: 0.346154px;
+  margin: 4px 0;
 }
 
 .auth-test {
