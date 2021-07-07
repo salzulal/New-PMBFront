@@ -14,7 +14,9 @@ $(".city-select").mousedown(function (e) {
   e.preventDefault();
 });
 $(".city-select").click(function (e) {
+  e.preventDefault();
   $("#list-select").toggleClass("show");
+  $(".phone-number input").focus();
 });
 var listoptions = $("#list-select").hasClass("option");
 
@@ -79,23 +81,6 @@ setInterval(function(){
     $('#modalBerhasilDaftar').modal('show')
   })
 }, 3000);
-// Validate Input
-$(".group input").on("keyup", function () {
-  let empty = false;
-  let invalid = false;
-
-  $(".group input").each(function () {
-    empty = $(this).val().length == 0;
-  });
-
-  if (empty) {
-    $(".btn-primary-auth").addClass("disabled");
-    $(".btn-primary-auth").attr("disabled", "disabled");
-  } else {
-    $(".btn-primary-auth").removeClass("disabled");
-    $(".btn-primary-auth").attr("disabled", false);
-  }
-});
 
 // section testimoni
 $("#carousel-testimoni").each(function () {

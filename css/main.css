@@ -1792,6 +1792,10 @@ main#landingpage .berita #carousel-berita .item .text h4 {
   margin: 4px 0;
 }
 
+.modal {
+  overflow-y: auto;
+}
+
 .auth-test {
   margin: 4rem 0;
 }
