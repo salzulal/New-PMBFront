@@ -945,6 +945,77 @@ footer .container-xxl .footmark p {
   text-transform: capitalize;
 }
 
+footer .container-xxl .footmark .language-option a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+}
+
+footer .container-xxl .footmark .language-option a p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .container-xxl .footmark .language-option a .dropdown-arrow {
+  margin-left: 4px;
+}
+
+footer .container-xxl .footmark .language-option a .dropdown-arrow::after {
+  content: url("../img/header/icon/arrow-dropdown.svg");
+  height: 24px;
+  position: absolute;
+  display: block;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+footer .container-xxl .footmark .language-option a.show .dropdown-arrow::after {
+  top: 0%;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+footer .container-xxl .footmark .language-option ul {
+  border: 1px solid #eeeeee;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 12px 32px rgba(34, 34, 34, 0.12);
+          box-shadow: 0px 12px 32px rgba(34, 34, 34, 0.12);
+  border-radius: 6px;
+  padding: 0;
+}
+
+footer .container-xxl .footmark .language-option ul li .button {
+  width: 100%;
+  margin: 0;
+  padding: 14px 16px;
+  font-weight: normal;
+  font-size: 0.8125rem;
+  line-height: 1.188rem;
+  text-transform: capitalize;
+  color: #424242;
+  outline: none !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+footer .container-xxl .footmark .language-option ul li .button:hover, footer .container-xxl .footmark .language-option ul li .button:focus {
+  background: #eceff1;
+  border-radius: 4px;
+}
+
+footer .container-xxl .footmark .language-option ul li .button:active {
+  background: #e6eaed;
+}
+
 footer .container-xxl .footmark .socmed img {
   margin-left: 24px;
 }

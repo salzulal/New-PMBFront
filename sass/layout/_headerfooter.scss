@@ -266,7 +266,69 @@ footer {
         line-height: 1.313rem;
         text-transform: capitalize;
       }
+
       .language-option {
+        a {
+          display: flex;
+          cursor: pointer;
+          text-decoration: none;
+          p {
+            display: flex;
+            align-items: center;
+          }
+          position: relative;
+          .dropdown-arrow {
+            margin-left: 4px;
+            &::after {
+              content: url("../img/header/icon/arrow-dropdown.svg");
+              height: 24px;
+              position: absolute;
+              display: block;
+              top: 50%;
+              -webkit-transform: translateY(-50%);
+              -moz-transform: translateY(-50%);
+              -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+            }
+          }
+          &.show {
+            .dropdown-arrow {
+              &::after {
+                top: 0%;
+                transform: rotate(180deg);
+              }
+            }
+          }
+        }
+        ul {
+          border: 1px solid #eeeeee;
+          box-sizing: border-box;
+          box-shadow: 0px 12px 32px rgba(34, 34, 34, 0.12);
+          border-radius: 6px;
+          padding: 0;
+          li {
+            .button {
+              width: 100%;
+              margin: 0;
+              padding: 14px 16px;
+              font-weight: normal;
+              font-size: 0.8125rem;
+              line-height: 1.188rem;
+              text-transform: capitalize;
+              color: #424242;
+              outline: none !important;
+              box-shadow: none;
+              &:hover,
+              &:focus {
+                background: #eceff1;
+                border-radius: 4px;
+              }
+              &:active {
+                background: adjust-color(#eceff1, $lightness: -2%);
+              }
+            }
+          }
+        }
       }
       .socmed {
         img {
