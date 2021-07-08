@@ -1,3 +1,16 @@
+// searchbar
+var offsetTop = $("#page-search-bar").offset().top;
+
+$(window).scroll(function () {
+  var scrollTop = $(window).scrollTop();
+  if (scrollTop > offsetTop - 96) {
+    $("#header-search-bar").fadeIn(200);
+  } else {
+    $("#header-search-bar").fadeOut(200);
+  }
+});
+
+// equal height col
 var row = $(".equalize");
 $.each(row, function () {
   var maxh = 0;
@@ -49,38 +62,88 @@ $(".showhide").click(function () {
 });
 // End Input Password Eye
 
-// KODE OTP 
-$('.digit-group').find('input').each(function() {
-	$(this).attr('maxlength', 1);
-	$(this).on('keyup', function(e) {
-		var parent = $($(this).parent());
-		
-		if(e.keyCode === 8 || e.keyCode === 37) {
-			var prev = parent.find('input#' + $(this).data('previous'));
-			
-			if(prev.length) {
-				$(prev).select();
-			}
-		} else if((e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode >= 65 && e.keyCode <= 90) || (e.keyCode >= 96 && e.keyCode <= 105) || e.keyCode === 39) {
-			var next = parent.find('input#' + $(this).data('next'));
-			
-			if(next.length) {
-				$(next).select();
-			} else {
-				if(parent.data('autosubmit')) {
-					parent.submit();
-				}
-			}
-		}
-	});
-});
+// KODE OTP
+$(".digit-group")
+  .find("input")
+  .each(function () {
+    $(this).attr("maxlength", 1);
+    $(this).on("keyup", function (e) {
+      var parent = $($(this).parent());
 
-setInterval(function(){
-  $('#modalLoading').modal('hide');
-  $('#modalLoading').on('hidden.bs.modal', function () {
-    $('#modalBerhasilDaftar').modal('show')
-  })
+      if (e.keyCode === 8 || e.keyCode === 37) {
+        var prev = parent.find("input#" + $(this).data("previous"));
+
+        if (prev.length) {
+          $(prev).select();
+        }
+      } else if (
+        (e.keyCode >= 48 && e.keyCode <= 57) ||
+        (e.keyCode >= 65 && e.keyCode <= 90) ||
+        (e.keyCode >= 96 && e.keyCode <= 105) ||
+        e.keyCode === 39
+      ) {
+        var next = parent.find("input#" + $(this).data("next"));
+
+        if (next.length) {
+          $(next).select();
+        } else {
+          if (parent.data("autosubmit")) {
+            parent.submit();
+          }
+        }
+      }
+    });
+  });
+
+setInterval(function () {
+  $("#modalLoading").modal("hide");
+  $("#modalLoading").on("hidden.bs.modal", function () {
+    $("#modalBerhasilDaftar").modal("show");
+  });
 }, 3000);
+
+// section jalur pendaftaran
+$("#jalur-seleksi-carousel").each(function () {
+  var $this = $(this);
+
+  $this
+    .on({
+      "initialized.owl.carousel": function () {
+        $this.find(".item").show();
+      },
+    })
+    .owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      dots: false,
+      responsiveClass: true,
+      responsive: {
+        1: {
+          items: 1.1,
+        },
+        360: {
+          items: 1.2,
+        },
+        460: {
+          items: 2.2,
+        },
+      },
+    });
+
+  $this
+    .parent()
+    .find(".NextBtn")
+    .click(function () {
+      $this.trigger("next.owl.carousel");
+    });
+  $this
+    .parent()
+    .find(".PreviousBtn")
+    .click(function () {
+      $this.trigger("prev.owl.carousel");
+    });
+});
 
 // section testimoni
 $("#carousel-testimoni").each(function () {
@@ -155,6 +218,9 @@ $("#carousel-berita").each(function () {
       // center: true,
       responsiveClass: true,
       responsive: {
+        576: {
+          items: 2.2,
+        },
         767: {
           items: 2,
           stagePadding: 100,
@@ -165,6 +231,10 @@ $("#carousel-berita").each(function () {
         },
         1199: {
           items: 4,
+          stagePadding: 100,
+        },
+        1649: {
+          items: 5,
           stagePadding: 100,
         },
       },

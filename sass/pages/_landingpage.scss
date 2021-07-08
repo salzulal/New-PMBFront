@@ -1,7 +1,7 @@
 main#landingpage {
   // section hero
   .hero {
-    height: 600px;
+    min-height: 600px;
     width: 100%;
     background-image: url("../../img/landingpage/hero-bg.jpg");
     background-repeat: no-repeat;
@@ -10,6 +10,7 @@ main#landingpage {
     .bg-overlay {
       width: 100%;
       height: 100%;
+      min-height: 600px;
       background: radial-gradient(
         47.81% 88.03% at 82.08% 33.88%,
         rgba(33, 33, 33, 0) 30.73%,
@@ -17,6 +18,7 @@ main#landingpage {
       );
       display: flex;
       align-items: center;
+      padding: 52px 0;
       .title {
         height: fit-content;
         width: 50%;
@@ -32,7 +34,7 @@ main#landingpage {
           span {
             color: $color-secondary;
           }
-          @media (min-width: 768px) {
+          @media (min-width: 576px) {
             font-size: 2.222rem;
             line-height: 3.333rem;
           }
@@ -62,7 +64,7 @@ main#landingpage {
     border: 1px solid #eceff1;
     box-shadow: 0px 10px 30px rgba(64, 72, 82, 0.2);
     border-radius: 16px;
-    @media (max-width: 767.98px) {
+    @media (max-width: 575.98px) {
       display: none;
     }
     .vr {
@@ -99,106 +101,184 @@ main#landingpage {
   }
   //   section jalur seleksi
   .jalur-seleksi {
-    margin: 0 -22px;
-    padding: 0;
-    @media (max-width: 767.98px) {
-      margin-top: 44px;
+    .title {
+      letter-spacing: 0.1px;
+      margin-bottom: 2rem;
+      font-weight: 600;
+      @media (min-width: 576px) {
+        display: none;
+      }
     }
-    .jalur-item {
-      padding: 0 22px;
-      margin-bottom: 64px;
-      .image-jalur {
-        max-width: 100%;
-        max-height: 260px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        img {
+    .row {
+      margin: 0 -22px;
+      padding: 0;
+      .jalur-item {
+        padding: 0 22px;
+        margin-bottom: 64px;
+        .image-jalur {
           max-width: 100%;
-          max-height: 100%;
-          height: auto;
-          width: auto;
-          border-radius: 12px;
+          max-height: 260px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img {
+            max-width: 100%;
+            max-height: 100%;
+            height: auto;
+            width: auto;
+            border-radius: 12px;
+          }
+        }
+        .detail-jalur {
+          padding: 16px;
+          .periode {
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            img {
+              margin-right: 8px;
+            }
+            p {
+              font-size: 0.6875rem;
+              line-height: 1rem;
+
+              opacity: 0.56;
+            }
+          }
+          .nama-jalur {
+            margin-bottom: 0.25rem;
+          }
+          .ket-jalur {
+            font-family: $font-mulish;
+            font-weight: normal;
+
+            opacity: 0.64;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+          }
+          .biaya-formulir {
+            font-family: $font-mulish;
+            font-weight: bold;
+            letter-spacing: 0.346154px;
+            span {
+              font-weight: normal;
+            }
+          }
         }
       }
-      .detail-jalur {
-        padding: 16px;
-        .periode {
-          display: inline-flex;
-          align-items: center;
-          margin-bottom: 1rem;
-          img {
-            margin-right: 8px;
-          }
-          p {
-            font-size: 0.6875rem;
-            line-height: 1rem;
+    }
+    .owl-carousel {
+      .item {
+        margin: 12px 0;
+        background: #ffffff;
+        border: 1px solid #eceff1;
+        // box-shadow: 0px 30px 80px rgba(47, 65, 88, 0.1);
+        border-radius: 8px;
+        .image-jalur {
+          height: 164px;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          border-radius: 8px 8px 0 0;
+        }
+        .detail-jalur {
+          padding: 16px;
+          .periode {
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            img {
+              margin-right: 8px;
+              height: 16px;
+              width: 16px;
+            }
+            p {
+              font-size: 0.6875rem;
+              line-height: 1rem;
 
-            opacity: 0.56;
+              opacity: 0.56;
+            }
           }
-        }
-        .nama-jalur {
-          margin-bottom: 0.25rem;
-        }
-        .ket-jalur {
-          font-family: $font-mulish;
-          font-weight: normal;
+          .nama-jalur {
+            margin-bottom: 0.25rem;
+          }
+          .ket-jalur {
+            font-family: $font-mulish;
+            font-weight: normal;
 
-          opacity: 0.64;
-          margin-bottom: 1rem;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          display: -webkit-box;
-          -webkit-line-clamp: 2;
-          -webkit-box-orient: vertical;
-        }
-        .biaya-formulir {
-          font-family: $font-mulish;
-          font-weight: bold;
-          letter-spacing: 0.346154px;
-          color: $color-secondary;
+            opacity: 0.64;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+          }
+          .biaya-formulir {
+            font-family: $font-mulish;
+            letter-spacing: 0.346154px;
+            color: $color-secondary;
+            font-weight: bold;
+            span {
+              font-weight: normal;
+            }
+          }
         }
       }
     }
   }
   //   section fasilitas kampus
-  .fasilitas-kampus-desktop {
+  .fasilitas-kampus {
     width: 100vw;
     overflow-x: hidden;
     position: relative;
-    @media (max-width: 575.98px) {
-      display: none;
-    }
+    margin-top: 64px;
     .fasilitas-detail {
-      text-align: center;
       max-width: 760px;
       margin: 0 auto;
+      padding: 0 20px;
       .title {
-        font-family: $font-mulish;
-        font-size: 1.556rem;
-        line-height: 2.333rem;
-        letter-spacing: 0.3px;
-        margin-bottom: 16px;
-        font-weight: bold;
+        letter-spacing: 0.1px;
+        margin-bottom: 2rem;
+        font-weight: 600;
+        @media (min-width: 576px) {
+          text-align: center;
+          font-family: $font-mulish;
+          font-size: 1.556rem;
+          line-height: 2.333rem;
+          letter-spacing: 0.3px;
+          margin-bottom: 16px;
+          font-weight: bold;
+        }
       }
       .subtitle {
+        text-align: center;
+
         letter-spacing: 0.346154px;
         color: #7a7a7a;
       }
-      .row {
+      .row-wrapper {
         margin-top: 56px;
-        text-align: left;
-        .col-sm-4 {
-          display: inline-flex;
-          align-items: center;
-          margin-bottom: 20px;
-          img {
-            margin-right: 12px;
-          }
-          h5 {
-            font-weight: normal;
+        overflow-x: auto;
+        .row {
+          text-align: left;
+          min-width: 600px;
 
-            letter-spacing: 0.346154px;
+          .col-4 {
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 20px;
+            img {
+              margin-right: 12px;
+            }
+            h5 {
+              font-weight: normal;
+              letter-spacing: 0.346154px;
+            }
           }
         }
       }
@@ -251,9 +331,8 @@ main#landingpage {
     }
     .texts {
       max-width: 660px;
-
       margin-left: auto;
-      padding: 100px 0;
+      padding: 100px 20px;
       text-align: center;
       display: flex;
       flex-direction: column;
@@ -262,12 +341,17 @@ main#landingpage {
         margin-bottom: 1rem;
       }
       .title {
-        font-family: $font-mulish;
-        font-size: 1.556rem;
-        line-height: 2.333rem;
-        letter-spacing: 0.3px;
-        margin-bottom: 16px;
-        font-weight: bold;
+        letter-spacing: 0.1px;
+        margin-bottom: 2rem;
+        font-weight: 600;
+        @media (min-width: 576px) {
+          font-family: $font-mulish;
+          font-size: 1.556rem;
+          line-height: 2.333rem;
+          letter-spacing: 0.3px;
+          margin-bottom: 16px;
+          font-weight: bold;
+        }
       }
       #carousel-testimoni {
         max-width: 500px;
@@ -285,6 +369,7 @@ main#landingpage {
             text-align: center;
             font-style: italic;
             opacity: 0.64;
+            overflow-y: auto;
           }
           .nama {
             height: 64px;
@@ -328,6 +413,18 @@ main#landingpage {
           }
           &:hover {
             cursor: pointer;
+          }
+        }
+        .img-groups {
+          padding-left: 6px;
+          display: inline-flex;
+          img {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            border: 2px solid #ffffff;
+            margin: 0;
+            margin-left: -8px;
           }
         }
       }
@@ -460,6 +557,12 @@ main#landingpage {
     padding: 82px 0;
     .section-title {
       margin-bottom: 82px;
+      .mobile-title {
+        letter-spacing: 0.1px;
+        margin-bottom: 2rem;
+        font-weight: 600;
+        display: none;
+      }
       .col-6 {
         h1 {
           font-family: $font-mulish;
@@ -467,7 +570,7 @@ main#landingpage {
           line-height: 2.333rem;
           font-weight: 700;
           letter-spacing: 0.3px;
-          width: 350px;
+          max-width: 350px;
         }
         p {
           letter-spacing: 0.346154px;
@@ -478,6 +581,65 @@ main#landingpage {
             margin-top: 12px;
             font-weight: 600;
             color: $color-secondary;
+          }
+        }
+      }
+    }
+    .berita-mobile {
+      display: none;
+      padding: 0;
+      margin: 0 -16px;
+      .item-wrapper {
+        padding: 8px;
+        &#berita-2,
+        &#berita-4 {
+          position: relative;
+          top: 40px;
+        }
+        .item {
+          background: #fafafa;
+          border: 1px solid #eceff1;
+          box-shadow: 0px 20px 60px rgba(32, 56, 85, 0.1);
+          border-radius: 8px;
+          margin: 0px;
+          padding: 8px;
+
+          .img {
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            width: 100%;
+            height: 120px;
+            border-radius: 8px;
+          }
+          .text {
+            padding: 12px;
+
+            .judul {
+              letter-spacing: 0.346154px;
+              margin: 4px 0;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 4;
+              -webkit-box-orient: vertical;
+            }
+            .tanggal {
+              margin-top: 24px;
+              display: inline-flex;
+              align-items: center;
+              font-weight: normal;
+              line-height: 1.5rem;
+              color: #7a7a7a;
+              letter-spacing: 0.346154px;
+
+              img {
+                width: 20px;
+                height: 20px;
+                margin-right: 8px;
+              }
+            }
           }
         }
       }
@@ -538,6 +700,11 @@ main#landingpage {
           h4 {
             letter-spacing: 0.346154px;
             margin: 4px 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
           }
         }
       }

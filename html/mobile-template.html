@@ -16,6 +16,7 @@
     <link href="../css/main.css" rel="stylesheet" />
   </head>
   <body>
+    <!-- untuk landingpage header + class hiddensearchbar -->
     <header id="header-pmb">
       <div class="bg">
         <nav class="navbar" id="header">
@@ -23,9 +24,9 @@
             <div class="left">
               <img src="../img/header/logo-campus.png" alt="" />
             </div>
-            <div class="search-bar">
+            <div class="search-bar" id="header-search-bar">
               <input
-                class="form-control dim"
+                class="form-control"
                 type="search"
                 placeholder="Cari Pendaftaran"
               />
@@ -51,10 +52,10 @@
               </div>
               <!-- no photo (initial) -->
               <!-- <div class="profile-img no-photo">
-                <div class="helper" style="background-color: blue">
-                  <h4 class="initial">MK</h4>
-                </div>
-              </div> -->
+              <div class="helper" style="background-color: blue">
+                <h4 class="initial">MK</h4>
+              </div>
+            </div> -->
             </div>
           </div>
         </nav>
@@ -132,58 +133,100 @@
     </main>
 
     <footer class="footer mt-auto">
+      <div class="container-xxl help">
+        <div
+          class="bg"
+          style="background-image: url('../img/header/bg-footer.jpg')"
+        >
+          <div class="overlay">
+            <div class="content">
+              <h1>Kami Siap Membantu Anda</h1>
+              <h5 class="mobile">
+                Silakan hubungi kami apabila terdapat pertanyaan atau kendala
+                yang Anda alami.
+              </h5>
+              <h5 class="desktop">
+                Apabila Anda memiliki kendala atau terdapat beberapa hal yang
+                ingin ditanyakan. Silakan hubungi kami atau dapat juga membaca
+                user guide (petunjuk) pendaftaran terlebih dahulu
+              </h5>
+              <div class="buttons">
+                <a class="button secondary" type="button">
+                  <div class="ripple js-ripple">
+                    <span class="ripple__circle"></span>
+                  </div>
+                  <img src="../img/header/icon/whatsapp-icon.svg" alt="" />
+                  <p>Whatsapp</p>
+                </a>
+                <a class="button ternary" type="button">
+                  <div class="ripple js-ripple">
+                    <span class="ripple__circle"></span>
+                  </div>
+                  <p>User Guide</p>
+                </a>
+              </div>
+            </div>
+            <div
+              class="pattern"
+              style="background-image: url(../img/header/pattern-footer.svg)"
+            ></div>
+          </div>
+        </div>
+      </div>
       <div class="container-xxl">
         <div class="row">
-          <div class="col col-12 col-md-4">
+          <div class="col col-12 col-md-3">
             <div class="campus-logo">
               <img src="../img/header/logo-campus.png" alt="" />
             </div>
-            <p class="campus-description">
-              Universitas teknologi pertama dikota Surabaya yang telah mampu
-              bertahan selama lebih dari 25 tahun & berhasil mencetak lebih dari
-              200.000 lulusan terbaik
-            </p>
-            <div class="campus-info">
-              <div class="item location">
-                <div class="icon">
-                  <img src="../img/header/icon/location-icon.svg" alt="" />
-                </div>
-                <p>
-                  Medokan Asri Tengah MA-2 Blok Q No 16, Medokan Ayu, Kec.
-                  Rungkut, Kota SBY, Jawa Timur 60295
-                </p>
-              </div>
-              <div class="item email">
-                <div class="icon">
-                  <img src="../img/header/icon/email-icon.svg" alt="" />
-                </div>
-                <p>pmbonline@sevima.ac.id</p>
-              </div>
-              <div class="item telephone">
-                <div class="icon">
-                  <img src="../img/header/icon/telephone-icon.svg" alt="" />
-                </div>
-                <p>081374004080 / 081268449980</p>
-              </div>
+            <div class="row campus-images">
+              <img class="col-6" src="../img/header/footer-img-1.jpg" alt="" />
+              <img class="col-6" src="../img/header/footer-img-2.jpg" alt="" />
+              <img class="col-6" src="../img/header/footer-img-3.jpg" alt="" />
+              <img class="col-6" src="../img/header/footer-img-4.jpg" alt="" />
             </div>
           </div>
-          <div class="col col-12 col-md-8">
+          <div class="col col-12 col-md-9">
             <div class="row links">
-              <div class="col col-12 col-sm-4">
+              <div class="col col-12 col-sm-6">
+                <h4>Tentang Kami</h4>
+                <p class="campus-description">
+                  Universitas teknologi pertama dikota Surabaya yang telah mampu
+                  bertahan selama lebih dari 25 tahun & berhasil mencetak lebih
+                  dari 200.000 lulusan terbaik
+                </p>
+                <div class="campus-info">
+                  <div class="item location">
+                    <div class="icon">
+                      <img src="../img/header/icon/location-icon.svg" alt="" />
+                    </div>
+                    <p>
+                      Medokan Asri Tengah MA-2 Blok Q No 16, Medokan Ayu, Kec.
+                      Rungkut, Kota SBY, Jawa Timur 60295
+                    </p>
+                  </div>
+                  <div class="item email">
+                    <div class="icon">
+                      <img src="../img/header/icon/email-icon.svg" alt="" />
+                    </div>
+                    <p>pmbonline@sevima.ac.id</p>
+                  </div>
+                  <div class="item telephone">
+                    <div class="icon">
+                      <img src="../img/header/icon/telephone-icon.svg" alt="" />
+                    </div>
+                    <p>081374004080 / 081268449980</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-12 col-sm-3">
                 <h4>Menu</h4>
                 <a href="">Beranda</a>
                 <a href="">Pengumuman</a>
                 <a href="">Jalur Seleksi</a>
                 <a href="">Berita Terbaru</a>
               </div>
-              <div class="col col-12 col-sm-4">
-                <h4>Informasi</h4>
-                <a href="">Info Pendaftaran</a>
-                <a href="">Cara Pendaftaran</a>
-                <a href="">Cara Pembayaran</a>
-                <a href="">Info Pascasarjana</a>
-              </div>
-              <div class="col col-12 col-sm-4">
+              <div class="col col-12 col-sm-3">
                 <h4>Fakultas</h4>
                 <a href="">Sistem Informasi</a>
                 <a href="">Teknik Komputer</a>
@@ -191,6 +234,26 @@
                 <a href="">Ilmu Ekonomi</a>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="footmark">
+          <div class="language-option">NGENG</div>
+          <div class="copyright">
+            <p>Copyright © 2021 - sevima surabaya</p>
+          </div>
+          <div class="socmed">
+            <a href=""
+              ><img src="../img/header/icon/facebook-logo.svg" alt=""
+            /></a>
+            <a href=""
+              ><img src="../img/header/icon/linkedin-logo.svg" alt=""
+            /></a>
+            <a href=""
+              ><img src="../img/header/icon/twitter-logo.svg" alt=""
+            /></a>
+            <a href=""
+              ><img src="../img/header/icon/instagram-logo.svg" alt=""
+            /></a>
           </div>
         </div>
       </div>

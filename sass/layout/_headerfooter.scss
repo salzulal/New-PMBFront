@@ -175,6 +175,105 @@ footer {
   background: #f5f6f8;
   .container-xxl {
     padding: 44px;
+    padding-bottom: 32px;
+    &.help {
+      padding: 44px;
+
+      .bg {
+        border-radius: 6px;
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position: right center;
+        .overlay {
+          border-radius: 6px;
+          padding: 56px;
+          background: linear-gradient(
+            82.61deg,
+            rgba(2, 62, 138, 0.97) 48.57%,
+            rgba(2, 62, 138, 0.83) 84.13%
+          );
+          position: relative;
+          .pattern {
+            height: 100%;
+            width: 100%;
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+            background-position: right center;
+            position: absolute;
+            top: 24px;
+            right: 36px;
+          }
+          .content {
+            max-width: 530px;
+            h1 {
+              font-weight: 700;
+              font-size: 1.333rem;
+              line-height: 1.778rem;
+              color: #fff;
+              margin-bottom: 0.75rem;
+            }
+            h5 {
+              font-weight: normal;
+              font-size: 0.8889rem;
+              line-height: 1.778rem;
+              color: #fff;
+              opacity: 0.64;
+              font-family: $font-mulish;
+              &.mobile {
+                @media (min-width: 576px) {
+                  display: none;
+                }
+              }
+              &.desktop {
+                @media (max-width: 575.98px) {
+                  display: none;
+                }
+              }
+            }
+            .buttons {
+              display: inline-flex;
+              margin-top: 1.5rem;
+              .button {
+                width: 164px;
+                margin-right: 16px;
+                padding: 0.6667rem;
+                border-radius: 8px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                  margin-right: 0.25rem;
+                }
+                p {
+                  font-weight: 500;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .footmark {
+      border-top: 1px solid #dedede;
+      display: inline-flex;
+      justify-content: space-between;
+      width: 100%;
+      padding-top: 32px;
+      margin-top: 40px;
+      p {
+        font-weight: normal;
+        color: #7a7a7a;
+        line-height: 1.313rem;
+        text-transform: capitalize;
+      }
+      .language-option {
+      }
+      .socmed {
+        img {
+          margin-left: 24px;
+        }
+      }
+    }
     .row {
       margin: 0;
       padding: 0;
@@ -191,36 +290,19 @@ footer {
             height: auto;
           }
         }
-        .campus-description {
-          font-weight: normal;
-          color: $color-dark-900;
-          line-height: 1.313rem;
-          margin-top: 16px;
-        }
-        .campus-info {
-          .item {
-            display: flex;
-            flex-direction: row;
-            margin-top: 16px;
-            .icon {
-              width: fit-content;
-              margin-right: 16px;
-              img {
-                height: 20px;
-                width: 20px;
-              }
-            }
-            p {
-              font-weight: normal;
-              color: #757575;
-              line-height: 20px !important;
-            }
+        .campus-images {
+          margin: 32px -8px 0;
+          max-width: 232px;
+          .col-6 {
+            max-width: 100px;
+            padding: 8px;
+            border-radius: 4px;
           }
         }
       }
       .links {
         .col {
-          h3 {
+          h4 {
             letter-spacing: 0.02em;
             margin-bottom: 8px;
           }
@@ -233,6 +315,34 @@ footer {
             text-decoration: none;
             &:hover {
               text-decoration: underline;
+            }
+          }
+          .campus-description {
+            font-weight: normal;
+            color: #7a7a7a;
+            line-height: 1.313rem;
+            margin-top: 16px;
+            max-width: 380px;
+          }
+          .campus-info {
+            max-width: 380px;
+            .item {
+              display: flex;
+              flex-direction: row;
+              margin-top: 16px;
+              .icon {
+                width: fit-content;
+                margin-right: 16px;
+                img {
+                  height: 20px;
+                  width: 20px;
+                }
+              }
+              p {
+                font-weight: normal;
+                color: #757575;
+                line-height: 20px !important;
+              }
             }
           }
         }

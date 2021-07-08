@@ -37,7 +37,7 @@ html {
   font-size: 16px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   html {
     font-size: 18px;
   }
@@ -104,6 +104,7 @@ p {
 
 /* Designing for scroll-bar */
 ::-webkit-scrollbar {
+  height: 4px;
   width: 4px;
 }
 
@@ -828,6 +829,124 @@ footer {
 
 footer .container-xxl {
   padding: 44px;
+  padding-bottom: 32px;
+}
+
+footer .container-xxl.help {
+  padding: 44px;
+}
+
+footer .container-xxl.help .bg {
+  border-radius: 6px;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+footer .container-xxl.help .bg .overlay {
+  border-radius: 6px;
+  padding: 56px;
+  background: linear-gradient(82.61deg, rgba(2, 62, 138, 0.97) 48.57%, rgba(2, 62, 138, 0.83) 84.13%);
+  position: relative;
+}
+
+footer .container-xxl.help .bg .overlay .pattern {
+  height: 100%;
+  width: 100%;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: right center;
+  position: absolute;
+  top: 24px;
+  right: 36px;
+}
+
+footer .container-xxl.help .bg .overlay .content {
+  max-width: 530px;
+}
+
+footer .container-xxl.help .bg .overlay .content h1 {
+  font-weight: 700;
+  font-size: 1.333rem;
+  line-height: 1.778rem;
+  color: #fff;
+  margin-bottom: 0.75rem;
+}
+
+footer .container-xxl.help .bg .overlay .content h5 {
+  font-weight: normal;
+  font-size: 0.8889rem;
+  line-height: 1.778rem;
+  color: #fff;
+  opacity: 0.64;
+  font-family: "Mulish", sans-serif;
+}
+
+@media (min-width: 576px) {
+  footer .container-xxl.help .bg .overlay .content h5.mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  footer .container-xxl.help .bg .overlay .content h5.desktop {
+    display: none;
+  }
+}
+
+footer .container-xxl.help .bg .overlay .content .buttons {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: 1.5rem;
+}
+
+footer .container-xxl.help .bg .overlay .content .buttons .button {
+  width: 164px;
+  margin-right: 16px;
+  padding: 0.6667rem;
+  border-radius: 8px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .container-xxl.help .bg .overlay .content .buttons .button img {
+  margin-right: 0.25rem;
+}
+
+footer .container-xxl.help .bg .overlay .content .buttons .button p {
+  font-weight: 500;
+}
+
+footer .container-xxl .footmark {
+  border-top: 1px solid #dedede;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding-top: 32px;
+  margin-top: 40px;
+}
+
+footer .container-xxl .footmark p {
+  font-weight: normal;
+  color: #7a7a7a;
+  line-height: 1.313rem;
+  text-transform: capitalize;
+}
+
+footer .container-xxl .footmark .socmed img {
+  margin-left: 24px;
 }
 
 footer .container-xxl .row {
@@ -854,43 +973,18 @@ footer .container-xxl .row .col .campus-logo img {
   height: auto;
 }
 
-footer .container-xxl .row .col .campus-description {
-  font-weight: normal;
-  color: #424242;
-  line-height: 1.313rem;
-  margin-top: 16px;
+footer .container-xxl .row .col .campus-images {
+  margin: 32px -8px 0;
+  max-width: 232px;
 }
 
-footer .container-xxl .row .col .campus-info .item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin-top: 16px;
+footer .container-xxl .row .col .campus-images .col-6 {
+  max-width: 100px;
+  padding: 8px;
+  border-radius: 4px;
 }
 
-footer .container-xxl .row .col .campus-info .item .icon {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin-right: 16px;
-}
-
-footer .container-xxl .row .col .campus-info .item .icon img {
-  height: 20px;
-  width: 20px;
-}
-
-footer .container-xxl .row .col .campus-info .item p {
-  font-weight: normal;
-  color: #757575;
-  line-height: 20px !important;
-}
-
-footer .container-xxl .row .links .col h3 {
+footer .container-xxl .row .links .col h4 {
   letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
@@ -906,6 +1000,47 @@ footer .container-xxl .row .links .col a {
 
 footer .container-xxl .row .links .col a:hover {
   text-decoration: underline;
+}
+
+footer .container-xxl .row .links .col .campus-description {
+  font-weight: normal;
+  color: #7a7a7a;
+  line-height: 1.313rem;
+  margin-top: 16px;
+  max-width: 380px;
+}
+
+footer .container-xxl .row .links .col .campus-info {
+  max-width: 380px;
+}
+
+footer .container-xxl .row .links .col .campus-info .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 16px;
+}
+
+footer .container-xxl .row .links .col .campus-info .item .icon {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-right: 16px;
+}
+
+footer .container-xxl .row .links .col .campus-info .item .icon img {
+  height: 20px;
+  width: 20px;
+}
+
+footer .container-xxl .row .links .col .campus-info .item p {
+  font-weight: normal;
+  color: #757575;
+  line-height: 20px !important;
 }
 
 html {
@@ -1150,7 +1285,7 @@ main .header-progress a img {
 }
 
 main#landingpage .hero {
-  height: 600px;
+  min-height: 600px;
   width: 100%;
   background-image: url("../../img/landingpage/hero-bg.jpg");
   background-repeat: no-repeat;
@@ -1161,6 +1296,7 @@ main#landingpage .hero {
 main#landingpage .hero .bg-overlay {
   width: 100%;
   height: 100%;
+  min-height: 600px;
   background: radial-gradient(47.81% 88.03% at 82.08% 33.88%, rgba(33, 33, 33, 0) 30.73%, rgba(33, 33, 33, 0.9) 100%);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1168,6 +1304,7 @@ main#landingpage .hero .bg-overlay {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 52px 0;
 }
 
 main#landingpage .hero .bg-overlay .title {
@@ -1192,7 +1329,7 @@ main#landingpage .hero .bg-overlay .title h1 span {
   color: #f57c00;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   main#landingpage .hero .bg-overlay .title h1 {
     font-size: 2.222rem;
     line-height: 3.333rem;
@@ -1233,7 +1370,7 @@ main#landingpage .search-bar {
   border-radius: 16px;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 575.98px) {
   main#landingpage .search-bar {
     display: none;
   }
@@ -1277,23 +1414,29 @@ main#landingpage .search-bar a {
   text-decoration: none;
 }
 
-main#landingpage .jalur-seleksi {
+main#landingpage .jalur-seleksi .title {
+  letter-spacing: 0.1px;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+@media (min-width: 576px) {
+  main#landingpage .jalur-seleksi .title {
+    display: none;
+  }
+}
+
+main#landingpage .jalur-seleksi .row {
   margin: 0 -22px;
   padding: 0;
 }
 
-@media (max-width: 767.98px) {
-  main#landingpage .jalur-seleksi {
-    margin-top: 44px;
-  }
-}
-
-main#landingpage .jalur-seleksi .jalur-item {
+main#landingpage .jalur-seleksi .row .jalur-item {
   padding: 0 22px;
   margin-bottom: 64px;
 }
 
-main#landingpage .jalur-seleksi .jalur-item .image-jalur {
+main#landingpage .jalur-seleksi .row .jalur-item .image-jalur {
   max-width: 100%;
   max-height: 260px;
   display: -webkit-box;
@@ -1307,7 +1450,7 @@ main#landingpage .jalur-seleksi .jalur-item .image-jalur {
           justify-content: center;
 }
 
-main#landingpage .jalur-seleksi .jalur-item .image-jalur img {
+main#landingpage .jalur-seleksi .row .jalur-item .image-jalur img {
   max-width: 100%;
   max-height: 100%;
   height: auto;
@@ -1315,11 +1458,11 @@ main#landingpage .jalur-seleksi .jalur-item .image-jalur img {
   border-radius: 12px;
 }
 
-main#landingpage .jalur-seleksi .jalur-item .detail-jalur {
+main#landingpage .jalur-seleksi .row .jalur-item .detail-jalur {
   padding: 16px;
 }
 
-main#landingpage .jalur-seleksi .jalur-item .detail-jalur .periode {
+main#landingpage .jalur-seleksi .row .jalur-item .detail-jalur .periode {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1329,21 +1472,21 @@ main#landingpage .jalur-seleksi .jalur-item .detail-jalur .periode {
   margin-bottom: 1rem;
 }
 
-main#landingpage .jalur-seleksi .jalur-item .detail-jalur .periode img {
+main#landingpage .jalur-seleksi .row .jalur-item .detail-jalur .periode img {
   margin-right: 8px;
 }
 
-main#landingpage .jalur-seleksi .jalur-item .detail-jalur .periode p {
+main#landingpage .jalur-seleksi .row .jalur-item .detail-jalur .periode p {
   font-size: 0.6875rem;
   line-height: 1rem;
   opacity: 0.56;
 }
 
-main#landingpage .jalur-seleksi .jalur-item .detail-jalur .nama-jalur {
+main#landingpage .jalur-seleksi .row .jalur-item .detail-jalur .nama-jalur {
   margin-bottom: 0.25rem;
 }
 
-main#landingpage .jalur-seleksi .jalur-item .detail-jalur .ket-jalur {
+main#landingpage .jalur-seleksi .row .jalur-item .detail-jalur .ket-jalur {
   font-family: "Mulish", sans-serif;
   font-weight: normal;
   opacity: 0.64;
@@ -1355,51 +1498,132 @@ main#landingpage .jalur-seleksi .jalur-item .detail-jalur .ket-jalur {
   -webkit-box-orient: vertical;
 }
 
-main#landingpage .jalur-seleksi .jalur-item .detail-jalur .biaya-formulir {
+main#landingpage .jalur-seleksi .row .jalur-item .detail-jalur .biaya-formulir {
   font-family: "Mulish", sans-serif;
   font-weight: bold;
   letter-spacing: 0.346154px;
-  color: #f57c00;
 }
 
-main#landingpage .fasilitas-kampus-desktop {
-  width: 100vw;
-  overflow-x: hidden;
-  position: relative;
+main#landingpage .jalur-seleksi .row .jalur-item .detail-jalur .biaya-formulir span {
+  font-weight: normal;
 }
 
-@media (max-width: 575.98px) {
-  main#landingpage .fasilitas-kampus-desktop {
-    display: none;
-  }
+main#landingpage .jalur-seleksi .owl-carousel .item {
+  margin: 12px 0;
+  background: #ffffff;
+  border: 1px solid #eceff1;
+  border-radius: 8px;
 }
 
-main#landingpage .fasilitas-kampus-desktop .fasilitas-detail {
-  text-align: center;
-  max-width: 760px;
-  margin: 0 auto;
+main#landingpage .jalur-seleksi .owl-carousel .item .image-jalur {
+  height: 164px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 8px 8px 0 0;
 }
 
-main#landingpage .fasilitas-kampus-desktop .fasilitas-detail .title {
+main#landingpage .jalur-seleksi .owl-carousel .item .detail-jalur {
+  padding: 16px;
+}
+
+main#landingpage .jalur-seleksi .owl-carousel .item .detail-jalur .periode {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+}
+
+main#landingpage .jalur-seleksi .owl-carousel .item .detail-jalur .periode img {
+  margin-right: 8px;
+  height: 16px;
+  width: 16px;
+}
+
+main#landingpage .jalur-seleksi .owl-carousel .item .detail-jalur .periode p {
+  font-size: 0.6875rem;
+  line-height: 1rem;
+  opacity: 0.56;
+}
+
+main#landingpage .jalur-seleksi .owl-carousel .item .detail-jalur .nama-jalur {
+  margin-bottom: 0.25rem;
+}
+
+main#landingpage .jalur-seleksi .owl-carousel .item .detail-jalur .ket-jalur {
   font-family: "Mulish", sans-serif;
-  font-size: 1.556rem;
-  line-height: 2.333rem;
-  letter-spacing: 0.3px;
-  margin-bottom: 16px;
+  font-weight: normal;
+  opacity: 0.64;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+main#landingpage .jalur-seleksi .owl-carousel .item .detail-jalur .biaya-formulir {
+  font-family: "Mulish", sans-serif;
+  letter-spacing: 0.346154px;
+  color: #f57c00;
   font-weight: bold;
 }
 
-main#landingpage .fasilitas-kampus-desktop .fasilitas-detail .subtitle {
+main#landingpage .jalur-seleksi .owl-carousel .item .detail-jalur .biaya-formulir span {
+  font-weight: normal;
+}
+
+main#landingpage .fasilitas-kampus {
+  width: 100vw;
+  overflow-x: hidden;
+  position: relative;
+  margin-top: 64px;
+}
+
+main#landingpage .fasilitas-kampus .fasilitas-detail {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+main#landingpage .fasilitas-kampus .fasilitas-detail .title {
+  letter-spacing: 0.1px;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+@media (min-width: 576px) {
+  main#landingpage .fasilitas-kampus .fasilitas-detail .title {
+    text-align: center;
+    font-family: "Mulish", sans-serif;
+    font-size: 1.556rem;
+    line-height: 2.333rem;
+    letter-spacing: 0.3px;
+    margin-bottom: 16px;
+    font-weight: bold;
+  }
+}
+
+main#landingpage .fasilitas-kampus .fasilitas-detail .subtitle {
+  text-align: center;
   letter-spacing: 0.346154px;
   color: #7a7a7a;
 }
 
-main#landingpage .fasilitas-kampus-desktop .fasilitas-detail .row {
+main#landingpage .fasilitas-kampus .fasilitas-detail .row-wrapper {
   margin-top: 56px;
-  text-align: left;
+  overflow-x: auto;
 }
 
-main#landingpage .fasilitas-kampus-desktop .fasilitas-detail .row .col-sm-4 {
+main#landingpage .fasilitas-kampus .fasilitas-detail .row-wrapper .row {
+  text-align: left;
+  min-width: 600px;
+}
+
+main#landingpage .fasilitas-kampus .fasilitas-detail .row-wrapper .row .col-4 {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1409,16 +1633,16 @@ main#landingpage .fasilitas-kampus-desktop .fasilitas-detail .row .col-sm-4 {
   margin-bottom: 20px;
 }
 
-main#landingpage .fasilitas-kampus-desktop .fasilitas-detail .row .col-sm-4 img {
+main#landingpage .fasilitas-kampus .fasilitas-detail .row-wrapper .row .col-4 img {
   margin-right: 12px;
 }
 
-main#landingpage .fasilitas-kampus-desktop .fasilitas-detail .row .col-sm-4 h5 {
+main#landingpage .fasilitas-kampus .fasilitas-detail .row-wrapper .row .col-4 h5 {
   font-weight: normal;
   letter-spacing: 0.346154px;
 }
 
-main#landingpage .fasilitas-kampus-desktop .fasilitas-images {
+main#landingpage .fasilitas-kampus .fasilitas-images {
   position: relative;
   top: -100px;
   left: 50%;
@@ -1428,16 +1652,16 @@ main#landingpage .fasilitas-kampus-desktop .fasilitas-images {
   padding: 0;
 }
 
-main#landingpage .fasilitas-kampus-desktop .fasilitas-images .col-sm-6 {
+main#landingpage .fasilitas-kampus .fasilitas-images .col-sm-6 {
   padding: 0;
 }
 
-main#landingpage .fasilitas-kampus-desktop .fasilitas-images .col-sm-6 .row {
+main#landingpage .fasilitas-kampus .fasilitas-images .col-sm-6 .row {
   margin: 0 -12px;
   padding: 0 12px;
 }
 
-main#landingpage .fasilitas-kampus-desktop .fasilitas-images .col-sm-6 .row .col-sm-3 {
+main#landingpage .fasilitas-kampus .fasilitas-images .col-sm-6 .row .col-sm-3 {
   padding: 0 12px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1451,7 +1675,7 @@ main#landingpage .fasilitas-kampus-desktop .fasilitas-images .col-sm-6 .row .col
           justify-content: flex-end;
 }
 
-main#landingpage .fasilitas-kampus-desktop .fasilitas-images .col-sm-6 .row .col-sm-3 .img {
+main#landingpage .fasilitas-kampus .fasilitas-images .col-sm-6 .row .col-sm-3 .img {
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1460,11 +1684,11 @@ main#landingpage .fasilitas-kampus-desktop .fasilitas-images .col-sm-6 .row .col
   margin-top: 16px;
 }
 
-main#landingpage .fasilitas-kampus-desktop .fasilitas-images .col-sm-6 .row .col-sm-3 .img.small {
+main#landingpage .fasilitas-kampus .fasilitas-images .col-sm-6 .row .col-sm-3 .img.small {
   height: 114px;
 }
 
-main#landingpage .fasilitas-kampus-desktop .fasilitas-images .col-sm-6 .row .col-sm-3 .img.large {
+main#landingpage .fasilitas-kampus .fasilitas-images .col-sm-6 .row .col-sm-3 .img.large {
   height: 222px;
 }
 
@@ -1480,7 +1704,7 @@ main#landingpage .testimoni .col-sm-6 {
 main#landingpage .testimoni .texts {
   max-width: 660px;
   margin-left: auto;
-  padding: 100px 0;
+  padding: 100px 20px;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1499,12 +1723,20 @@ main#landingpage .testimoni .texts img {
 }
 
 main#landingpage .testimoni .texts .title {
-  font-family: "Mulish", sans-serif;
-  font-size: 1.556rem;
-  line-height: 2.333rem;
-  letter-spacing: 0.3px;
-  margin-bottom: 16px;
-  font-weight: bold;
+  letter-spacing: 0.1px;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+@media (min-width: 576px) {
+  main#landingpage .testimoni .texts .title {
+    font-family: "Mulish", sans-serif;
+    font-size: 1.556rem;
+    line-height: 2.333rem;
+    letter-spacing: 0.3px;
+    margin-bottom: 16px;
+    font-weight: bold;
+  }
 }
 
 main#landingpage .testimoni .texts #carousel-testimoni {
@@ -1534,6 +1766,7 @@ main#landingpage .testimoni .texts #carousel-testimoni .item .text-testimoni {
   text-align: center;
   font-style: italic;
   opacity: 0.64;
+  overflow-y: auto;
 }
 
 main#landingpage .testimoni .texts #carousel-testimoni .item .nama {
@@ -1596,6 +1829,22 @@ main#landingpage .testimoni .texts .btns a#NextBtn {
 
 main#landingpage .testimoni .texts .btns a:hover {
   cursor: pointer;
+}
+
+main#landingpage .testimoni .texts .btns .img-groups {
+  padding-left: 6px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+main#landingpage .testimoni .texts .btns .img-groups img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  margin: 0;
+  margin-left: -8px;
 }
 
 main#landingpage .testimoni .images {
@@ -1693,13 +1942,20 @@ main#landingpage .berita .section-title {
   margin-bottom: 82px;
 }
 
+main#landingpage .berita .section-title .mobile-title {
+  letter-spacing: 0.1px;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  display: none;
+}
+
 main#landingpage .berita .section-title .col-6 h1 {
   font-family: "Mulish", sans-serif;
   font-size: 1.556rem;
   line-height: 2.333rem;
   font-weight: 700;
   letter-spacing: 0.3px;
-  width: 350px;
+  max-width: 350px;
 }
 
 main#landingpage .berita .section-title .col-6 p {
@@ -1714,6 +1970,75 @@ main#landingpage .berita .section-title .col-6 a p {
   margin-top: 12px;
   font-weight: 600;
   color: #f57c00;
+}
+
+main#landingpage .berita .berita-mobile {
+  display: none;
+  padding: 0;
+  margin: 0 -16px;
+}
+
+main#landingpage .berita .berita-mobile .item-wrapper {
+  padding: 8px;
+}
+
+main#landingpage .berita .berita-mobile .item-wrapper#berita-2, main#landingpage .berita .berita-mobile .item-wrapper#berita-4 {
+  position: relative;
+  top: 40px;
+}
+
+main#landingpage .berita .berita-mobile .item-wrapper .item {
+  background: #fafafa;
+  border: 1px solid #eceff1;
+  -webkit-box-shadow: 0px 20px 60px rgba(32, 56, 85, 0.1);
+          box-shadow: 0px 20px 60px rgba(32, 56, 85, 0.1);
+  border-radius: 8px;
+  margin: 0px;
+  padding: 8px;
+}
+
+main#landingpage .berita .berita-mobile .item-wrapper .item .img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  height: 120px;
+  border-radius: 8px;
+}
+
+main#landingpage .berita .berita-mobile .item-wrapper .item .text {
+  padding: 12px;
+}
+
+main#landingpage .berita .berita-mobile .item-wrapper .item .text .judul {
+  letter-spacing: 0.346154px;
+  margin: 4px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+main#landingpage .berita .berita-mobile .item-wrapper .item .text .tanggal {
+  margin-top: 24px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: normal;
+  line-height: 1.5rem;
+  color: #7a7a7a;
+  letter-spacing: 0.346154px;
+}
+
+main#landingpage .berita .berita-mobile .item-wrapper .item .text .tanggal img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
 }
 
 @media (max-width: 575.98px) {
@@ -1790,6 +2115,11 @@ main#landingpage .berita #carousel-berita .item .text h5.isi-berita {
 main#landingpage .berita #carousel-berita .item .text h4 {
   letter-spacing: 0.346154px;
   margin: 4px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .modal {
@@ -2210,6 +2540,18 @@ main#landingpage .berita #carousel-berita .item .text h4 {
   color: #1959A9;
 }
 
+@media (min-width: 576px) {
+  main#landingpage .jalur-seleksi .owl-carousel {
+    display: none;
+  }
+  main#landingpage .fasilitas-kampus .row-wrapper {
+    margin-top: 28px;
+  }
+  main#landingpage .testimoni .texts .btns .img-groups {
+    display: none;
+  }
+}
+
 @media (max-width: 767.98px) {
   .container-xxl {
     padding-left: 20px !important;
@@ -2234,11 +2576,99 @@ main#landingpage .berita #carousel-berita .item .text h4 {
   footer .container-xxl .row .col .links .col {
     margin-top: 32px;
   }
+  main#landingpage .fasilitas-kampus .fasilitas-images {
+    display: none;
+  }
+  main#landingpage .testimoni {
+    padding: 0 20px;
+  }
+  main#landingpage .testimoni .texts {
+    margin-top: 64px;
+    padding: 36px 20px;
+  }
+  main#landingpage .testimoni .texts img {
+    height: 24px;
+  }
+  main#landingpage .testimoni .texts .btns {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main#landingpage .testimoni .texts .btns a {
+    position: unset;
+    top: unset;
+  }
+  main#landingpage .testimoni .texts .btns img {
+    height: 14px;
+    margin: 0;
+  }
+  main#landingpage .testimoni .images {
+    display: none;
+  }
 }
 
 @media (max-width: 575.98px) {
   #header-pmb .bg #header .container-xxl .search-bar {
     width: calc(100% - 300px);
+  }
+  footer .container-xxl.help {
+    padding: 0 !important;
+  }
+  footer .container-xxl.help .bg {
+    border-radius: 0;
+  }
+  footer .container-xxl.help .bg .overlay {
+    border-radius: 0;
+    padding: 32px;
+  }
+  footer .container-xxl.help .bg .overlay .content .buttons .button {
+    padding: 0.75rem 1rem;
+  }
+  main#landingpage .hero {
+    min-height: -webkit-fit-content !important;
+    min-height: -moz-fit-content !important;
+    min-height: fit-content !important;
+  }
+  main#landingpage .hero .bg-overlay {
+    min-height: -webkit-fit-content !important;
+    min-height: -moz-fit-content !important;
+    min-height: fit-content !important;
+  }
+  main#landingpage .hero .title h4 {
+    display: none;
+  }
+  main#landingpage .search-bar {
+    display: none;
+  }
+  main#landingpage .jalur-seleksi {
+    margin-top: 44px;
+  }
+  main#landingpage .jalur-seleksi .jalur-item {
+    display: none;
+  }
+  main#landingpage .fasilitas-kampus .subtitle {
+    display: none;
+  }
+  main#landingpage .berita {
+    padding: 0;
+    margin-top: 64px;
+  }
+  main#landingpage .berita .section-title {
+    margin-bottom: 0;
+  }
+  main#landingpage .berita .section-title .mobile-title {
+    display: block;
+  }
+  main#landingpage .berita .section-title .col-6 {
+    display: none;
+  }
+  main#landingpage .berita .berita-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main#landingpage .berita #carousel-berita {
+    display: none;
   }
 }
 
