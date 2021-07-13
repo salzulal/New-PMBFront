@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <!-- bootstrap v5 -->
+    <link
+      rel="stylesheet"
+      href="../assets/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons+Round"
+      rel="stylesheet"
+    />
+    <!-- owl carousel -->
+    <link
+      rel="stylesheet"
+      href="../assets/owl-carousel/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/owl-carousel/dist/assets/owl.theme.default.min.css"
+    />
+    <!-- custom css -->
+    <link href="../css/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- untuk landingpage header + class hidden-searchbar -->
+    <header class="hidden-searchbar" id="header-pmb">
+      <div class="bg">
+        <nav class="navbar" id="header">
+          <div class="container-xxl">
+            <div class="left">
+              <img src="../img/header/logo-campus.png" alt="" />
+            </div>
+            <div class="search-bar" id="header-search-bar">
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Cari Pendaftaran"
+              />
+            </div>
+            <div class="menu-group">
+              <a href="" class="button menu active"><p>Beranda</p></a>
+              <a href="" class="button menu"><p>Jalur Seleksi</p></a>
+              <a href="" class="button menu"><p>Fasilitas</p></a>
+              <a href="" class="button menu"><p>Informasi</p></a>
+            </div>
+            <div class="right">
+              <div class="menu-group">
+                <a
+                  id="pilih-bahasa"
+                  href=""
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalBahasa"
+                  data-bs-dismiss="modal"
+                  class="button"
+                >
+                  <p>IND</p>
+                  <img src="../img/header/icon/language-icon.svg" alt="" />
+                </a>
+              </div>
+              <div class="profile">
+                <!-- not logged in -->
+                <div class="login-button">
+                  <a class="button primary outline" type="button">
+                    <div class="ripple js-ripple">
+                      <span class="ripple__circle"></span>
+                    </div>
+                    <p>Masuk</p>
+                  </a>
+                </div>
+
+                <!-- logged-in -->
+                <!-- <div class="profile-img">
+                  <img src="../img/header/photo-profile.jpg" alt="" />
+                </div> -->
+                <!-- no photo (initial) -->
+                <!-- <div class="profile-img no-photo">
+                  <div class="helper" style="background-color: blue">
+                    <h4 class="initial">MK</h4>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="daftar-jalur">
+      <!-- section hero -->
+      <section class="hero">
+        </div>
+      </section>
+      <!-- section search -->
+      <div class="container-xxl search-bar-container">
+        <section class="search-bar" id="page-search-bar">
+          <div class="filter-group search-group">
+            <img src="../img/landingpage/icon/search-icon.svg" alt="" />
+            <input
+              class="form-control search"
+              type="search"
+              placeholder="Temukan Jalur Anda di Sini"
+            />
+          </div>
+          <a class="button secondary search-now" type="button">
+            <div class="ripple js-ripple">
+              <span class="ripple__circle"></span>
+            </div>
+            <p>Cari Sekarang</p>
+          </a>
+        </section>
+      </div>
+      <div class="container-xxl">
+        <!-- section jalur seleksi -->
+        <section class="jalur-seleksi">
+          <div class="row equalize">
+            <div class="jalur-item col-md-4 col-sm-6">
+              <div class="image-jalur equalize-this">
+                <img src="../img/landingpage/jalur-seleksi.jpg" alt="" />
+              </div>
+              <div class="detail-jalur">
+                <div class="periode">
+                  <img src="../img/landingpage/icon/time-icon.svg" alt="" />
+                  <p>01 januari - 31 maret 2021</p>
+                </div>
+                <h4 class="nama-jalur">
+                  Jalur Mandiri Periode 2021/2022 Gelombang 01
+                </h4>
+                <h5 class="ket-jalur">
+                  Sebuah jalur ditujukan kepada para pendaftar atau calon
+                  mahasiswa yang blablablab ablbal ablalb
+                </h5>
+                <h5 class="biaya-formulir">
+                  Rp 300.000 <span>/ Formulir</span>
+                </h5>
+              </div>
+            </div>
+            <div class="jalur-item col-md-4 col-sm-6">
+              <div class="image-jalur equalize-this">
+                <img src="../img/landingpage/jalur-seleksi.jpg" alt="" />
+              </div>
+              <div class="detail-jalur">
+                <div class="periode">
+                  <img src="../img/landingpage/icon/time-icon.svg" alt="" />
+                  <p>01 januari - 31 maret 2021</p>
+                </div>
+                <h4 class="nama-jalur">
+                  Jalur Mandiri Periode 2021/2022 Gelombang 01
+                </h4>
+                <h5 class="ket-jalur">
+                  Sebuah jalur ditujukan kepada para pendaftar atau calon
+                  mahasiswa yang blablablab ablbal ablalb
+                </h5>
+                <h5 class="biaya-formulir">Bebas Biaya Formulir</h5>
+              </div>
+            </div>
+            <div class="jalur-item col-md-4 col-sm-6">
+              <div class="image-jalur equalize-this">
+                <img src="../img/landingpage/jalur-seleksi.jpg" alt="" />
+              </div>
+              <div class="detail-jalur">
+                <div class="periode">
+                  <img src="../img/landingpage/icon/time-icon.svg" alt="" />
+                  <p>01 januari - 31 maret 2021</p>
+                </div>
+                <h4 class="nama-jalur">
+                  Jalur Mandiri Periode 2021/2022 Gelombang 01
+                </h4>
+                <h5 class="ket-jalur">
+                  Sebuah jalur ditujukan kepada para pendaftar atau calon
+                  mahasiswa yang blablablab ablbal ablalb
+                </h5>
+                <h5 class="biaya-formulir">
+                  Rp 300.000 <span>/ Formulir</span>
+                </h5>
+              </div>
+            </div>
+            <div class="jalur-item col-md-4 col-sm-6">
+              <div class="image-jalur equalize-this">
+                <img src="../img/landingpage/jalur-seleksi.jpg" alt="" />
+              </div>
+              <div class="detail-jalur">
+                <div class="periode">
+                  <img src="../img/landingpage/icon/time-icon.svg" alt="" />
+                  <p>01 januari - 31 maret 2021</p>
+                </div>
+                <h4 class="nama-jalur">
+                  Jalur Mandiri Periode 2021/2022 Gelombang 01
+                </h4>
+                <h5 class="ket-jalur">
+                  Sebuah jalur ditujukan kepada para pendaftar atau calon
+                  mahasiswa yang blablablab ablbal ablalb
+                </h5>
+                <h5 class="biaya-formulir">Bebas Biaya Formulir</h5>
+              </div>
+            </div>
+            <div class="jalur-item col-md-4 col-sm-6">
+              <div class="image-jalur equalize-this">
+                <img src="../img/landingpage/jalur-seleksi.jpg" alt="" />
+              </div>
+              <div class="detail-jalur">
+                <div class="periode">
+                  <img src="../img/landingpage/icon/time-icon.svg" alt="" />
+                  <p>01 januari - 31 maret 2021</p>
+                </div>
+                <h4 class="nama-jalur">
+                  Jalur Mandiri Periode 2021/2022 Gelombang 01
+                </h4>
+                <h5 class="ket-jalur">
+                  Sebuah jalur ditujukan kepada para pendaftar atau calon
+                  mahasiswa yang blablablab ablbal ablalb
+                </h5>
+                <h5 class="biaya-formulir">
+                  Rp 300.000 <span>/ Formulir</span>
+                </h5>
+              </div>
+            </div>
+            <div class="jalur-item col-md-4 col-sm-6">
+              <div class="image-jalur equalize-this">
+                <img src="../img/landingpage/jalur-seleksi.jpg" alt="" />
+              </div>
+              <div class="detail-jalur">
+                <div class="periode">
+                  <img src="../img/landingpage/icon/time-icon.svg" alt="" />
+                  <p>01 januari - 31 maret 2021</p>
+                </div>
+                <h4 class="nama-jalur">
+                  Jalur Mandiri Periode 2021/2022 Gelombang 01
+                </h4>
+                <h5 class="ket-jalur">
+                  Sebuah jalur ditujukan kepada para pendaftar atau calon
+                  mahasiswa yang blablablab ablbal ablalb
+                </h5>
+                <h5 class="biaya-formulir">Bebas Biaya Formulir</h5>
+              </div>
+            </div>
+            <div class="jalur-item col-md-4 col-sm-6">
+              <div class="image-jalur equalize-this">
+                <img src="../img/landingpage/jalur-seleksi.jpg" alt="" />
+              </div>
+              <div class="detail-jalur">
+                <div class="periode">
+                  <img src="../img/landingpage/icon/time-icon.svg" alt="" />
+                  <p>01 januari - 31 maret 2021</p>
+                </div>
+                <h4 class="nama-jalur">
+                  Jalur Mandiri Periode 2021/2022 Gelombang 01
+                </h4>
+                <h5 class="ket-jalur">
+                  Sebuah jalur ditujukan kepada para pendaftar atau calon
+                  mahasiswa yang blablablab ablbal ablalb
+                </h5>
+                <h5 class="biaya-formulir">
+                  Rp 300.000 <span>/ Formulir</span>
+                </h5>
+              </div>
+            </div>
+            <div class="jalur-item col-md-4 col-sm-6">
+              <div class="image-jalur equalize-this">
+                <img src="../img/landingpage/jalur-seleksi.jpg" alt="" />
+              </div>
+              <div class="detail-jalur">
+                <div class="periode">
+                  <img src="../img/landingpage/icon/time-icon.svg" alt="" />
+                  <p>01 januari - 31 maret 2021</p>
+                </div>
+                <h4 class="nama-jalur">
+                  Jalur Mandiri Periode 2021/2022 Gelombang 01
+                </h4>
+                <h5 class="ket-jalur">
+                  Sebuah jalur ditujukan kepada para pendaftar atau calon
+                  mahasiswa yang blablablab ablbal ablalb
+                </h5>
+                <h5 class="biaya-formulir">Bebas Biaya Formulir</h5>
+              </div>
+            </div>
+            <div class="jalur-item col-md-4 col-sm-6">
+              <div class="image-jalur equalize-this">
+                <img src="../img/landingpage/jalur-seleksi.jpg" alt="" />
+              </div>
+              <div class="detail-jalur">
+                <div class="periode">
+                  <img src="../img/landingpage/icon/time-icon.svg" alt="" />
+                  <p>01 januari - 31 maret 2021</p>
+                </div>
+                <h4 class="nama-jalur">
+                  Jalur Mandiri Periode 2021/2022 Gelombang 01
+                </h4>
+                <h5 class="ket-jalur">
+                  Sebuah jalur ditujukan kepada para pendaftar atau calon
+                  mahasiswa yang blablablab ablbal ablalb
+                </h5>
+                <h5 class="biaya-formulir">
+                  Rp 300.000 <span>/ Formulir</span>
+                </h5>
+              </div>
+            </div>
+            <div class="jalur-item col-md-4 col-sm-6">
+              <div class="image-jalur equalize-this">
+                <img src="../img/landingpage/jalur-seleksi.jpg" alt="" />
+              </div>
+              <div class="detail-jalur">
+                <div class="periode">
+                  <img src="../img/landingpage/icon/time-icon.svg" alt="" />
+                  <p>01 januari - 31 maret 2021</p>
+                </div>
+                <h4 class="nama-jalur">
+                  Jalur Mandiri Periode 2021/2022 Gelombang 01
+                </h4>
+                <h5 class="ket-jalur">
+                  Sebuah jalur ditujukan kepada para pendaftar atau calon
+                  mahasiswa yang blablablab ablbal ablalb
+                </h5>
+                <h5 class="biaya-formulir">Bebas Biaya Formulir</h5>
+              </div>
+            </div>
+            <div class="jalur-item col-md-4 col-sm-6">
+              <div class="image-jalur equalize-this">
+                <img src="../img/landingpage/jalur-seleksi.jpg" alt="" />
+              </div>
+              <div class="detail-jalur">
+                <div class="periode">
+                  <img src="../img/landingpage/icon/time-icon.svg" alt="" />
+                  <p>01 januari - 31 maret 2021</p>
+                </div>
+                <h4 class="nama-jalur">
+                  Jalur Mandiri Periode 2021/2022 Gelombang 01
+                </h4>
+                <h5 class="ket-jalur">
+                  Sebuah jalur ditujukan kepada para pendaftar atau calon
+                  mahasiswa yang blablablab ablbal ablalb
+                </h5>
+                <h5 class="biaya-formulir">
+                  Rp 300.000 <span>/ Formulir</span>
+                </h5>
+              </div>
+            </div>
+            <div class="jalur-item col-md-4 col-sm-6">
+              <div class="image-jalur equalize-this">
+                <img src="../img/landingpage/jalur-seleksi.jpg" alt="" />
+              </div>
+              <div class="detail-jalur">
+                <div class="periode">
+                  <img src="../img/landingpage/icon/time-icon.svg" alt="" />
+                  <p>01 januari - 31 maret 2021</p>
+                </div>
+                <h4 class="nama-jalur">
+                  Jalur Mandiri Periode 2021/2022 Gelombang 01
+                </h4>
+                <h5 class="ket-jalur">
+                  Sebuah jalur ditujukan kepada para pendaftar atau calon
+                  mahasiswa yang blablablab ablbal ablalb
+                </h5>
+                <h5 class="biaya-formulir">Bebas Biaya Formulir</h5>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer mt-auto">
+      <div class="container-xxl help">
+        <div
+          class="bg"
+          style="background-image: url('../img/header/bg-footer.jpg')"
+        >
+          <div class="overlay">
+            <div
+              class="pattern"
+              style="background-image: url(../img/header/pattern-footer.svg)"
+            >
+              <div class="content">
+                <h1>Kami Siap Membantu Anda</h1>
+                <h5 class="mobile">
+                  Silakan hubungi kami apabila terdapat pertanyaan atau kendala
+                  yang Anda alami.
+                </h5>
+                <h5 class="desktop">
+                  Apabila Anda memiliki kendala atau terdapat beberapa hal yang
+                  ingin ditanyakan. Silakan hubungi kami atau dapat juga membaca
+                  user guide (petunjuk) pendaftaran terlebih dahulu
+                </h5>
+                <div class="buttons">
+                  <a class="button secondary" type="button">
+                    <div class="ripple js-ripple">
+                      <span class="ripple__circle"></span>
+                    </div>
+                    <img src="../img/header/icon/whatsapp-icon.svg" alt="" />
+                    <p>Whatsapp</p>
+                  </a>
+
+                  <a class="button ternary" type="button">
+                    <div class="ripple js-ripple">
+                      <span class="ripple__circle"></span>
+                    </div>
+                    <p>User Guide</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col col-12 col-md-3">
+            <div class="campus-logo">
+              <img src="../img/header/logo-campus.png" alt="" />
+            </div>
+            <div class="row campus-images">
+              <img class="col-6" src="../img/header/footer-img-1.jpg" alt="" />
+              <img class="col-6" src="../img/header/footer-img-2.jpg" alt="" />
+              <img class="col-6" src="../img/header/footer-img-3.jpg" alt="" />
+              <img class="col-6" src="../img/header/footer-img-4.jpg" alt="" />
+            </div>
+          </div>
+          <div class="col col-12 col-md-9">
+            <div class="row links">
+              <div class="col col-12 col-sm-6">
+                <h4>Tentang Kami</h4>
+                <p class="campus-description">
+                  Universitas teknologi pertama dikota Surabaya yang telah mampu
+                  bertahan selama lebih dari 25 tahun & berhasil mencetak lebih
+                  dari 200.000 lulusan terbaik
+                </p>
+                <div class="campus-info">
+                  <div class="item location">
+                    <div class="icon">
+                      <img src="../img/header/icon/location-icon.svg" alt="" />
+                    </div>
+                    <p>
+                      Medokan Asri Tengah MA-2 Blok Q No 16, Medokan Ayu, Kec.
+                      Rungkut, Kota SBY, Jawa Timur 60295
+                    </p>
+                  </div>
+                  <div class="item email">
+                    <div class="icon">
+                      <img src="../img/header/icon/email-icon.svg" alt="" />
+                    </div>
+                    <p>pmbonline@sevima.ac.id</p>
+                  </div>
+                  <div class="item telephone">
+                    <div class="icon">
+                      <img src="../img/header/icon/telephone-icon.svg" alt="" />
+                    </div>
+                    <p>081374004080 / 081268449980</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-12 col-sm-3">
+                <h4>Menu</h4>
+                <a href="">Beranda</a>
+                <a href="">Pengumuman</a>
+                <a href="">Jalur Seleksi</a>
+                <a href="">Berita Terbaru</a>
+              </div>
+              <div class="col col-12 col-sm-3">
+                <h4>Fakultas</h4>
+                <a href="">Sistem Informasi</a>
+                <a href="">Teknik Komputer</a>
+                <a href="">Manajemen</a>
+                <a href="">Ilmu Ekonomi</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footmark">
+          <div class="language-option dropdown">
+            <a data-bs-toggle="dropdown" aria-expanded="false">
+              <p>Bahasa Indonesia</p>
+              <span class="dropdown-arrow"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="button">
+                  Bahasa Indonesia
+                  <div class="check"></div>
+                </a>
+              </li>
+              <li>
+                <a class="button">
+                  English
+                  <div class="check"></div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="copyright">
+            <p>Copyright © 2021 - sevima surabaya</p>
+          </div>
+          <div class="socmed">
+            <a href=""
+              ><img src="../img/header/icon/facebook-logo.svg" alt=""
+            /></a>
+            <a href=""
+              ><img src="../img/header/icon/linkedin-logo.svg" alt=""
+            /></a>
+            <a href=""
+              ><img src="../img/header/icon/twitter-logo.svg" alt=""
+            /></a>
+            <a href=""
+              ><img src="../img/header/icon/instagram-logo.svg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- bootstrap v5 -->
+    <script src="../assets/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- info carousel -->
+    <script src="../assets/owl-carousel/dist/owl.carousel.min.js"></script>
+    <!-- chartjs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <script src="../js/circular-progress.js"></script>
+
+    <!-- custom -->
+    <script src="../js/ripple-effect.js"></script>
+    <script src="../js/background-dim.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/landingpage.js"></script>
+  </body>
+</html>
