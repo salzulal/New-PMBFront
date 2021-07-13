@@ -1,7 +1,6 @@
 main#daftar-jalur {
   // section hero
   .hero {
-    min-height: 600px;
     width: 100%;
     background-image: url("../../img/landingpage/hero-bg.jpg");
     background-repeat: no-repeat;
@@ -109,6 +108,72 @@ main#daftar-jalur {
     }
   }
   //   section jalur seleksi
+
+  h5.sub-title {
+    font-family: $font-mulish;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    font-weight: normal;
+    opacity: 0.64;
+
+    @media (min-width: 576px) {
+      margin-top: 0;
+      font-size: 0.8889rem;
+      line-height: 1.333rem;
+    }
+  }
+  h3.title {
+    letter-spacing: 0.1px;
+    margin-bottom: 2.667rem;
+    font-weight: 600;
+    @media (min-width: 576px) {
+      font-family: $font-mulish;
+      font-size: 1.556rem;
+      line-height: 2.333rem;
+      letter-spacing: 0.3px;
+      font-weight: bold;
+    }
+  }
+
+  .filter-container {
+    cursor: grab;
+
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .filter-tags {
+      display: inline-flex;
+      align-items: center;
+      margin-bottom: 2.667rem;
+      width: fit-content;
+      .tag {
+        height: 40px;
+        border-radius: 20px;
+        border: 1px solid #dedede;
+        margin-right: 0.8889rem;
+        min-width: fit-content;
+        padding: 0 1.25rem;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        cursor: pointer;
+        &.active {
+          border: 1px solid #404852;
+        }
+        @media (min-width: 576px) {
+          height: 52px;
+          border-radius: 26px;
+        }
+        h5 {
+          font-weight: normal;
+        }
+      }
+    }
+  }
+
   .jalur-seleksi {
     .title {
       letter-spacing: 0.1px;

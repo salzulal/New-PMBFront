@@ -2725,7 +2725,6 @@ main#landingpage .berita #carousel-berita .item .text h4 {
 }
 
 main#daftar-jalur .hero {
-  min-height: 600px;
   width: 100%;
   background-image: url("../../img/landingpage/hero-bg.jpg");
   background-repeat: no-repeat;
@@ -2862,6 +2861,97 @@ main#daftar-jalur .search-bar .search-now {
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
+}
+
+main#daftar-jalur h5.sub-title {
+  font-family: "Mulish", sans-serif;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  font-weight: normal;
+  opacity: 0.64;
+}
+
+@media (min-width: 576px) {
+  main#daftar-jalur h5.sub-title {
+    margin-top: 0;
+    font-size: 0.8889rem;
+    line-height: 1.333rem;
+  }
+}
+
+main#daftar-jalur h3.title {
+  letter-spacing: 0.1px;
+  margin-bottom: 2.667rem;
+  font-weight: 600;
+}
+
+@media (min-width: 576px) {
+  main#daftar-jalur h3.title {
+    font-family: "Mulish", sans-serif;
+    font-size: 1.556rem;
+    line-height: 2.333rem;
+    letter-spacing: 0.3px;
+    font-weight: bold;
+  }
+}
+
+main#daftar-jalur .filter-container {
+  cursor: -webkit-grab;
+  cursor: grab;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+main#daftar-jalur .filter-container::-webkit-scrollbar {
+  display: none;
+}
+
+main#daftar-jalur .filter-container .filter-tags {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2.667rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+main#daftar-jalur .filter-container .filter-tags .tag {
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #dedede;
+  margin-right: 0.8889rem;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  padding: 0 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+main#daftar-jalur .filter-container .filter-tags .tag.active {
+  border: 1px solid #404852;
+}
+
+@media (min-width: 576px) {
+  main#daftar-jalur .filter-container .filter-tags .tag {
+    height: 52px;
+    border-radius: 26px;
+  }
+}
+
+main#daftar-jalur .filter-container .filter-tags .tag h5 {
+  font-weight: normal;
 }
 
 main#daftar-jalur .jalur-seleksi .title {
@@ -3209,6 +3299,9 @@ main#daftar-jalur .jalur-seleksi .owl-carousel .item .detail-jalur .biaya-formul
   }
   main#landingpage .berita #carousel-berita {
     display: none;
+  }
+  main#daftar-jalur .hero {
+    min-height: 172px;
   }
   main#daftar-jalur .search-bar-container {
     position: absolute;
