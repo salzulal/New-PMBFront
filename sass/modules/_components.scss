@@ -29,3 +29,70 @@
 ::-webkit-scrollbar-thumb:hover {
   background: adjust-color(#dedede, $lightness: -2%);
 }
+.select-pmb{
+  position: relative;
+  display: inline-block;
+  select {
+    cursor: pointer;
+    option{
+      display: none;
+    }
+      &:disabled{
+      background: #fff;
+      }
+  }
+}
+.select{
+  position: relative;
+}
+#select-dropdown{
+  position: absolute;
+  top: 105%;
+  z-index: 99;
+  width: 100%;
+  max-width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 12px 32px rgba(34, 34, 34, 0.12);
+  border-radius: 6px;
+  border: 1px solid #F5F6F8;
+  max-height: 200px;
+  overflow-y: hidden;
+  display: none;
+  overflow-x: hidden;
+  &.showDropdown{
+    display: block;
+  }
+  &:hover {
+    overflow-y: auto;
+    transition: 200ms;
+  }
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #f5f5f5;
+  }
+
+  &::-webkit-scrollbar {
+    width: 3px;
+    background-color: #f5f5f5;
+    visibility: hidden;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(13, 71, 161, 0.16);
+  }
+  .option{
+    padding: 12px;
+    border-bottom: 1px solid #F5F6F8;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 19px;
+    text-transform: capitalize;
+    color: #404852;
+    cursor: pointer;
+    &:hover{
+      background-color: #EFF1F7;
+    }
+  }
+}

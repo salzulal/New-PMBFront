@@ -73,7 +73,8 @@
                         <!-- <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalVerifMethod">Pilih Verifikasi</button>
                         <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#otpHP">OTP HP</button>
                         <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalLoading">Loading</button>
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalBerhasilDaftar">Sukses</button> -->
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalBerhasilDaftar">Sukses</button>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalLupaPassword">Lupa Password</button> -->
                     </div>
                 </div>
             </div>
@@ -151,7 +152,13 @@
               <div class="logo-kampus">
                   <img src="../img/header/logo-campus.png" alt="Logo">
               </div>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <button type="button" class="btn-modal-close" data-bs-dismiss="modal">
+                <button type="button" class="btn-modal-close" data-bs-dismiss="modal">
+                  <span class="material-icons-round">
+                  close
+                  </span>
+                </button>
+              </button>
             </div>
             <div class="modal-body">
                 <div class="row">
@@ -188,7 +195,7 @@
                                 <input type="email" placeholder="Email" required="required" /><label>Email</label>
                             </div>
                             <div class="group password">
-                                <input type="password" placeholder="Password" required="required" /><label>Password</label>
+                                <input type="password" id="password-field" placeholder="Password" required="required" /><label>Password</label>
                                 <span
                                     toggle="#password-field"
                                     class="material-icons-round showhide show"
@@ -217,7 +224,13 @@
             <div class="logo-kampus">
                 <img src="../img/header/logo-campus.png" alt="Logo">
             </div>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button type="button" class="btn-modal-close" data-bs-dismiss="modal">
+              <button type="button" class="btn-modal-close" data-bs-dismiss="modal">
+                <span class="material-icons-round">
+                close
+                </span>
+              </button>
+            </button>
           </div>
           <div class="modal-body">
               <div class="row">
@@ -246,11 +259,111 @@
                                 Ingat saya
                               </label>
                             </div>
-                            <a href="#">Lupa password</a>
+                            <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#modalLupaPassword">Lupa password</a>
                           </div>
                           <div class="cta-auth">
                               <button class="btn-primary-auth" type="submit" data-bs-dismiss="modal">Masuk</button>
                               <p>Belum punya akun? <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#modalDaftar">Daftar Sekarang</a></p>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalLupaPassword" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+      <div class="modal-dialog modal-auth">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="logo-kampus">
+                <img src="../img/header/logo-campus.png" alt="Logo">
+            </div>
+            <button type="button" class="btn-modal-close" data-bs-dismiss="modal">
+              <button type="button" class="btn-modal-close" data-bs-dismiss="modal">
+                <span class="material-icons-round">
+                close
+                </span>
+              </button>
+            </button>
+          </div>
+          <div class="modal-body">
+              <div class="row">
+                  <div class="col-lg-12">
+                      <div class="heading-modal">
+                          <h1>Lupa Password</h1>
+                          <p>Masukkan alamat email yang terhubung dengan akun Anda, dan kami akan mengirimkan sebuah tautan via email untuk mengatur ulang kata sandi Anda.</p>
+                      </div>
+                      <form>
+                        <div class="group">
+                            <input type="email" placeholder="Email" required="required" /><label>Email</label>
+                        </div>
+                        <div class="label-warning">
+                          Tidak ditemukan akun untuk steward@gmail.com. Mungkin Anda mendaftar menggunakan alamat email yang berbeda/salah. Silakan coba lagi!
+                        </div>
+                          <div class="cta-auth">
+                              <button class="btn-primary-auth" type="submit" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#modalPerbaruiPassword">kirim pengaturan sandi</button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalPerbaruiPassword" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+      <div class="modal-dialog modal-auth">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="logo-kampus">
+                <img src="../img/header/logo-campus.png" alt="Logo">
+            </div>
+            <button type="button" class="btn-modal-close" data-bs-dismiss="modal">
+              <button type="button" class="btn-modal-close" data-bs-dismiss="modal">
+                <span class="material-icons-round">
+                close
+                </span>
+              </button>
+            </button>
+          </div>
+          <div class="modal-body">
+              <div class="row">
+                  <div class="col-lg-12">
+                      <div class="heading-modal">
+                          <h1>Perbarui Password</h1>
+                          <p>Masukkan alamat email yang terhubung dengan akun Anda, dan kami akan mengirimkan sebuah tautan via email untuk mengatur ulang kata sandi Anda.</p>
+                      </div>
+                      <form>
+                          <div class="group password">
+                              <input type="password" placeholder="Password" required="required" /><label>Password</label>
+                              <span
+                                  toggle="#password-field"
+                                  class="material-icons-round showhide show"
+                              >
+                                  visibility_off
+                              </span>
+                          </div>
+                          <div class="valid-password">
+                            <ul><p class="mb-3">Kekuatan kata sandi: <b class="blue">Sangat Baik</b></p>
+                              <li class="check"><span class="material-icons-round">check_circle</span><p>Tidak boleh berisi nama / email Anda</p></li>
+                              <li class="check"><span class="material-icons-round">check_circle</span><p>Min 8 karakter dengan kombinasi angka, huruf besar & kecil</p></li>
+                              <li><span class="material-icons-round">check_circle</span><p>Konfirmasi password harus sama</p></li>
+                            </ul>
+                          </div>
+                          <div class="group confirm-password">
+                            <input type="password" placeholder="Password" required="required" /><label>Confirmation Password</label>
+                            <span
+                                toggle="#password-field"
+                                class="material-icons-round showhide-confirm show"
+                            >
+                                visibility_off
+                            </span>
+                          </div>
+                          <div class="valid-password">
+                            <p>Confirmation Password: <b class="blue">Sesuai</b></p>
+                          </div>
+                          <div class="cta-auth">
+                              <button class="btn-primary-auth" type="submit" data-bs-dismiss="modal">Perbarui Password</button>
                           </div>
                       </form>
                   </div>
@@ -266,7 +379,13 @@
             <div class="logo-kampus">
                 <img src="../img/header/logo-campus.png" alt="Logo">
             </div>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button type="button" class="btn-modal-close" data-bs-dismiss="modal">
+              <button type="button" class="btn-modal-close" data-bs-dismiss="modal">
+                <span class="material-icons-round">
+                close
+                </span>
+              </button>
+            </button>
           </div>
           <div class="modal-body">
               <div class="row">
@@ -304,7 +423,13 @@
             <div class="logo-kampus">
                 <img src="../img/header/logo-campus.png" alt="Logo">
             </div>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button type="button" class="btn-modal-close" data-bs-dismiss="modal">
+              <button type="button" class="btn-modal-close" data-bs-dismiss="modal">
+                <span class="material-icons-round">
+                close
+                </span>
+              </button>
+            </button>
           </div>
           <div class="modal-body">
               <div class="row">
@@ -341,7 +466,11 @@
             <div class="logo-kampus">
                 <img src="../img/header/logo-campus.png" alt="Logo">
             </div>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button type="button" class="btn-modal-close" data-bs-dismiss="modal">
+              <span class="material-icons-round">
+              close
+              </span>
+            </button>
           </div>
           <div class="modal-body">
               <div class="row">
@@ -378,7 +507,13 @@
             <div class="logo-kampus">
                 <img src="../img/header/logo-campus.png" alt="Logo">
             </div>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button type="button" class="btn-modal-close" data-bs-dismiss="modal">
+              <button type="button" class="btn-modal-close" data-bs-dismiss="modal">
+                <span class="material-icons-round">
+                close
+                </span>
+              </button>
+            </button>
           </div>
           <div class="modal-body">
               <div class="row">
@@ -406,7 +541,7 @@
             <div class="logo-kampus">
                 <img src="../img/header/logo-campus.png" alt="Logo">
             </div>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button type="button" class="btn-modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
               <div class="row">
@@ -441,5 +576,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
     <script src="../js/circular-progress.js"></script>
     <script src="../js/landingpage.js"></script>
+    <script src="../js/auth.js"></script>
   </body>
 </html>

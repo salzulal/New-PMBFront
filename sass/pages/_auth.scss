@@ -42,16 +42,28 @@
                     width: auto;
                 }
             }
-            .btn-close {
-                font-size: 14px;
+            .btn-modal-close {
+                font-size: 10px;
                 padding: 0;
                 color: #7A7A7A;
+                background: #fff !important;
                 border: 0;
                 outline: none;
                 position: absolute;
                 right: 1.5rem;
                 top: 1.5rem;
                 margin: 0;
+                @media (max-width: 550px) {
+                    color: #7A7A7A;
+                    width: 44px;
+                    height: 44px;
+                    font-size: 8px;
+                    padding-top: 4px;
+                    border-radius: 50%;
+                    background: #FFFFFF;
+                    border: 1px solid #ECEFF1;
+                    box-shadow: 0px 8px 20px rgba(38, 50, 56, 0.08);
+                }
             }
         }
         .modal-body{
@@ -340,4 +352,50 @@
         }
     }
 }
-
+.label-warning{
+    background: #FDF0E6;
+    border: 1px solid #FAD3B3;
+    border-radius: 6px;
+    padding: 12px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 24px;
+    color: #D93900;
+    margin-bottom: 1.556rem;
+}
+.valid-password{
+    margin-bottom: 24px;
+    ul{
+        padding-left: 0;
+        list-style: none;
+        .check{
+            span{
+                color: $color-primary;
+            }
+            p{
+                color: $color-primary;
+            }
+        }
+        li{
+            margin-bottom: 0.778rem;
+            display: flex;
+            align-items: center;
+            span{
+                font-size: 18px;
+                margin-right: 12px;
+                color: $color-disabled;
+            }
+        }
+    }
+    b.blue{
+        font-weight: 700 !important;
+        color: $color-primary !important;
+    }
+    p{
+        font-weight: normal;
+        font-size: 0.667rem;
+        line-height: 18px;
+        color: $color-black-alpha;
+        margin: 0;
+    }
+}

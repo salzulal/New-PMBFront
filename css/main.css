@@ -125,6 +125,86 @@ p {
   background: #d9d9d9;
 }
 
+.select-pmb {
+  position: relative;
+  display: inline-block;
+}
+
+.select-pmb select {
+  cursor: pointer;
+}
+
+.select-pmb select option {
+  display: none;
+}
+
+.select-pmb select:disabled {
+  background: #fff;
+}
+
+.select {
+  position: relative;
+}
+
+#select-dropdown {
+  position: absolute;
+  top: 105%;
+  z-index: 99;
+  width: 100%;
+  max-width: 100%;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 12px 32px rgba(34, 34, 34, 0.12);
+          box-shadow: 0px 12px 32px rgba(34, 34, 34, 0.12);
+  border-radius: 6px;
+  border: 1px solid #F5F6F8;
+  max-height: 200px;
+  overflow-y: hidden;
+  display: none;
+  overflow-x: hidden;
+}
+
+#select-dropdown.showDropdown {
+  display: block;
+}
+
+#select-dropdown:hover {
+  overflow-y: auto;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+#select-dropdown::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+#select-dropdown::-webkit-scrollbar {
+  width: 3px;
+  background-color: #f5f5f5;
+  visibility: hidden;
+}
+
+#select-dropdown::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgba(13, 71, 161, 0.16);
+}
+
+#select-dropdown .option {
+  padding: 12px;
+  border-bottom: 1px solid #F5F6F8;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 19px;
+  text-transform: capitalize;
+  color: #404852;
+  cursor: pointer;
+}
+
+#select-dropdown .option:hover {
+  background-color: #EFF1F7;
+}
+
 .button {
   -webkit-appearance: none;
   position: relative;
@@ -2256,16 +2336,32 @@ main#landingpage .berita #carousel-berita .item .text h4 {
   width: auto;
 }
 
-.modal-auth .modal-content .modal-header .btn-close {
-  font-size: 14px;
+.modal-auth .modal-content .modal-header .btn-modal-close {
+  font-size: 10px;
   padding: 0;
   color: #7A7A7A;
+  background: #fff !important;
   border: 0;
   outline: none;
   position: absolute;
   right: 1.5rem;
   top: 1.5rem;
   margin: 0;
+}
+
+@media (max-width: 550px) {
+  .modal-auth .modal-content .modal-header .btn-modal-close {
+    color: #7A7A7A;
+    width: 44px;
+    height: 44px;
+    font-size: 8px;
+    padding-top: 4px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    border: 1px solid #ECEFF1;
+    -webkit-box-shadow: 0px 8px 20px rgba(38, 50, 56, 0.08);
+            box-shadow: 0px 8px 20px rgba(38, 50, 56, 0.08);
+  }
 }
 
 .modal-auth .modal-content .modal-body {
@@ -2609,6 +2705,64 @@ main#landingpage .berita #carousel-berita .item .text h4 {
 .modal-auth .modal-content .modal-body .kirim-ulang span {
   font-size: 1rem;
   color: #1959A9;
+}
+
+.label-warning {
+  background: #FDF0E6;
+  border: 1px solid #FAD3B3;
+  border-radius: 6px;
+  padding: 12px;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  color: #D93900;
+  margin-bottom: 1.556rem;
+}
+
+.valid-password {
+  margin-bottom: 24px;
+}
+
+.valid-password ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.valid-password ul .check span {
+  color: #3656a1;
+}
+
+.valid-password ul .check p {
+  color: #3656a1;
+}
+
+.valid-password ul li {
+  margin-bottom: 0.778rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.valid-password ul li span {
+  font-size: 18px;
+  margin-right: 12px;
+  color: #bec2c3;
+}
+
+.valid-password b.blue {
+  font-weight: 700 !important;
+  color: #3656a1 !important;
+}
+
+.valid-password p {
+  font-weight: normal;
+  font-size: 0.667rem;
+  line-height: 18px;
+  color: #7a7a7a;
+  margin: 0;
 }
 
 @media (min-width: 576px) {
