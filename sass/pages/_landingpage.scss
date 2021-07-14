@@ -603,9 +603,8 @@ main#landingpage {
 
   // section berita
   .berita {
-    padding: 82px 0;
+    padding-top: 82px;
     .section-title {
-      margin-bottom: 82px;
       .mobile-title {
         letter-spacing: 0.1px;
         margin-bottom: 2rem;
@@ -697,6 +696,9 @@ main#landingpage {
     #carousel-berita {
       @media (max-width: 575.98px) {
         display: none;
+      }
+      .owl-stage-outer {
+        padding: 82px 0;
       }
       .item {
         background: #fafafa;

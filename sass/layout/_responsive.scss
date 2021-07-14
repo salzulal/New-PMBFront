@@ -87,8 +87,8 @@
   //   font-size: 15px;
   // }
   .container-xxl {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
+    padding-left: 32px !important;
+    padding-right: 32px !important;
   }
   footer {
     .container-xxl {
@@ -99,6 +99,16 @@
               margin-top: 32px;
             }
           }
+        }
+      }
+      .footmark {
+        .language-option,
+        .socmed {
+          display: none;
+        }
+        justify-content: center;
+        div {
+          text-align: center;
         }
       }
     }
@@ -131,6 +141,37 @@
       }
       .images {
         display: none;
+      }
+    }
+  }
+  main#detail-jalur {
+    section {
+      &.ulasan {
+        padding: 0 32px;
+        .owl-carousel {
+          margin: 0;
+          width: 100%;
+          .item {
+            padding: 0;
+            .author {
+              .profile {
+                .name {
+                  position: unset;
+                  i {
+                    position: absolute;
+                    top: 0;
+                    right: 24px;
+                    font-size: 62px;
+                    opacity: 0.06;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .btns {
+          display: none;
+        }
       }
     }
   }

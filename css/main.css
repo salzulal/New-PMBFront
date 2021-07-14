@@ -1,6 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap");
 /**
 
 	VARIABLE:
@@ -18,6 +15,9 @@
 	- Typography
 =========================
 */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap");
 @font-face {
   font-family: Nec;
   src: url(../../fonts/nec.TTF);
@@ -33,6 +33,42 @@
 	- Font Size
 =========================
 */
+@font-face {
+  font-family: "fontello";
+  src: url("../../assets/custom-icon-pack/font/fontello?.eot");
+  src: url("../../assets/custom-icon-pack/font/fontello.eot#iefix") format("embedded-opentype"), url("../../assets/custom-icon-pack/font/fontello.woff") format("woff"), url("../../assets/custom-icon-pack/font/fontello.ttf") format("truetype"), url("../../assets/custom-icon-pack/font/fontello.svg#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.pmb-icon {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: 0.2em;
+  /* You can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
 html {
   font-size: 16px;
 }
@@ -2198,11 +2234,7 @@ main#landingpage .testimoni .images.highlight-5 .avatar-highlight .img:not(#high
 }
 
 main#landingpage .berita {
-  padding: 82px 0;
-}
-
-main#landingpage .berita .section-title {
-  margin-bottom: 82px;
+  padding-top: 82px;
 }
 
 main#landingpage .berita .section-title .mobile-title {
@@ -2309,6 +2341,10 @@ main#landingpage .berita .berita-mobile .item-wrapper .item .text .tanggal img {
   main#landingpage .berita #carousel-berita {
     display: none;
   }
+}
+
+main#landingpage .berita #carousel-berita .owl-stage-outer {
+  padding: 82px 0;
 }
 
 main#landingpage .berita #carousel-berita .item {
@@ -2854,7 +2890,30 @@ main#landingpage .berita #carousel-berita .item .text h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
+.valid-password ul li span {
+  font-size: 18px;
+  margin-right: 12px;
+  color: #bec2c3;
+}
+
+.valid-password b.blue {
+  font-weight: 700 !important;
+  color: #3656a1 !important;
+}
+
+.valid-password p {
+  font-weight: normal;
+  font-size: 0.667rem;
+  line-height: 18px;
+  color: #7a7a7a;
+  margin: 0;
+}
+
 main#daftar-jalur .hero {
   width: 100%;
   background-image: url("../../img/landingpage/hero-bg.jpg");
@@ -2912,24 +2971,6 @@ main#daftar-jalur .search-bar .filter-group.search-group {
           align-items: center;
 }
 
-.valid-password ul li span {
-  font-size: 18px;
-  margin-right: 12px;
-  color: #bec2c3;
-}
-
-.valid-password b.blue {
-  font-weight: 700 !important;
-  color: #3656a1 !important;
-}
-
-.valid-password p {
-  font-weight: normal;
-  font-size: 0.667rem;
-  line-height: 18px;
-  color: #7a7a7a;
-  margin: 0;
-}
 main#daftar-jalur .search-bar .filter-group.search-group .search {
   border: 0;
   font-size: 0.8889rem;
@@ -3233,10 +3274,17 @@ main#detail-jalur .hero {
   padding: 80px 0;
 }
 
+main#detail-jalur .container-row {
+  margin: 0 -30px;
+}
+
+main#detail-jalur .container-row .col {
+  padding: 32px 30px 0;
+}
+
 main#detail-jalur h5.sub-title {
   font-family: "Mulish", sans-serif;
   margin-bottom: 1rem;
-  margin-top: 2rem;
   font-weight: normal;
   opacity: 0.64;
 }
@@ -3339,6 +3387,11 @@ main#detail-jalur section.jadwal-seleksi .progress-container .item-progress .ico
   background: #eceff1;
 }
 
+main#detail-jalur section.jadwal-seleksi .progress-container .item-progress .icon i {
+  font-size: 14px;
+  color: #5a45be;
+}
+
 main#detail-jalur section.jadwal-seleksi .progress-container .item-progress .step {
   width: 100%;
 }
@@ -3382,6 +3435,7 @@ main#detail-jalur section.jadwal-seleksi .progress-container .item-progress .tag
 }
 
 main#detail-jalur section.jadwal-seleksi .progress-container .item-progress .tag.done-tag {
+  display: none;
   background: rgba(90, 69, 190, 0.08);
 }
 
@@ -3390,6 +3444,7 @@ main#detail-jalur section.jadwal-seleksi .progress-container .item-progress .tag
 }
 
 main#detail-jalur section.jadwal-seleksi .progress-container .item-progress .tag.current-tag {
+  display: none;
   background: linear-gradient(108.95deg, #cf5d9e -61.84%, #fd5f86 124.4%);
   -webkit-box-shadow: 0px 4px 16px rgba(242, 94, 139, 0.16);
           box-shadow: 0px 4px 16px rgba(242, 94, 139, 0.16);
@@ -3397,6 +3452,290 @@ main#detail-jalur section.jadwal-seleksi .progress-container .item-progress .tag
 
 main#detail-jalur section.jadwal-seleksi .progress-container .item-progress .tag.current-tag p {
   color: #fff;
+}
+
+main#detail-jalur section.jadwal-seleksi .progress-container .item-progress.done .icon {
+  background: #5a45be;
+}
+
+main#detail-jalur section.jadwal-seleksi .progress-container .item-progress.done .icon i {
+  color: #fff;
+}
+
+main#detail-jalur section.jadwal-seleksi .progress-container .item-progress.done .step h4 {
+  font-weight: 500;
+}
+
+main#detail-jalur section.jadwal-seleksi .progress-container .item-progress.done .tag.done-tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main#detail-jalur section.jadwal-seleksi .progress-container .item-progress.current .icon {
+  background: linear-gradient(108.95deg, #cf5d9e -61.84%, #fd5f86 124.4%);
+  -webkit-box-shadow: 0px 4px 16px rgba(242, 94, 139, 0.16);
+          box-shadow: 0px 4px 16px rgba(242, 94, 139, 0.16);
+}
+
+main#detail-jalur section.jadwal-seleksi .progress-container .item-progress.current .icon i {
+  color: #fff;
+}
+
+main#detail-jalur section.jadwal-seleksi .progress-container .item-progress.current .step h4 {
+  font-weight: 500;
+  background: -webkit-linear-gradient(#cf5d9e, #fd5f86);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+main#detail-jalur section.jadwal-seleksi .progress-container .item-progress.current .tag.current-tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main#detail-jalur section.ulasan {
+  position: relative;
+}
+
+main#detail-jalur section.ulasan .owl-carousel {
+  margin: 0 -50px;
+  width: calc(100% + 100px);
+}
+
+main#detail-jalur section.ulasan .owl-carousel .owl-item.active.center {
+  border-right: 1px dashed rgba(64, 72, 82, 0.12);
+  border-left: 1px dashed rgba(64, 72, 82, 0.12);
+}
+
+main#detail-jalur section.ulasan .owl-carousel .item {
+  padding: 0 50px;
+}
+
+main#detail-jalur section.ulasan .owl-carousel .item .content {
+  height: 6.6rem;
+  overflow-y: auto;
+  margin-bottom: 2rem;
+}
+
+main#detail-jalur section.ulasan .owl-carousel .item .content h4 {
+  font-style: italic;
+  line-height: 1.65rem;
+  opacity: 0.64;
+}
+
+main#detail-jalur section.ulasan .owl-carousel .item .author {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main#detail-jalur section.ulasan .owl-carousel .item .author .profile-picture {
+  height: 2.675rem;
+  width: 2.675rem;
+  margin-right: 1rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main#detail-jalur section.ulasan .owl-carousel .item .author .profile .name {
+  font-weight: 500;
+  opacity: 0.8;
+  margin-bottom: 0.25rem;
+  position: relative;
+}
+
+main#detail-jalur section.ulasan .owl-carousel .item .author .profile .name i {
+  color: #f57c00;
+  opacity: 0.16;
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 0;
+  margin-left: 12px;
+}
+
+main#detail-jalur section.ulasan .owl-carousel .item .author .profile .status {
+  font-weight: normal;
+  color: #7a7a7a;
+}
+
+main#detail-jalur section.ulasan .owl-carousel .owl-dots .owl-dot span {
+  width: 6px;
+  height: 6px;
+  margin: 0px 3px;
+  background: #f57c00;
+  opacity: 0.12;
+  display: block;
+  -webkit-backface-visibility: visible;
+  -webkit-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
+  border-radius: 3px;
+}
+
+main#detail-jalur section.ulasan .owl-carousel .owl-dots .owl-dot.active span {
+  width: 19px;
+  background: #f57c00;
+  opacity: 1;
+}
+
+main#detail-jalur section.ulasan .btns {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+main#detail-jalur section.ulasan .btns a {
+  text-decoration: none;
+  color: #404852;
+  font-size: 14px;
+  margin: 0 14px;
+  cursor: pointer;
+}
+
+main#detail-jalur .side-panel {
+  position: relative;
+}
+
+main#detail-jalur .side-panel .card {
+  background: #ffffff;
+  border: 1px solid #eceff1;
+  -webkit-box-shadow: 0px 30px 60px rgba(32, 56, 85, 0.15);
+          box-shadow: 0px 30px 60px rgba(32, 56, 85, 0.15);
+  border-radius: 12px;
+  padding: 0;
+}
+
+main#detail-jalur .side-panel .card .card-title {
+  background: linear-gradient(140.59deg, #22e1ff -107.5%, #1d8fe1 21.6%, #625eb1 161.45%);
+  border-radius: 12px 12px 0 0;
+}
+
+main#detail-jalur .side-panel .card .card-title .bg-overlay {
+  background-image: url("../img/detail-jalur/card-title-mask.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 24px 32px;
+  border-radius: 12px 12px 0 0;
+}
+
+main#detail-jalur .side-panel .card .card-title .bg-overlay i {
+  color: #fff;
+  font-size: 20px;
+  margin-right: 16px;
+}
+
+main#detail-jalur .side-panel .card .card-title .bg-overlay h3 {
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+main#detail-jalur .side-panel .card .card-body {
+  padding: 0 32px;
+}
+
+main#detail-jalur .side-panel .card .card-body .info-item {
+  padding: 20px 0;
+}
+
+main#detail-jalur .side-panel .card .card-body .info-item:not(:last-child) {
+  border-bottom: 1px solid #eceff1cc;
+}
+
+main#detail-jalur .side-panel .card .card-body .info-item h5 {
+  font-weight: normal;
+  text-transform: capitalize;
+  color: #7a7a7a;
+  margin-bottom: 8px;
+}
+
+main#detail-jalur .side-panel .card .card-body .info-item h4 {
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+main#detail-jalur .side-panel .card .btn-container {
+  padding: 16px 32px 28px;
+}
+
+main#detail-jalur .side-panel .card .btn-container a {
+  width: 100%;
+  padding: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 8px;
+}
+
+main#detail-jalur .side-panel .card .btn-container a h3 {
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+main#detail-jalur .side-panel .share-link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #404852;
+  text-decoration: none;
+  width: 100%;
+  margin-top: 24px;
+}
+
+main#detail-jalur .side-panel .share-link i {
+  margin-right: 12px;
+}
+
+main#detail-jalur .side-panel .share-link h4 {
+  font-weight: normal;
+  text-transform: capitalize;
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+main#detail-jalur .side-panel .dots {
+  position: absolute;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+main#detail-jalur .side-panel .dots#dots-1 {
+  top: -16px;
+  right: -16px;
+}
+
+main#detail-jalur .side-panel .dots#dots-2 {
+  top: 280px;
+  left: -32px;
 }
 
 @media (min-width: 576px) {
@@ -3432,11 +3771,23 @@ main#detail-jalur section.jadwal-seleksi .progress-container .item-progress .tag
 
 @media (max-width: 767.98px) {
   .container-xxl {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
+    padding-left: 32px !important;
+    padding-right: 32px !important;
   }
   footer .container-xxl .row .col .links .col {
     margin-top: 32px;
+  }
+  footer .container-xxl .footmark {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .container-xxl .footmark .language-option,
+  footer .container-xxl .footmark .socmed {
+    display: none;
+  }
+  footer .container-xxl .footmark div {
+    text-align: center;
   }
   main#landingpage .fasilitas-kampus .fasilitas-images {
     display: none;
@@ -3465,6 +3816,29 @@ main#detail-jalur section.jadwal-seleksi .progress-container .item-progress .tag
     margin: 0;
   }
   main#landingpage .testimoni .images {
+    display: none;
+  }
+  main#detail-jalur section.ulasan {
+    padding: 0 32px;
+  }
+  main#detail-jalur section.ulasan .owl-carousel {
+    margin: 0;
+    width: 100%;
+  }
+  main#detail-jalur section.ulasan .owl-carousel .item {
+    padding: 0;
+  }
+  main#detail-jalur section.ulasan .owl-carousel .item .author .profile .name {
+    position: unset;
+  }
+  main#detail-jalur section.ulasan .owl-carousel .item .author .profile .name i {
+    position: absolute;
+    top: 0;
+    right: 24px;
+    font-size: 62px;
+    opacity: 0.06;
+  }
+  main#detail-jalur section.ulasan .btns {
     display: none;
   }
 }
