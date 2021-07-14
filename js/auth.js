@@ -97,7 +97,6 @@ $("<div id='select-dropdown'></div>").insertAfter(".select-pmb select");
 var selectPmb = $(".select-pmb #select-dropdown");
 $(".select-pmb").each(function (e) {
   $(this)
-    .has("select")
     .click(function (e) {
       e.stopPropagation();
       selectPmb.empty();
@@ -112,7 +111,7 @@ $(".select-pmb").each(function (e) {
               "</div>"
           );
         });
-      $(".showDropdown").removeClass("showDropdown", 100, "swing");
+      $(".showDropdown").removeClass("showDropdown", 20, "swing");
       $(this).find("#select-dropdown").addClass("showDropdown");
     });
 });
@@ -126,5 +125,5 @@ selectPmb.on("click", ".option", function () {
 });
 $(document).click(function (e) {
   selectPmb.empty();
-  selectPmb.removeClass("showDropdown", "swing");
+  selectPmb.removeClass("showDropdown" , "swing");
 });
