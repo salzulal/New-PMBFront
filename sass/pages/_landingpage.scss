@@ -227,10 +227,9 @@ main#landingpage {
         // box-shadow: 0px 30px 80px rgba(47, 65, 88, 0.1);
         border-radius: 8px;
         .image-jalur {
-          height: 164px;
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
+          width: 100%;
+          height: 160px;
+          object-fit: cover;
           border-radius: 8px 8px 0 0;
         }
         .detail-jalur {
@@ -350,18 +349,19 @@ main#landingpage {
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
-            .img {
+            img {
               width: 100%;
-              background-repeat: no-repeat;
-              background-size: cover;
-              background-position: center;
+              object-fit: cover;
               border-radius: 8px;
               margin-top: 16px;
-              &.small {
+              height: 222px;
+              &#fasil-1,
+              &#fasil-3,
+              &#fasil-4,
+              &#fasil-9,
+              &#fasil-10,
+              &#fasil-11 {
                 height: 114px;
-              }
-              &.large {
-                height: 222px;
               }
             }
           }
@@ -501,99 +501,94 @@ main#landingpage {
           display: flex;
           justify-content: center;
           align-items: center;
-          .img {
+          img {
             border-radius: 50%;
             border: 4px solid #fff;
             width: 52px;
             height: 52px;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
+            object-fit: cover;
           }
         }
       }
       .avatar-highlight {
-        //   width: fit-content;
         height: 500px;
         width: 340px;
         margin-right: 32px;
-        .img {
+        img {
           height: 100%;
           width: 100%;
           border-radius: 0 64px;
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
+          object-fit: cover;
         }
       }
       &.highlight-1 {
         #avatar-1 {
-          .img {
+          img {
             //   isisomething
           }
         }
         .avatar-highlight {
-          .img:not(#highlight-1) {
+          img:not(#highlight-1) {
             display: none;
           }
         }
       }
       &.highlight-2 {
         #avatar-2 {
-          .img {
+          img {
             //   isisomething
           }
         }
         .avatar-highlight {
-          .img:not(#highlight-2) {
+          img:not(#highlight-2) {
             display: none;
           }
         }
       }
       &.highlight-2 {
         #avatar-2 {
-          .img {
+          img {
             //   isisomething
           }
         }
         .avatar-highlight {
-          .img:not(#highlight-2) {
+          img:not(#highlight-2) {
             display: none;
           }
         }
       }
       &.highlight-3 {
         #avatar-3 {
-          .img {
+          img {
             //   isisomething
           }
         }
         .avatar-highlight {
-          .img:not(#highlight-3) {
+          img:not(#highlight-3) {
             display: none;
           }
         }
       }
       &.highlight-4 {
         #avatar-4 {
-          .img {
+          img {
             //   isisomething
           }
         }
         .avatar-highlight {
-          .img:not(#highlight-4) {
+          img:not(#highlight-4) {
             display: none;
           }
         }
       }
       &.highlight-5 {
         #avatar-5 {
-          .img {
+          img {
             //   isisomething
           }
         }
         .avatar-highlight {
-          .img:not(#highlight-5) {
+          img:not(#highlight-5) {
             display: none;
           }
         }
@@ -652,16 +647,14 @@ main#landingpage {
           border-radius: 8px;
           margin: 0px;
           padding: 8px;
-
-          .img {
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
+          img {
+            object-fit: cover;
             position: relative;
             width: 100%;
             height: 120px;
             border-radius: 8px;
           }
+
           .text {
             padding: 12px;
 

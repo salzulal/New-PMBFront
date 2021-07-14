@@ -1813,10 +1813,10 @@ main#landingpage .jalur-seleksi .owl-carousel .item {
 }
 
 main#landingpage .jalur-seleksi .owl-carousel .item .image-jalur {
-  height: 164px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 100%;
+  height: 160px;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 8px 8px 0 0;
 }
 
@@ -1974,21 +1974,17 @@ main#landingpage .fasilitas-kampus .fasilitas-images .col-sm-6 .row .col-sm-3 {
           justify-content: flex-end;
 }
 
-main#landingpage .fasilitas-kampus .fasilitas-images .col-sm-6 .row .col-sm-3 .img {
+main#landingpage .fasilitas-kampus .fasilitas-images .col-sm-6 .row .col-sm-3 img {
   width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 8px;
   margin-top: 16px;
-}
-
-main#landingpage .fasilitas-kampus .fasilitas-images .col-sm-6 .row .col-sm-3 .img.small {
-  height: 114px;
-}
-
-main#landingpage .fasilitas-kampus .fasilitas-images .col-sm-6 .row .col-sm-3 .img.large {
   height: 222px;
+}
+
+main#landingpage .fasilitas-kampus .fasilitas-images .col-sm-6 .row .col-sm-3 img#fasil-1, main#landingpage .fasilitas-kampus .fasilitas-images .col-sm-6 .row .col-sm-3 img#fasil-3, main#landingpage .fasilitas-kampus .fasilitas-images .col-sm-6 .row .col-sm-3 img#fasil-4, main#landingpage .fasilitas-kampus .fasilitas-images .col-sm-6 .row .col-sm-3 img#fasil-9, main#landingpage .fasilitas-kampus .fasilitas-images .col-sm-6 .row .col-sm-3 img#fasil-10, main#landingpage .fasilitas-kampus .fasilitas-images .col-sm-6 .row .col-sm-3 img#fasil-11 {
+  height: 114px;
 }
 
 main#landingpage .testimoni {
@@ -2184,14 +2180,13 @@ main#landingpage .testimoni .images .avatar-list .avatar-container {
           align-items: center;
 }
 
-main#landingpage .testimoni .images .avatar-list .avatar-container .img {
+main#landingpage .testimoni .images .avatar-list .avatar-container img {
   border-radius: 50%;
   border: 4px solid #fff;
   width: 52px;
   height: 52px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 main#landingpage .testimoni .images .avatar-highlight {
@@ -2200,36 +2195,35 @@ main#landingpage .testimoni .images .avatar-highlight {
   margin-right: 32px;
 }
 
-main#landingpage .testimoni .images .avatar-highlight .img {
+main#landingpage .testimoni .images .avatar-highlight img {
   height: 100%;
   width: 100%;
   border-radius: 0 64px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-main#landingpage .testimoni .images.highlight-1 .avatar-highlight .img:not(#highlight-1) {
+main#landingpage .testimoni .images.highlight-1 .avatar-highlight img:not(#highlight-1) {
   display: none;
 }
 
-main#landingpage .testimoni .images.highlight-2 .avatar-highlight .img:not(#highlight-2) {
+main#landingpage .testimoni .images.highlight-2 .avatar-highlight img:not(#highlight-2) {
   display: none;
 }
 
-main#landingpage .testimoni .images.highlight-2 .avatar-highlight .img:not(#highlight-2) {
+main#landingpage .testimoni .images.highlight-2 .avatar-highlight img:not(#highlight-2) {
   display: none;
 }
 
-main#landingpage .testimoni .images.highlight-3 .avatar-highlight .img:not(#highlight-3) {
+main#landingpage .testimoni .images.highlight-3 .avatar-highlight img:not(#highlight-3) {
   display: none;
 }
 
-main#landingpage .testimoni .images.highlight-4 .avatar-highlight .img:not(#highlight-4) {
+main#landingpage .testimoni .images.highlight-4 .avatar-highlight img:not(#highlight-4) {
   display: none;
 }
 
-main#landingpage .testimoni .images.highlight-5 .avatar-highlight .img:not(#highlight-5) {
+main#landingpage .testimoni .images.highlight-5 .avatar-highlight img:not(#highlight-5) {
   display: none;
 }
 
@@ -2293,10 +2287,9 @@ main#landingpage .berita .berita-mobile .item-wrapper .item {
   padding: 8px;
 }
 
-main#landingpage .berita .berita-mobile .item-wrapper .item .img {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+main#landingpage .berita .berita-mobile .item-wrapper .item img {
+  -o-object-fit: cover;
+     object-fit: cover;
   position: relative;
   width: 100%;
   height: 120px;
