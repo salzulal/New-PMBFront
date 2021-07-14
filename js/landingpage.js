@@ -1,6 +1,8 @@
 // searchbar
 var offsetTop = $("#page-search-bar").offset().top;
-
+$(window).resize(function () {
+  offsetTop = $("#page-search-bar").offset().top;
+});
 $(window).scroll(function () {
   var scrollTop = $(window).scrollTop();
   if (scrollTop > offsetTop - 96) {
@@ -103,21 +105,21 @@ var carouselItemActive = $(".testimoni .owl-carousel .owl-item.highlight");
 var owl = $(".testimoni .owl-carousel");
 
 owl.on("changed.owl.carousel", function (event) {
-  var currentItem = event.item.index;
+  var currentItem = event.item.index + 1;
   if ($(".owl-item").eq(currentItem).children().hasClass("highlight-1")) {
-    $(".col-sm-6.images").attr("class", "col-sm-6 images highlight-1");
+    $(".col-md-6.images").attr("class", "col-md-6 images highlight-1");
   }
   if ($(".owl-item").eq(currentItem).children().hasClass("highlight-2")) {
-    $(".col-sm-6.images").attr("class", "col-sm-6 images highlight-2");
+    $(".col-md-6.images").attr("class", "col-md-6 images highlight-2");
   }
   if ($(".owl-item").eq(currentItem).children().hasClass("highlight-3")) {
-    $(".col-sm-6.images").attr("class", "col-sm-6 images highlight-3");
+    $(".col-md-6.images").attr("class", "col-md-6 images highlight-3");
   }
   if ($(".owl-item").eq(currentItem).children().hasClass("highlight-4")) {
-    $(".col-sm-6.images").attr("class", "col-sm-6 images highlight-4");
+    $(".col-md-6.images").attr("class", "col-md-6 images highlight-4");
   }
   if ($(".owl-item").eq(currentItem).children().hasClass("highlight-5")) {
-    $(".col-sm-6.images").attr("class", "col-sm-6 images highlight-5");
+    $(".col-md-6.images").attr("class", "col-md-6 images highlight-5");
   }
 });
 

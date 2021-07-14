@@ -18,7 +18,7 @@ main#landingpage {
       );
       display: flex;
       align-items: center;
-      padding: 52px 0;
+      padding: 80px 0;
       .title {
         height: fit-content;
         width: 50%;
@@ -47,14 +47,27 @@ main#landingpage {
           font-weight: normal;
         }
       }
+      .daftar {
+        margin-top: 4px;
+        padding: 12px;
+        border-radius: 8px;
+        font-size: 0.8889rem;
+        line-height: 1.333rem;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        @media (min-width: 576px) {
+          display: none;
+        }
+      }
     }
   }
   //   section search
   .search-bar {
-    height: 112px;
+    margin: 0;
+    min-height: 112px;
     width: fit-content;
     max-width: 100%;
-    padding: 0 28px;
+    padding: 14px 28px;
     position: relative;
     top: -56px;
     display: flex;
@@ -64,14 +77,32 @@ main#landingpage {
     border: 1px solid #eceff1;
     box-shadow: 0px 10px 30px rgba(64, 72, 82, 0.2);
     border-radius: 16px;
-    @media (max-width: 575.98px) {
-      display: none;
+
+    .column {
+      padding: 14px 0;
+      display: flex;
+      flex-direction: row;
+      width: fit-content;
+      // max-width: 50%;
+      align-items: center;
+      justify-content: space-between;
+      @media (max-width: 1099.98px) {
+        width: 100%;
+        max-width: 100%;
+      }
     }
     .vr {
       height: 32px;
       border-right: 1px solid #dedede;
+      margin: 0 32px;
+      @media (max-width: 1099.98px) {
+        display: none;
+      }
     }
-    .group {
+    .filter-group {
+      @media (max-width: 1099.98px) {
+        width: 100%;
+      }
       &.search-group {
         display: flex;
         flex-direction: row;
@@ -85,18 +116,35 @@ main#landingpage {
           width: 280px;
           outline: none !important;
           box-shadow: none;
+          @media (max-width: 1099.98px) {
+            width: 100%;
+          }
+        }
+      }
+      h5 {
+        margin-bottom: 4px;
+        opacity: 0.8;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+      }
+      a {
+        text-decoration: none;
+        h4 {
+          opacity: 0.64;
+          letter-spacing: 0.5px;
+          font-weight: normal;
         }
       }
     }
-    a {
+    .search-now {
       padding: 16px 20px;
       border-radius: 8px;
-      background-color: $color-secondary;
       font-size: 0.8889rem;
       line-height: 1.333rem;
       letter-spacing: 0.02em;
-      color: #ffffff;
       text-decoration: none;
+      margin-left: 32px;
+      min-width: fit-content;
     }
   }
   //   section jalur seleksi
@@ -267,7 +315,8 @@ main#landingpage {
         .row {
           text-align: left;
           min-width: 600px;
-
+          max-width: 720px;
+          margin: 0 auto;
           .col-4 {
             display: inline-flex;
             align-items: center;
@@ -588,6 +637,7 @@ main#landingpage {
     .berita-mobile {
       display: none;
       padding: 0;
+      padding-bottom: 40px;
       margin: 0 -16px;
       .item-wrapper {
         padding: 8px;

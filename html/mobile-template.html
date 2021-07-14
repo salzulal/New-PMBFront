@@ -16,7 +16,7 @@
     <link href="../css/main.css" rel="stylesheet" />
   </head>
   <body>
-    <!-- untuk landingpage header + class hiddensearchbar -->
+    <!-- untuk landingpage header + class hidden-searchbar -->
     <header id="header-pmb">
       <div class="bg">
         <nav class="navbar" id="header">
@@ -33,29 +33,46 @@
             </div>
             <div class="menu-group">
               <a href="" class="button menu active"><p>Beranda</p></a>
-              <a href="" class="button menu"><p>Pengumuman</p></a>
-              <a
-                id="pilih-bahasa"
-                href=""
-                data-bs-toggle="modal"
-                data-bs-target="#modalBahasa"
-                data-bs-dismiss="modal"
-                class="button"
-              >
-                <p>IND</p>
-                <img src="../img/header/icon/language-icon.svg" alt="" />
-              </a>
+              <a href="" class="button menu"><p>Jalur Seleksi</p></a>
+              <a href="" class="button menu"><p>Fasilitas</p></a>
+              <a href="" class="button menu"><p>Informasi</p></a>
             </div>
-            <div class="profile">
-              <div class="profile-img">
-                <img src="../img/header/photo-profile.jpg" alt="" />
+            <div class="right">
+              <div class="menu-group">
+                <a
+                  id="pilih-bahasa"
+                  href=""
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalBahasa"
+                  data-bs-dismiss="modal"
+                  class="button"
+                >
+                  <p>IND</p>
+                  <img src="../img/header/icon/language-icon.svg" alt="" />
+                </a>
               </div>
-              <!-- no photo (initial) -->
-              <!-- <div class="profile-img no-photo">
-              <div class="helper" style="background-color: blue">
-                <h4 class="initial">MK</h4>
+              <div class="profile">
+                <!-- not logged in -->
+                <div class="login-button">
+                  <a class="button primary outline" type="button">
+                    <div class="ripple js-ripple">
+                      <span class="ripple__circle"></span>
+                    </div>
+                    <p>Masuk</p>
+                  </a>
+                </div>
+
+                <!-- logged-in -->
+                <!-- <div class="profile-img">
+                  <img src="../img/header/photo-profile.jpg" alt="" />
+                </div> -->
+                <!-- no photo (initial) -->
+                <!-- <div class="profile-img no-photo">
+                  <div class="helper" style="background-color: blue">
+                    <h4 class="initial">MK</h4>
+                  </div>
+                </div> -->
               </div>
-            </div> -->
             </div>
           </div>
         </nav>
@@ -139,37 +156,39 @@
           style="background-image: url('../img/header/bg-footer.jpg')"
         >
           <div class="overlay">
-            <div class="content">
-              <h1>Kami Siap Membantu Anda</h1>
-              <h5 class="mobile">
-                Silakan hubungi kami apabila terdapat pertanyaan atau kendala
-                yang Anda alami.
-              </h5>
-              <h5 class="desktop">
-                Apabila Anda memiliki kendala atau terdapat beberapa hal yang
-                ingin ditanyakan. Silakan hubungi kami atau dapat juga membaca
-                user guide (petunjuk) pendaftaran terlebih dahulu
-              </h5>
-              <div class="buttons">
-                <a class="button secondary" type="button">
-                  <div class="ripple js-ripple">
-                    <span class="ripple__circle"></span>
-                  </div>
-                  <img src="../img/header/icon/whatsapp-icon.svg" alt="" />
-                  <p>Whatsapp</p>
-                </a>
-                <a class="button ternary" type="button">
-                  <div class="ripple js-ripple">
-                    <span class="ripple__circle"></span>
-                  </div>
-                  <p>User Guide</p>
-                </a>
-              </div>
-            </div>
             <div
               class="pattern"
               style="background-image: url(../img/header/pattern-footer.svg)"
-            ></div>
+            >
+              <div class="content">
+                <h1>Kami Siap Membantu Anda</h1>
+                <h5 class="mobile">
+                  Silakan hubungi kami apabila terdapat pertanyaan atau kendala
+                  yang Anda alami.
+                </h5>
+                <h5 class="desktop">
+                  Apabila Anda memiliki kendala atau terdapat beberapa hal yang
+                  ingin ditanyakan. Silakan hubungi kami atau dapat juga membaca
+                  user guide (petunjuk) pendaftaran terlebih dahulu
+                </h5>
+                <div class="buttons">
+                  <a class="button secondary" type="button">
+                    <div class="ripple js-ripple">
+                      <span class="ripple__circle"></span>
+                    </div>
+                    <img src="../img/header/icon/whatsapp-icon.svg" alt="" />
+                    <p>Whatsapp</p>
+                  </a>
+
+                  <a class="button ternary" type="button">
+                    <div class="ripple js-ripple">
+                      <span class="ripple__circle"></span>
+                    </div>
+                    <p>User Guide</p>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -239,7 +258,7 @@
         <div class="footmark">
           <div class="language-option dropdown">
             <a data-bs-toggle="dropdown" aria-expanded="false">
-              <p>Jadwal Kuliah</p>
+              <p>Bahasa Indonesia</p>
               <span class="dropdown-arrow"></span>
             </a>
             <ul class="dropdown-menu">
