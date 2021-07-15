@@ -1482,12 +1482,9 @@ main .header-progress a img {
 }
 
 .modal-bottom .modal-dialog .modal-content .content-wrapper.step-progress .step-item h3::before {
-  content: "&#xe81a;";
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  color: #eeeeee;
-  font-size: 20px;
+  content: url("../../img/header/icon/check-gray-icon.svg");
+  width: 20px;
+  height: 20px;
   display: block;
   margin-right: 20px;
 }
