@@ -1482,9 +1482,12 @@ main .header-progress a img {
 }
 
 .modal-bottom .modal-dialog .modal-content .content-wrapper.step-progress .step-item h3::before {
-  content: url("../../img/header/icon/check-gray-icon.svg");
-  width: 20px;
-  height: 20px;
+  content: "&#xe81a;";
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  color: #eeeeee;
+  font-size: 20px;
   display: block;
   margin-right: 20px;
 }
@@ -1769,7 +1772,9 @@ main#landingpage .jalur-seleksi .row .jalur-item .detail-jalur .periode {
   margin-bottom: 1rem;
 }
 
-main#landingpage .jalur-seleksi .row .jalur-item .detail-jalur .periode img {
+main#landingpage .jalur-seleksi .row .jalur-item .detail-jalur .periode i {
+  font-size: 14px;
+  color: #40485270;
   margin-right: 8px;
 }
 
@@ -2331,10 +2336,10 @@ main#landingpage .berita .berita-mobile .item-wrapper .item .text .tanggal {
   letter-spacing: 0.346154px;
 }
 
-main#landingpage .berita .berita-mobile .item-wrapper .item .text .tanggal img {
-  width: 20px;
-  height: 20px;
-  margin-right: 8px;
+main#landingpage .berita .berita-mobile .item-wrapper .item .text .tanggal i {
+  font-size: 12px;
+  color: #dedede;
+  margin-right: 12px;
 }
 
 @media (max-width: 575.98px) {

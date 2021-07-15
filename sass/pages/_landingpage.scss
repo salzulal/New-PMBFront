@@ -183,7 +183,9 @@ main#landingpage {
             display: inline-flex;
             align-items: center;
             margin-bottom: 1rem;
-            img {
+            i {
+              font-size: 14px;
+              color: #40485270;
               margin-right: 8px;
             }
             p {
@@ -684,10 +686,10 @@ main#landingpage {
               color: #7a7a7a;
               letter-spacing: 0.346154px;
 
-              img {
-                width: 20px;
-                height: 20px;
-                margin-right: 8px;
+              i {
+                font-size: 12px;
+                color: #dedede;
+                margin-right: 12px;
               }
             }
           }
