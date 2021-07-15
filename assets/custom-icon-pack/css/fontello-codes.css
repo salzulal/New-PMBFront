@@ -11,3 +11,10 @@
 .pmb-receipt:before { content: '\e80a'; } /* '' */
 .pmb-globe:before { content: '\e80b'; } /* '' */
 .pmb-quote-icon:before { content: '\e80e'; } /* '' */
+.pmb-flag-icon:before { content: '\e80f'; } /* '' */
+.pmb-stars-icon:before { content: '\e818'; } /* '' */
+.pmb-li--button-icon:before { content: '\e819'; } /* '' */
+.pmb-check-icon:before { content: '\e81a'; } /* '' */
+.pmb-time-icon:before { content: '\e822'; } /* '' */
+.pmb-search-icon-mobile:before { content: '\e823'; } /* '' */
+.pmb-close-icon:before { content: '\e824'; } /* '' */

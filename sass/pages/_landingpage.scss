@@ -386,8 +386,11 @@ main#landingpage {
       display: flex;
       flex-direction: column;
       align-items: center;
-      img {
+      .pmb-quote-icon {
         margin-bottom: 1rem;
+        color: #f57c00;
+        opacity: 0.56;
+        font-size: 2.5rem;
       }
       .title {
         letter-spacing: 0.1px;
@@ -452,6 +455,11 @@ main#landingpage {
         position: relative;
         z-index: +1;
         a {
+          text-decoration: none;
+          color: #404852;
+          font-size: 14px;
+          cursor: pointer;
+
           position: absolute;
           top: -80px;
           &#PreviousBtn {
@@ -721,9 +729,9 @@ main#landingpage {
             border-radius: 50%;
             background-color: $color-secondary;
             border: 2px solid #ffffff;
-            img {
-              height: 14px;
-              width: 14px;
+            i {
+              color: #fff;
+              font-size: 14px;
             }
           }
         }

@@ -2013,8 +2013,11 @@ main#landingpage .testimoni .texts {
           align-items: center;
 }
 
-main#landingpage .testimoni .texts img {
+main#landingpage .testimoni .texts .pmb-quote-icon {
   margin-bottom: 1rem;
+  color: #f57c00;
+  opacity: 0.56;
+  font-size: 2.5rem;
 }
 
 main#landingpage .testimoni .texts .title {
@@ -2110,6 +2113,10 @@ main#landingpage .testimoni .texts .btns {
 }
 
 main#landingpage .testimoni .texts .btns a {
+  text-decoration: none;
+  color: #404852;
+  font-size: 14px;
+  cursor: pointer;
   position: absolute;
   top: -80px;
 }
@@ -2381,9 +2388,9 @@ main#landingpage .berita #carousel-berita .item .img .arrow {
   border: 2px solid #ffffff;
 }
 
-main#landingpage .berita #carousel-berita .item .img .arrow img {
-  height: 14px;
-  width: 14px;
+main#landingpage .berita #carousel-berita .item .img .arrow i {
+  color: #fff;
+  font-size: 14px;
 }
 
 main#landingpage .berita #carousel-berita .item .text {
@@ -3792,8 +3799,8 @@ main#detail-jalur .side-panel .dots#dots-2 {
     margin-top: 64px;
     padding: 36px 20px;
   }
-  main#landingpage .testimoni .texts img {
-    height: 24px;
+  main#landingpage .testimoni .texts .pmb-quote-icon {
+    font-size: 1.5rem;
   }
   main#landingpage .testimoni .texts .btns {
     -webkit-box-align: center;
