@@ -1,19 +1,24 @@
-// searchbar
-var offsetTop = $("#page-search-bar").offset().top;
-$(window).resize(function () {
-  offsetTop = $("#page-search-bar").offset().top;
+var divWidth = $(".berita-lain .item .img").width();
+
+$(document).ready(function () {
+  $(".berita-lain .item .img").height(divWidth);
 });
-$(window).scroll(function () {
-  var scrollTop = $(window).scrollTop();
-  if (scrollTop > offsetTop - 96) {
-    $("#header-search-bar").fadeIn(200);
-  } else {
-    $("#header-search-bar").fadeOut(200);
-  }
+var $window = $(window);
+var windowWidth = $(window).width();
+var windowHeight = $(window).height();
+$(window).resize(function () {
+  setInterval(function () {
+    if (windowWidth != $window.width() || windowHeight != $window.height()) {
+      windowWidth = $window.width();
+      windowHeight = $window.height();
+
+      $("#carousel-berita .item .img").height(divWidth);
+    }
+  }, 300);
 });
 
-// section jalur pendaftaran
-$("#jalur-seleksi-carousel").each(function () {
+// section breakingnews
+$("#carousel-breakingnews").each(function () {
   var $this = $(this);
 
   $this
@@ -26,17 +31,20 @@ $("#jalur-seleksi-carousel").each(function () {
       loop: true,
       margin: 10,
       nav: false,
-      dots: false,
+      items: 1,
+
       responsiveClass: true,
       responsive: {
         1: {
-          items: 1.1,
+          dots: true,
+          mouseDrag: true,
+          touchDrag: true,
         },
-        360: {
-          items: 1.2,
-        },
-        460: {
-          items: 2.2,
+        576: {
+          dots: false,
+          mouseDrag: false,
+          touchDrag: false,
+          animateOut: "fadeOut",
         },
       },
     });
@@ -108,63 +116,4 @@ owl.on("changed.owl.carousel", function (event) {
   if ($(".owl-item").eq(currentItem).children().hasClass("highlight-5")) {
     $(".col-md-6.images").attr("class", "col-md-6 images highlight-5");
   }
-});
-
-// section berita
-$("#carousel-berita").each(function () {
-  var $this = $(this);
-
-  $this
-    .on({
-      "initialized.owl.carousel": function () {
-        $this.find(".item").show();
-      },
-    })
-    .owlCarousel({
-      loop: true,
-      nav: false,
-
-      // center: true,
-      responsiveClass: true,
-      responsive: {
-        576: {
-          items: 2.2,
-        },
-        767: {
-          items: 2,
-          stagePadding: 100,
-        },
-        991: {
-          items: 3,
-          stagePadding: 100,
-        },
-        1199: {
-          items: 4,
-          stagePadding: 100,
-        },
-        1649: {
-          items: 5,
-          stagePadding: 100,
-        },
-      },
-    });
-});
-
-var divWidth = $("#carousel-berita .item .img").width();
-
-$(document).ready(function () {
-  $("#carousel-berita .item .img").height(divWidth);
-});
-var $window = $(window);
-var windowWidth = $(window).width();
-var windowHeight = $(window).height();
-$(window).resize(function () {
-  setInterval(function () {
-    if (windowWidth != $window.width() || windowHeight != $window.height()) {
-      windowWidth = $window.width();
-      windowHeight = $window.height();
-
-      $("#carousel-berita .item .img").height(divWidth);
-    }
-  }, 300);
 });

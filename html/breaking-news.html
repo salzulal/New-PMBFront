@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <!-- bootstrap v5 -->
+    <link
+      rel="stylesheet"
+      href="../assets/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons+Round"
+      rel="stylesheet"
+    />
+    <!-- owl carousel -->
+    <link
+      rel="stylesheet"
+      href="../assets/owl-carousel/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/owl-carousel/dist/assets/owl.theme.default.min.css"
+    />
+    <!-- custom css -->
+    <link href="../css/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- untuk landingpage header + class hidden-searchbar -->
+    <header class="" id="header-pmb">
+      <div class="bg">
+        <nav class="navbar" id="header">
+          <div class="container-xxl">
+            <div class="left">
+              <img src="../img/header/logo-campus.png" alt="" />
+            </div>
+            <div class="search-bar" id="header-search-bar">
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Cari Pendaftaran"
+              />
+            </div>
+            <div class="menu-group">
+              <a href="" class="button menu active"><p>Beranda</p></a>
+              <a href="" class="button menu"><p>Jalur Seleksi</p></a>
+              <a href="" class="button menu"><p>Fasilitas</p></a>
+              <a href="" class="button menu"><p>Informasi</p></a>
+            </div>
+            <div class="right">
+              <div class="menu-group">
+                <a
+                  id="pilih-bahasa"
+                  href=""
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalBahasa"
+                  data-bs-dismiss="modal"
+                  class="button"
+                >
+                  <p>IND</p>
+                  <img src="../img/header/icon/language-icon.svg" alt="" />
+                </a>
+              </div>
+              <div class="profile">
+                <!-- not logged in -->
+                <div class="login-button">
+                  <a class="button primary outline" type="button">
+                    <div class="ripple js-ripple">
+                      <span class="ripple__circle"></span>
+                    </div>
+                    <p>Masuk</p>
+                  </a>
+                </div>
+
+                <!-- logged-in -->
+                <!-- <div class="profile-img">
+                  <img src="../img/header/photo-profile.jpg" alt="" />
+                </div> -->
+                <!-- no photo (initial) -->
+                <!-- <div class="profile-img no-photo">
+                  <div class="helper" style="background-color: blue">
+                    <h4 class="initial">MK</h4>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="breakingnews">
+      <section class="breaking-news">
+        <div class="container-xxl">
+          <div class="owl-carousel owl-theme" id="carousel-breakingnews">
+            <div class="row item">
+              <div class="col-12 col-sm-6 news-detail">
+                <h3 class="tag">Breaking News</h3>
+                <h1 class="judul-breakingnews">
+                  Pengumuman Seleksi Penerimaan Mahasiswa Baru
+                </h1>
+                <h3 class="isi-breakingnews">
+                  Enim massa vitae neque in viverra arcu. Amet amet, maecenas
+                  malesuada dolor egestas leo. Massa neque aliquam, nibh rhoncus
+                  sit ipsum fusce. Tortor maecenas faucibus turpis amet, quis
+                  turpis quis
+                </h3>
+                <h3 class="author">By Admin · June 30, 2021</h3>
+                <a href=""
+                  ><h3>Baca Selengkapnya</h3>
+                  <i class="pmb-icon pmb-arrow-right">&#xe808;</i>
+                </a>
+              </div>
+              <div
+                class="col-12 col-sm-6 news-image"
+                style="
+                  background-image: url('../img/breaking-news/image-breakingnews.jpg');
+                "
+              >
+                <img src="../img/breaking-news/image-breakingnews.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="row item">
+              <div class="col-12 col-sm-6 news-detail">
+                <h3 class="tag">Breaking News</h3>
+                <h1 class="judul-breakingnews">Pengumuman Kedua</h1>
+                <h3 class="isi-breakingnews">
+                  Enim massa vitae neque in viverra arcu. Amet amet, maecenas
+                </h3>
+                <h3 class="author">By Admin · June 30, 2021</h3>
+                <a href=""
+                  ><h3>Baca Selengkapnya</h3>
+                  <i class="pmb-icon pmb-arrow-right">&#xe808;</i>
+                </a>
+              </div>
+              <div
+                class="col-12 col-sm-6 news-image"
+                style="
+                  background-image: url('../img/landingpage/avatar-4.jfif');
+                "
+              >
+                <img src="../img/landingpage/avatar-4.jfif" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="wrapper">
+            <div class="btns">
+              <a class="PreviousBtn" id="PreviousBtn">
+                <i class="pmb-icon pmb-arrow-left">&#xe809;</i>
+              </a>
+              <a class="NextBtn" id="NextBtn">
+                <i class="pmb-icon pmb-arrow-right">&#xe808;</i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="patterns">
+          <div class="curves">
+            <img src="../img/breaking-news/Meliuk-liuk.svg" alt="" />
+          </div>
+          <div class="dots">
+            <img src="../img/breaking-news/Titik-titik.svg" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- section berita -->
+      <section class="berita-lain">
+        <div class="container-xxl">
+          <h2 class="section-title">Berita Menarik Lainnya</h2>
+
+          <div class="row">
+            <div class="col col-6 col-md-4 col-lg-3">
+              <a class="item" href="">
+                <div
+                  class="img"
+                  style="
+                    background-image: url('../img/landingpage/berita-img-1.jpg');
+                  "
+                >
+                  <div class="arrow">
+                    <i class="pmb-icon pmb-arrow-right">&#xe808;</i>
+                  </div>
+                </div>
+                <div class="text">
+                  <h5 class="tanggal">
+                    <i class="demo-icon pmb-flag-icon">&#xe80f;</i>16 Juni 2021
+                  </h5>
+                  <h4 class="judul">
+                    Tiga Pelajar Berprestasi Mendapatkan Beasiswa
+                  </h4>
+                  <h5 class="isi-berita">
+                    Sebuah berita berisi pengumuman yang cukup panjang
+                  </h5>
+                </div>
+              </a>
+            </div>
+            <div class="col col-6 col-md-4 col-lg-3">
+              <a class="item" href="">
+                <div
+                  class="img"
+                  style="
+                    background-image: url('../img/landingpage/berita-img-2.jpg');
+                  "
+                >
+                  <div class="arrow">
+                    <i class="pmb-icon pmb-arrow-right">&#xe808;</i>
+                  </div>
+                </div>
+                <div class="text">
+                  <h5 class="tanggal">
+                    <i class="demo-icon pmb-flag-icon">&#xe80f;</i>17 Juni 2021
+                  </h5>
+                  <h4 class="judul">
+                    Pengumuman Hasil Seleksi Penerimaan Mahasiswa Baru dan
+                    Panjang Ini Judul Panjang
+                  </h4>
+                  <h5 class="isi-berita">
+                    Sebuah berita berisi pengumuman yang cukup panjang
+                  </h5>
+                </div>
+              </a>
+            </div>
+            <div class="col col-6 col-md-4 col-lg-3">
+              <a class="item" href="">
+                <div
+                  class="img"
+                  style="
+                    background-image: url('../img/landingpage/berita-img-1.jpg');
+                  "
+                >
+                  <div class="arrow">
+                    <i class="pmb-icon pmb-arrow-right">&#xe808;</i>
+                  </div>
+                </div>
+                <div class="text">
+                  <h5 class="tanggal">
+                    <i class="demo-icon pmb-flag-icon">&#xe80f;</i>16 Juni 2021
+                  </h5>
+                  <h4 class="judul">
+                    Tiga Pelajar Berprestasi Mendapatkan Beasiswa
+                  </h4>
+                  <h5 class="isi-berita">
+                    Sebuah berita berisi pengumuman yang cukup panjang
+                  </h5>
+                </div>
+              </a>
+            </div>
+            <div class="col col-6 col-md-4 col-lg-3">
+              <a class="item" href="">
+                <div
+                  class="img"
+                  style="
+                    background-image: url('../img/landingpage/berita-img-2.jpg');
+                  "
+                >
+                  <div class="arrow">
+                    <i class="pmb-icon pmb-arrow-right">&#xe808;</i>
+                  </div>
+                </div>
+                <div class="text">
+                  <h5 class="tanggal">
+                    <i class="demo-icon pmb-flag-icon">&#xe80f;</i>17 Juni 2021
+                  </h5>
+                  <h4 class="judul">
+                    Pengumuman Hasil Seleksi Penerimaan Mahasiswa Baru dan
+                    Panjang Ini Judul Panjang
+                  </h4>
+                  <h5 class="isi-berita">
+                    Sebuah berita berisi pengumuman yang cukup panjang
+                  </h5>
+                </div>
+              </a>
+            </div>
+            <div class="col col-6 col-md-4 col-lg-3">
+              <a class="item" href="">
+                <div
+                  class="img"
+                  style="
+                    background-image: url('../img/landingpage/berita-img-1.jpg');
+                  "
+                >
+                  <div class="arrow">
+                    <i class="pmb-icon pmb-arrow-right">&#xe808;</i>
+                  </div>
+                </div>
+                <div class="text">
+                  <h5 class="tanggal">
+                    <i class="demo-icon pmb-flag-icon">&#xe80f;</i>16 Juni 2021
+                  </h5>
+                  <h4 class="judul">
+                    Tiga Pelajar Berprestasi Mendapatkan Beasiswa
+                  </h4>
+                  <h5 class="isi-berita">
+                    Sebuah berita berisi pengumuman yang cukup panjang
+                  </h5>
+                </div>
+              </a>
+            </div>
+            <div class="col col-6 col-md-4 col-lg-3">
+              <a class="item" href="">
+                <div
+                  class="img"
+                  style="
+                    background-image: url('../img/landingpage/berita-img-2.jpg');
+                  "
+                >
+                  <div class="arrow">
+                    <i class="pmb-icon pmb-arrow-right">&#xe808;</i>
+                  </div>
+                </div>
+                <div class="text">
+                  <h5 class="tanggal">
+                    <i class="demo-icon pmb-flag-icon">&#xe80f;</i>17 Juni 2021
+                  </h5>
+                  <h4 class="judul">
+                    Pengumuman Hasil Seleksi Penerimaan Mahasiswa Baru dan
+                    Panjang Ini Judul Panjang
+                  </h4>
+                  <h5 class="isi-berita">
+                    Sebuah berita berisi pengumuman yang cukup panjang
+                  </h5>
+                </div>
+              </a>
+            </div>
+            <div class="col col-6 col-md-4 col-lg-3">
+              <a class="item" href="">
+                <div
+                  class="img"
+                  style="
+                    background-image: url('../img/landingpage/berita-img-1.jpg');
+                  "
+                >
+                  <div class="arrow">
+                    <i class="pmb-icon pmb-arrow-right">&#xe808;</i>
+                  </div>
+                </div>
+                <div class="text">
+                  <h5 class="tanggal">
+                    <i class="demo-icon pmb-flag-icon">&#xe80f;</i>16 Juni 2021
+                  </h5>
+                  <h4 class="judul">
+                    Tiga Pelajar Berprestasi Mendapatkan Beasiswa
+                  </h4>
+                  <h5 class="isi-berita">
+                    Sebuah berita berisi pengumuman yang cukup panjang
+                  </h5>
+                </div>
+              </a>
+            </div>
+            <div class="col col-6 col-md-4 col-lg-3">
+              <a class="item" href="">
+                <div
+                  class="img"
+                  style="
+                    background-image: url('../img/landingpage/berita-img-2.jpg');
+                  "
+                >
+                  <div class="arrow">
+                    <i class="pmb-icon pmb-arrow-right">&#xe808;</i>
+                  </div>
+                </div>
+                <div class="text">
+                  <h5 class="tanggal">
+                    <i class="demo-icon pmb-flag-icon">&#xe80f;</i>17 Juni 2021
+                  </h5>
+                  <h4 class="judul">
+                    Pengumuman Hasil Seleksi Penerimaan Mahasiswa Baru dan
+                    Panjang Ini Judul Panjang
+                  </h4>
+                  <h5 class="isi-berita">
+                    Sebuah berita berisi pengumuman yang cukup panjang
+                  </h5>
+                </div>
+              </a>
+            </div>
+            <div class="col col-6 col-md-4 col-lg-3">
+              <a class="item" href="">
+                <div
+                  class="img"
+                  style="
+                    background-image: url('../img/landingpage/berita-img-1.jpg');
+                  "
+                >
+                  <div class="arrow">
+                    <i class="pmb-icon pmb-arrow-right">&#xe808;</i>
+                  </div>
+                </div>
+                <div class="text">
+                  <h5 class="tanggal">
+                    <i class="demo-icon pmb-flag-icon">&#xe80f;</i>16 Juni 2021
+                  </h5>
+                  <h4 class="judul">
+                    Tiga Pelajar Berprestasi Mendapatkan Beasiswa
+                  </h4>
+                  <h5 class="isi-berita">
+                    Sebuah berita berisi pengumuman yang cukup panjang
+                  </h5>
+                </div>
+              </a>
+            </div>
+            <div class="col col-6 col-md-4 col-lg-3">
+              <a class="item" href="">
+                <div
+                  class="img"
+                  style="
+                    background-image: url('../img/landingpage/berita-img-2.jpg');
+                  "
+                >
+                  <div class="arrow">
+                    <i class="pmb-icon pmb-arrow-right">&#xe808;</i>
+                  </div>
+                </div>
+                <div class="text">
+                  <h5 class="tanggal">
+                    <i class="demo-icon pmb-flag-icon">&#xe80f;</i>17 Juni 2021
+                  </h5>
+                  <h4 class="judul">
+                    Pengumuman Hasil Seleksi Penerimaan Mahasiswa Baru dan
+                    Panjang Ini Judul Panjang
+                  </h4>
+                  <h5 class="isi-berita">
+                    Sebuah berita berisi pengumuman yang cukup panjang
+                  </h5>
+                </div>
+              </a>
+            </div>
+            <div class="col col-6 col-md-4 col-lg-3">
+              <a class="item" href="">
+                <div
+                  class="img"
+                  style="
+                    background-image: url('../img/landingpage/berita-img-1.jpg');
+                  "
+                >
+                  <div class="arrow">
+                    <i class="pmb-icon pmb-arrow-right">&#xe808;</i>
+                  </div>
+                </div>
+                <div class="text">
+                  <h5 class="tanggal">
+                    <i class="demo-icon pmb-flag-icon">&#xe80f;</i>16 Juni 2021
+                  </h5>
+                  <h4 class="judul">
+                    Tiga Pelajar Berprestasi Mendapatkan Beasiswa
+                  </h4>
+                  <h5 class="isi-berita">
+                    Sebuah berita berisi pengumuman yang cukup panjang
+                  </h5>
+                </div>
+              </a>
+            </div>
+            <div class="col col-6 col-md-4 col-lg-3">
+              <a class="item" href="">
+                <div
+                  class="img"
+                  style="
+                    background-image: url('../img/landingpage/berita-img-2.jpg');
+                  "
+                >
+                  <div class="arrow">
+                    <i class="pmb-icon pmb-arrow-right">&#xe808;</i>
+                  </div>
+                </div>
+                <div class="text">
+                  <h5 class="tanggal">
+                    <i class="demo-icon pmb-flag-icon">&#xe80f;</i>17 Juni 2021
+                  </h5>
+                  <h4 class="judul">
+                    Pengumuman Hasil Seleksi Penerimaan Mahasiswa Baru dan
+                    Panjang Ini Judul Panjang
+                  </h4>
+                  <h5 class="isi-berita">
+                    Sebuah berita berisi pengumuman yang cukup panjang
+                  </h5>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section testimoni (max 5)-->
+      <section class="row testimoni">
+        <div class="col-md-6 texts">
+          <i class="pmb-icon pmb-quote-icon">&#xe80e;</i>
+          <h3 class="title">Ulasan Tentang Kami</h3>
+          <div class="owl-carousel owl-theme" id="carousel-testimoni">
+            <div class="item highlight-1">
+              <h4 class="text-testimoni">
+                “Saya merasa bangga bisa menempuh jenjang pendidikan di
+                universitas. Disini terasa seperti laboratorium, dimana kita
+                bisa melakukan banyak ekperimen untuk mendapatkan banyak sekali
+                pengalaman. Baik itu hardskill ataupun softskill didampingi pula
+                oleh pengajar yang profesional”
+              </h4>
+              <div class="nama">
+                <h4 class="nama-testimoni">Cameron Williamson</h4>
+                <h5 class="nama-detail">alumni universitas</h5>
+              </div>
+            </div>
+            <div class="item highlight-2">
+              <h4 class="text-testimoni">“Ngeng"</h4>
+              <div class="nama">
+                <h4 class="nama-testimoni">Bambang Ilyasa</h4>
+                <h5 class="nama-detail">alumni universitas</h5>
+              </div>
+            </div>
+            <div class="item highlight-3">
+              <h4 class="text-testimoni">“Ngeng bro"</h4>
+              <div class="nama">
+                <h4 class="nama-testimoni">Bambang sutisna</h4>
+                <h5 class="nama-detail">alumni universitas</h5>
+              </div>
+            </div>
+            <div class="item highlight-4">
+              <h4 class="text-testimoni">"Explosive Boom"</h4>
+              <div class="nama">
+                <h4 class="nama-testimoni">Sudarmaji</h4>
+                <h5 class="nama-detail">alumni universitas</h5>
+              </div>
+            </div>
+            <div class="item highlight-5">
+              <h4 class="text-testimoni">"Bagus"</h4>
+              <div class="nama">
+                <h4 class="nama-testimoni">Endar</h4>
+                <h5 class="nama-detail">alumni universitas</h5>
+              </div>
+            </div>
+          </div>
+          <div class="btns">
+            <a class="PreviousBtn" id="PreviousBtn">
+              <i class="pmb-icon pmb-arrow-left">&#xe809;</i>
+            </a>
+            <div class="img-groups">
+              <img src="../img/landingpage/avatar-1.jfif" alt="" />
+              <img src="../img/landingpage/avatar-2.jfif" alt="" />
+              <img src="../img/landingpage/avatar-3.jfif" alt="" />
+              <img src="../img/landingpage/avatar-4.jfif" alt="" />
+              <img src="../img/landingpage/avatar-5.jfif" alt="" />
+            </div>
+            <a class="NextBtn" id="NextBtn">
+              <i class="pmb-icon pmb-arrow-right">&#xe808;</i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 images highlight-1">
+          <div class="avatar-list">
+            <div class="avatar-container" id="avatar-1">
+              <img src="../img/landingpage/avatar-1.jfif" />
+            </div>
+            <div class="avatar-container" id="avatar-2">
+              <img src="../img/landingpage/avatar-2.jfif" />
+            </div>
+            <div class="avatar-container" id="avatar-3">
+              <img src="../img/landingpage/avatar-3.jfif" />
+            </div>
+            <div class="avatar-container" id="avatar-4">
+              <img src="../img/landingpage/avatar-4.jfif" />
+            </div>
+            <div class="avatar-container" id="avatar-5">
+              <img src="../img/landingpage/avatar-5.jfif" />
+            </div>
+          </div>
+          <div class="avatar-highlight">
+            <img src="../img/landingpage/avatar-1.jfif" id="highlight-1" />
+            <img src="../img/landingpage/avatar-2.jfif" id="highlight-2" />
+            <img src="../img/landingpage/avatar-3.jfif" id="highlight-3" />
+            <img src="../img/landingpage/avatar-4.jfif" id="highlight-4" />
+            <img src="../img/landingpage/avatar-5.jfif" id="highlight-5" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer mt-auto">
+      <div class="container-xxl help">
+        <div
+          class="bg"
+          style="background-image: url('../img/header/bg-footer.jpg')"
+        >
+          <div class="overlay">
+            <div
+              class="pattern"
+              style="background-image: url(../img/header/pattern-footer.svg)"
+            >
+              <div class="content">
+                <h1>Kami Siap Membantu Anda</h1>
+                <h5 class="mobile">
+                  Silakan hubungi kami apabila terdapat pertanyaan atau kendala
+                  yang Anda alami.
+                </h5>
+                <h5 class="desktop">
+                  Apabila Anda memiliki kendala atau terdapat beberapa hal yang
+                  ingin ditanyakan. Silakan hubungi kami atau dapat juga membaca
+                  user guide (petunjuk) pendaftaran terlebih dahulu
+                </h5>
+                <div class="buttons">
+                  <a class="button secondary" type="button">
+                    <div class="ripple js-ripple">
+                      <span class="ripple__circle"></span>
+                    </div>
+                    <img src="../img/header/icon/whatsapp-icon.svg" alt="" />
+                    <p>Whatsapp</p>
+                  </a>
+
+                  <a class="button ternary" type="button">
+                    <div class="ripple js-ripple">
+                      <span class="ripple__circle"></span>
+                    </div>
+                    <p>User Guide</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col col-12 col-md-3">
+            <div class="campus-logo">
+              <img src="../img/header/logo-campus.png" alt="" />
+            </div>
+            <div class="row campus-images">
+              <img class="col-6" src="../img/header/footer-img-1.jpg" alt="" />
+              <img class="col-6" src="../img/header/footer-img-2.jpg" alt="" />
+              <img class="col-6" src="../img/header/footer-img-3.jpg" alt="" />
+              <img class="col-6" src="../img/header/footer-img-4.jpg" alt="" />
+            </div>
+          </div>
+          <div class="col col-12 col-md-9">
+            <div class="row links">
+              <div class="col col-12 col-sm-6">
+                <h4>Tentang Kami</h4>
+                <p class="campus-description">
+                  Universitas teknologi pertama dikota Surabaya yang telah mampu
+                  bertahan selama lebih dari 25 tahun & berhasil mencetak lebih
+                  dari 200.000 lulusan terbaik
+                </p>
+                <div class="campus-info">
+                  <div class="item location">
+                    <div class="icon">
+                      <img src="../img/header/icon/location-icon.svg" alt="" />
+                    </div>
+                    <p>
+                      Medokan Asri Tengah MA-2 Blok Q No 16, Medokan Ayu, Kec.
+                      Rungkut, Kota SBY, Jawa Timur 60295
+                    </p>
+                  </div>
+                  <div class="item email">
+                    <div class="icon">
+                      <img src="../img/header/icon/email-icon.svg" alt="" />
+                    </div>
+                    <p>pmbonline@sevima.ac.id</p>
+                  </div>
+                  <div class="item telephone">
+                    <div class="icon">
+                      <img src="../img/header/icon/telephone-icon.svg" alt="" />
+                    </div>
+                    <p>081374004080 / 081268449980</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-12 col-sm-3">
+                <h4>Menu</h4>
+                <a href="">Beranda</a>
+                <a href="">Pengumuman</a>
+                <a href="">Jalur Seleksi</a>
+                <a href="">Berita Terbaru</a>
+              </div>
+              <div class="col col-12 col-sm-3">
+                <h4>Fakultas</h4>
+                <a href="">Sistem Informasi</a>
+                <a href="">Teknik Komputer</a>
+                <a href="">Manajemen</a>
+                <a href="">Ilmu Ekonomi</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footmark">
+          <div class="language-option dropdown">
+            <a data-bs-toggle="dropdown" aria-expanded="false">
+              <p>Bahasa Indonesia</p>
+              <span class="dropdown-arrow"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="button">
+                  Bahasa Indonesia
+                  <div class="check"></div>
+                </a>
+              </li>
+              <li>
+                <a class="button">
+                  English
+                  <div class="check"></div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="copyright">
+            <p>Copyright © 2021 - sevima surabaya</p>
+          </div>
+          <div class="socmed">
+            <a href=""
+              ><img src="../img/header/icon/facebook-logo.svg" alt=""
+            /></a>
+            <a href=""
+              ><img src="../img/header/icon/linkedin-logo.svg" alt=""
+            /></a>
+            <a href=""
+              ><img src="../img/header/icon/twitter-logo.svg" alt=""
+            /></a>
+            <a href=""
+              ><img src="../img/header/icon/instagram-logo.svg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- bootstrap v5 -->
+    <script src="../assets/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- info carousel -->
+    <script src="../assets/owl-carousel/dist/owl.carousel.min.js"></script>
+    <!-- chartjs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <script src="../js/circular-progress.js"></script>
+
+    <!-- custom -->
+    <script src="../js/ripple-effect.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/breakingnews.js"></script>
+  </body>
+</html>

@@ -1,3 +1,15 @@
+// equal height col
+var row = $(".equalize");
+$.each(row, function () {
+  var maxh = 0;
+  $.each($(this).find(".equalize-this"), function () {
+    if ($(this).height() > maxh) maxh = $(this).height();
+  });
+  $.each($(this).find(".equalize-this"), function () {
+    $(this).height(maxh);
+  });
+});
+
 // horizontal-drag-scroll
 const slider = document.querySelector(".scroll");
 let isDown = false;
@@ -24,16 +36,4 @@ slider.addEventListener("mousemove", (e) => {
   const x = e.pageX - slider.offsetLeft;
   const walk = x - startX;
   slider.scrollLeft = scrollLeft - walk;
-});
-
-// equal height col
-var row = $(".equalize");
-$.each(row, function () {
-  var maxh = 0;
-  $.each($(this).find(".equalize-this"), function () {
-    if ($(this).height() > maxh) maxh = $(this).height();
-  });
-  $.each($(this).find(".equalize-this"), function () {
-    $(this).height(maxh);
-  });
 });
