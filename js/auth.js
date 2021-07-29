@@ -122,7 +122,7 @@ selectPmb.on("click", ".option", function () {
     .parent()
     .find("select")
     .attr("value", $(this).data("option"));
-});
+  });
 $(document).click(function (e) {
   selectPmb.empty();
   selectPmb.removeClass("showDropdown" , "swing");

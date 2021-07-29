@@ -159,6 +159,7 @@ main#breakingnews {
   // section berita
   .berita-lain {
     padding-top: 4rem;
+    margin-bottom: 4rem;
     .section-title {
       margin-bottom: 2rem;
     }
@@ -474,6 +475,78 @@ main#breakingnews {
           }
         }
       }
+    }
+  }
+}
+.btn-lihat-berita{
+  border: 1px solid #DEDEDE;
+  border-radius: 50px;
+  padding: 12px 24px;
+  background-color: transparent;
+  
+  h6{
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: capitalize;
+    margin-bottom: 0;
+    margin-right: 8px;
+  }
+  span{
+    font-size: 16px;
+  }
+
+  color: #757575;
+}
+.news-pagination{
+  margin: 2rem 0;
+  h6{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.346154px;
+    text-transform: capitalize;
+    color: #404852;
+    margin-bottom: 0;
+    margin-right: 28px;
+  }
+  .pagination{
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #404852;
+    .page-item.active .page-link{
+      color: #fff;
+      background: #1959A9;
+      border-radius: 12px;
+    }
+    .page-link{
+      color: #404852;
+      border: none;
+      cursor: pointer;
+      border-radius: 16px;
+      margin-right: 6px;
+    }
+  }
+}
+.next-prev-pagination{
+  a{
+    padding: 0 20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.346154px;
+    text-transform: capitalize;
+    color: #404852;
+    border-right: 1px solid #CFD8DC;
+    text-decoration: none;
+    &.disabled{
+      cursor: no-drop;
+      color: #7A7A7A;
+    }
+    &:last-child{
+      padding-right: 0;
+      border-right: 0;
     }
   }
 }

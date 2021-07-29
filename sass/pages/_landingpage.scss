@@ -103,6 +103,34 @@ main#landingpage {
       @media (max-width: 1099.98px) {
         width: 100%;
       }
+      .select-pmb{
+        position: relative;
+        span{
+          position: absolute;
+          top: 2px;
+          left: 100%;
+          color: $color-disabled;
+          cursor: pointer;
+        }
+        select{
+          -moz-appearance: none;
+          /* for Chrome */
+          -webkit-appearance: none;
+          border: none;
+          background-color: transparent;
+          padding: 0;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 24px;
+          color: #404852;
+          opacity: 0.64;
+          letter-spacing: 0.5px;
+          text-transform: capitalize;
+          &::-ms-expand {
+            display: none !important;
+          }
+        }
+      }
       &.search-group {
         display: flex;
         flex-direction: row;
