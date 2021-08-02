@@ -117,3 +117,74 @@ owl.on("changed.owl.carousel", function (event) {
     $(".col-md-6.images").attr("class", "col-md-6 images highlight-5");
   }
 });
+
+$("#carousel-berita").each(function () {
+  var $this = $(this);
+
+  $this
+    .on({
+      "initialized.owl.carousel": function () {
+        $this.find(".item").show();
+      },
+    })
+    .owlCarousel({
+      loop: true,
+      nav: false,
+
+      // center: true,
+      responsiveClass: true,
+      responsive: {
+        576: {
+          items: 2.2,
+        },
+        767: {
+          items: 2,
+          stagePadding: 80,
+        },
+        991: {
+          items: 3,
+          stagePadding: 80,
+        },
+        1199: {
+          items: 4,
+          stagePadding: 80,
+        },
+        1649: {
+          items: 5,
+          stagePadding: 80,
+        },
+      },
+    });
+});
+
+var divWidth = $("#carousel-berita .item .img").width();
+
+$(document).ready(function () {
+  $("#carousel-berita .item .img").height(divWidth);
+});
+var $window = $(window);
+var windowWidth = $(window).width();
+var windowHeight = $(window).height();
+$(window).resize(function () {
+  setInterval(function () {
+    if (windowWidth != $window.width() || windowHeight != $window.height()) {
+      windowWidth = $window.width();
+      windowHeight = $window.height();
+
+      $("#carousel-berita .item .img").height(divWidth);
+    }
+  }, 300);
+});
+
+$(".nav-berita-lain")
+    .parent()
+    .find(".next")
+    .click(function () {
+      $("#carousel-berita").trigger("next.owl.carousel");
+    });
+$(".nav-berita-lain")
+    .parent()
+    .find(".prev")
+    .click(function () {
+      $("#carousel-berita").trigger("prev.owl.carousel");
+    });
