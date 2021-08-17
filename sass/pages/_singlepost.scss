@@ -282,6 +282,10 @@ main#singlepost {
 }
 .list-berita-lain{
     margin-top: 40px;
+    display: none;
+    @media (max-width: 575.98px) {
+        display: block;
+      }
     .heading{
         border-top: 1px solid #ECEFF1;
         padding-top: 40px;

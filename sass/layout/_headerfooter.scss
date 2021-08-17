@@ -358,6 +358,104 @@ footer {
         }
       }
     }
+    .footmark-pendaftaran {
+      border-top: 1px solid #dedede;
+      display: inline-flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding-top: 32px;
+      margin-top: 40px;
+      .logo{
+        width: 30%;
+        img{
+          height: 55px;
+          width: auto;
+        }
+      }
+      .copyright{
+        width: 40%;
+        text-align: center;
+      }
+      p {
+        font-weight: normal;
+        color: #7a7a7a;
+        line-height: 1.313rem;
+        text-transform: capitalize;
+      }
+
+      .language-option {
+        a {
+          display: flex;
+          cursor: pointer;
+          text-decoration: none;
+          p {
+            display: flex;
+            align-items: center;
+          }
+          position: relative;
+          .dropdown-arrow {
+            margin-left: 4px;
+            &::after {
+              content: url("../img/header/icon/arrow-dropdown.svg");
+              height: 24px;
+              position: absolute;
+              display: block;
+              top: 50%;
+              -webkit-transform: translateY(-50%);
+              -moz-transform: translateY(-50%);
+              -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+            }
+          }
+          &.show {
+            .dropdown-arrow {
+              &::after {
+                top: 0%;
+                transform: rotate(180deg);
+              }
+            }
+          }
+        }
+        ul {
+          border: 1px solid #eeeeee;
+          box-sizing: border-box;
+          box-shadow: 0px 12px 32px rgba(34, 34, 34, 0.12);
+          border-radius: 6px;
+          padding: 0;
+          li {
+            .button {
+              width: 100%;
+              margin: 0;
+              padding: 14px 16px;
+              font-weight: normal;
+              font-size: 0.8125rem;
+              line-height: 1.188rem;
+              text-transform: capitalize;
+              color: #424242;
+              outline: none !important;
+              box-shadow: none;
+              &:hover,
+              &:focus {
+                background: #eceff1;
+                border-radius: 4px;
+              }
+              &:active {
+                background: adjust-color(#eceff1, $lightness: -2%);
+              }
+            }
+          }
+        }
+      }
+      .socmed {
+        margin-right: 24px;
+        padding-right: 24px;
+        border-right: 1px solid rgba(122, 122, 122, 0.16);
+        img {
+          margin-left: 16px;
+        }
+      }
+    }
     .row {
       margin: 0;
       padding: 0;

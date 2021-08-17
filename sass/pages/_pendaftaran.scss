@@ -1,0 +1,241 @@
+main#pendaftaran {
+    // section hero
+    .hero {
+      width: 100%;
+      background: linear-gradient(180deg, rgba(64, 72, 82, 0) -85.15%, #222B36 131.32%),url("../../img/landingpage/hero-bg.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      min-height: 340px;
+      display: flex;
+      padding: 80px 0;
+        @media (max-width: 576px) {
+        padding: 32px 0;
+        min-height: 150px;
+        }
+      h1{
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 50px;
+        text-transform: capitalize;
+        font-family: $font-mulish;
+        color: #FFFFFF;
+        @media (max-width: 576px) {
+            font-size: 18px;
+            line-height: 26px;
+        }
+      }
+    }
+    .main-pendaftaran{
+        margin-top: -6rem;
+        @media (max-width: 576px) {
+            margin-top: 0;
+        }
+        .card-main-pendaftaran{
+            padding: 44px 64px;
+            background: #FFFFFF;
+            border: 1px solid #ECEFF1;
+            box-sizing: border-box;
+            box-shadow: 0px 44px 60px rgba(32, 56, 85, 0.08);
+            border-radius: 8px;
+            @media (max-width: 576px) {
+                border: none;
+                box-shadow: none;
+                padding: 0;
+            }
+            .step-pendaftaran{
+                display: flex;
+                background: #FFFFFF;
+                border: 1px solid #ECEFF1;
+                box-sizing: border-box;
+                padding: 22px 32px;
+                border-radius: 24px;
+                width: 100%;
+                @media (max-width: 576px) {
+                    margin-top: -2.5rem;
+                }
+                .list-step{
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    padding: 0 12px;
+                    border-right: 1px solid #ECEFF1;
+                    border-left: 1px solid #ECEFF1;
+                    @media (max-width: 576px) {
+                        display: none;
+                        border: none;
+                    }
+                    &:hover{
+                        .icon{
+                            background: #F5F1FF;
+                            width: 44px;
+                            height: 44px;
+                            min-width: 44px;
+                            min-height: 44px;
+                            max-width: 44px;
+                            max-height: 44px;
+                            padding-top: 7px;
+                            text-align: center;
+                            border-radius: 16px;
+                            transition: 200ms;
+                        }
+                        svg{
+                            path{
+                                fill: #5F30E2;
+                                transition: 200ms;
+                            }
+                        }
+                    }
+                    &:first-child{
+                        border-left: 0;
+                    }
+                    &:last-child{
+                        border-right: 0;
+                    }
+                    .icon{
+                        background: #fff;
+                        width: 44px;
+                        height: 44px;
+                        min-width: 44px;
+                        min-height: 44px;
+                        max-width: 44px;
+                        max-height: 44px;
+                        padding-top: 7px;
+                        text-align: center;
+                        border-radius: 16px;
+                    }
+                    svg{
+                        path{
+                            fill: #8B8BAB;
+                        }
+                    }
+                    &.active{
+                        width: 100%;
+                        @media (max-width: 576px) {
+                            display: flex;
+                        }
+                        .icon{
+                            background: #5F30E2;
+                            width: 44px;
+                            height: 44px;
+                            min-width: 44px;
+                            min-height: 44px;
+                            max-width: 44px;
+                            max-height: 44px;
+                            padding-top: 7px;
+                            text-align: center;
+                            border-radius: 16px;
+                        }
+                        svg{
+                            path{
+                                fill: #fff;
+                            }
+                        }
+                    }
+                    &.done{
+                        .icon{
+                            background: #F5F1FF;
+                            width: 44px;
+                            height: 44px;
+                            min-width: 44px;
+                            min-height: 44px;
+                            max-width: 44px;
+                            max-height: 44px;
+                            padding-top: 7px;
+                            text-align: center;
+                            border-radius: 16px;
+                        }
+                        svg{
+                            path{
+                                fill: #5F30E2;
+                            }
+                        }
+                    }
+                    .info-step{
+                        margin-left: 20px;
+                        label{
+                            font-weight: 500;
+                            font-size: 12px;
+                            line-height: 14px;
+                            color: #5F30E2;
+                            margin-bottom: 4px;
+                        }
+                        h3{
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 18px;
+                            text-transform: capitalize;
+                            color: #404852;
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.contact-pendaftaran{
+    img{
+        width: 161px;
+        height: auto;
+        margin-right: 40px;
+    }
+    h3{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 32px;
+        color: #404852;
+        margin-bottom: 8px;
+    }
+    p{
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.346154px;
+        color: #7A7A7A;
+        margin: 0;
+    }
+    .cta-contact{
+        a{
+            text-decoration: none;
+        }
+        .btn-wa{
+            background: #0097A7;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #fff;
+            padding: 18px 34px;
+            margin-right: 18px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 21px;
+            letter-spacing: 0.25px;
+            text-transform: capitalize;
+            &:hover{
+                transition: 200ms;
+                background-color: #0a8391;
+            }
+        }
+        .btn-normal{
+            background: #fff;
+            border-radius: 8px;
+            text-decoration: none;
+            border: 1px solid #E0E2E3;
+            color: #7A7A7A;
+            padding: 18px 34px;
+            margin-right: 18px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 21px;
+            letter-spacing: 0.25px;
+            text-transform: capitalize;
+            &:hover{
+                transition: 200ms;
+                background-color: rgb(238, 237, 237);
+            }
+        }
+    }
+}

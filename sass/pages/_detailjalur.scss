@@ -9,8 +9,44 @@ main#detail-jalur {
     width: 100%;
     height: 100%;
     min-height: 340px;
+    margin-top: 0;
     display: flex;
-    padding: 80px 0;
+    padding: 40px 0 80px 0;
+    a{
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn-kembali{
+      background: rgba(64, 72, 82, 0.4);
+      backdrop-filter: blur(90px);
+      border-radius: 100px;
+      padding: 8px 16px 8px 8px;
+      @media (min-width: 576px) {
+        background: rgba(64, 72, 82, 0.4);
+        backdrop-filter: blur(90px);
+      }
+      .circle{
+        width: 32px;
+        height: 32px;
+        background: rgba(255, 255, 255, 0.18);
+        border-radius: 50%;
+        text-align: center;
+        padding: 2px 0 0 0;
+        margin-right: 12px;
+        span{
+          color: #fff;
+          font-size: 28px;
+        }
+      }
+      p{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        margin-bottom: 0;
+      }
+    }
   }
 
   .container-row {
@@ -403,5 +439,47 @@ main#detail-jalur {
         left: -32px;
       }
     }
+  }
+}
+.footer-daftar-res{
+  position: fixed;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #fff;
+  box-shadow: 0px -2px 6px rgba(33, 33, 33, 0.08);
+  padding: 32px;
+  .biaya-form{
+    label{
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 18px;
+      text-transform: capitalize;
+      color: #7A7A7A;
+      opacity: 0.8;
+      margin-bottom: 8px;
+    }
+    h3{
+      font-family: $font-mulish;
+      font-weight: bold;
+      font-size: 13px;
+      line-height: 16px;
+      text-transform: capitalize;
+      color: #404852;
+      margin-bottom: 0;
+    }
+  }
+  button{
+    background: #F57C00;
+    box-shadow: 0px 4px 12px rgba(100, 56, 11, 0.12);
+    border-radius: 8px;
+    border: none;
+    padding: 18px 15px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 19px;
+    text-transform: capitalize;
+    color: #FFFFFF;
   }
 }

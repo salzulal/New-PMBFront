@@ -295,9 +295,9 @@
         position: relative;
         top: unset;
         min-height: fit-content;
-        border-radius: 22px;
+        border-radius: 50px;
         width: 100%;
-        padding: 7px 28px;
+        padding: 6px;
         display: inline-flex;
         flex-direction: row;
         align-items: center;
@@ -372,6 +372,7 @@
         min-height: fit-content;
         height: 44px;
         border-radius: 22px;
+        padding: 14px 6px 14px 14px;
         .search-group {
           img {
           }
@@ -536,6 +537,7 @@
             border-radius: 6px;
             padding: 0 !important;
             .img {
+              height: 120px;
               border-radius: 6px 6px 0px 0px;
               .arrow {
                 display: none;

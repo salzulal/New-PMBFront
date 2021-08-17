@@ -35,6 +35,14 @@ main#daftar-jalur {
         flex-direction: row;
         width: 100%;
         align-items: center;
+        img{
+          width: 18px;
+          height: 18px;
+          @media (max-width: 575.98px) {
+            width: 32px;
+            height: 32px;
+          }
+        }
         .search {
           border: 0;
           font-size: 0.8889rem;
