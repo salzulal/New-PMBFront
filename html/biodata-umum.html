@@ -16,6 +16,10 @@
       rel="stylesheet"
     />
     <!-- owl carousel -->
+    <link rel="stylesheet" href="../assets/air-datepicker/css/datepicker.css" />
+    <!-- Select 2 -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
     <link
       rel="stylesheet"
       href="../assets/owl-carousel/dist/assets/owl.carousel.min.css"
@@ -97,7 +101,7 @@
       <section class="hero">
         <div class="container-xxl">
           <div class="row">
-            <div class="col-xl-12">
+            <div class="col-xl-10 offset-xl-1">
               <h1>portal pendaftaran <br />mahasiswa baru 2021</h1>
             </div>
           </div>
@@ -106,7 +110,7 @@
       <section class="main-pendaftaran">
         <div class="container-xxl">
           <div class="row">
-            <div class="col-xl-12">
+            <div class="col-xl-10 offset-xl-1">
               <div class="card-main-pendaftaran">
                 <div class="step-pendaftaran">
                   <div class="list-step done">
@@ -161,6 +165,164 @@
                     <div class="info-step">
                       <label>Step 6 of 6</label>
                       <h3>Daftar Ulang</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="biodata">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <h2 class="title">Data Diri</h2>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="group">
+                          <input type="text" placeholder="Nama Lengkap" required="required" /><label>Nama Lengkap</label>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="group">
+                          <input type="email" placeholder="Email" required="required" /><label>Email</label>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <h2 class="title-form">Jenis Kelamin</h2>
+                      <div class="d-flex align-items-center">
+                        <div class="group-radio">
+                            <input type="radio" name="radio-group" id="male">
+                            <label for="male">Laki - Laki</label>
+                        </div>
+                        <div class="group-radio">
+                          <input type="radio" name="radio-group" id="female">
+                          <label for="female">Perempuan</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="phone-number">
+                        <div class="city-select">
+                            <select name="citycode" id="citycode" value="+62" disabled>
+                                <option value="+62">+62</option>
+                            </select>
+                            <span class="material-icons-round">
+                                arrow_drop_down
+                            </span>
+                        </div>
+                        <div id="list-select">
+                            <div class="option" data-option="+62">Indonesia (+62)</div>
+                            <div class="option" data-option="+36">Hungaria (+36)</div>
+                            <div class="option" data-option="+52">Hongkong (+52)</div>
+                            <div class="option" data-option="+91">India (+91)</div>
+                            <div class="option" data-option="+44">Inggris Raya (+44)</div>
+                            <div class="option" data-option="+35">Irlandia (+35)</div>
+                        </div>
+                        <input type="number" placeholder="Handphone" required="required" />
+                        <label>Handphone</label>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="group date">
+                        <input type='text' data-language='id' id="jadwal-datepicker" placeholder="Tanggal Lahir" /><label>Tanggal Lahir</label>
+                        <span class="material-icons-round">
+                          event
+                        </span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="group">
+                          <input type="text" placeholder="Alamat Domisili" required="required" /><label>Alamat Domisili</label>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="group form-select-pmb">
+                        <select class="select2-pmb-sekolah">
+                          <option></option>
+                          <option value="1">SMA Katolik ST. Louis 1 Surabaya</option>
+                          <option value="2">SMA Islam Jiwa Nala Surabaya</option>
+                          <option value="3">SMA Hang tuah 1 Surabaya</option>
+                          <option value="4">SMA Gema 45 Surabaya</option>
+                          <option value="5">SMA Bina Bangsa Surabaya</option>
+                        </select>
+                        <label>Nama Sekolah</label>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="group form-select-pmb">
+                        <select class="select2-pmb" id="placeholder-jurusan" data-placeholder="Jurusan">
+                          <option></option>
+                          <option value="ipa">IPA (Ilmu Pengetahuan Alam)</option>
+                          <option value="ips">IPS (Ilmu Pengetahuan Sosial)</option>
+                        </select>
+                        <label>Jurusan</label>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="group form-select-pmb">
+                        <select class="select2-pmb" id="placeholder" data-placeholder="Provinsi">
+                          <option></option>
+                          <option value="jatim">Jawa Timur</option>
+                          <option value="jabar">Jawa Barat</option>
+                        </select>
+                        <label>Provinsi</label>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="group form-select-pmb">
+                        <select class="select2-pmb" id="placeholder-kota" data-placeholder="Kota/Kabupaten">
+                          <option></option>
+                          <option value="sby">Surabaya</option>
+                          <option value="sidoarjo">Sidoarjo</option>
+                        </select>
+                        <label>Kota/Kabupaten</label>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="group form-select-pmb">
+                        <select class="select2-pmb" id="placeholder-thnlulus" data-placeholder="Tahun Lulus">
+                          <option></option>
+                          <option value="2020">2020</option>
+                          <option value="2021">2021</option>
+                        </select>
+                        <label>Tahun Lulus</label>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <h2 class="title">Program Studi</h2>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="group form-select-pmb">
+                        <select class="select2-pmb" id="placeholder-pilihan1" data-placeholder="Pilihan Pertama">
+                          <option></option>
+                          <option value="ik">S1 Ilmu Komunikasi</option>
+                          <option value="ti">S1 Teknik Informatika</option>
+                        </select>
+                        <label>Pilihan Pertama</label>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="group form-select-pmb">
+                        <select class="select2-pmb" id="placeholder-pilihan2" data-placeholder="Pilihan Kedua">
+                          <option></option>
+                          <option value="dkv">S1 Desain Komunikasi Visual</option>
+                          <option value="si">S1 Sistem Informasi</option>
+                        </select>
+                        <label>Pilihan Kedua</label>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="form-check-biodata">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="ingatsaya">
+                          <label class="form-check-label" for="ingatsaya">
+                            Saya setuju dengan sadar menyatakan bahwa data yang dimasukkan benar adanya dan bisa dibuktikan secara hukum. Serta saya telah menyetujui dengan syarat dan ketentuan pendaftaran mahasiswa baru.
+                          </label>
+                        </div>
+                      </div>
+                      <div class="cta-pendaftaran">
+                          <a href="#"><div class="sebelum">
+                            <span class="material-icons-round">
+                            arrow_back
+                            </span>Sebelumnya</div></a>
+                          <a href="#"><div class="selanjutnya">Selanjutnya</div></a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -659,6 +821,12 @@
   </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.js"></script>
+    <!-- Select 2  -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <!-- datepicker -->
+    <script src="../assets/air-datepicker/js/datepicker.min.js"></script>
+    <script src="../assets/air-datepicker/js/datepicker.id.js"></script>
     <!-- bootstrap v5 -->
     <script src="../assets/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 

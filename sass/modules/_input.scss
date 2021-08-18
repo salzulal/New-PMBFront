@@ -6,6 +6,44 @@ $width: 400px;
 form {
   width: $width;
 }
+.datepicker-style{
+  background: #FFFFFF;
+  border: 1px solid #F5F6F8;
+  box-sizing: border-box;
+  box-shadow: 0px 12px 32px rgba(34, 34, 34, 0.12);
+  border-radius: 6px;
+  font-family: $font-family;
+  width: 402px;
+  padding: 12px;
+  .datepicker--cell.-current-{
+    color: #2C6ECB;
+  }
+  .datepicker--cell.-selected-{
+    background-color: #2C6ECB;
+    color: #fff;
+  }
+  .datepicker--pointer{
+    display: none;
+  }
+  .datepicker--day-name{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    text-transform: capitalize;
+    color: #404852;
+    opacity: 0.7;
+    padding: 10px;
+  }
+}
+.date{
+  position: relative;
+  span{
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    color: #7A7A7A;
+  }
+}
 .group {
   position: relative;
   margin: 12px 0;
@@ -208,4 +246,69 @@ form {
 .select-text {
   appearance: none;
   -webkit-appearance: none;
+}
+.form-select-pmb{
+  .select2-container{
+    width: 100% !important; 
+  }
+  .select2-container .select2-selection--single{
+    height: 58.6px;
+  }
+  .select2-container--default .select2-selection--single .select2-selection__rendered{
+    line-height: 58.6px;
+    padding: 0 24px;
+    color: #404852;
+  }
+  .select2-container--default .select2-selection--single{
+    background: #fff;
+    color: #404852;
+    font-size: 0.875rem;
+    line-height: 1.313rem;
+    display: block;
+    border: none;
+    border-radius: 6px;
+    border: 1px solid #dadce0;
+  }
+  .select2-container--default .select2-selection--single .select2-selection__arrow b{
+    margin-left: -18px;
+    margin-top: 14px;
+  }
+  
+  
+}
+.select2-dropdown{
+  background: #FFFFFF;
+  border: 1px solid #F5F6F8;
+  box-sizing: border-box;
+  box-shadow: 0px 12px 32px rgba(34, 34, 34, 0.12);
+  border-radius: 6px;
+}
+.select2-results__option{
+  padding: 12px 24px;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 19px;
+  text-transform: capitalize;
+  color: #404852;
+  border-bottom: 1px solid #F5F6F8;
+
+}
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable{
+  background-color: #1959A9 !important;
+}
+.select2-search--dropdown{
+  padding: 16px 24px;
+}
+.select2-container--default .select2-search--dropdown .select2-search__field{
+  background: #FFFFFF;
+  border: 1px solid #DADCE0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  height: 42px;
+  outline: none;
+  padding: 12px;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 19px;
+  color: #404852;
 }

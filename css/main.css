@@ -241,6 +241,69 @@ p {
   background-color: #EFF1F7;
 }
 
+.group-radio [type="radio"]:checked,
+.group-radio [type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+.group-radio [type="radio"]:checked + label,
+.group-radio [type="radio"]:not(:checked) + label {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #404852;
+}
+
+.group-radio [type="radio"]:checked + label:before,
+.group-radio [type="radio"]:not(:checked) + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #7A7A7A;
+  border-radius: 100%;
+  background: #fff;
+}
+
+.group-radio [type="radio"]:checked + label:after,
+.group-radio [type="radio"]:not(:checked) + label:after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: #1959A9;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  border-color: #1959A9;
+}
+
+.group-radio [type="radio"]:checked + label:before {
+  border-color: #1959A9 !important;
+}
+
+.group-radio [type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+.group-radio [type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
 .button {
   -webkit-appearance: none;
   position: relative;
@@ -460,6 +523,53 @@ p {
 
 form {
   width: 400px;
+}
+
+.datepicker-style {
+  background: #FFFFFF;
+  border: 1px solid #F5F6F8;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 12px 32px rgba(34, 34, 34, 0.12);
+          box-shadow: 0px 12px 32px rgba(34, 34, 34, 0.12);
+  border-radius: 6px;
+  font-family: "Poppins", sans-serif;
+  width: 402px;
+  padding: 12px;
+}
+
+.datepicker-style .datepicker--cell.-current- {
+  color: #2C6ECB;
+}
+
+.datepicker-style .datepicker--cell.-selected- {
+  background-color: #2C6ECB;
+  color: #fff;
+}
+
+.datepicker-style .datepicker--pointer {
+  display: none;
+}
+
+.datepicker-style .datepicker--day-name {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  text-transform: capitalize;
+  color: #404852;
+  opacity: 0.7;
+  padding: 10px;
+}
+
+.date {
+  position: relative;
+}
+
+.date span {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  color: #7A7A7A;
 }
 
 .group {
@@ -733,6 +843,79 @@ form {
   -moz-appearance: none;
        appearance: none;
   -webkit-appearance: none;
+}
+
+.form-select-pmb .select2-container {
+  width: 100% !important;
+}
+
+.form-select-pmb .select2-container .select2-selection--single {
+  height: 58.6px;
+}
+
+.form-select-pmb .select2-container--default .select2-selection--single .select2-selection__rendered {
+  line-height: 58.6px;
+  padding: 0 24px;
+  color: #404852;
+}
+
+.form-select-pmb .select2-container--default .select2-selection--single {
+  background: #fff;
+  color: #404852;
+  font-size: 0.875rem;
+  line-height: 1.313rem;
+  display: block;
+  border: none;
+  border-radius: 6px;
+  border: 1px solid #dadce0;
+}
+
+.form-select-pmb .select2-container--default .select2-selection--single .select2-selection__arrow b {
+  margin-left: -18px;
+  margin-top: 14px;
+}
+
+.select2-dropdown {
+  background: #FFFFFF;
+  border: 1px solid #F5F6F8;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 12px 32px rgba(34, 34, 34, 0.12);
+          box-shadow: 0px 12px 32px rgba(34, 34, 34, 0.12);
+  border-radius: 6px;
+}
+
+.select2-results__option {
+  padding: 12px 24px;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 19px;
+  text-transform: capitalize;
+  color: #404852;
+  border-bottom: 1px solid #F5F6F8;
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+  background-color: #1959A9 !important;
+}
+
+.select2-search--dropdown {
+  padding: 16px 24px;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+  background: #FFFFFF;
+  border: 1px solid #DADCE0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+  height: 42px;
+  outline: none;
+  padding: 12px;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 19px;
+  color: #404852;
 }
 
 #header-pmb {
@@ -5329,6 +5512,131 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .lis
   text-transform: capitalize;
   color: #404852;
   margin-bottom: 0;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata {
+  margin-top: 52px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  text-transform: capitalize;
+  color: #404852;
+  margin-bottom: 25px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .title-form {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
+  margin-bottom: 12px;
+  color: #404852;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .phone-number .city-select input, main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .phone-number .city-select select {
+  width: 100%;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .phone-number input[type="number"] {
+  width: 100% !important;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .group {
+  margin-bottom: 25px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .group input {
+  width: 100%;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .group-radio {
+  margin-bottom: 25px;
+  margin-right: 20px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .form-select-pmb {
+  margin-bottom: 25px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .form-check-biodata {
+  margin-bottom: 100px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .form-check-biodata .form-check-input:checked {
+  background-color: #3656A1;
+  border-color: #3656A1;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .form-check-biodata input {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .form-check-biodata .form-check .form-check-label {
+  cursor: pointer;
+  font-weight: normal;
+  font-size: 0.722rem;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #404852;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .cta-pendaftaran {
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .cta-pendaftaran a {
+  text-decoration: none;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .cta-pendaftaran .selanjutnya {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.25px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  padding: 17px 33px;
+  background-color: #1959A9;
+  border-radius: 8px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .cta-pendaftaran .selanjutnya:hover {
+  background-color: #12488a;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .cta-pendaftaran .sebelum {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.25px;
+  text-transform: capitalize;
+  color: #7A7A7A;
+  margin-right: 28px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .cta-pendaftaran .sebelum span {
+  font-size: 14px;
+  margin-right: 16px;
+  color: #7a7a7a;
 }
 
 .contact-pendaftaran img {
