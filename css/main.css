@@ -113,8 +113,16 @@ h4 {
 
 h5 {
   font-weight: 600;
-  font-size: 0.75rem;
-  line-height: 1.125rem;
+  font-size: 0.778rem;
+  line-height: 1.167rem;
+  color: #404852;
+  margin: 0;
+}
+
+h6 {
+  font-weight: 600;
+  font-size: 0.722rem;
+  line-height: 1.111rem;
   color: #404852;
   margin: 0;
 }
@@ -438,6 +446,23 @@ p {
 }
 
 .button.ternary.outline .ripple__circle {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.button.gray.outline {
+  background: transparent;
+  border: 1px solid #e0e2e3;
+}
+
+.button.gray.outline p {
+  color: #7a7a7a;
+}
+
+.button.gray.outline:hover {
+  background: white;
+}
+
+.button.gray.outline .ripple__circle {
   background: rgba(0, 0, 0, 0.25);
 }
 
@@ -5976,6 +6001,786 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .contailer-li
   -webkit-transition: ease-in-out 750ms;
   transition: ease-in-out 750ms;
   border-radius: 8px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .info-jalur-pembayaran {
+  position: relative;
+  margin: 40px -6px 0;
+  padding: 16px 24px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(37.68%, rgba(242, 247, 254, 0)), color-stop(118.12%, #f2f7fe));
+  background: linear-gradient(180deg, rgba(242, 247, 254, 0) 37.68%, #f2f7fe 118.12%);
+  border-radius: 6px;
+  min-height: 140px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .info-jalur-pembayaran .col {
+  padding: 0 6px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .info-jalur-pembayaran .col .row {
+  margin: 0 -12px;
+  padding: 0;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .info-jalur-pembayaran .col .row .col {
+  padding: 0 12px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .info-jalur-pembayaran .col .row .col h6 {
+  font-weight: 400;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .info-jalur-pembayaran .col .row .col h6 a {
+  color: #f57c00;
+  font-size: 0.667;
+  margin-left: 8px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .info-jalur-pembayaran .col .row .col h5 {
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .info-jalur-pembayaran .col.img img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .select-metode {
+  margin: 44px 0;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .select-metode .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .select-metode .title h5 {
+  font-weight: 400;
+  color: #7a7a7a;
+  margin-top: 4px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .select-metode .select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 0;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .select-metode .select .form-select-pmb {
+  margin: 0px;
+  width: calc(100% - 150px);
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .select-metode .select .form-select-pmb select {
+  width: 100%;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .select-metode .select .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 58px;
+  margin-left: 16px;
+  width: 134px;
+  border-radius: 6px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .select-metode .select .button p {
+  font-weight: 500;
+  font-size: 0.778rem;
+  line-height: 1.167rem;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran hr.card-divider {
+  height: 13px;
+  background: #eceff1;
+  opacity: 0.4;
+  border-top: 1px solid #eeeeee;
+  margin: 0 -64px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .pilihan-pembayaran {
+  padding: 44px 0;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .pilihan-pembayaran .section-title {
+  margin-bottom: 32px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .pilihan-pembayaran .pilihan-list .pilihan-item {
+  padding: 6px 16px;
+  background: #ffffff;
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .pilihan-pembayaran .pilihan-list .pilihan-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .pilihan-pembayaran .pilihan-list .pilihan-item:hover {
+  cursor: pointer;
+  border: 1px solid #bdbdbd;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .pilihan-pembayaran .pilihan-list .pilihan-item .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .pilihan-pembayaran .pilihan-list .pilihan-item .left .material-icons-round {
+  margin-right: 18px;
+  color: #bec2c3;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .pilihan-pembayaran .pilihan-list .pilihan-item .left .desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .pilihan-pembayaran .pilihan-list .pilihan-item .left .desc .name {
+  font-weight: 500;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .pilihan-pembayaran .pilihan-list .pilihan-item .left .desc .fee {
+  font-weight: 400;
+  color: #7a7a7a;
+  margin-top: 2px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .pilihan-pembayaran .pilihan-list .pilihan-item .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .pilihan-pembayaran .pilihan-list .pilihan-item .right img {
+  height: 76px;
+  max-height: 76px;
+  width: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .pilihan-pembayaran .pilihan-list .pilihan-item.active {
+  border: 1px solid #3656a1;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .pilihan-pembayaran .pilihan-list .pilihan-item.active .left .material-icons-round {
+  color: #3656a1;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .pilihan-pembayaran .pilihan-list .pilihan-item.active .left .desc .name {
+  font-weight: 600;
+  color: #3656a1;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .transfer-bank {
+  padding: 44px 0;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .transfer-bank .section-title {
+  margin-bottom: 32px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .transfer-bank .notify {
+  background: #fefefc;
+  -webkit-box-shadow: 0px 30px 60px rgba(32, 56, 85, 0.06);
+          box-shadow: 0px 30px 60px rgba(32, 56, 85, 0.06);
+  border-radius: 4px;
+  padding: 24px 24px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .transfer-bank .notify .top-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: #0097a7;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .transfer-bank .notify h5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .transfer-bank .notify h5 .material-icons-round {
+  margin-right: 16px;
+  color: #0097a7;
+  font-size: 18px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .transfer-bank .sub-title {
+  margin: 24px 0;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .transfer-bank .ketentuan-list .ketentuan-item {
+  margin: 0 -6px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .transfer-bank .ketentuan-list .ketentuan-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .transfer-bank .ketentuan-list .ketentuan-item .col {
+  padding: 0 6px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .transfer-bank .ketentuan-list .ketentuan-item .col .material-icons-round {
+  color: #0097a7;
+  font-size: 12px;
+  line-height: 1.167rem;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .transfer-bank .ketentuan-list .ketentuan-item .col.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .transfer-bank .ketentuan-list .ketentuan-item .col.content h5 {
+  font-weight: 400;
+  color: #7a7a7a;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .transfer-bank .ketentuan-list .ketentuan-item .col.content .banks {
+  margin: 22px -2px -2px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .transfer-bank .ketentuan-list .ketentuan-item .col.content .banks .bank {
+  padding: 2px;
+  height: 45px;
+  width: 71px;
+  max-height: 45px;
+  max-width: 71px;
+  border: 1px solid #f5f6f8;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .transfer-bank .ketentuan-list .ketentuan-item .col.content .banks .bank img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher {
+  padding: 44px 0;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .section-title {
+  margin-bottom: 44px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher {
+  outline-offset: -2px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher .col-6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 24px 32px;
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher .col-6 .text {
+  margin-left: 16px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher .col-6 .text .bottom {
+  margin-top: 4px;
+  font-weight: 400;
+  color: #7a7a7a;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher .col-6.left {
+  border-right: none;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher .col-6.right {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  border-left: 2px dashed #dadce0;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher .col-6.right a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #3656a1;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher .col-6.right a i,
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher .col-6.right a h5 {
+  font-size: 14px;
+  color: #3656a1;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher .col-6.right a i {
+  margin-left: 12px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher .cutout {
+  padding: 0;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border: 1px solid #dadce0;
+  border-radius: 100%;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher .cutout.top {
+  top: -8.5px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher .cutout.bot {
+  bottom: -8.5px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher .cutout.mid {
+  left: calc(50% - 7px);
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher .cutout.stop {
+  top: calc(25% - 7px);
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher .cutout.smid {
+  top: calc(50% - 7px);
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher .cutout.sbot {
+  top: calc(75% - 7px);
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher .cutout.left {
+  left: -7px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher .cutout.right {
+  right: -7px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher.active .col-6 {
+  border: 1px solid #3656a1;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher.active .col-6.left {
+  border-right: none;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher.active .col-6.left h6:not(.bottom) {
+  color: #3656a1;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher.active .col-6.right {
+  border-left: 2px dashed #3656a1;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher.active .cutout {
+  border: 1px solid #3656a1;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .detail-pembayaran {
+  padding: 44px 0;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .detail-pembayaran .section-title {
+  margin-bottom: 12px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .detail-pembayaran .list-detail .item-pembayaran {
+  padding: 20px 0;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .detail-pembayaran .list-detail .item-pembayaran .description,
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .detail-pembayaran .list-detail .item-pembayaran .nominal {
+  font-weight: 400;
+  color: #7a7a7a;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .detail-pembayaran .list-detail .item-pembayaran .nominal {
+  font-family: "DM Mono", sans-serif;
+  text-align: right;
+  letter-spacing: 0.25px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .detail-pembayaran .list-detail .item-pembayaran.total .description {
+  color: #404852;
+  font-weight: 500;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .detail-pembayaran .list-detail .item-pembayaran.total .nominal {
+  color: #e53935;
+  font-weight: 500;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .detail-pembayaran .list-detail .item-pembayaran:not(:last-child) {
+  border-bottom: 1px solid #eceff1a3;
+}
+
+.modal {
+  overflow-y: auto;
+}
+
+.modal .modal-dialog .modal-content {
+  background: #ffffff;
+  border-radius: 8px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+}
+
+@media (max-width: 550px) {
+  .modal .modal-dialog .modal-content {
+    margin: 0;
+    height: auto;
+    min-height: 100%;
+    border-radius: 0;
+  }
+}
+
+.modal .modal-dialog .modal-content .modal-header {
+  padding: 32px 56px 16px 56px;
+  border: none;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+}
+
+@media (max-width: 550px) {
+  .modal .modal-dialog .modal-content .modal-header {
+    padding: 32px 32px 16px 32px;
+  }
+}
+
+.modal .modal-dialog .modal-content .modal-header .btn-modal-close {
+  font-size: 10px;
+  padding: 0;
+  color: #7a7a7a;
+  background: #fff !important;
+  border: 0;
+  outline: none;
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+  margin: 0;
+}
+
+@media (max-width: 550px) {
+  .modal .modal-dialog .modal-content .modal-header .btn-modal-close {
+    color: #7a7a7a;
+    width: 44px;
+    height: 44px;
+    font-size: 8px;
+    padding-top: 4px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 1px solid #eceff1;
+    -webkit-box-shadow: 0px 8px 20px rgba(38, 50, 56, 0.08);
+            box-shadow: 0px 8px 20px rgba(38, 50, 56, 0.08);
+  }
+}
+
+.modal .modal-dialog .modal-content .modal-body {
+  padding: 28px 56px;
+}
+
+@media (max-width: 550px) {
+  .modal .modal-dialog .modal-content .modal-body {
+    padding: 28px 32px;
+  }
+}
+
+.modal-pindah-jalur {
+  width: 954px;
+  max-width: 954px;
+}
+
+@media (max-width: 990.98px) {
+  .modal-pindah-jalur {
+    width: 100% !important;
+    max-width: 100% !important;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+}
+
+.modal-pindah-jalur .modal-body {
+  padding-bottom: 40px;
+}
+
+.modal-pindah-jalur .modal-body .body-heading {
+  margin-bottom: 24px;
+}
+
+.modal-pindah-jalur .modal-body .body-heading .alert-box {
+  background: #fff4f4;
+  border: 1px solid #f0d3d2;
+  border-radius: 8px;
+  padding: 22px 32px;
+}
+
+.modal-pindah-jalur .modal-body .body-heading .alert-box h5 {
+  margin-bottom: 4px;
+}
+
+.modal-pindah-jalur .modal-body .body-heading .alert-box h6 {
+  font-weight: normal;
+}
+
+.modal-pindah-jalur .modal-body .jalur-list.others {
+  max-height: 700px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-right: -52px;
+  padding-right: 52px;
+}
+
+@media (max-width: 550px) {
+  .modal-pindah-jalur .modal-body .jalur-list.others {
+    margin-right: -28px;
+    padding-right: 28px;
+  }
+}
+
+.modal-pindah-jalur .modal-body .jalur-list .jalur-row {
+  padding: 32px 0 0;
+  margin: 0 -12px;
+}
+
+.modal-pindah-jalur .modal-body .jalur-list .jalur-row .col {
+  padding: 0 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modal-pindah-jalur .modal-body .jalur-list .jalur-row img {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.modal-pindah-jalur .modal-body .jalur-list .jalur-row .title {
+  font-weight: 400;
+  color: #7a7a7a;
+  margin-bottom: 8px;
+}
+
+.modal-pindah-jalur .modal-body .jalur-list .jalur-row .more {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.modal-pindah-jalur .modal-body .jalur-list .jalur-row .more .tag {
+  width: 112px;
+  max-width: 112px;
+  text-align: center;
+  padding: 16px;
+  background: #e8eef6;
+  border-radius: 100px;
+  color: #1959a9;
+}
+
+.modal-pindah-jalur .modal-body .jalur-list .jalur-row .more .button {
+  width: 112px;
+  max-width: 112px;
+  padding: 13px;
+  border-radius: 6px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modal-pindah-jalur .modal-body .jalur-list .jalur-row .more .button p {
+  font-weight: 600;
+  font-size: 0.722rem;
+  line-height: 1.111rem;
+}
+
+.modal-pindah-jalur .modal-body .jalur-list .jalur-row:not(:last-child) {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #eceff1;
+}
+
+.modal-pindah-jalur .modal-body hr.body-divider {
+  height: 13px;
+  background: #eceff1;
+  opacity: 0.4;
+  border-top: 1px solid #eeeeee;
+  margin: 40px -56px;
+}
+
+.modal-pindah-jalur .modal-footer {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #fafafa;
+  padding: 16px;
+}
+
+.modal-pindah-jalur .modal-footer h5 {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.modal-pindah-jalur .modal-footer h5 span {
+  font-weight: 700;
+  opacity: 1;
+}
+
+.modal-small {
+  width: 512px;
+  max-width: 512px;
+}
+
+@media (max-width: 550px) {
+  .modal-small {
+    width: 100% !important;
+    max-width: 100% !important;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+}
+
+.modal-small .modal-content .modal-body.with-illus {
+  text-align: center;
+}
+
+.modal-small .modal-content .modal-body.with-illus h2 {
+  margin: 8px 0 12px;
+}
+
+.modal-small .modal-content .modal-body.with-illus h5 {
+  font-family: "Mulish", sans-serif;
+  max-width: 370px;
+  opacity: 0.64;
+  font-weight: 400;
+  margin: 0 auto;
+}
+
+.modal-small .modal-content .modal-body.with-illus .buttons {
+  margin-top: 76px;
+}
+
+.modal-small .modal-content .modal-body.with-illus .buttons .button {
+  width: 100%;
+  border-radius: 6px;
+  height: 64px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-small .modal-content .modal-body.with-illus .buttons .button p {
+  font-weight: 600;
+  font-size: 0.778rem;
+  line-height: 1.167rem;
 }
 
 @media (min-width: 576px) {

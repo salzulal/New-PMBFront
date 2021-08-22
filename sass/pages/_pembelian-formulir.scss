@@ -1,0 +1,600 @@
+main#pendaftaran {
+  .main-pendaftaran {
+    .card-main-pendaftaran {
+      .info-jalur-pembayaran {
+        position: relative;
+        margin: 40px -6px 0;
+        padding: 16px 24px;
+        background: linear-gradient(
+          180deg,
+          rgba(242, 247, 254, 0) 37.68%,
+          #f2f7fe 118.12%
+        );
+        border-radius: 6px;
+        min-height: 140px;
+        .col {
+          padding: 0 6px;
+          .row {
+            margin: 0 -12px;
+            padding: 0;
+            .col {
+              padding: 0 12px;
+              h6 {
+                font-weight: 400;
+                a {
+                  color: $color-secondary;
+                  font-size: 0.667;
+                  margin-left: 8px;
+                }
+              }
+              h5 {
+                font-weight: 500;
+                margin-top: 8px;
+              }
+            }
+          }
+          &.img {
+            img {
+              position: absolute;
+              right: 0;
+              bottom: 0;
+            }
+          }
+        }
+      }
+      .select-metode {
+        margin: 44px 0;
+
+        .title {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 0;
+          h5 {
+            font-weight: 400;
+            color: #7a7a7a;
+            margin-top: 4px;
+          }
+        }
+        .select {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          padding-right: 0;
+          .form-select-pmb {
+            margin: 0px;
+            width: calc(100% - 150px);
+            select {
+              width: 100%;
+            }
+          }
+          .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 58px;
+            margin-left: 16px;
+            width: 134px;
+            border-radius: 6px;
+            p {
+              font-weight: 500;
+              font-size: 0.778rem;
+              line-height: 1.167rem;
+            }
+          }
+        }
+      }
+      hr.card-divider {
+        height: 13px;
+        background: #eceff1;
+        opacity: 0.4;
+        border-top: 1px solid #eeeeee;
+        margin: 0 -64px;
+      }
+      .pilihan-pembayaran {
+        padding: 44px 0;
+        .section-title {
+          margin-bottom: 32px;
+        }
+        .pilihan-list {
+          .pilihan-item {
+            padding: 6px 16px;
+            background: #ffffff;
+            border: 1px solid #dadce0;
+            border-radius: 8px;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+
+            &:not(:last-child) {
+              margin-bottom: 24px;
+            }
+            &:hover {
+              cursor: pointer;
+              border: 1px solid #bdbdbd;
+            }
+
+            .left {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              .material-icons-round {
+                margin-right: 18px;
+                color: #bec2c3;
+              }
+              .desc {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                .name {
+                  font-weight: 500;
+                }
+                .fee {
+                  font-weight: 400;
+                  color: #7a7a7a;
+                  margin-top: 2px;
+                }
+              }
+            }
+            .right {
+              display: flex;
+              align-items: center;
+              justify-content: flex-end;
+              img {
+                height: 76px;
+                max-height: 76px;
+                width: auto;
+                object-fit: contain;
+              }
+            }
+            &.active {
+              border: 1px solid $color-primary;
+              .left {
+                .material-icons-round {
+                  color: $color-primary;
+                }
+                .desc {
+                  .name {
+                    font-weight: 600;
+                    color: $color-primary;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .transfer-bank {
+        padding: 44px 0;
+        .section-title {
+          margin-bottom: 32px;
+        }
+        .notify {
+          background: #fefefc;
+          box-shadow: 0px 30px 60px rgba(32, 56, 85, 0.06);
+          border-radius: 4px;
+          padding: 24px 24px 20px;
+          position: relative;
+          overflow: hidden;
+          .top-line {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: $color-ternary;
+          }
+          h5 {
+            display: flex;
+            align-items: center;
+            .material-icons-round {
+              margin-right: 16px;
+              color: $color-ternary;
+              font-size: 18px;
+            }
+          }
+        }
+        .sub-title {
+          margin: 24px 0;
+        }
+        .ketentuan-list {
+          .ketentuan-item {
+            margin: 0 -6px;
+            &:not(:last-child) {
+              margin-bottom: 24px;
+            }
+            .col {
+              padding: 0 6px;
+              .material-icons-round {
+                color: $color-ternary;
+                font-size: 12px;
+                line-height: 1.167rem;
+              }
+              &.content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                h5 {
+                  font-weight: 400;
+                  color: #7a7a7a;
+                }
+                .banks {
+                  margin: 22px -2px -2px;
+                  .bank {
+                    padding: 2px;
+                    height: 45px;
+                    width: 71px;
+                    max-height: 45px;
+                    max-width: 71px;
+                    border: 1px solid #f5f6f8;
+                    border-radius: 2px;
+                    overflow: hidden;
+                    img {
+                      width: 100%;
+                      height: 100%;
+                      object-fit: contain;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .promo-voucher {
+        padding: 44px 0;
+        .section-title {
+          margin-bottom: 44px;
+        }
+        .voucher {
+          outline-offset: -2px;
+          margin: 0;
+          padding: 0;
+          position: relative;
+          overflow: hidden;
+          .col-6 {
+            display: flex;
+            align-items: center;
+            padding: 24px 32px;
+            border: 1px solid #dadce0;
+            border-radius: 8px;
+            .text {
+              margin-left: 16px;
+              .bottom {
+                margin-top: 4px;
+                font-weight: 400;
+                color: #7a7a7a;
+              }
+            }
+            &.left {
+              border-right: none;
+            }
+            &.right {
+              justify-content: flex-end;
+              border-left: 2px dashed #dadce0;
+              a {
+                display: flex;
+                align-items: center;
+                color: $color-primary;
+                i,
+                h5 {
+                  font-size: 14px;
+                  color: $color-primary;
+                }
+                i {
+                  margin-left: 12px;
+                }
+              }
+            }
+          }
+          .cutout {
+            padding: 0;
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            background: #fff;
+            border: 1px solid #dadce0;
+            border-radius: 100%;
+            &.top {
+              top: -8.5px;
+            }
+            &.bot {
+              bottom: -8.5px;
+            }
+            &.mid {
+              left: calc(50% - 7px);
+            }
+            &.stop {
+              top: calc(25% - 7px);
+            }
+            &.smid {
+              top: calc(50% - 7px);
+            }
+            &.sbot {
+              top: calc(75% - 7px);
+            }
+            &.left {
+              left: -7px;
+            }
+            &.right {
+              right: -7px;
+            }
+          }
+          &.active {
+            .col-6 {
+              border: 1px solid $color-primary;
+              &.left {
+                h6:not(.bottom) {
+                  color: $color-primary;
+                }
+                border-right: none;
+              }
+              &.right {
+                border-left: 2px dashed $color-primary;
+              }
+            }
+            .cutout {
+              border: 1px solid $color-primary;
+            }
+          }
+        }
+      }
+      .detail-pembayaran {
+        padding: 44px 0;
+        .section-title {
+          margin-bottom: 12px;
+        }
+        .list-detail {
+          .item-pembayaran {
+            padding: 20px 0;
+            .description,
+            .nominal {
+              font-weight: 400;
+              color: #7a7a7a;
+            }
+            .nominal {
+              font-family: "DM Mono", sans-serif;
+              text-align: right;
+              letter-spacing: 0.25px;
+            }
+            &.total {
+              .description {
+                color: #404852;
+                font-weight: 500;
+              }
+              .nominal {
+                color: $color-danger;
+                font-weight: 500;
+              }
+            }
+            &:not(:last-child) {
+              border-bottom: 1px solid #eceff1a3;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.modal {
+  overflow-y: auto;
+  .modal-dialog {
+    .modal-content {
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: none;
+      border: none;
+      @media (max-width: 550px) {
+        margin: 0;
+        height: auto;
+        min-height: 100%;
+        border-radius: 0;
+      }
+      .modal-header {
+        padding: 32px 56px 16px 56px;
+        border: none;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        align-items: flex-start;
+        position: relative;
+        @media (max-width: 550px) {
+          padding: 32px 32px 16px 32px;
+        }
+        .btn-modal-close {
+          font-size: 10px;
+          padding: 0;
+          color: #7a7a7a;
+          background: #fff !important;
+          border: 0;
+          outline: none;
+          position: absolute;
+          right: 1.5rem;
+          top: 1.5rem;
+          margin: 0;
+          @media (max-width: 550px) {
+            color: #7a7a7a;
+            width: 44px;
+            height: 44px;
+            font-size: 8px;
+            padding-top: 4px;
+            border-radius: 50%;
+            background: #ffffff;
+            border: 1px solid #eceff1;
+            box-shadow: 0px 8px 20px rgba(38, 50, 56, 0.08);
+          }
+        }
+      }
+      .modal-body {
+        padding: 28px 56px;
+        @media (max-width: 550px) {
+          padding: 28px 32px;
+        }
+      }
+    }
+  }
+}
+
+.modal-pindah-jalur {
+  width: 954px;
+  max-width: 954px;
+  @media (max-width: 990.98px) {
+    width: 100% !important;
+    max-width: 100% !important;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  .modal-body {
+    padding-bottom: 40px;
+    .body-heading {
+      margin-bottom: 24px;
+      .alert-box {
+        background: #fff4f4;
+        border: 1px solid #f0d3d2;
+        border-radius: 8px;
+        padding: 22px 32px;
+        h5 {
+          margin-bottom: 4px;
+        }
+        h6 {
+          font-weight: normal;
+        }
+      }
+    }
+    .jalur-list {
+      &.others {
+        max-height: 700px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        margin-right: -52px;
+        padding-right: 52px;
+        @media (max-width: 550px) {
+          margin-right: -28px;
+          padding-right: 28px;
+        }
+      }
+      .jalur-row {
+        padding: 32px 0 0;
+        margin: 0 -12px;
+        .col {
+          padding: 0 12px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          max-height: 100%;
+          max-width: 100%;
+          object-fit: cover;
+        }
+        .title {
+          font-weight: 400;
+          color: #7a7a7a;
+          margin-bottom: 8px;
+        }
+        .more {
+          align-items: flex-end;
+          .tag {
+            width: 112px;
+            max-width: 112px;
+            text-align: center;
+            padding: 16px;
+            background: #e8eef6;
+            border-radius: 100px;
+            color: #1959a9;
+          }
+          .button {
+            width: 112px;
+            max-width: 112px;
+            padding: 13px;
+            border-radius: 6px;
+            justify-content: center;
+            p {
+              font-weight: 600;
+              font-size: 0.722rem;
+              line-height: 1.111rem;
+            }
+          }
+        }
+        &:not(:last-child) {
+          padding-bottom: 40px;
+          border-bottom: 1px solid #eceff1;
+        }
+      }
+    }
+    hr.body-divider {
+      height: 13px;
+      background: #eceff1;
+      opacity: 0.4;
+      border-top: 1px solid #eeeeee;
+      margin: 40px -56px;
+    }
+  }
+  .modal-footer {
+    justify-content: center;
+    background: #fafafa;
+    padding: 16px;
+    h5 {
+      font-family: "Mulish", sans-serif;
+      font-weight: 400;
+      opacity: 0.8;
+      span {
+        font-weight: 700;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.modal-small {
+  width: 512px;
+  max-width: 512px;
+  @media (max-width: 550px) {
+    width: 100% !important;
+    max-width: 100% !important;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  .modal-content {
+    .modal-body {
+      &.with-illus {
+        text-align: center;
+        h2 {
+          margin: 8px 0 12px;
+        }
+        h5 {
+          font-family: "Mulish", sans-serif;
+          max-width: 370px;
+          opacity: 0.64;
+          font-weight: 400;
+          margin: 0 auto;
+        }
+        .buttons {
+          margin-top: 76px;
+          .button {
+            width: 100%;
+            border-radius: 6px;
+            height: 64px;
+            justify-content: center;
+            align-items: center;
+            p {
+              font-weight: 600;
+              font-size: 0.778rem;
+              line-height: 1.167rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

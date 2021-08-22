@@ -90,8 +90,15 @@ h4 {
 }
 h5 {
   font-weight: 600;
-  font-size: 0.75rem; //12
-  line-height: 1.125rem;
+  font-size: 0.778rem;
+  line-height: 1.167rem;
+  color: $color-text;
+  margin: 0;
+}
+h6 {
+  font-weight: 600;
+  font-size: 0.722rem;
+  line-height: 1.111rem;
   color: $color-text;
   margin: 0;
 }
