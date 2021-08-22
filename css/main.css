@@ -5519,13 +5519,29 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata {
 }
 
 main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .title {
+  margin-bottom: 25px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .title h2 {
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.25px;
   text-transform: capitalize;
   color: #404852;
-  margin-bottom: 25px;
+  margin-bottom: 4px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .title p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+  color: #7A7A7A;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .alert-box {
+  margin-bottom: 40px;
 }
 
 main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .title-form {
@@ -5534,6 +5550,15 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .title-form {
   line-height: 20px;
   margin-bottom: 12px;
   color: #404852;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .title-form-upload {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #404852;
+  margin-bottom: 16px;
 }
 
 main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .phone-number .city-select input, main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .phone-number .city-select select {
@@ -5639,6 +5664,49 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .cta-pendafta
   color: #7a7a7a;
 }
 
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .contailer-list-upload {
+  max-height: 400px;
+  overflow-y: hidden;
+  margin-bottom: 80px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .contailer-list-upload:hover {
+  overflow-y: auto;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .contailer-list-upload .list-upload {
+  width: 100%;
+  margin-bottom: 14px;
+  padding: 20px 12px;
+  border-bottom: 1px solid rgba(236, 239, 241, 0.64);
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .contailer-list-upload .list-upload h3 {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #7A7A7A;
+  margin: 0;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .contailer-list-upload .list-upload:hover h3 {
+  color: #1959A9;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .contailer-list-upload .list-upload.active {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(172, 217, 249, 0.3)), color-stop(67.17%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(90deg, rgba(172, 217, 249, 0.3) 0%, rgba(255, 255, 255, 0) 67.17%);
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .contailer-list-upload .list-upload.active h3 {
+  font-weight: 600;
+  color: #1959A9;
+}
+
 .contact-pendaftaran img {
   width: 161px;
   height: auto;
@@ -5705,6 +5773,209 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .cta-pendafta
   -webkit-transition: 200ms;
   transition: 200ms;
   background-color: #eeeded;
+}
+
+.alert-box {
+  background: #FEFEFC;
+  -webkit-box-shadow: 0px 30px 60px rgba(32, 56, 85, 0.06);
+          box-shadow: 0px 30px 60px rgba(32, 56, 85, 0.06);
+  border-radius: 4px;
+  border-top: 4px solid #00A0AC;
+  padding: 20px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.alert-box img {
+  width: 14px;
+  height: 14px;
+  margin-right: 16px;
+}
+
+.alert-box p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  color: #7A7A7A;
+  margin: 0;
+}
+
+.red {
+  color: #E53935;
+}
+
+.input-preview__src {
+  display: none;
+}
+
+.input-preview {
+  background: #FFFFFF;
+  border: 1.5px dashed #DEDEDE;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 100%;
+  height: 344px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  -webkit-transition: ease-in-out 200ms;
+  transition: ease-in-out 200ms;
+}
+
+.input-preview:hover {
+  border-color: #1959A9;
+}
+
+.input-preview .upload-input {
+  text-align: center;
+}
+
+.input-preview .upload-input img {
+  margin-bottom: 24px;
+  width: 126px;
+  height: auto;
+}
+
+.input-preview .upload-input p {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 22px;
+  text-align: center;
+  color: #7A7A7A;
+}
+
+.input-preview .upload-input p b {
+  font-weight: 600;
+  text-decoration: underline;
+  color: #1959A9;
+}
+
+.input-preview .upload-input .size-rule {
+  margin-top: 60px;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #E53935;
+}
+
+.input-preview .pdfFile {
+  display: none;
+  text-align: center;
+}
+
+.input-preview .pdfFile img {
+  margin-bottom: 24px;
+  width: 126px;
+  height: auto;
+}
+
+.input-preview .pdfFile p {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 22px;
+  text-align: center;
+  color: #7A7A7A;
+}
+
+.input-preview .pdfFile p b {
+  font-weight: 600;
+  text-decoration: underline;
+  color: #1959A9;
+}
+
+.input-preview .pdfFile .size-rule {
+  margin-top: 60px;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #E53935;
+}
+
+.input-preview .loading-input {
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: none;
+}
+
+.input-preview .loading-input h4 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
+  margin-bottom: 6px;
+  padding-left: 20px;
+}
+
+.input-preview .loading-input .progress-input {
+  width: 0;
+  height: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background: linear-gradient(89.99deg, #0097A7 7.88%, rgba(255, 255, 255, 0.17) 97.98%);
+  -webkit-transition: width;
+  transition: width;
+}
+
+.input-preview .loading-input .file-size {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 20px;
+  margin-bottom: 16px;
+}
+
+.input-preview .loading-input .file-size p {
+  color: #fff;
+  margin: 0;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
+.input-preview .loading-input .file-size .dots {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  margin: 0 5px;
+  background: #C4C4C4;
+}
+
+.has-image::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(70, 70, 70, 0.5);
+  content: " ";
+  -webkit-transition: ease-in-out 750ms;
+  transition: ease-in-out 750ms;
+  border-radius: 8px;
 }
 
 @media (min-width: 576px) {

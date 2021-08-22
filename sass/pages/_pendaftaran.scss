@@ -176,13 +176,26 @@ main#pendaftaran {
             .biodata{
                 margin-top: 52px;
                 .title{
-                    font-weight: 600;
-                    font-size: 16px;
-                    line-height: 24px;
-                    letter-spacing: 0.25px;
-                    text-transform: capitalize;
-                    color: #404852;
+                    h2{
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: 0.25px;
+                        text-transform: capitalize;
+                        color: #404852;
+                        margin-bottom: 4px;
+                    }
+                    p{
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 24px;
+                        margin: 0;
+                        color: #7A7A7A;
+                    }
                     margin-bottom: 25px;
+                }
+                .alert-box{
+                    margin-bottom: 40px;
                 }
                 .title-form{
                     font-weight: normal;
@@ -190,6 +203,14 @@ main#pendaftaran {
                     line-height: 20px;
                     margin-bottom: 12px;
                     color: #404852;
+                }
+                .title-form-upload{
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 24px;
+                    text-transform: capitalize;
+                    color: #404852;
+                    margin-bottom: 16px;
                 }
                 .phone-number{
                     .city-select{
@@ -275,6 +296,42 @@ main#pendaftaran {
                         }
                     }
                 }
+                .contailer-list-upload{
+                    max-height: 400px;
+                    overflow-y: hidden;
+                    margin-bottom: 80px;
+                    &:hover{
+                        overflow-y: auto;
+                    }
+                    .list-upload{
+                        width: 100%;
+                        margin-bottom: 14px;
+                        padding: 20px 12px;
+                        border-bottom: 1px solid rgba(236, 239, 241,0.64);
+                        cursor: pointer;
+                        border-radius: 4px;
+                        h3{
+                            font-weight: normal;
+                            font-size: 14px;
+                            line-height: 24px;
+                            color: #7A7A7A;
+                            margin: 0;
+                        }
+                        &:hover{
+                            h3{
+                                color: #1959A9;
+                                transition: 200ms;
+                            }
+                        }
+                        &.active{
+                            background: linear-gradient(90deg, rgba(172, 217, 249, 0.3) 0%, rgba(255, 255, 255, 0) 67.17%);
+                            h3{
+                                font-weight: 600;
+                                color: #1959A9;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -342,3 +399,185 @@ main#pendaftaran {
         }
     }
 }
+.alert-box{
+    background: #FEFEFC;
+    box-shadow: 0px 30px 60px rgba(32, 56, 85, 0.06);
+    border-radius: 4px;
+    border-top: 4px solid #00A0AC;
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    img{
+        width: 14px;
+        height: 14px;
+        margin-right: 16px;
+    }
+    p{
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.25px;
+        color: #7A7A7A;
+        margin: 0;
+    }
+}
+.red{
+    color: #E53935;
+}
+
+.input-preview__src {
+    display: none;
+  }
+  
+  .input-preview {
+    background: #FFFFFF;
+    border: 1.5px dashed #DEDEDE;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 100%;
+    height: 344px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    transition: ease-in-out 200ms;
+    &:hover{
+        border-color: #1959A9;
+    }
+    .upload-input{
+        text-align: center;
+        img{
+            margin-bottom: 24px;
+            width: 126px;
+            height: auto;
+        }
+        p{
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 22px;
+            text-align: center;
+            color: #7A7A7A;
+            b{
+                font-weight: 600;
+                text-decoration: underline;
+                color: #1959A9;
+            }
+        }
+        .size-rule{
+            margin-top: 60px;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+            color: #E53935;
+        }
+    }
+    .pdfFile{
+        display: none;
+        text-align: center;
+        img{
+            margin-bottom: 24px;
+            width: 126px;
+            height: auto;
+        }
+        p{
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 22px;
+            text-align: center;
+            color: #7A7A7A;
+            b{
+                font-weight: 600;
+                text-decoration: underline;
+                color: #1959A9;
+            }
+        }
+        .size-rule{
+            margin-top: 60px;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+            color: #E53935;
+        }
+    }
+    .loading-input{
+        position: absolute;
+        z-index: 10;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        display: none;
+        h4{
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 21px;
+            color: #FFFFFF;
+            margin-bottom: 6px;
+            padding-left: 20px;
+        }
+        .progress-input{
+            width: 0;
+            height: 8px;
+            border-bottom-right-radius: 8px;
+            border-bottom-left-radius: 8px;
+            background: linear-gradient(89.99deg, #0097A7 7.88%, rgba(255, 255, 255, 0.17) 97.98%);
+            transition: width;
+        }
+        .file-size{
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            margin-bottom: 16px;
+            p{
+                color: #fff;
+                margin: 0;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 14px;
+                color: #FFFFFF;
+                opacity: 0.5;
+            }
+            .dots{
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                margin: 0 5px;
+                background: #C4C4C4;
+            }
+        }
+    }
+    // &::after {
+    //   position: absolute;
+    //   top: 50%;
+    //   left: 0;
+    //   width: 100%;
+    //   text-align: center;
+    //   transform: translateY(50%);
+    //   content: "Choose a file...";
+    //   font-style: italic;
+    //   font-size: 1em;
+    // }
+  }
+  
+  .has-image {
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(70, 70, 70, 0.5);
+      content: " ";
+      transition: ease-in-out 750ms;
+      border-radius: 8px;
+    }
+  
+    // &::after {
+    //   content: "Choose another file...";
+    //   color: white;
+    // }
+  }
