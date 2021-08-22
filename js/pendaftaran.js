@@ -146,7 +146,7 @@ const namaFile = document.getElementById('namaFile');
 
 fileImage.onchange = function () {
     const reader = new FileReader();
-    var fileTypes = ['jpg', 'jpeg', 'png', 'gif'];  //acceptable file types
+    var fileTypes = ['jpg', 'jpeg', 'png', 'gif', 'jfif', 'svg'];  //acceptable file types
     var extension = this.files[0].name.split('.').pop().toLowerCase(),
     isSuccess = fileTypes.indexOf(extension) > -1;  //is extension in acceptable types
     
