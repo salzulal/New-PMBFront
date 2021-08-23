@@ -15,11 +15,118 @@ form {
   font-family: $font-family;
   width: 402px;
   padding: 12px;
+  .datepicker--nav{
+    padding: 0;
+    min-height: 0;
+    border-bottom: 0;
+    .datepicker--nav-title-right{
+      align-items: center;
+      justify-content: space-between;
+      padding: 4px 8px 4px 12px;
+      transition: 200ms;
+      &.-disabled-{
+        display: none;
+      }
+      span{
+        padding-top: 5px;
+      }
+      p{
+        font-weight: normal;
+        font-size: 14px;
+        color: #404852;
+      }
+      &:focus{
+        p{
+          font-weight: 500;
+          font-size: 14px;
+          color: #2C6ECB;
+          background: #F2F7FE;
+          border-radius: 4px;
+        }
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 28px;
+        color: #2C6ECB;
+        background: #F2F7FE;
+        border-radius: 4px;
+      }
+      &:hover{
+        p{
+          font-weight: 500;
+        font-size: 14px;
+        color: #2C6ECB;
+        background: #F2F7FE;
+        border-radius: 4px;
+        }
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 28px;
+        color: #2C6ECB;
+        background: #F2F7FE;
+        border-radius: 4px;
+      }
+    }
+    .datepicker--nav-title-centre{
+      &.-disabled-{
+        display: none;
+      }
+    }
+    .datepicker--nav-title-left{
+      align-items: center;
+      justify-content: space-between;
+      padding: 4px 8px 4px 12px;
+      transition: 200ms;
+      &.-disabled-{
+        display: none;
+      }
+      span{
+        padding-top: 5px;
+      }
+      p{
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 28px;
+        color: #404852;
+      }
+      &:focus{
+        p{
+          font-weight: 500;
+          font-size: 14px;
+          color: #2C6ECB;
+          background: #F2F7FE;
+          border-radius: 4px;  
+        }
+        font-weight: 500;
+        font-size: 14px;
+        color: #2C6ECB;
+        background: #F2F7FE;
+        border-radius: 4px;
+      }
+      &:hover{
+        p{
+          font-weight: 500;
+        font-size: 14px;
+        color: #2C6ECB;
+        background: #F2F7FE;
+        border-radius: 4px;
+        }
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 28px;
+        color: #2C6ECB;
+        background: #F2F7FE;
+        border-radius: 4px;
+      }
+    }
+    .datepicker--nav-action{
+      display: none;
+    }
+  }
   .datepicker--cell.-current-{
     color: #2C6ECB;
   }
   .datepicker--cell.-selected-{
-    background-color: #2C6ECB;
+    background: #2C6ECB;
     color: #fff;
   }
   .datepicker--pointer{
@@ -248,16 +355,36 @@ form {
   -webkit-appearance: none;
 }
 .form-select-pmb{
+  label{
+    display: none;
+  }
   .select2-container{
     width: 100% !important; 
   }
   .select2-container .select2-selection--single{
     height: 58.6px;
   }
+  
   .select2-container--default .select2-selection--single .select2-selection__rendered{
     line-height: 58.6px;
     padding: 0 24px;
     color: #404852;
+  }
+  .select2-container--classic .select2-selection--single .select2-selection__rendered{
+    line-height: 58.6px;
+    padding: 0 24px;
+    color: #404852;
+  }
+  
+  .select2-container--classic .select2-selection--single{
+    background: #fff !important;
+    color: #404852;
+    font-size: 0.875rem;
+    line-height: 1.313rem;
+    display: block;
+    border: none;
+    border-radius: 6px;
+    border: 1px solid #dadce0;
   }
   .select2-container--default .select2-selection--single{
     background: #fff;
@@ -273,14 +400,21 @@ form {
     margin-left: -18px;
     margin-top: 14px;
   }
-  
+  .select2-container--classic .select2-selection--single .select2-selection__arrow b{
+    margin-left: -18px;
+    margin-top: 14px;
+  }
+  .select2-container--classic .select2-selection--single .select2-selection__arrow{
+    background: transparent;
+    border: none;
+  }
   
 }
 .select2-dropdown{
   background: #FFFFFF;
   border: 1px solid #F5F6F8;
   box-sizing: border-box;
-  box-shadow: 0px 12px 32px rgba(34, 34, 34, 0.12);
+  // box-shadow: 0px 12px 32px rgba(34, 34, 34, 0.12);
   border-radius: 6px;
 }
 .select2-results__option{
@@ -297,7 +431,7 @@ form {
   background-color: #1959A9 !important;
 }
 .select2-search--dropdown{
-  padding: 16px 24px;
+  padding: 0 24px 16px 24px;
 }
 .select2-container--default .select2-search--dropdown .select2-search__field{
   background: #FFFFFF;
@@ -311,4 +445,24 @@ form {
   font-size: 13px;
   line-height: 19px;
   color: #404852;
+}
+.select2-container--classic .select2-search--dropdown .select2-search__field{
+  background: #FFFFFF;
+  border: 1px solid #DADCE0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  height: 42px;
+  outline: none;
+  padding: 12px;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 19px;
+  color: #404852;
+}
+.select2-container--classic.select2-container--open .select2-dropdown{
+  border-left: 1px solid #DADCE0;
+  border-bottom: 1px solid #DADCE0;
+  border-right: 1px solid #DADCE0;
+  border-top: none;
+  border-color: #DADCE0;
 }

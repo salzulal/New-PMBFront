@@ -9,6 +9,7 @@ $("#jadwal-datepicker").datepicker({
 // Access instance of plugin
 $("#jadwal-datepicker").data("datepicker");
 
+
 (function ($) {
   var Defaults = $.fn.select2.amd.require("select2/defaults");
 
@@ -110,18 +111,20 @@ $("#jadwal-datepicker").data("datepicker");
 })(window.jQuery);
 
 $(".select2-pmb-sekolah").select2({
-  placeholder: "Asal Sekolah",
   dropdownPosition: "below",
+  theme: "classic"
+  // containerCssClass : "select2-pmb-select",
   // minimumResultsForSearch: Infinity
 });
+
 $(".card-main-pendaftaran").each(function () {
   $(this).find(".form-select-pmb #placeholder").data("placeholder");
 });
+
 $(".select2-pmb").select2({
   dropdownPosition: "below",
   minimumResultsForSearch: Infinity,
 });
-
 ////// Pembelian Formulir
 
 $(".pilihan-item").click(function () {
@@ -147,6 +150,7 @@ $("#btn-metode-pembayaran").click(function () {
     $("#metode-divider").hide();
   }
 });
+
 
 // Upload Image
 const progressBar = document.querySelector(".progress-input");

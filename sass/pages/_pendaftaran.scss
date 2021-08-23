@@ -608,3 +608,21 @@ main#pendaftaran {
   //   color: white;
   // }
 }
+
+.before-search{
+  padding: 10px 0 16px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  p{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #404852;
+    margin: 0;
+  }
+  span{
+    color: #7A7A7A;
+    margin-right: -10px;
+  }
+}
