@@ -5368,7 +5368,6 @@ main#pendaftaran .main-pendaftaran {
 }
 
 main#pendaftaran .main-pendaftaran .card-main-pendaftaran {
-  position: relative;
   padding: 44px 64px;
   background: #ffffff;
   border: 1px solid #eceff1;
@@ -5515,209 +5514,15 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .lis
   border-radius: 16px;
 }
 
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .list-step.done .biodata {
-  margin-top: 52px;
-}
-
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .list-step.done .biodata .title {
-  margin-bottom: 25px;
-}
-
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .list-step.done .biodata .title h2 {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.25px;
-  text-transform: capitalize;
-  color: #404852;
-  margin-bottom: 4px;
-}
-
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .list-step.done .biodata .title p {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  margin: 0;
-  color: #7a7a7a;
-}
-
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .list-step.done .biodata .alert-box {
-  margin-bottom: 40px;
-}
-
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .list-step.done .biodata .title-form {
-  font-weight: normal;
-  font-size: 13px;
-  line-height: 20px;
-  margin-bottom: 12px;
-  color: #404852;
-}
-
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .list-step.done .biodata .title-form-upload {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 24px;
-  text-transform: capitalize;
-  color: #404852;
-  margin-bottom: 16px;
-}
-
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .list-step.done .biodata .phone-number .city-select input,
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .list-step.done .biodata .phone-number .city-select select {
-  width: 100%;
-}
-
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .list-step.done .biodata .phone-number input[type="number"] {
-  width: 100% !important;
-}
-
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .list-step.done .biodata .group {
-  margin-bottom: 25px;
-}
-
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .list-step.done .biodata .group input {
-  width: 100%;
-}
-
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .list-step.done .biodata .group-radio {
-  margin-bottom: 25px;
-  margin-right: 20px;
-}
-
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .list-step.done .biodata .form-select-pmb {
-  margin-bottom: 25px;
-}
-
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .list-step.done .biodata .form-check-biodata {
-  margin-bottom: 100px;
-}
-
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .list-step.done .biodata .form-check-biodata .form-check-input:checked {
-  background-color: #3656a1;
-  border-color: #3656a1;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .list-step.done .biodata .form-check-biodata input {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .list-step.done .biodata .form-check-biodata .form-check .form-check-label {
-  cursor: pointer;
-  font-weight: normal;
-  font-size: 0.722rem;
-  line-height: 24px;
-  text-transform: capitalize;
-  color: #404852;
-}
-
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .list-step.done .biodata .cta-pendaftaran {
-  margin-bottom: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .list-step.done .biodata .cta-pendaftaran a {
-  text-decoration: none;
-}
-
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .list-step.done .biodata .cta-pendaftaran .selanjutnya {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 21px;
-  letter-spacing: 0.25px;
-  text-transform: capitalize;
-  color: #ffffff;
-  padding: 17px 33px;
-  background-color: #1959a9;
-  border-radius: 8px;
-}
-
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .list-step.done .biodata .cta-pendaftaran .selanjutnya:hover {
-  background-color: #12488a;
-  -webkit-transition: 200ms;
-  transition: 200ms;
-}
-
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .list-step.done .biodata .cta-pendaftaran .sebelum {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
-  letter-spacing: 0.25px;
-  text-transform: capitalize;
-  color: #7a7a7a;
-  margin-right: 28px;
-}
-
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .list-step.done .biodata .cta-pendaftaran .sebelum span {
-  font-size: 14px;
-  margin-right: 16px;
-  color: #7a7a7a;
-}
-
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .list-step.done .biodata .contailer-list-upload {
-  max-height: 400px;
-  overflow-y: hidden;
-  margin-bottom: 80px;
-}
-
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .list-step.done .biodata .contailer-list-upload:hover {
-  overflow-y: auto;
-}
-
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .list-step.done .biodata .contailer-list-upload .list-upload {
-  width: 100%;
-  margin-bottom: 14px;
-  padding: 20px 12px;
-  border-bottom: 1px solid rgba(236, 239, 241, 0.64);
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .list-step.done .biodata .contailer-list-upload .list-upload h3 {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: #7a7a7a;
-  margin: 0;
-}
-
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .list-step.done .biodata .contailer-list-upload .list-upload:hover h3 {
-  color: #1959a9;
-  -webkit-transition: 200ms;
-  transition: 200ms;
-}
-
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .list-step.done .biodata .contailer-list-upload .list-upload.active {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(172, 217, 249, 0.3)), color-stop(67.17%, rgba(255, 255, 255, 0)));
-  background: linear-gradient(90deg, rgba(172, 217, 249, 0.3) 0%, rgba(255, 255, 255, 0) 67.17%);
-}
-
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .list-step.done .biodata .contailer-list-upload .list-upload.active h3 {
-  font-weight: 600;
-  color: #1959a9;
-}
-
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .list-step.done .biodata svg path {
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .list-step.done svg path {
   fill: #5f30e2;
 }
 
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .list-step.done .info-step {
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .list-step .info-step {
   margin-left: 20px;
 }
 
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .list-step.done .info-step label {
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .list-step .info-step label {
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;
@@ -5725,7 +5530,7 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .lis
   margin-bottom: 4px;
 }
 
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .list-step.done .info-step h3 {
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .list-step .info-step h3 {
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
@@ -5734,21 +5539,37 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .lis
   margin-bottom: 0;
 }
 
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .biodata {
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata {
   margin-top: 52px;
 }
 
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .biodata .title {
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .title {
+  margin-bottom: 25px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .title h2 {
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.25px;
   text-transform: capitalize;
   color: #404852;
-  margin-bottom: 25px;
+  margin-bottom: 4px;
 }
 
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .biodata .title-form {
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .title p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+  color: #7a7a7a;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .alert-box {
+  margin-bottom: 40px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .title-form {
   font-weight: normal;
   font-size: 13px;
   line-height: 20px;
@@ -5756,51 +5577,60 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .bio
   color: #404852;
 }
 
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .biodata .phone-number .city-select input,
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .biodata .phone-number .city-select select {
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .title-form-upload {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #404852;
+  margin-bottom: 16px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .phone-number .city-select input,
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .phone-number .city-select select {
   width: 100%;
 }
 
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .biodata .phone-number input[type="number"] {
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .phone-number input[type="number"] {
   width: 100% !important;
 }
 
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .biodata .group {
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .group {
   margin-bottom: 25px;
 }
 
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .biodata .group input {
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .group input {
   width: 100%;
 }
 
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .biodata .group-radio {
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .group-radio {
   margin-bottom: 25px;
   margin-right: 20px;
 }
 
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .biodata .form-select-pmb {
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .form-select-pmb {
   margin-bottom: 25px;
 }
 
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .biodata .form-check-biodata {
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .form-check-biodata {
   margin-bottom: 100px;
 }
 
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .biodata .form-check-biodata .form-check-input:checked {
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .form-check-biodata .form-check-input:checked {
   background-color: #3656a1;
   border-color: #3656a1;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .biodata .form-check-biodata input {
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .form-check-biodata input {
   -webkit-box-shadow: none;
           box-shadow: none;
   border-radius: 3px;
   cursor: pointer;
 }
 
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .biodata .form-check-biodata .form-check .form-check-label {
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .form-check-biodata .form-check .form-check-label {
   cursor: pointer;
   font-weight: normal;
   font-size: 0.722rem;
@@ -5809,7 +5639,50 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .bio
   color: #404852;
 }
 
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .cta-pendaftaran {
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .contailer-list-upload {
+  max-height: 400px;
+  overflow-y: hidden;
+  margin-bottom: 80px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .contailer-list-upload:hover {
+  overflow-y: auto;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .contailer-list-upload .list-upload {
+  width: 100%;
+  margin-bottom: 14px;
+  padding: 20px 12px;
+  border-bottom: 1px solid rgba(236, 239, 241, 0.64);
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .contailer-list-upload .list-upload h3 {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #7a7a7a;
+  margin: 0;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .contailer-list-upload .list-upload:hover h3 {
+  color: #1959a9;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .contailer-list-upload .list-upload.active {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(172, 217, 249, 0.3)), color-stop(67.17%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(90deg, rgba(172, 217, 249, 0.3) 0%, rgba(255, 255, 255, 0) 67.17%);
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .contailer-list-upload .list-upload.active h3 {
+  font-weight: 600;
+  color: #1959a9;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .cta-pendaftaran {
   margin-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5822,11 +5695,11 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .cta
           justify-content: flex-end;
 }
 
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .cta-pendaftaran a {
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .cta-pendaftaran a {
   text-decoration: none;
 }
 
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .cta-pendaftaran .selanjutnya {
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .cta-pendaftaran .selanjutnya {
   font-weight: 600;
   font-size: 14px;
   line-height: 21px;
@@ -5838,13 +5711,13 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .cta
   border-radius: 8px;
 }
 
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .cta-pendaftaran .selanjutnya:hover {
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .cta-pendaftaran .selanjutnya:hover {
   background-color: #12488a;
   -webkit-transition: 200ms;
   transition: 200ms;
 }
 
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .cta-pendaftaran .sebelum {
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .cta-pendaftaran .sebelum {
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
@@ -5854,19 +5727,19 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .cta
   margin-right: 28px;
 }
 
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .step-pendaftaran .cta-pendaftaran .sebelum span {
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .cta-pendaftaran .sebelum span {
   font-size: 14px;
   margin-right: 16px;
   color: #7a7a7a;
 }
 
-main#pendaftaran .contact-pendaftaran img {
+.contact-pendaftaran img {
   width: 161px;
   height: auto;
   margin-right: 40px;
 }
 
-main#pendaftaran .contact-pendaftaran h3 {
+.contact-pendaftaran h3 {
   font-weight: 600;
   font-size: 18px;
   line-height: 32px;
@@ -5874,7 +5747,7 @@ main#pendaftaran .contact-pendaftaran h3 {
   margin-bottom: 8px;
 }
 
-main#pendaftaran .contact-pendaftaran p {
+.contact-pendaftaran p {
   font-weight: normal;
   font-size: 14px;
   line-height: 28px;
@@ -5883,11 +5756,11 @@ main#pendaftaran .contact-pendaftaran p {
   margin: 0;
 }
 
-main#pendaftaran .contact-pendaftaran .cta-contact a {
+.contact-pendaftaran .cta-contact a {
   text-decoration: none;
 }
 
-main#pendaftaran .contact-pendaftaran .cta-contact .btn-wa {
+.contact-pendaftaran .cta-contact .btn-wa {
   background: #0097a7;
   border-radius: 8px;
   text-decoration: none;
@@ -5901,13 +5774,34 @@ main#pendaftaran .contact-pendaftaran .cta-contact .btn-wa {
   text-transform: capitalize;
 }
 
-main#pendaftaran .contact-pendaftaran .cta-contact .btn-wa:hover {
+.contact-pendaftaran .cta-contact .btn-wa:hover {
   -webkit-transition: 200ms;
   transition: 200ms;
   background-color: #0a8391;
 }
 
-main#pendaftaran .contact-pendaftaran .alert-box {
+.contact-pendaftaran .cta-contact .btn-normal {
+  background: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  border: 1px solid #e0e2e3;
+  color: #7a7a7a;
+  padding: 18px 34px;
+  margin-right: 18px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.25px;
+  text-transform: capitalize;
+}
+
+.contact-pendaftaran .cta-contact .btn-normal:hover {
+  -webkit-transition: 200ms;
+  transition: 200ms;
+  background-color: #eeeded;
+}
+
+.alert-box {
   background: #fefefc;
   -webkit-box-shadow: 0px 30px 60px rgba(32, 56, 85, 0.06);
           box-shadow: 0px 30px 60px rgba(32, 56, 85, 0.06);
@@ -5922,13 +5816,13 @@ main#pendaftaran .contact-pendaftaran .alert-box {
           align-items: center;
 }
 
-main#pendaftaran .contact-pendaftaran .alert-box img {
+.alert-box img {
   width: 14px;
   height: 14px;
   margin-right: 16px;
 }
 
-main#pendaftaran .contact-pendaftaran .alert-box p {
+.alert-box p {
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
@@ -5937,15 +5831,15 @@ main#pendaftaran .contact-pendaftaran .alert-box p {
   margin: 0;
 }
 
-main#pendaftaran .contact-pendaftaran .red {
+.red {
   color: #e53935;
 }
 
-main#pendaftaran .contact-pendaftaran .input-preview__src {
+.input-preview__src {
   display: none;
 }
 
-main#pendaftaran .contact-pendaftaran .input-preview {
+.input-preview {
   background: #ffffff;
   border: 1.5px dashed #dedede;
   cursor: pointer;
@@ -5969,21 +5863,21 @@ main#pendaftaran .contact-pendaftaran .input-preview {
   transition: ease-in-out 200ms;
 }
 
-main#pendaftaran .contact-pendaftaran .input-preview:hover {
+.input-preview:hover {
   border-color: #1959a9;
 }
 
-main#pendaftaran .contact-pendaftaran .input-preview .upload-input {
+.input-preview .upload-input {
   text-align: center;
 }
 
-main#pendaftaran .contact-pendaftaran .input-preview .upload-input img {
+.input-preview .upload-input img {
   margin-bottom: 24px;
   width: 126px;
   height: auto;
 }
 
-main#pendaftaran .contact-pendaftaran .input-preview .upload-input p {
+.input-preview .upload-input p {
   font-weight: normal;
   font-size: 13px;
   line-height: 22px;
@@ -5991,13 +5885,13 @@ main#pendaftaran .contact-pendaftaran .input-preview .upload-input p {
   color: #7a7a7a;
 }
 
-main#pendaftaran .contact-pendaftaran .input-preview .upload-input p b {
+.input-preview .upload-input p b {
   font-weight: 600;
   text-decoration: underline;
   color: #1959a9;
 }
 
-main#pendaftaran .contact-pendaftaran .input-preview .upload-input .size-rule {
+.input-preview .upload-input .size-rule {
   margin-top: 60px;
   font-weight: normal;
   font-size: 12px;
@@ -6006,18 +5900,18 @@ main#pendaftaran .contact-pendaftaran .input-preview .upload-input .size-rule {
   color: #e53935;
 }
 
-main#pendaftaran .contact-pendaftaran .input-preview .pdfFile {
+.input-preview .pdfFile {
   display: none;
   text-align: center;
 }
 
-main#pendaftaran .contact-pendaftaran .input-preview .pdfFile img {
+.input-preview .pdfFile img {
   margin-bottom: 24px;
   width: 126px;
   height: auto;
 }
 
-main#pendaftaran .contact-pendaftaran .input-preview .pdfFile p {
+.input-preview .pdfFile p {
   font-weight: normal;
   font-size: 13px;
   line-height: 22px;
@@ -6025,13 +5919,13 @@ main#pendaftaran .contact-pendaftaran .input-preview .pdfFile p {
   color: #7a7a7a;
 }
 
-main#pendaftaran .contact-pendaftaran .input-preview .pdfFile p b {
+.input-preview .pdfFile p b {
   font-weight: 600;
   text-decoration: underline;
   color: #1959a9;
 }
 
-main#pendaftaran .contact-pendaftaran .input-preview .pdfFile .size-rule {
+.input-preview .pdfFile .size-rule {
   margin-top: 60px;
   font-weight: normal;
   font-size: 12px;
@@ -6040,7 +5934,7 @@ main#pendaftaran .contact-pendaftaran .input-preview .pdfFile .size-rule {
   color: #e53935;
 }
 
-main#pendaftaran .contact-pendaftaran .input-preview .loading-input {
+.input-preview .loading-input {
   position: absolute;
   z-index: 10;
   left: 0;
@@ -6049,7 +5943,7 @@ main#pendaftaran .contact-pendaftaran .input-preview .loading-input {
   display: none;
 }
 
-main#pendaftaran .contact-pendaftaran .input-preview .loading-input h4 {
+.input-preview .loading-input h4 {
   font-weight: 600;
   font-size: 14px;
   line-height: 21px;
@@ -6058,7 +5952,7 @@ main#pendaftaran .contact-pendaftaran .input-preview .loading-input h4 {
   padding-left: 20px;
 }
 
-main#pendaftaran .contact-pendaftaran .input-preview .loading-input .progress-input {
+.input-preview .loading-input .progress-input {
   width: 0;
   height: 8px;
   border-bottom-right-radius: 8px;
@@ -6068,7 +5962,7 @@ main#pendaftaran .contact-pendaftaran .input-preview .loading-input .progress-in
   transition: width;
 }
 
-main#pendaftaran .contact-pendaftaran .input-preview .loading-input .file-size {
+.input-preview .loading-input .file-size {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6079,7 +5973,7 @@ main#pendaftaran .contact-pendaftaran .input-preview .loading-input .file-size {
   margin-bottom: 16px;
 }
 
-main#pendaftaran .contact-pendaftaran .input-preview .loading-input .file-size p {
+.input-preview .loading-input .file-size p {
   color: #fff;
   margin: 0;
   font-weight: normal;
@@ -6089,7 +5983,7 @@ main#pendaftaran .contact-pendaftaran .input-preview .loading-input .file-size p
   opacity: 0.5;
 }
 
-main#pendaftaran .contact-pendaftaran .input-preview .loading-input .file-size .dots {
+.input-preview .loading-input .file-size .dots {
   width: 4px;
   height: 4px;
   border-radius: 50%;
@@ -6097,7 +5991,7 @@ main#pendaftaran .contact-pendaftaran .input-preview .loading-input .file-size .
   background: #c4c4c4;
 }
 
-main#pendaftaran .contact-pendaftaran .has-image::before {
+.has-image::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -6108,27 +6002,6 @@ main#pendaftaran .contact-pendaftaran .has-image::before {
   -webkit-transition: ease-in-out 750ms;
   transition: ease-in-out 750ms;
   border-radius: 8px;
-}
-
-main#pendaftaran .contact-pendaftaran .btn-normal {
-  background: #fff;
-  border-radius: 8px;
-  text-decoration: none;
-  border: 1px solid #e0e2e3;
-  color: #7a7a7a;
-  padding: 18px 34px;
-  margin-right: 18px;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 21px;
-  letter-spacing: 0.25px;
-  text-transform: capitalize;
-}
-
-main#pendaftaran .contact-pendaftaran .btn-normal:hover {
-  -webkit-transition: 200ms;
-  transition: 200ms;
-  background-color: #eeeded;
 }
 
 main#pendaftaran .main-pendaftaran .card-main-pendaftaran .info-jalur-pembayaran {

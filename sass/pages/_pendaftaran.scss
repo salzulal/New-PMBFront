@@ -39,7 +39,6 @@ main#pendaftaran {
       margin-top: 0;
     }
     .card-main-pendaftaran {
-      position: relative;
       padding: 44px 64px;
       background: #ffffff;
       border: 1px solid #eceff1;
@@ -153,532 +152,243 @@ main#pendaftaran {
               text-align: center;
               border-radius: 16px;
             }
-            .biodata {
-              margin-top: 52px;
-              .title {
-                h2 {
-                  font-weight: 600;
-                  font-size: 16px;
-                  line-height: 24px;
-                  letter-spacing: 0.25px;
-                  text-transform: capitalize;
-                  color: #404852;
-                  margin-bottom: 4px;
-                }
-                p {
-                  font-weight: normal;
-                  font-size: 14px;
-                  line-height: 24px;
-                  margin: 0;
-                  color: #7a7a7a;
-                }
-                margin-bottom: 25px;
-              }
-              .alert-box {
-                margin-bottom: 40px;
-              }
-              .title-form {
-                font-weight: normal;
-                font-size: 13px;
-                line-height: 20px;
-                margin-bottom: 12px;
-                color: #404852;
-              }
-              .title-form-upload {
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 24px;
-                text-transform: capitalize;
-                color: #404852;
-                margin-bottom: 16px;
-              }
-              .phone-number {
-                .city-select {
-                  input,
-                  select {
-                    width: 100%;
-                  }
-                }
-                input[type="number"] {
-                  width: 100% !important;
-                }
-              }
-              .group {
-                margin-bottom: 25px;
-                input {
-                  width: 100%;
-                }
-              }
-              .group-radio {
-                margin-bottom: 25px;
-                margin-right: 20px;
-              }
-              .form-select-pmb {
-                margin-bottom: 25px;
-              }
-              .form-check-biodata {
-                margin-bottom: 100px;
-                .form-check-input:checked {
-                  background-color: #3656a1;
-                  border-color: #3656a1;
-                  box-shadow: none;
-                }
-                input {
-                  box-shadow: none;
-                  border-radius: 3px;
-                  cursor: pointer;
-                }
-                .form-check {
-                  .form-check-label {
-                    cursor: pointer;
-                    font-weight: normal;
-                    font-size: 0.722rem;
-                    line-height: 24px;
-                    text-transform: capitalize;
-                    color: $color-text;
-                  }
-                }
-              }
-              .cta-pendaftaran {
-                margin-bottom: 40px;
-                display: flex;
-                align-items: center;
-                justify-content: flex-end;
-                a {
-                  text-decoration: none;
-                }
-                .selanjutnya {
-                  font-weight: 600;
-                  font-size: 14px;
-                  line-height: 21px;
-                  letter-spacing: 0.25px;
-                  text-transform: capitalize;
-                  color: #ffffff;
-                  padding: 17px 33px;
-                  background-color: #1959a9;
-                  border-radius: 8px;
-                  &:hover {
-                    background-color: #12488a;
-                    transition: 200ms;
-                  }
-                }
-                .sebelum {
-                  font-weight: 500;
-                  font-size: 14px;
-                  line-height: 21px;
-                  letter-spacing: 0.25px;
-                  text-transform: capitalize;
-                  color: #7a7a7a;
-                  margin-right: 28px;
-                  span {
-                    font-size: 14px;
-                    margin-right: 16px;
-                    color: #7a7a7a;
-                  }
-                }
-              }
-              .contailer-list-upload {
-                max-height: 400px;
-                overflow-y: hidden;
-                margin-bottom: 80px;
-                &:hover {
-                  overflow-y: auto;
-                }
-                .list-upload {
-                  width: 100%;
-                  margin-bottom: 14px;
-                  padding: 20px 12px;
-                  border-bottom: 1px solid rgba(236, 239, 241, 0.64);
-                  cursor: pointer;
-                  border-radius: 4px;
-                  h3 {
-                    font-weight: normal;
-                    font-size: 14px;
-                    line-height: 24px;
-                    color: #7a7a7a;
-                    margin: 0;
-                  }
-                  &:hover {
-                    h3 {
-                      color: #1959a9;
-                      transition: 200ms;
-                    }
-                  }
-                  &.active {
-                    background: linear-gradient(
-                      90deg,
-                      rgba(172, 217, 249, 0.3) 0%,
-                      rgba(255, 255, 255, 0) 67.17%
-                    );
-                    h3 {
-                      font-weight: 600;
-                      color: #1959a9;
-                    }
-                  }
-                }
-              }
-              svg {
-                path {
-                  fill: #5f30e2;
-                }
-              }
-            }
-            .info-step {
-              margin-left: 20px;
-              label {
-                font-weight: 500;
-                font-size: 12px;
-                line-height: 14px;
-                color: #5f30e2;
-                margin-bottom: 4px;
-              }
-              h3 {
-                font-weight: 600;
-                font-size: 14px;
-                line-height: 18px;
-                text-transform: capitalize;
-                color: #404852;
-                margin-bottom: 0;
+            svg {
+              path {
+                fill: #5f30e2;
               }
             }
           }
+          .info-step {
+            margin-left: 20px;
+            label {
+              font-weight: 500;
+              font-size: 12px;
+              line-height: 14px;
+              color: #5f30e2;
+              margin-bottom: 4px;
+            }
+            h3 {
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 18px;
+              text-transform: capitalize;
+              color: #404852;
+              margin-bottom: 0;
+            }
+          }
         }
-        .biodata {
-          margin-top: 52px;
-          .title {
+      }
+      .biodata {
+        margin-top: 52px;
+        .title {
+          h2 {
             font-weight: 600;
             font-size: 16px;
             line-height: 24px;
             letter-spacing: 0.25px;
             text-transform: capitalize;
             color: #404852;
-            margin-bottom: 25px;
+            margin-bottom: 4px;
           }
-          .title-form {
+          p {
             font-weight: normal;
-            font-size: 13px;
-            line-height: 20px;
-            margin-bottom: 12px;
-            color: #404852;
+            font-size: 14px;
+            line-height: 24px;
+            margin: 0;
+            color: #7a7a7a;
           }
-          .phone-number {
-            .city-select {
-              input,
-              select {
-                width: 100%;
-              }
-            }
-            input[type="number"] {
-              width: 100% !important;
-            }
-          }
-          .group {
-            margin-bottom: 25px;
-            input {
+          margin-bottom: 25px;
+        }
+        .alert-box {
+          margin-bottom: 40px;
+        }
+        .title-form {
+          font-weight: normal;
+          font-size: 13px;
+          line-height: 20px;
+          margin-bottom: 12px;
+          color: #404852;
+        }
+        .title-form-upload {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 24px;
+          text-transform: capitalize;
+          color: #404852;
+          margin-bottom: 16px;
+        }
+        .phone-number {
+          .city-select {
+            input,
+            select {
               width: 100%;
             }
           }
-          .group-radio {
-            margin-bottom: 25px;
-            margin-right: 20px;
+          input[type="number"] {
+            width: 100% !important;
           }
-          .form-select-pmb {
-            margin-bottom: 25px;
+        }
+        .group {
+          margin-bottom: 25px;
+          input {
+            width: 100%;
           }
-          .form-check-biodata {
-            margin-bottom: 100px;
-            .form-check-input:checked {
-              background-color: #3656a1;
-              border-color: #3656a1;
-              box-shadow: none;
-            }
-            input {
-              box-shadow: none;
-              border-radius: 3px;
+        }
+        .group-radio {
+          margin-bottom: 25px;
+          margin-right: 20px;
+        }
+        .form-select-pmb {
+          margin-bottom: 25px;
+        }
+        .form-check-biodata {
+          margin-bottom: 100px;
+          .form-check-input:checked {
+            background-color: #3656a1;
+            border-color: #3656a1;
+            box-shadow: none;
+          }
+          input {
+            box-shadow: none;
+            border-radius: 3px;
+            cursor: pointer;
+          }
+          .form-check {
+            .form-check-label {
               cursor: pointer;
+              font-weight: normal;
+              font-size: 0.722rem;
+              line-height: 24px;
+              text-transform: capitalize;
+              color: $color-text;
             }
-            .form-check {
-              .form-check-label {
-                cursor: pointer;
-                font-weight: normal;
-                font-size: 0.722rem;
-                line-height: 24px;
-                text-transform: capitalize;
-                color: $color-text;
+          }
+        }
+
+        .contailer-list-upload {
+          max-height: 400px;
+          overflow-y: hidden;
+          margin-bottom: 80px;
+          &:hover {
+            overflow-y: auto;
+          }
+          .list-upload {
+            width: 100%;
+            margin-bottom: 14px;
+            padding: 20px 12px;
+            border-bottom: 1px solid rgba(236, 239, 241, 0.64);
+            cursor: pointer;
+            border-radius: 4px;
+            h3 {
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 24px;
+              color: #7a7a7a;
+              margin: 0;
+            }
+            &:hover {
+              h3 {
+                color: #1959a9;
+                transition: 200ms;
+              }
+            }
+            &.active {
+              background: linear-gradient(
+                90deg,
+                rgba(172, 217, 249, 0.3) 0%,
+                rgba(255, 255, 255, 0) 67.17%
+              );
+              h3 {
+                font-weight: 600;
+                color: #1959a9;
               }
             }
           }
         }
-        .cta-pendaftaran {
-          margin-bottom: 40px;
-          display: flex;
-          align-items: center;
-          justify-content: flex-end;
-          a {
-            text-decoration: none;
+      }
+      .cta-pendaftaran {
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        a {
+          text-decoration: none;
+        }
+        .selanjutnya {
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 21px;
+          letter-spacing: 0.25px;
+          text-transform: capitalize;
+          color: #ffffff;
+          padding: 17px 33px;
+          background-color: #1959a9;
+          border-radius: 8px;
+          &:hover {
+            background-color: #12488a;
+            transition: 200ms;
           }
-          .selanjutnya {
-            font-weight: 600;
+        }
+        .sebelum {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 21px;
+          letter-spacing: 0.25px;
+          text-transform: capitalize;
+          color: #7a7a7a;
+          margin-right: 28px;
+          span {
             font-size: 14px;
-            line-height: 21px;
-            letter-spacing: 0.25px;
-            text-transform: capitalize;
-            color: #ffffff;
-            padding: 17px 33px;
-            background-color: #1959a9;
-            border-radius: 8px;
-            &:hover {
-              background-color: #12488a;
-              transition: 200ms;
-            }
-          }
-          .sebelum {
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 21px;
-            letter-spacing: 0.25px;
-            text-transform: capitalize;
+            margin-right: 16px;
             color: #7a7a7a;
-            margin-right: 28px;
-            span {
-              font-size: 14px;
-              margin-right: 16px;
-              color: #7a7a7a;
-            }
           }
         }
       }
     }
   }
+}
 
-  .contact-pendaftaran {
-    img {
-      width: 161px;
-      height: auto;
-      margin-right: 40px;
+.contact-pendaftaran {
+  img {
+    width: 161px;
+    height: auto;
+    margin-right: 40px;
+  }
+  h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    color: #404852;
+    margin-bottom: 8px;
+  }
+  p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.346154px;
+    color: #7a7a7a;
+    margin: 0;
+  }
+  .cta-contact {
+    a {
+      text-decoration: none;
     }
-    h3 {
-      font-weight: 600;
-      font-size: 18px;
-      line-height: 32px;
-      color: #404852;
-      margin-bottom: 8px;
-    }
-    p {
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 28px;
-      letter-spacing: 0.346154px;
-      color: #7a7a7a;
-      margin: 0;
-    }
-    .cta-contact {
-      a {
-        text-decoration: none;
-      }
-      .btn-wa {
-        background: #0097a7;
-        border-radius: 8px;
-        text-decoration: none;
-        color: #fff;
-        padding: 18px 34px;
-        margin-right: 18px;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 21px;
-        letter-spacing: 0.25px;
-        text-transform: capitalize;
-        &:hover {
-          transition: 200ms;
-          background-color: #0a8391;
-        }
-      }
-    }
-    .alert-box {
-      background: #fefefc;
-      box-shadow: 0px 30px 60px rgba(32, 56, 85, 0.06);
-      border-radius: 4px;
-      border-top: 4px solid #00a0ac;
-      padding: 20px 24px;
-      display: flex;
-      align-items: center;
-      img {
-        width: 14px;
-        height: 14px;
-        margin-right: 16px;
-      }
-      p {
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 24px;
-        letter-spacing: 0.25px;
-        color: #7a7a7a;
-        margin: 0;
-      }
-    }
-    .red {
-      color: #e53935;
-    }
-
-    .input-preview__src {
-      display: none;
-    }
-
-    .input-preview {
-      background: #ffffff;
-      border: 1.5px dashed #dedede;
-      cursor: pointer;
+    .btn-wa {
+      background: #0097a7;
       border-radius: 8px;
-      width: 100%;
-      height: 344px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
-      position: relative;
-      transition: ease-in-out 200ms;
+      text-decoration: none;
+      color: #fff;
+      padding: 18px 34px;
+      margin-right: 18px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 21px;
+      letter-spacing: 0.25px;
+      text-transform: capitalize;
       &:hover {
-        border-color: #1959a9;
+        transition: 200ms;
+        background-color: #0a8391;
       }
-      .upload-input {
-        text-align: center;
-        img {
-          margin-bottom: 24px;
-          width: 126px;
-          height: auto;
-        }
-        p {
-          font-weight: normal;
-          font-size: 13px;
-          line-height: 22px;
-          text-align: center;
-          color: #7a7a7a;
-          b {
-            font-weight: 600;
-            text-decoration: underline;
-            color: #1959a9;
-          }
-        }
-        .size-rule {
-          margin-top: 60px;
-          font-weight: normal;
-          font-size: 12px;
-          line-height: 18px;
-          text-align: center;
-          color: #e53935;
-        }
-      }
-      .pdfFile {
-        display: none;
-        text-align: center;
-        img {
-          margin-bottom: 24px;
-          width: 126px;
-          height: auto;
-        }
-        p {
-          font-weight: normal;
-          font-size: 13px;
-          line-height: 22px;
-          text-align: center;
-          color: #7a7a7a;
-          b {
-            font-weight: 600;
-            text-decoration: underline;
-            color: #1959a9;
-          }
-        }
-        .size-rule {
-          margin-top: 60px;
-          font-weight: normal;
-          font-size: 12px;
-          line-height: 18px;
-          text-align: center;
-          color: #e53935;
-        }
-      }
-      .loading-input {
-        position: absolute;
-        z-index: 10;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        display: none;
-        h4 {
-          font-weight: 600;
-          font-size: 14px;
-          line-height: 21px;
-          color: #ffffff;
-          margin-bottom: 6px;
-          padding-left: 20px;
-        }
-        .progress-input {
-          width: 0;
-          height: 8px;
-          border-bottom-right-radius: 8px;
-          border-bottom-left-radius: 8px;
-          background: linear-gradient(
-            89.99deg,
-            #0097a7 7.88%,
-            rgba(255, 255, 255, 0.17) 97.98%
-          );
-          transition: width;
-        }
-        .file-size {
-          display: flex;
-          align-items: center;
-          padding-left: 20px;
-          margin-bottom: 16px;
-          p {
-            color: #fff;
-            margin: 0;
-            font-weight: normal;
-            font-size: 12px;
-            line-height: 14px;
-            color: #ffffff;
-            opacity: 0.5;
-          }
-          .dots {
-            width: 4px;
-            height: 4px;
-            border-radius: 50%;
-            margin: 0 5px;
-            background: #c4c4c4;
-          }
-        }
-      }
-      // &::after {
-      //   position: absolute;
-      //   top: 50%;
-      //   left: 0;
-      //   width: 100%;
-      //   text-align: center;
-      //   transform: translateY(50%);
-      //   content: "Choose a file...";
-      //   font-style: italic;
-      //   font-size: 1em;
-      // }
-    }
-
-    .has-image {
-      &::before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(70, 70, 70, 0.5);
-        content: " ";
-        transition: ease-in-out 750ms;
-        border-radius: 8px;
-      }
-
-      // &::after {
-      //   content: "Choose another file...";
-      //   color: white;
-      // }
     }
     .btn-normal {
       background: #fff;
@@ -699,4 +409,190 @@ main#pendaftaran {
       }
     }
   }
+}
+.alert-box {
+  background: #fefefc;
+  box-shadow: 0px 30px 60px rgba(32, 56, 85, 0.06);
+  border-radius: 4px;
+  border-top: 4px solid #00a0ac;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  img {
+    width: 14px;
+    height: 14px;
+    margin-right: 16px;
+  }
+  p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+    color: #7a7a7a;
+    margin: 0;
+  }
+}
+.red {
+  color: #e53935;
+}
+
+.input-preview__src {
+  display: none;
+}
+
+.input-preview {
+  background: #ffffff;
+  border: 1.5px dashed #dedede;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 100%;
+  height: 344px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  transition: ease-in-out 200ms;
+  &:hover {
+    border-color: #1959a9;
+  }
+  .upload-input {
+    text-align: center;
+    img {
+      margin-bottom: 24px;
+      width: 126px;
+      height: auto;
+    }
+    p {
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 22px;
+      text-align: center;
+      color: #7a7a7a;
+      b {
+        font-weight: 600;
+        text-decoration: underline;
+        color: #1959a9;
+      }
+    }
+    .size-rule {
+      margin-top: 60px;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 18px;
+      text-align: center;
+      color: #e53935;
+    }
+  }
+  .pdfFile {
+    display: none;
+    text-align: center;
+    img {
+      margin-bottom: 24px;
+      width: 126px;
+      height: auto;
+    }
+    p {
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 22px;
+      text-align: center;
+      color: #7a7a7a;
+      b {
+        font-weight: 600;
+        text-decoration: underline;
+        color: #1959a9;
+      }
+    }
+    .size-rule {
+      margin-top: 60px;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 18px;
+      text-align: center;
+      color: #e53935;
+    }
+  }
+  .loading-input {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: none;
+    h4 {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 21px;
+      color: #ffffff;
+      margin-bottom: 6px;
+      padding-left: 20px;
+    }
+    .progress-input {
+      width: 0;
+      height: 8px;
+      border-bottom-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+      background: linear-gradient(
+        89.99deg,
+        #0097a7 7.88%,
+        rgba(255, 255, 255, 0.17) 97.98%
+      );
+      transition: width;
+    }
+    .file-size {
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+      margin-bottom: 16px;
+      p {
+        color: #fff;
+        margin: 0;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        color: #ffffff;
+        opacity: 0.5;
+      }
+      .dots {
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        margin: 0 5px;
+        background: #c4c4c4;
+      }
+    }
+  }
+  // &::after {
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 0;
+  //   width: 100%;
+  //   text-align: center;
+  //   transform: translateY(50%);
+  //   content: "Choose a file...";
+  //   font-style: italic;
+  //   font-size: 1em;
+  // }
+}
+
+.has-image {
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(70, 70, 70, 0.5);
+    content: " ";
+    transition: ease-in-out 750ms;
+    border-radius: 8px;
+  }
+
+  // &::after {
+  //   content: "Choose another file...";
+  //   color: white;
+  // }
 }
