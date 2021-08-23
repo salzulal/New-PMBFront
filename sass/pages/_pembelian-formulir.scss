@@ -249,6 +249,19 @@ main#pendaftaran {
             }
           }
         }
+        &.waiting {
+          display: block;
+          border: 1px solid #eceff1;
+          border-radius: 8px;
+          margin: 44px auto;
+          padding: 24px;
+          .sub-title {
+            margin: 0;
+            padding-bottom: 24px;
+            margin-bottom: 24px;
+            border-bottom: 1px solid #eceff1;
+          }
+        }
       }
       .promo-voucher {
         padding: 44px 0;
@@ -261,7 +274,7 @@ main#pendaftaran {
           padding: 0;
           position: relative;
           overflow: hidden;
-          .col-6 {
+          .col-12 {
             display: flex;
             align-items: center;
             padding: 24px 32px;
@@ -331,7 +344,7 @@ main#pendaftaran {
             }
           }
           &.active {
-            .col-6 {
+            .col-12 {
               border: 1px solid $color-primary;
               &.left {
                 h6:not(.bottom) {
@@ -399,6 +412,7 @@ main#pendaftaran {
         padding: 40px 0;
         img {
           margin: 16px 0 44px;
+          max-width: 100%;
         }
         h2 {
           width: 320px;
@@ -408,7 +422,24 @@ main#pendaftaran {
         }
         h3 {
           color: $color-danger;
-          margin-top: 12px;
+        }
+        h5 {
+          margin: 12px auto 0;
+          width: 400px;
+          max-width: 100%;
+          line-height: 1.67rem;
+          font-weight: 400;
+        }
+        &.recap {
+          h2 {
+            width: 400px;
+            max-width: 100%;
+          }
+          &.cancelled {
+            img {
+              margin: 24px 0 0;
+            }
+          }
         }
       }
 
@@ -416,12 +447,12 @@ main#pendaftaran {
         margin: 0 auto;
         padding: 32px 0;
         .row {
-          padding: 0;
           &:not(:last-child) {
             border-bottom: 1px solid #eceff1a3;
           }
           .col-6 {
-            padding: 16px 0;
+            padding-top: 16px;
+            padding-bottom: 16px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -433,10 +464,12 @@ main#pendaftaran {
               font-weight: 400;
               color: #7a7a7a;
             }
-            .total {
+            .total-number {
               color: $color-primary;
               font-family: "DM Mono", sans-serif;
               font-weight: 500;
+              cursor: pointer;
+              width: fit-content;
             }
           }
           .right {
@@ -483,10 +516,7 @@ main#pendaftaran {
               &:not(:last-child) {
                 border-bottom: 1px solid #eceff1a3;
               }
-              .col-8,
-              .col-4 {
-                padding: 0;
-              }
+
               h5 {
                 font-weight: 400;
               }
@@ -504,6 +534,53 @@ main#pendaftaran {
                 h4 {
                   font-weight: 500;
                   color: $color-primary;
+                  cursor: pointer;
+                  width: fit-content;
+                }
+              }
+            }
+          }
+        }
+        &.recap {
+          .section-title {
+            margin-bottom: 12px;
+          }
+          .row {
+            .col-6 {
+              min-height: 68px;
+              h5 {
+                font-weight: 400;
+                color: #7a7a7a;
+                &.total {
+                  font-weight: 500;
+                  color: $color-text;
+                }
+              }
+            }
+            .right {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: flex-end;
+              img {
+                height: 50px;
+                width: 80px;
+                max-height: 50px;
+                max-width: 80px;
+                object-fit: contain;
+                margin-right: 6px;
+              }
+              h5 {
+                &.status {
+                  font-weight: 500;
+                  color: rgba(237, 47, 135, 1);
+                }
+                &.number {
+                  font-family: "DM Mono", sans-serif;
+                  letter-spacing: 0.25px;
+                }
+                &.total {
+                  color: $color-primary;
                 }
               }
             }
@@ -513,21 +590,21 @@ main#pendaftaran {
       .buttons {
         margin: 40px auto 44px;
         .row {
-          margin: 0 -24px;
+          margin: 0 -12px;
           .col-6 {
             padding: 0 12px;
-            .button {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              height: 68px;
-              width: 100%;
-              border-radius: 6px;
-              p {
-                font-weight: 500;
-                font-size: 0.875rem;
-                line-height: 1.313rem;
-              }
+          }
+          .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 68px;
+            width: 100%;
+            border-radius: 12px;
+            p {
+              font-weight: 500;
+              font-size: 0.875rem;
+              line-height: 1.313rem;
             }
           }
         }
@@ -775,7 +852,7 @@ main#pendaftaran {
   .modal-content {
     width: 512px;
     max-width: 512px;
-    min-height: 642px;
+    min-height: fit-content;
     max-height: 100%;
 
     @media (max-width: 550px) {
@@ -787,8 +864,10 @@ main#pendaftaran {
       height: 100%;
     }
     .modal-body {
+      // min-height: 642px;
       &.with-illus {
         text-align: center;
+        min-height: fit-content;
         h2 {
           margin: 8px 0 12px;
         }

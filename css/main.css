@@ -135,6 +135,10 @@ p {
   margin: 0;
 }
 
+.text-danger {
+  color: #e53935 !important;
+}
+
 .card {
   padding: 24px 32px;
   background: #ffffff;
@@ -200,7 +204,7 @@ p {
   -webkit-box-shadow: 0px 12px 32px rgba(34, 34, 34, 0.12);
           box-shadow: 0px 12px 32px rgba(34, 34, 34, 0.12);
   border-radius: 6px;
-  border: 1px solid #F5F6F8;
+  border: 1px solid #f5f6f8;
   max-height: 200px;
   overflow-y: hidden;
   display: none;
@@ -235,7 +239,7 @@ p {
 
 #select-dropdown .option {
   padding: 12px;
-  border-bottom: 1px solid #F5F6F8;
+  border-bottom: 1px solid #f5f6f8;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -246,7 +250,7 @@ p {
 }
 
 #select-dropdown .option:hover {
-  background-color: #EFF1F7;
+  background-color: #eff1f7;
 }
 
 .group-radio [type="radio"]:checked,
@@ -270,34 +274,34 @@ p {
 
 .group-radio [type="radio"]:checked + label:before,
 .group-radio [type="radio"]:not(:checked) + label:before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
   width: 20px;
   height: 20px;
-  border: 2px solid #7A7A7A;
+  border: 2px solid #7a7a7a;
   border-radius: 100%;
   background: #fff;
 }
 
 .group-radio [type="radio"]:checked + label:after,
 .group-radio [type="radio"]:not(:checked) + label:after {
-  content: '';
+  content: "";
   width: 12px;
   height: 12px;
-  background: #1959A9;
+  background: #1959a9;
   position: absolute;
   top: 4px;
   left: 4px;
   border-radius: 100%;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  border-color: #1959A9;
+  border-color: #1959a9;
 }
 
 .group-radio [type="radio"]:checked + label:before {
-  border-color: #1959A9 !important;
+  border-color: #1959a9 !important;
 }
 
 .group-radio [type="radio"]:not(:checked) + label:after {
@@ -310,6 +314,130 @@ p {
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1);
+}
+
+.tooltip {
+  position: absolute;
+  z-index: 1080;
+  display: block;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.778rem;
+  line-height: 1.167rem;
+  text-align: left;
+  text-align: start;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  letter-spacing: normal;
+  word-break: normal;
+  word-spacing: normal;
+  white-space: normal;
+  line-break: auto;
+  word-wrap: break-word;
+  opacity: 0;
+}
+
+.tooltip .tooltip-arrow {
+  position: absolute;
+  display: block;
+  width: 0.8rem;
+  height: 0.4rem;
+}
+
+.tooltip .tooltip-arrow::before {
+  position: absolute;
+  content: "";
+  border-color: transparent;
+  border-style: solid;
+}
+
+.tooltip.show {
+  opacity: 0.9;
+}
+
+.bs-tooltip-top,
+.bs-tooltip-auto[data-popper-placement^="top"] {
+  padding: 0.4rem 0;
+}
+
+.bs-tooltip-top .tooltip-arrow,
+.bs-tooltip-auto[data-popper-placement^="top"] .tooltip-arrow {
+  bottom: 0;
+}
+
+.bs-tooltip-top .tooltip-arrow::before,
+.bs-tooltip-auto[data-popper-placement^="top"] .tooltip-arrow::before {
+  top: -1px;
+  border-width: 0.4rem 0.4rem 0;
+  border-top-color: #e1b878;
+}
+
+.bs-tooltip-end,
+.bs-tooltip-auto[data-popper-placement^="right"] {
+  padding: 0 0.4rem;
+}
+
+.bs-tooltip-end .tooltip-arrow,
+.bs-tooltip-auto[data-popper-placement^="right"] .tooltip-arrow {
+  left: 0;
+  width: 0.4rem;
+  height: 0.8rem;
+}
+
+.bs-tooltip-end .tooltip-arrow::before,
+.bs-tooltip-auto[data-popper-placement^="right"] .tooltip-arrow::before {
+  right: -1px;
+  border-width: 0.4rem 0.4rem 0.4rem 0;
+  border-right-color: #e1b878;
+}
+
+.bs-tooltip-bottom,
+.bs-tooltip-auto[data-popper-placement^="bottom"] {
+  padding: 0.4rem 0;
+}
+
+.bs-tooltip-bottom .tooltip-arrow,
+.bs-tooltip-auto[data-popper-placement^="bottom"] .tooltip-arrow {
+  top: 0;
+}
+
+.bs-tooltip-bottom .tooltip-arrow::before,
+.bs-tooltip-auto[data-popper-placement^="bottom"] .tooltip-arrow::before {
+  bottom: -1px;
+  border-width: 0 0.4rem 0.4rem;
+  border-bottom-color: #e1b878;
+}
+
+.bs-tooltip-start,
+.bs-tooltip-auto[data-popper-placement^="left"] {
+  padding: 0 0.4rem;
+}
+
+.bs-tooltip-start .tooltip-arrow,
+.bs-tooltip-auto[data-popper-placement^="left"] .tooltip-arrow {
+  right: 0;
+  width: 0.4rem;
+  height: 0.8rem;
+}
+
+.bs-tooltip-start .tooltip-arrow::before,
+.bs-tooltip-auto[data-popper-placement^="left"] .tooltip-arrow::before {
+  left: -1px;
+  border-width: 0.4rem 0 0.4rem 0.4rem;
+  border-left-color: #e1b878;
+}
+
+.tooltip-inner {
+  max-width: 260px;
+  padding: 10px 16px;
+  color: #404852;
+  text-align: center;
+  background-color: #fff5ea;
+  border: 1px solid #e1b878;
+  border-radius: 8px;
 }
 
 .button {
@@ -6354,6 +6482,21 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .transfer-bank .ketent
      object-fit: contain;
 }
 
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .transfer-bank.waiting {
+  display: block;
+  border: 1px solid #eceff1;
+  border-radius: 8px;
+  margin: 44px auto;
+  padding: 24px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .transfer-bank.waiting .sub-title {
+  margin: 0;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #eceff1;
+}
+
 main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher {
   padding: 44px 0;
 }
@@ -6370,7 +6513,7 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .vouche
   overflow: hidden;
 }
 
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher .col-6 {
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher .col-12 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6382,28 +6525,28 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .vouche
   border-radius: 8px;
 }
 
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher .col-6 .text {
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher .col-12 .text {
   margin-left: 16px;
 }
 
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher .col-6 .text .bottom {
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher .col-12 .text .bottom {
   margin-top: 4px;
   font-weight: 400;
   color: #7a7a7a;
 }
 
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher .col-6.left {
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher .col-12.left {
   border-right: none;
 }
 
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher .col-6.right {
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher .col-12.right {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   border-left: 2px dashed #dadce0;
 }
 
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher .col-6.right a {
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher .col-12.right a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6414,13 +6557,13 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .vouche
   cursor: pointer;
 }
 
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher .col-6.right a i,
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher .col-6.right a h5 {
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher .col-12.right a i,
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher .col-12.right a h5 {
   font-size: 14px;
   color: #3656a1;
 }
 
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher .col-6.right a i {
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher .col-12.right a i {
   margin-left: 12px;
 }
 
@@ -6466,19 +6609,19 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .vouche
   right: -7px;
 }
 
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher.active .col-6 {
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher.active .col-12 {
   border: 1px solid #3656a1;
 }
 
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher.active .col-6.left {
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher.active .col-12.left {
   border-right: none;
 }
 
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher.active .col-6.left h6:not(.bottom) {
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher.active .col-12.left h6:not(.bottom) {
   color: #3656a1;
 }
 
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher.active .col-6.right {
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher.active .col-12.right {
   border-left: 2px dashed #3656a1;
 }
 
@@ -6540,6 +6683,7 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .ilustrasi {
 
 main#pendaftaran .main-pendaftaran .card-main-pendaftaran .ilustrasi img {
   margin: 16px 0 44px;
+  max-width: 100%;
 }
 
 main#pendaftaran .main-pendaftaran .card-main-pendaftaran .ilustrasi h2 {
@@ -6551,7 +6695,23 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .ilustrasi h2 {
 
 main#pendaftaran .main-pendaftaran .card-main-pendaftaran .ilustrasi h3 {
   color: #e53935;
-  margin-top: 12px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .ilustrasi h5 {
+  margin: 12px auto 0;
+  width: 400px;
+  max-width: 100%;
+  line-height: 1.67rem;
+  font-weight: 400;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .ilustrasi.recap h2 {
+  width: 400px;
+  max-width: 100%;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .ilustrasi.recap.cancelled img {
+  margin: 24px 0 0;
 }
 
 main#pendaftaran .main-pendaftaran .card-main-pendaftaran .payment-details {
@@ -6559,16 +6719,13 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .payment-details {
   padding: 32px 0;
 }
 
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .payment-details .row {
-  padding: 0;
-}
-
 main#pendaftaran .main-pendaftaran .card-main-pendaftaran .payment-details .row:not(:last-child) {
   border-bottom: 1px solid #eceff1a3;
 }
 
 main#pendaftaran .main-pendaftaran .card-main-pendaftaran .payment-details .row .col-6 {
-  padding: 16px 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6588,10 +6745,14 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .payment-details .row 
   color: #7a7a7a;
 }
 
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .payment-details .row .left .total {
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .payment-details .row .left .total-number {
   color: #3656a1;
   font-family: "DM Mono", sans-serif;
   font-weight: 500;
+  cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 main#pendaftaran .main-pendaftaran .card-main-pendaftaran .payment-details .row .right {
@@ -6654,11 +6815,6 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .payment-details .row 
   border-bottom: 1px solid #eceff1a3;
 }
 
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .payment-details .row .rincian .row .col-8,
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .payment-details .row .rincian .row .col-4 {
-  padding: 0;
-}
-
 main#pendaftaran .main-pendaftaran .card-main-pendaftaran .payment-details .row .rincian .row h5 {
   font-weight: 400;
 }
@@ -6678,6 +6834,68 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .payment-details .row 
 main#pendaftaran .main-pendaftaran .card-main-pendaftaran .payment-details .row .rincian .row.total h4 {
   font-weight: 500;
   color: #3656a1;
+  cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .payment-details.recap .section-title {
+  margin-bottom: 12px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .payment-details.recap .row .col-6 {
+  min-height: 68px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .payment-details.recap .row .col-6 h5 {
+  font-weight: 400;
+  color: #7a7a7a;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .payment-details.recap .row .col-6 h5.total {
+  font-weight: 500;
+  color: #404852;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .payment-details.recap .row .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .payment-details.recap .row .right img {
+  height: 50px;
+  width: 80px;
+  max-height: 50px;
+  max-width: 80px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 6px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .payment-details.recap .row .right h5.status {
+  font-weight: 500;
+  color: #ed2f87;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .payment-details.recap .row .right h5.number {
+  font-family: "DM Mono", sans-serif;
+  letter-spacing: 0.25px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .payment-details.recap .row .right h5.total {
+  color: #3656a1;
 }
 
 main#pendaftaran .main-pendaftaran .card-main-pendaftaran .buttons {
@@ -6685,14 +6903,14 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .buttons {
 }
 
 main#pendaftaran .main-pendaftaran .card-main-pendaftaran .buttons .row {
-  margin: 0 -24px;
+  margin: 0 -12px;
 }
 
 main#pendaftaran .main-pendaftaran .card-main-pendaftaran .buttons .row .col-6 {
   padding: 0 12px;
 }
 
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .buttons .row .col-6 .button {
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .buttons .row .button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6704,10 +6922,10 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .buttons .row .col-6 .
           align-items: center;
   height: 68px;
   width: 100%;
-  border-radius: 6px;
+  border-radius: 12px;
 }
 
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .buttons .row .col-6 .button p {
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .buttons .row .button p {
   font-weight: 500;
   font-size: 0.875rem;
   line-height: 1.313rem;
@@ -7006,7 +7224,9 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .cara-pembayaran .acco
 .modal-small .modal-content {
   width: 512px;
   max-width: 512px;
-  min-height: 642px;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
   max-height: 100%;
 }
 
@@ -7023,6 +7243,9 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .cara-pembayaran .acco
 
 .modal-small .modal-content .modal-body.with-illus {
   text-align: center;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
 }
 
 .modal-small .modal-content .modal-body.with-illus h2 {

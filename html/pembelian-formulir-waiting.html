@@ -213,7 +213,7 @@
                   <h3>Senin, 12 Juni 2021 (23:23 WIB)</h3>
                 </div>
 
-                <div class="col-10 payment-details">
+                <div class="col-12 col-md-10 payment-details">
                   <div class="row">
                     <div class="col-6 left">
                       <h4 class="row-title">Virtual Account</h4>
@@ -238,7 +238,14 @@
                   <div class="row">
                     <div class="col-6 left">
                       <h4 class="row-title detail">Total Pembayaran</h4>
-                      <h4 class="row-subtitle total">Rp. 365.000</h4>
+                      <h4
+                        class="row-subtitle total-number"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="right"
+                        title="Pastikan Anda transfer sesuai nominal hingga 3 digit terakhir"
+                      >
+                        Rp. 365.000
+                      </h4>
                     </div>
                     <div class="col-6 right">
                       <a id="expand-details">
@@ -279,16 +286,79 @@
                           <h5>Total Pembayaran</h5>
                         </div>
                         <div class="col-4">
-                          <h4>Rp. 365.000</h4>
+                          <h4
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="left"
+                            title="Pastikan Anda transfer sesuai nominal hingga 3 digit terakhir"
+                          >
+                            Rp. 365.000
+                          </h4>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-10 buttons">
+
+                <!-- for offline -->
+                <div class="col-12 col-md-10 transfer-bank waiting">
+                  <h4 class="sub-title">Ketentuan Transfer</h4>
+                  <div class="ketentuan-list">
+                    <div class="row ketentuan-item">
+                      <div class="col col-auto marker">
+                        <span class="material-icons-round"> trip_origin </span>
+                      </div>
+                      <div class="col content">
+                        <h5>
+                          Pembayaran dapat dilakukan melalui transfer ke
+                          rekening Bank BCA, Bank Mandiri, Bank Paninbank, Bank
+                          BNI, BANK BTN, Bank BTPN, Bank Muamalat atau Bank
+                          Bukopin.
+                        </h5>
+                        <div class="row banks">
+                          <div class="col-auto bank">
+                            <img src="../img/pembelian-formulir/bni.png" />
+                          </div>
+                          <div class="col-auto bank">
+                            <img src="../img/pembelian-formulir/mandiri.png" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row ketentuan-item">
+                      <div class="col col-auto marker">
+                        <span class="material-icons-round"> trip_origin </span>
+                      </div>
+                      <div class="col content">
+                        <h5>
+                          Pembayaran dengan angka yang tidak tepat akan
+                          menyebabkan verifikasi pembayaran menjadi terhambat.
+                        </h5>
+                      </div>
+                    </div>
+                    <div class="row ketentuan-item">
+                      <div class="col col-auto marker">
+                        <span class="material-icons-round"> trip_origin </span>
+                      </div>
+                      <div class="col content">
+                        <h5>
+                          Mohon transfer total pembayaran tepat hingga 3 digit
+                          terakhir untuk proses verifikasi.
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end of for offline -->
+                <div class="col-12 col-md-10 buttons">
                   <div class="row">
                     <div class="col-6">
-                      <a class="button primary outline" type="button">
+                      <a
+                        class="button primary outline"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modalKonfirmasiBatalTransaksi"
+                        data-bs-dismiss="modal"
+                      >
                         <div class="ripple js-ripple">
                           <span class="ripple__circle"></span>
                         </div>
@@ -306,8 +376,9 @@
                   </div>
                 </div>
 
+                <!-- for online -->
                 <hr class="card-divider" />
-                <div class="col-10 cara-pembayaran">
+                <div class="col-12 col-md-10 cara-pembayaran">
                   <h4 class="section-title">Petunjuk Pembayaran</h4>
 
                   <div
@@ -407,6 +478,7 @@
                     </div>
                   </div>
                 </div>
+                <!-- end of for online -->
               </div>
             </div>
           </div>
@@ -487,7 +559,8 @@
         </div>
       </div>
     </footer>
-    <!-- Modal Page -->
+
+    <!-- modal pindah jalur -->
     <div
       class="modal fade"
       id="modalPindahJalur"
@@ -752,6 +825,7 @@
         </div>
       </div>
     </div>
+    <!-- modal konfirm pindah jalur -->
     <div
       class="modal fade"
       id="modalKonfirmasiPindahJalur"
@@ -805,6 +879,7 @@
         </div>
       </div>
     </div>
+    <!-- modal voucher -->
     <div
       class="modal fade"
       id="modalVoucher"
@@ -867,6 +942,117 @@
         </div>
       </div>
     </div>
+    <!-- modal konfirm batal transaksi -->
+    <div
+      class="modal fade"
+      id="modalKonfirmasiBatalTransaksi"
+      tabindex="-1"
+      aria-hidden="true"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+    >
+      <div class="modal-dialog modal-small">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-modal-close"
+              data-bs-dismiss="modal"
+            >
+              <span class="material-icons-round"> close </span>
+            </button>
+          </div>
+          <div class="modal-body with-illus">
+            <div class="ilustrasi">
+              <img
+                src="../img/pembelian-formulir/ilustrasi-batal-bayar.svg"
+                alt=""
+              />
+            </div>
+            <h2>Batalkan Transaksi</h2>
+            <h5>
+              Saat Anda membatalkan transaksi maka semua proses akan hilang.
+              Lanjutkan?
+            </h5>
+            <div class="row buttons">
+              <div class="col-6">
+                <a
+                  class="button gray outline"
+                  type="button"
+                  data-bs-dismiss="modal"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalTransaksiDibatalkan"
+                >
+                  <div class="ripple js-ripple">
+                    <span class="ripple__circle"></span>
+                  </div>
+                  <p>Batalkan</p>
+                </a>
+              </div>
+              <div class="col-6">
+                <a class="button primary" type="button" data-bs-dismiss="modal">
+                  <div class="ripple js-ripple">
+                    <span class="ripple__circle"></span>
+                  </div>
+                  <p>Tetap Bayar</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal transaksi dibatalkan -->
+    <div
+      class="modal fade"
+      id="modalTransaksiDibatalkan"
+      tabindex="-1"
+      aria-hidden="true"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+    >
+      <div class="modal-dialog modal-small">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-modal-close"
+              data-bs-dismiss="modal"
+            >
+              <span class="material-icons-round"> close </span>
+            </button>
+          </div>
+          <div class="modal-body with-illus">
+            <div class="ilustrasi">
+              <img
+                src="../img/pembelian-formulir/ilustrasi-pembatalan-berhasil.svg"
+                alt=""
+              />
+            </div>
+            <h2>Berhasil Dibatalkan</h2>
+            <h5>
+              Anda telah berhasil membatalkan transaksi pendaftaran kuliah
+            </h5>
+            <div class="row buttons">
+              <div class="col-12">
+                <a
+                  class="button primary"
+                  type="button"
+                  data-bs-dismiss="modal"
+                  href="#"
+                >
+                  <div class="ripple js-ripple">
+                    <span class="ripple__circle"></span>
+                  </div>
+                  <p>Kembali ke Beranda</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Modal Auth -->
     <div
       class="modal fade"
@@ -1749,6 +1935,13 @@
           $(".payment-details .row-subtitle.total").hide();
           $(".payment-details .row-title.detail").html("Detail Pembayaran");
         }
+      });
+
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
       });
     </script>
   </body>
