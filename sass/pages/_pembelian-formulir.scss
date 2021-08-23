@@ -90,8 +90,12 @@ main#pendaftaran {
         opacity: 0.4;
         border-top: 1px solid #eeeeee;
         margin: 0 -64px;
+        &#metode-divider {
+          display: none;
+        }
       }
       .pilihan-pembayaran {
+        display: none;
         padding: 44px 0;
         .section-title {
           margin-bottom: 32px;
@@ -169,6 +173,7 @@ main#pendaftaran {
         }
       }
       .transfer-bank {
+        display: none;
         padding: 44px 0;
         .section-title {
           margin-bottom: 32px;
@@ -280,6 +285,7 @@ main#pendaftaran {
                 display: flex;
                 align-items: center;
                 color: $color-primary;
+                cursor: pointer;
                 i,
                 h5 {
                   font-size: 14px;
@@ -377,6 +383,210 @@ main#pendaftaran {
           }
         }
       }
+      // waiting
+      img.bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: auto;
+        width: 100%;
+        // z-index: 0;
+      }
+
+      .ilustrasi {
+        text-align: center;
+        padding: 40px 0;
+        img {
+          margin: 16px 0 44px;
+        }
+        h2 {
+          width: 320px;
+          max-width: 100%;
+          letter-spacing: 0.25px;
+          margin: 0 auto;
+        }
+        h3 {
+          color: $color-danger;
+          margin-top: 12px;
+        }
+      }
+
+      .payment-details {
+        margin: 0 auto;
+        padding: 32px 0;
+        .row {
+          padding: 0;
+          &:not(:last-child) {
+            border-bottom: 1px solid #eceff1a3;
+          }
+          .col-6 {
+            padding: 16px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 124px;
+          }
+          .left {
+            .row-subtitle {
+              margin-top: 12px;
+              font-weight: 400;
+              color: #7a7a7a;
+            }
+            .total {
+              color: $color-primary;
+              font-family: "DM Mono", sans-serif;
+              font-weight: 500;
+            }
+          }
+          .right {
+            align-items: flex-end;
+            img {
+              height: 95px;
+              width: 150px;
+              max-height: 95px;
+              max-width: 150px;
+              object-fit: contain;
+            }
+            h5 {
+              font-weight: 500;
+              color: #7a7a7a;
+              display: flex;
+              align-items: center;
+              &.icon-left {
+                .material-icons-round {
+                  font-size: 16px;
+                  margin-right: 8px;
+                }
+              }
+              &.icon-right {
+                .material-icons-round {
+                  font-size: 16px;
+                  margin-left: 8px;
+                }
+              }
+            }
+            a {
+              text-decoration: none;
+              h5 {
+                cursor: pointer;
+                &.hidden {
+                  display: none;
+                }
+              }
+            }
+          }
+          .rincian {
+            display: none;
+            .row {
+              padding: 16px 0;
+              &:not(:last-child) {
+                border-bottom: 1px solid #eceff1a3;
+              }
+              .col-8,
+              .col-4 {
+                padding: 0;
+              }
+              h5 {
+                font-weight: 400;
+              }
+              h4 {
+                text-align: right;
+                font-family: "DM Mono", sans-serif;
+                font-weight: 400;
+                letter-spacing: 0.25px;
+                color: #7a7a7a;
+              }
+              &.total {
+                h5 {
+                  font-weight: 500;
+                }
+                h4 {
+                  font-weight: 500;
+                  color: $color-primary;
+                }
+              }
+            }
+          }
+        }
+      }
+      .buttons {
+        margin: 40px auto 44px;
+        .row {
+          margin: 0 -24px;
+          .col-6 {
+            padding: 0 12px;
+            .button {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 68px;
+              width: 100%;
+              border-radius: 6px;
+              p {
+                font-weight: 500;
+                font-size: 0.875rem;
+                line-height: 1.313rem;
+              }
+            }
+          }
+        }
+      }
+      .cara-pembayaran {
+        margin: 0 auto;
+        .section-title {
+          margin: 44px 0 18px;
+        }
+        .accordion {
+          .accordion-item {
+            .accordion-header {
+              .accordion-button {
+                padding: 24px 0;
+                background-color: #fff !important;
+                box-shadow: none;
+
+                h5 {
+                  font-weight: 500;
+                }
+                &::after {
+                  background-image: none;
+                  content: url("../img/pembelian-formulir/icon/expand-arrow.svg");
+                  width: 16px;
+                  height: 16px;
+                  margin: auto 8px auto auto;
+                }
+                &:not(.collapsed) {
+                  p {
+                    font-weight: 600;
+                    color: #001b36;
+                  }
+                }
+              }
+            }
+            .accordion-collapse {
+              .accordion-body {
+                padding: 24px 0 40px;
+                font-size: 0.778rem;
+                line-height: 1.167rem;
+                color: #7a7a7a;
+                ol {
+                  li {
+                    padding: 0;
+                    display: flex;
+                    border: none;
+                    margin: 12px 0;
+                    &::before {
+                      min-width: 25px;
+                      text-align: center;
+                      margin-right: 12px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -404,6 +614,13 @@ main#pendaftaran {
         position: relative;
         @media (max-width: 550px) {
           padding: 32px 32px 16px 32px;
+        }
+        .title-icon {
+          margin-right: 16px;
+          width: 32px;
+          height: 32px;
+          max-width: 32px;
+          max-height: 32px;
         }
         .btn-modal-close {
           font-size: 10px;
@@ -555,17 +772,20 @@ main#pendaftaran {
 }
 
 .modal-small {
-  width: 512px;
-  max-width: 512px;
-  @media (max-width: 550px) {
-    width: 100% !important;
-    max-width: 100% !important;
-    border-radius: 0;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-  }
   .modal-content {
+    width: 512px;
+    max-width: 512px;
+    min-height: 642px;
+    max-height: 100%;
+
+    @media (max-width: 550px) {
+      width: 100% !important;
+      max-width: 100% !important;
+      border-radius: 0;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
     .modal-body {
       &.with-illus {
         text-align: center;
@@ -592,6 +812,63 @@ main#pendaftaran {
               font-size: 0.778rem;
               line-height: 1.167rem;
             }
+          }
+        }
+      }
+      &.modal-voucher {
+        padding-top: 0;
+        h5.header-text {
+          font-family: "Mulish", sans-serif;
+          opacity: 0.64;
+          font-weight: 400;
+          width: 100%;
+        }
+        .form-voucher {
+          margin-top: 48px;
+          width: 100%;
+        }
+        .alert {
+          padding: 16px;
+          border-radius: 8px;
+          margin-top: 12px;
+          &.success {
+            background: #ebf9fc;
+            border: 1px solid #98c6cd;
+          }
+          &.failed {
+            background: #fff4f4;
+            border: 1px solid #f0d3d2;
+          }
+          p {
+            font-size: 0.8rem;
+            line-height: 1.6rem;
+            margin-top: 6px;
+          }
+        }
+        .button {
+          margin-top: 28px;
+          width: 100%;
+          border-radius: 6px;
+          height: 64px;
+          justify-content: center;
+          align-items: center;
+          p {
+            font-weight: 600;
+            font-size: 0.778rem;
+            line-height: 1.167rem;
+          }
+        }
+        .cancel {
+          display: flex;
+          height: 64px;
+          justify-content: center;
+          align-items: center;
+          a {
+            color: $color-secondary;
+            font-weight: 400;
+            font-size: 0.722rem;
+            line-height: 1.111rem;
+            cursor: pointer;
           }
         }
       }
