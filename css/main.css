@@ -5706,6 +5706,17 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .contailer-li
   border-bottom: 1px solid rgba(236, 239, 241, 0.64);
   cursor: pointer;
   border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .contailer-list-upload .list-upload img {
+  display: none;
+  margin-right: 8px;
 }
 
 main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .contailer-list-upload .list-upload h3 {
@@ -5720,6 +5731,10 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .contailer-li
   color: #1959A9;
   -webkit-transition: 200ms;
   transition: 200ms;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .contailer-list-upload .list-upload.done img {
+  display: block;
 }
 
 main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .contailer-list-upload .list-upload.active {

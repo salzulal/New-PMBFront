@@ -310,6 +310,13 @@ main#pendaftaran {
                         border-bottom: 1px solid rgba(236, 239, 241,0.64);
                         cursor: pointer;
                         border-radius: 4px;
+                        display: flex;
+                        align-items: center;
+                        img{
+                            display: none;
+                            margin-right: 8px;
+                        }
+                        
                         h3{
                             font-weight: normal;
                             font-size: 14px;
@@ -321,6 +328,11 @@ main#pendaftaran {
                             h3{
                                 color: #1959A9;
                                 transition: 200ms;
+                            }
+                        }
+                        &.done{
+                            img{
+                                display: block;
                             }
                         }
                         &.active{

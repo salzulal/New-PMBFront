@@ -139,6 +139,7 @@ const uploadInput = document.querySelector('.upload-input');
 const loadingInput = document.querySelector('.loading-input');
 const pdfFile = document.querySelector('.pdfFile');
 // Info File 
+const filePreviewClass = document.getElementsByClassName('input-preview');
 const result = document.getElementById('percent');
 const filesize = document.getElementById('filesize');
 const fileformat = document.getElementById('fileformat');
@@ -220,4 +221,3 @@ fileImage.onchange = function () {
         clearInterval(progressInterval);
     }
 };
-
