@@ -133,177 +133,10 @@ main#pendaftaran {
               text-align: center;
               border-radius: 16px;
             }
-            .biodata{
-                margin-top: 52px;
-                .title{
-                    h2{
-                        font-weight: 600;
-                        font-size: 16px;
-                        line-height: 24px;
-                        letter-spacing: 0.25px;
-                        text-transform: capitalize;
-                        color: #404852;
-                        margin-bottom: 4px;
-                    }
-                    p{
-                        font-weight: normal;
-                        font-size: 14px;
-                        line-height: 24px;
-                        margin: 0;
-                        color: #7A7A7A;
-                    }
-                    margin-bottom: 25px;
-                }
-                .alert-box{
-                    margin-bottom: 40px;
-                }
-                .title-form{
-                    font-weight: normal;
-                    font-size: 13px;
-                    line-height: 20px;
-                    margin-bottom: 12px;
-                    color: #404852;
-                }
-                .title-form-upload{
-                    font-weight: 500;
-                    font-size: 14px;
-                    line-height: 24px;
-                    text-transform: capitalize;
-                    color: #404852;
-                    margin-bottom: 16px;
-                }
-                .phone-number{
-                    .city-select{
-                        input,select{
-                            width: 100%;
-                        }
-                    }
-                    input[type="number"]{
-                        width: 100% !important;
-                    }
-                }
-                .group{
-                    margin-bottom: 25px;
-                    input{
-                        width: 100%;
-                    }
-                }
-                .group-radio{
-                    margin-bottom: 25px;
-                    margin-right: 20px;
-                }
-                .form-select-pmb{
-                    margin-bottom: 25px;
-                }
-                .form-check-biodata{
-                    margin-bottom: 100px;
-                    .form-check-input:checked {
-                        background-color: #3656A1;
-                        border-color: #3656A1;
-                        box-shadow: none;
-                    }
-                    input{
-                        box-shadow: none;
-                        border-radius: 3px;
-                        cursor: pointer;
-                    }
-                    .form-check{
-                        .form-check-label{
-                            cursor: pointer;
-                            font-weight: normal;
-                            font-size: 0.722rem;
-                            line-height: 24px;
-                            text-transform: capitalize;
-                            color: $color-text;
-                        }
-                    }
-                }
-                .cta-pendaftaran{
-                    margin-bottom: 40px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-end;
-                    a{
-                        text-decoration: none;
-                    }
-                    .selanjutnya{
-                        font-weight: 600;
-                        font-size: 14px;
-                        line-height: 21px;
-                        letter-spacing: 0.25px;
-                        text-transform: capitalize;
-                        color: #FFFFFF;
-                        padding: 17px 33px;
-                        background-color: #1959A9;
-                        border-radius: 8px;
-                        &:hover{
-                            background-color: #12488a;
-                            transition: 200ms;
-                        }
-                    }
-                    .sebelum{
-                        font-weight: 500;
-                        font-size: 14px;
-                        line-height: 21px;
-                        letter-spacing: 0.25px;
-                        text-transform: capitalize;
-                        color: #7A7A7A;
-                        margin-right: 28px;
-                        span{
-                            font-size: 14px;
-                            margin-right: 16px;
-                            color: #7a7a7a;
-                        }
-                    }
-                }
-                .contailer-list-upload{
-                    max-height: 400px;
-                    overflow-y: hidden;
-                    margin-bottom: 80px;
-                    &:hover{
-                        overflow-y: auto;
-                    }
-                    .list-upload{
-                        width: 100%;
-                        margin-bottom: 14px;
-                        padding: 20px 12px;
-                        border-bottom: 1px solid rgba(236, 239, 241,0.64);
-                        cursor: pointer;
-                        border-radius: 4px;
-                        display: flex;
-                        align-items: center;
-                        img{
-                            display: none;
-                            margin-right: 8px;
-                        }
-                        
-                        h3{
-                            font-weight: normal;
-                            font-size: 14px;
-                            line-height: 24px;
-                            color: #7A7A7A;
-                            margin: 0;
-                        }
-                        &:hover{
-                            h3{
-                                color: #1959A9;
-                                transition: 200ms;
-                            }
-                        }
-                        &.done{
-                            img{
-                                display: block;
-                            }
-                        }
-                        &.active{
-                            background: linear-gradient(90deg, rgba(172, 217, 249, 0.3) 0%, rgba(255, 255, 255, 0) 67.17%);
-                            h3{
-                                font-weight: 600;
-                                color: #1959A9;
-                            }
-                        }
-                    }
-                }
+            svg {
+              path {
+                fill: #fff;
+              }
             }
           }
           &.done {
@@ -446,6 +279,13 @@ main#pendaftaran {
             border-bottom: 1px solid rgba(236, 239, 241, 0.64);
             cursor: pointer;
             border-radius: 4px;
+            display: flex;
+            align-items: center;
+            img {
+              display: none;
+              margin-right: 8px;
+            }
+
             h3 {
               font-weight: normal;
               font-size: 14px;
@@ -457,6 +297,11 @@ main#pendaftaran {
               h3 {
                 color: #1959a9;
                 transition: 200ms;
+              }
+            }
+            &.done {
+              img {
+                display: block;
               }
             }
             &.active {

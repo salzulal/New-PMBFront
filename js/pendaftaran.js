@@ -131,19 +131,6 @@ $(".pilihan-item").click(function () {
   $(this).find(".radio-icon").text("radio_button_checked");
 });
 
-// Upload Image 
-const progressBar = document.querySelector('.progress-input');
-const fileImage = document.querySelector('.input-preview__src');
-const filePreview = document.querySelector('.input-preview');
-const uploadInput = document.querySelector('.upload-input');
-const loadingInput = document.querySelector('.loading-input');
-const pdfFile = document.querySelector('.pdfFile');
-// Info File 
-const filePreviewClass = document.getElementsByClassName('input-preview');
-const result = document.getElementById('percent');
-const filesize = document.getElementById('filesize');
-const fileformat = document.getElementById('fileformat');
-const namaFile = document.getElementById('namaFile');
 $("#btn-metode-pembayaran").click(function () {
   var metode = $("#select-metode-pembayaran").val();
   if (metode == "online") {
@@ -169,6 +156,7 @@ const uploadInput = document.querySelector(".upload-input");
 const loadingInput = document.querySelector(".loading-input");
 const pdfFile = document.querySelector(".pdfFile");
 // Info File
+const filePreviewClass = document.getElementsByClassName("input-preview");
 const result = document.getElementById("percent");
 const filesize = document.getElementById("filesize");
 const fileformat = document.getElementById("fileformat");
