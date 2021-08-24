@@ -1692,6 +1692,11 @@ footer .container-xxl .footmark .socmed img {
   margin-left: 24px;
 }
 
+footer .container-xxl .contact-pendaftaran {
+  margin-bottom: 40px;
+  padding: 0;
+}
+
 @media (max-width: 459.98px) {
   footer .container-xxl .contact-pendaftaran .text {
     -webkit-box-orient: vertical;
@@ -1848,42 +1853,55 @@ footer .container-xxl .contact-pendaftaran .cta-contact .btn-normal:hover {
 
 footer .container-xxl .footmark-pendaftaran {
   border-top: 1px solid #dedede;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  padding-top: 32px;
-  margin-top: 40px;
+  padding: 0;
 }
 
-footer .container-xxl .footmark-pendaftaran .logo {
-  width: 30%;
+footer .container-xxl .footmark-pendaftaran .col {
+  padding: 24px 12px !important;
 }
 
-footer .container-xxl .footmark-pendaftaran .logo img {
-  height: 55px;
-  width: auto;
-}
-
-footer .container-xxl .footmark-pendaftaran .copyright {
-  width: 40%;
-  text-align: center;
-}
-
-footer .container-xxl .footmark-pendaftaran p {
+footer .container-xxl .footmark-pendaftaran .col p {
   font-weight: normal;
   color: #7a7a7a;
   line-height: 1.313rem;
   text-transform: capitalize;
 }
 
-footer .container-xxl .footmark-pendaftaran .language-option a {
+footer .container-xxl .footmark-pendaftaran .col.logo img {
+  height: auto;
+  max-height: 55px;
+  width: auto;
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+footer .container-xxl .footmark-pendaftaran .col.copyright {
+  text-align: center;
+}
+
+footer .container-xxl .footmark-pendaftaran .col.right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer .container-xxl .footmark-pendaftaran .col.right .language-option {
+  padding-left: 24px;
+}
+
+footer .container-xxl .footmark-pendaftaran .col.right .language-option a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1892,7 +1910,7 @@ footer .container-xxl .footmark-pendaftaran .language-option a {
   position: relative;
 }
 
-footer .container-xxl .footmark-pendaftaran .language-option a p {
+footer .container-xxl .footmark-pendaftaran .col.right .language-option a p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1901,11 +1919,11 @@ footer .container-xxl .footmark-pendaftaran .language-option a p {
           align-items: center;
 }
 
-footer .container-xxl .footmark-pendaftaran .language-option a .dropdown-arrow {
+footer .container-xxl .footmark-pendaftaran .col.right .language-option a .dropdown-arrow {
   margin-left: 4px;
 }
 
-footer .container-xxl .footmark-pendaftaran .language-option a .dropdown-arrow::after {
+footer .container-xxl .footmark-pendaftaran .col.right .language-option a .dropdown-arrow::after {
   content: url("../img/header/icon/arrow-dropdown.svg");
   height: 24px;
   position: absolute;
@@ -1915,13 +1933,13 @@ footer .container-xxl .footmark-pendaftaran .language-option a .dropdown-arrow::
   transform: translateY(-50%);
 }
 
-footer .container-xxl .footmark-pendaftaran .language-option a.show .dropdown-arrow::after {
+footer .container-xxl .footmark-pendaftaran .col.right .language-option a.show .dropdown-arrow::after {
   top: 0%;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-footer .container-xxl .footmark-pendaftaran .language-option ul {
+footer .container-xxl .footmark-pendaftaran .col.right .language-option ul {
   border: 1px solid #eeeeee;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1931,7 +1949,7 @@ footer .container-xxl .footmark-pendaftaran .language-option ul {
   padding: 0;
 }
 
-footer .container-xxl .footmark-pendaftaran .language-option ul li .button {
+footer .container-xxl .footmark-pendaftaran .col.right .language-option ul li .button {
   width: 100%;
   margin: 0;
   padding: 14px 16px;
@@ -1945,23 +1963,53 @@ footer .container-xxl .footmark-pendaftaran .language-option ul li .button {
           box-shadow: none;
 }
 
-footer .container-xxl .footmark-pendaftaran .language-option ul li .button:hover, footer .container-xxl .footmark-pendaftaran .language-option ul li .button:focus {
+footer .container-xxl .footmark-pendaftaran .col.right .language-option ul li .button:hover, footer .container-xxl .footmark-pendaftaran .col.right .language-option ul li .button:focus {
   background: #eceff1;
   border-radius: 4px;
 }
 
-footer .container-xxl .footmark-pendaftaran .language-option ul li .button:active {
+footer .container-xxl .footmark-pendaftaran .col.right .language-option ul li .button:active {
   background: #e6eaed;
 }
 
-footer .container-xxl .footmark-pendaftaran .socmed {
-  margin-right: 24px;
-  padding-right: 24px;
+footer .container-xxl .footmark-pendaftaran .col.right .socmed {
+  padding: 0 24px 0 12px;
   border-right: 1px solid rgba(122, 122, 122, 0.16);
 }
 
-footer .container-xxl .footmark-pendaftaran .socmed img {
+footer .container-xxl .footmark-pendaftaran .col.right .socmed img {
   margin-left: 16px;
+}
+
+@media (max-width: 575.98px) {
+  footer .container-xxl .footmark-pendaftaran .col.copyright {
+    padding: 0 !important;
+  }
+  footer .container-xxl .footmark-pendaftaran .col.right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  footer .container-xxl .footmark-pendaftaran .col.right .socmed {
+    padding: 0 12px;
+    border-right: none;
+  }
+  footer .container-xxl .footmark-pendaftaran .col.right .socmed img {
+    height: 16px;
+    width: auto;
+    margin-left: 8px;
+  }
+  footer .container-xxl .footmark-pendaftaran .col.right .language-option {
+    padding: 0 12px;
+    margin-top: 8px;
+  }
 }
 
 footer .container-xxl .row {
