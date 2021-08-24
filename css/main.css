@@ -6244,6 +6244,7 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .cta-pendaftaran a {
 }
 
 main#pendaftaran .main-pendaftaran .card-main-pendaftaran .cta-pendaftaran .selanjutnya {
+  cursor: pointer;
   font-weight: 600;
   font-size: 0.778rem;
   line-height: 1.167rem;
@@ -6370,10 +6371,12 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .cta-pendaftaran .sebe
   position: relative;
   -webkit-transition: ease-in-out 200ms;
   transition: ease-in-out 200ms;
+  margin-bottom: 80px;
 }
 
 .input-preview:hover {
   border-color: #1959a9;
+  background-color: #F2F7FE;
 }
 
 .input-preview .upload-input {
@@ -6416,16 +6419,16 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .cta-pendaftaran .sebe
 
 .input-preview .pdfFile img {
   margin-bottom: 24px;
-  width: 126px;
+  width: 80px;
   height: auto;
 }
 
 .input-preview .pdfFile p {
-  font-weight: normal;
+  font-weight: 500;
   font-size: 13px;
-  line-height: 22px;
-  text-align: center;
-  color: #7a7a7a;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #404852;
 }
 
 .input-preview .pdfFile p b {
@@ -6498,6 +6501,38 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .cta-pendaftaran .sebe
   border-radius: 50%;
   margin: 0 5px;
   background: #c4c4c4;
+}
+
+.has-file {
+  background-color: #C4C4C4;
+  border: none;
+}
+
+.has-file:hover {
+  background-color: #C4C4C4 !important;
+}
+
+#action-file {
+  display: none;
+}
+
+#action-file .right {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: block;
+}
+
+#action-file .right button {
+  display: block;
+  margin-bottom: 6px;
+  background-color: transparent;
+  border: none;
+}
+
+#action-file .right button img {
+  width: 24px;
+  height: 24px;
 }
 
 .has-image::before {

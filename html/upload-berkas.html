@@ -211,7 +211,7 @@
                     </div>
                     <div class="col-lg-7">
                       <h2 class="title-form-upload">Upload Legalisir SKHUN</h2>
-                      <label class="input-preview" for="img">
+                      <label class="input-preview" id="input-preview" for="img">
                         <div class="loading-input">
                           <h4>Progress Upload <span id="percent"></span> ...</h4>
                           <div class="file-size">
@@ -228,8 +228,15 @@
                           </div>
                         </div>
                         <div class="pdfFile">
-                          <img src="../img/comp-pendaftaran/default-upload.png" alt="">
-                          <p id="namaFile">Nama file pdf</p>
+                          <img src="../img/comp-pendaftaran/pdf-default.svg" alt="">
+                          <!-- <p id="namaFile">File berhasil Diupload</p> -->
+                          <p>File berhasil Diupload</p>
+                        </div>
+                        <div id="action-file">
+                          <div class="right">
+                            <button type="button" onclick="deleteFile()"><img src="../img/comp-pendaftaran/delete-file.svg" alt=""></button>
+                            <button><img src="../img/comp-pendaftaran/download-image.svg" alt=""></a>
+                          </div>
                         </div>
                         <input class="input-preview__src" name="img" id="img" type="file"/>
                       </label>
@@ -243,7 +250,7 @@
                             <span class="material-icons-round">
                             arrow_back
                             </span>Sebelumnya</div></a>
-                          <a href="#"><div class="selanjutnya">Selanjutnya</div></a>
+                          <div data-bs-toggle="modal" data-bs-target="#modalBerkas" class="selanjutnya">Selanjutnya</div>
                       </div>
                     </div>
                   </div>
@@ -330,6 +337,55 @@
       </div>
     </footer>
 <!-- Modal Auth -->
+<div class="modal fade" id="modalBerkas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+  <div class="modal-dialog modal-small">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button
+          type="button"
+          class="btn-modal-close"
+          data-bs-dismiss="modal"
+        >
+          <span class="material-icons-round"> close </span>
+        </button>
+      </div>
+      <div class="modal-body with-illus">
+        <div class="ilustrasi">
+          <img
+            src="../img/comp-pendaftaran/ilustrasi-upload-berkas.svg"
+            alt=""
+          />
+        </div>
+        <h2>Konfirmasi Berkas</h2>
+        <h5>
+          Saat Anda menekan lanjutkan maka semua berkas yang di unggah tidak dapat diubah lagi, Yakin untuk melanjutkan?
+        </h5>
+        <div class="row buttons">
+          <div class="col-6">
+            <a
+              class="button gray outline"
+              type="button"
+              data-bs-dismiss="modal"
+            >
+              <div class="ripple js-ripple">
+                <span class="ripple__circle"></span>
+              </div>
+              <p>Periksa Kembali</p>
+            </a>
+          </div>
+          <div class="col-6">
+            <a class="button primary" type="button" data-bs-dismiss="modal">
+              <div class="ripple js-ripple">
+                <span class="ripple__circle"></span>
+              </div>
+              <p>Lanjutkan</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <div class="modal fade" id="modalDaftar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
   <div class="modal-dialog modal-auth">
     <div class="modal-content">

@@ -165,7 +165,8 @@ const result = document.getElementById("percent");
 const filesize = document.getElementById("filesize");
 const fileformat = document.getElementById("fileformat");
 const namaFile = document.getElementById("namaFile");
-
+const actionFile = document.getElementById("action-file");
+var Fileread;
 fileImage.onchange = function () {
   const reader = new FileReader();
   var fileTypes = ["jpg", "jpeg", "png", "gif", "jfif", "svg"]; //acceptable file types
@@ -175,14 +176,18 @@ fileImage.onchange = function () {
   if (isSuccess) {
     reader.onload = function (e) {
       pdfFile.style.display = "none";
+      Fileread = e.target.result;
       filePreview.style.backgroundImage = "url(" + e.target.result + ")";
       showLoading();
+      filePreview.classList.add("has-file");
+      actionFile.style.display = "block";
     };
   } else {
     reader.onload = function (e) {
       filePreview.style.backgroundImage = "none";
       showLoading();
       showPDF();
+      actionFile.style.display = "block";
     };
   }
 
@@ -202,7 +207,7 @@ fileImage.onchange = function () {
   }
 
   filesize.innerHTML = bytesToSize(this.files[0].size);
-  namaFile.innerHTML = this.files[0].name;
+  // namaFile.innerHTML = this.files[0].name;
   fileformat.innerHTML = this.files[0].name.split(".").pop();
 
   let progress = 0;
@@ -239,3 +244,16 @@ fileImage.onchange = function () {
     clearInterval(progressInterval);
   }
 };
+
+function deleteFile() {
+  filePreview.style.backgroundImage = "none";
+  filePreview.classList.remove("has-file");
+  uploadInput.style.display = "block";
+  actionFile.style.display = "none";
+  pdfFile.style.display = "none";
+}
+// function downloadFile(url) {
+//   var link = document.getElementById("downloadFile");
+//   link.setAttribute("href", Fileread);
+//   console.log(Fileread);
+// }

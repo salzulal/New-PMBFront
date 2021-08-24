@@ -335,6 +335,7 @@ main#pendaftaran {
           }
         }
         .selanjutnya {
+          cursor: pointer;
           font-weight: 600;
           font-size: 0.778rem;
           line-height: 1.167rem;
@@ -434,8 +435,10 @@ main#pendaftaran {
   background-position: center;
   position: relative;
   transition: ease-in-out 200ms;
+  margin-bottom: 80px;
   &:hover {
     border-color: #1959a9;
+    background-color: #F2F7FE;
   }
   .upload-input {
     text-align: center;
@@ -470,15 +473,15 @@ main#pendaftaran {
     text-align: center;
     img {
       margin-bottom: 24px;
-      width: 126px;
+      width: 80px;
       height: auto;
     }
     p {
-      font-weight: normal;
+      font-weight: 500;
       font-size: 13px;
-      line-height: 22px;
-      text-align: center;
-      color: #7a7a7a;
+      line-height: 20px;
+      text-transform: capitalize;
+      color: #404852;
       b {
         font-weight: 600;
         text-decoration: underline;
@@ -556,7 +559,35 @@ main#pendaftaran {
   //   font-size: 1em;
   // }
 }
+.has-file{
+  background-color: #C4C4C4;
+  border: none;
+  &:hover {
+    background-color: #C4C4C4 !important;
+  }
+}
+#action-file {
+  display: none;
+  .right{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: block;
+    button{
+      display: block;
+      margin-bottom: 6px;
+      img{
+        width: 24px;
+        height: 24px;
+      }
+      background-color: transparent;
+      border: none;
+    }
+  }
+  .left{
 
+  }
+}
 .has-image {
   &::before {
     position: absolute;
