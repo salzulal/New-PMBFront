@@ -218,6 +218,7 @@ main#pendaftaran {
           margin-bottom: 16px;
         }
         .phone-number {
+          margin: 12px 0;
           .city-select {
             input,
             select {
@@ -333,6 +334,15 @@ main#pendaftaran {
           @media (max-width: 359.98px) {
             width: 100%;
           }
+        }
+        .lewati{
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 21px;
+          letter-spacing: 0.25px;
+          text-decoration-line: underline;
+          text-transform: capitalize;
+          color: #F57C00;
         }
         .selanjutnya {
           cursor: pointer;

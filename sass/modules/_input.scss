@@ -6,6 +6,17 @@ $width: 400px;
 form {
   width: $width;
 }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 .datepicker-style{
   background: #FFFFFF;
   border: 1px solid #F5F6F8;
@@ -154,7 +165,15 @@ form {
 .group {
   position: relative;
   margin: 12px 0;
-  
+  .satuan{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-weight: normal;
+    right: 18px;
+    top: 18px;
+    color: #404852;
+  }
   input,
   textarea,
   select {
@@ -355,9 +374,9 @@ form {
   -webkit-appearance: none;
 }
 .form-select-pmb{
-  label{
-    display: none;
-  }
+  // label{
+  //   display: none;
+  // }
   .select2-container{
     width: 100% !important; 
   }

@@ -253,6 +253,85 @@ p {
   background-color: #eff1f7;
 }
 
+.group-radio-square {
+  margin-bottom: 24px;
+}
+
+.group-radio-square [type="radio"]:checked,
+.group-radio-square [type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+.group-radio-square [type="radio"]:checked + label,
+.group-radio-square [type="radio"]:not(:checked) + label {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  margin-right: 12px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 44px;
+  color: #404852;
+  font-weight: normal;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #7A7A7A;
+}
+
+.group-radio-square [type="radio"]:checked + label:before,
+.group-radio-square [type="radio"]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  width: 44px;
+  height: 44px;
+  border: 1px solid #F5F6F8;
+  border-radius: 4px;
+  background: transparent;
+}
+
+.group-radio-square [type="radio"]:checked + label:after,
+.group-radio-square [type="radio"]:not(:checked) + label:after {
+  content: "";
+  width: 44px;
+  height: 44px;
+  left: 0;
+  top: 0;
+  background: rgba(25, 89, 169, 0.04);
+  position: absolute;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  border-color: #1959a9;
+}
+
+.group-radio-square [type="radio"]:checked + label:before {
+  border-color: #1959a9 !important;
+}
+
+.group-radio-square [type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+.group-radio-square [type="radio"]:checked + label {
+  color: #1959a9;
+  font-weight: 600;
+}
+
+.group-radio-square [type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
 .group-radio [type="radio"]:checked,
 .group-radio [type="radio"]:not(:checked) {
   position: absolute;
@@ -678,6 +757,18 @@ form {
   width: 400px;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .datepicker-style {
   background: #FFFFFF;
   border: 1px solid #F5F6F8;
@@ -862,6 +953,16 @@ form {
 .group {
   position: relative;
   margin: 12px 0;
+}
+
+.group .satuan {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-weight: normal;
+  right: 18px;
+  top: 18px;
+  color: #404852;
 }
 
 .group input,
@@ -1130,10 +1231,6 @@ form {
   -moz-appearance: none;
        appearance: none;
   -webkit-appearance: none;
-}
-
-.form-select-pmb label {
-  display: none;
 }
 
 .form-select-pmb .select2-container {
@@ -6097,6 +6194,10 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .title-form-u
   margin-bottom: 16px;
 }
 
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .phone-number {
+  margin: 12px 0;
+}
+
 main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .phone-number .city-select input,
 main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .phone-number .city-select select {
   width: 100%;
@@ -6241,6 +6342,17 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .cta-pendaftaran a {
   main#pendaftaran .main-pendaftaran .card-main-pendaftaran .cta-pendaftaran a {
     width: 100%;
   }
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .cta-pendaftaran .lewati {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.25px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  text-transform: capitalize;
+  color: #F57C00;
 }
 
 main#pendaftaran .main-pendaftaran .card-main-pendaftaran .cta-pendaftaran .selanjutnya {
