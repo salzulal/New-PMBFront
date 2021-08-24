@@ -61,21 +61,21 @@ html {
 // typography
 h1 {
   font-weight: 600;
-  font-size: 1.25rem; //20
-  line-height: 1.875rem;
+  font-size: 1.222rem; //22
+  line-height: 1.833rem;
   color: $color-text;
   margin: 0;
 }
 h2 {
   font-weight: 600;
-  font-size: 1.125rem; //18
-  line-height: 1.688rem;
+  font-size: 1.111rem; //20
+  line-height: 1.667rem;
   color: $color-text;
   margin: 0;
 }
 h3 {
   font-weight: 600;
-  font-size: 1rem; //16
+  font-size: 1rem; //18
   line-height: 1.5rem;
   color: $color-text;
   margin: 0;
@@ -83,28 +83,28 @@ h3 {
 
 h4 {
   font-weight: 600;
-  font-size: 0.875rem; //14
-  line-height: 1.313rem;
+  font-size: 0.889rem; //16
+  line-height: 1.333rem;
   color: $color-text;
   margin: 0;
 }
 h5 {
   font-weight: 600;
-  font-size: 0.778rem;
+  font-size: 0.778rem; //14
   line-height: 1.167rem;
   color: $color-text;
   margin: 0;
 }
 h6 {
   font-weight: 600;
-  font-size: 0.722rem;
-  line-height: 1.111rem;
+  font-size: 0.722rem; //13
+  line-height: 1rem;
   color: $color-text;
   margin: 0;
 }
 p {
-  font-size: 0.8125rem; //13
-  line-height: 1.188rem;
+  font-size: 0.667rem; //12
+  line-height: 1rem;
   letter-spacing: 0.15px;
   color: $color-text;
   margin: 0;
