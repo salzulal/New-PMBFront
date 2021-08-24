@@ -401,11 +401,10 @@ footer {
           margin-top: 16px;
           justify-content: flex-end;
         }
-        @media (max-width: 459.98px) {
-          justify-content: center;
-        }
+
         @media (max-width: 359.98px) {
           flex-direction: column;
+          justify-content: center;
           align-items: center;
         }
         a {

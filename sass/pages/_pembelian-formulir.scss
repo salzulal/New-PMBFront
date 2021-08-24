@@ -301,7 +301,6 @@ main#pendaftaran {
                 cursor: pointer;
                 i,
                 h5 {
-                  font-size: 14px;
                   color: $color-primary;
                 }
                 i {
@@ -421,6 +420,7 @@ main#pendaftaran {
           margin: 0 auto;
         }
         h3 {
+          margin-top: 12px;
           color: $color-danger;
         }
         h5 {
@@ -536,6 +536,7 @@ main#pendaftaran {
                   color: $color-primary;
                   cursor: pointer;
                   width: fit-content;
+                  margin-left: auto;
                 }
               }
             }
@@ -572,8 +573,16 @@ main#pendaftaran {
               }
               h5 {
                 &.status {
-                  font-weight: 500;
-                  color: rgba(237, 47, 135, 1);
+                  &.expired {
+                    font-weight: 500;
+                    color: rgba(237, 47, 135, 1);
+                  }
+                  &.success {
+                    font-weight: 400;
+                    span {
+                      color: #00cdac;
+                    }
+                  }
                 }
                 &.number {
                   font-family: "DM Mono", sans-serif;
@@ -591,14 +600,15 @@ main#pendaftaran {
         margin: 40px auto 44px;
         .row {
           margin: 0 -12px;
-          .col-6 {
+          .col {
             padding: 0 12px;
           }
           .button {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 68px;
+            min-height: 68px;
+            height: fit-content;
             width: 100%;
             border-radius: 12px;
             p {
@@ -883,7 +893,7 @@ main#pendaftaran {
           margin-top: 76px;
           .button {
             width: 100%;
-            border-radius: 6px;
+            border-radius: 8px;
             height: 64px;
             justify-content: center;
             align-items: center;
@@ -996,6 +1006,9 @@ main#pendaftaran {
   main#pendaftaran {
     .main-pendaftaran {
       .card-main-pendaftaran {
+        hr.card-divider {
+          margin: 0 -32px;
+        }
         .promo-voucher {
           .voucher {
             .col-12 {
@@ -1019,6 +1032,13 @@ main#pendaftaran {
                   border-top: 2px dashed $color-primary;
                 }
               }
+            }
+          }
+        }
+        .buttons {
+          .row {
+            .button {
+              min-height: 100%;
             }
           }
         }
@@ -1061,6 +1081,44 @@ main#pendaftaran {
               .right {
                 img {
                   max-width: 80px;
+                }
+              }
+            }
+          }
+        }
+        .buttons {
+          .row {
+            .col-12 {
+              padding: 6px 12px;
+            }
+          }
+        }
+        .payment-details {
+          .row {
+            .left {
+              .row-subtitle {
+                -ms-word-break: break-all;
+                word-break: break-all;
+                word-break: break-word;
+                -webkit-hyphens: auto;
+                -moz-hyphens: auto;
+                -ms-hyphens: auto;
+                hyphens: auto;
+              }
+            }
+            .right {
+              img {
+                width: 80px;
+                max-width: 100%;
+              }
+            }
+          }
+          &.recap {
+            .row {
+              .right {
+                img {
+                  width: 30px;
+                  max-width: 100%;
                 }
               }
             }

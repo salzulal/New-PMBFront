@@ -464,7 +464,7 @@ p {
   width: -moz-fit-content;
   width: fit-content;
   cursor: pointer;
-  padding: 4px 16px;
+  padding: 12px 16px;
 }
 
 .button p {
@@ -1752,20 +1752,15 @@ footer .container-xxl .contact-pendaftaran p {
   }
 }
 
-@media (max-width: 459.98px) {
-  footer .container-xxl .contact-pendaftaran .cta-contact {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
 @media (max-width: 359.98px) {
   footer .container-xxl .contact-pendaftaran .cta-contact {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -6956,7 +6951,6 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .vouche
 
 main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher .col-12.right a i,
 main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher .col-12.right a h5 {
-  font-size: 14px;
   color: #3656a1;
 }
 
@@ -7091,6 +7085,7 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .ilustrasi h2 {
 }
 
 main#pendaftaran .main-pendaftaran .card-main-pendaftaran .ilustrasi h3 {
+  margin-top: 12px;
   color: #e53935;
 }
 
@@ -7235,6 +7230,7 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .payment-details .row 
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  margin-left: auto;
 }
 
 main#pendaftaran .main-pendaftaran .card-main-pendaftaran .payment-details.recap .section-title {
@@ -7281,9 +7277,17 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .payment-details.recap
   margin-right: 6px;
 }
 
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .payment-details.recap .row .right h5.status {
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .payment-details.recap .row .right h5.status.expired {
   font-weight: 500;
   color: #ed2f87;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .payment-details.recap .row .right h5.status.success {
+  font-weight: 400;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .payment-details.recap .row .right h5.status.success span {
+  color: #00cdac;
 }
 
 main#pendaftaran .main-pendaftaran .card-main-pendaftaran .payment-details.recap .row .right h5.number {
@@ -7303,7 +7307,7 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .buttons .row {
   margin: 0 -12px;
 }
 
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .buttons .row .col-6 {
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .buttons .row .col {
   padding: 0 12px;
 }
 
@@ -7317,7 +7321,10 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .buttons .row .button 
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 68px;
+  min-height: 68px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   width: 100%;
   border-radius: 12px;
 }
@@ -7664,7 +7671,7 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .cara-pembayaran .acco
 
 .modal-small .modal-content .modal-body.with-illus .buttons .button {
   width: 100%;
-  border-radius: 6px;
+  border-radius: 8px;
   height: 64px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -7780,6 +7787,9 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .cara-pembayaran .acco
 }
 
 @media (max-width: 767.98px) {
+  main#pendaftaran .main-pendaftaran .card-main-pendaftaran hr.card-divider {
+    margin: 0 -32px;
+  }
   main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher .col-12.left {
     border: 1px solid #dadce0;
     border-bottom: none;
@@ -7795,6 +7805,9 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .cara-pembayaran .acco
   main#pendaftaran .main-pendaftaran .card-main-pendaftaran .promo-voucher .voucher.active .col-12.right {
     border: 1px solid #3656a1;
     border-top: 2px dashed #3656a1;
+  }
+  main#pendaftaran .main-pendaftaran .card-main-pendaftaran .buttons .row .button {
+    min-height: 100%;
   }
   .modal-pindah-jalur .modal-body .body-heading .alert-box {
     -webkit-box-orient: vertical;
@@ -7822,6 +7835,25 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .cara-pembayaran .acco
 @media (max-width: 575.98px) {
   main#pendaftaran .main-pendaftaran .card-main-pendaftaran .pilihan-pembayaran .pilihan-list .pilihan-item .right img {
     max-width: 80px;
+  }
+  main#pendaftaran .main-pendaftaran .card-main-pendaftaran .buttons .row .col-12 {
+    padding: 6px 12px;
+  }
+  main#pendaftaran .main-pendaftaran .card-main-pendaftaran .payment-details .row .left .row-subtitle {
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+  }
+  main#pendaftaran .main-pendaftaran .card-main-pendaftaran .payment-details .row .right img {
+    width: 80px;
+    max-width: 100%;
+  }
+  main#pendaftaran .main-pendaftaran .card-main-pendaftaran .payment-details.recap .row .right img {
+    width: 30px;
+    max-width: 100%;
   }
   .modal-pindah-jalur .modal-body .jalur-list .jalur-row .col {
     padding: 12px 24px;
