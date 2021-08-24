@@ -204,165 +204,104 @@
                   src="../img/pembelian-formulir/bg-ilustrasi.svg"
                   alt=""
                 /> -->
-                <div class="ilustrasi">
+                <div class="ilustrasi recap cancelled">
                   <img
-                    src="../img/pembelian-formulir/ilustrasi-waiting-payment.svg"
+                    src="../img/pembelian-formulir/ilustrasi-pembayaran-dibatalkan.svg"
                     alt=""
                   />
-                  <h2>Segera Selesaikan Pembayaran Anda Sebelum</h2>
-                  <h3>Senin, 12 Juni 2021 (23:23 WIB)</h3>
+                  <h2>
+                    Pembayaran melalui<br />BTN Virtual Account dibatalkan
+                  </h2>
+                  <h5 class="text-danger">Harap tidak membayar tagihan ini</h5>
                 </div>
+                <!-- or -->
+                <!-- <div class="ilustrasi recap success">
+                  <img
+                    src="../img/pembelian-formulir/ilustrasi-pembayaran-berhasil.svg"
+                    alt=""
+                  />
+                  <h2>Pembayaran Formulir Telah Berhasil</h2>
+                  <h5>
+                    Terima kasih telah menyelesaikan pembayaran. Silakan
+                    lanjutkan proses pendaftaran atau cek detail transaksi.
+                  </h5>
+                </div> -->
 
-                <div class="col-12 col-md-10 payment-details">
+                <div class="col-12 col-md-10 payment-details recap">
+                  <h4 class="section-title">Detail Pembayaran</h4>
                   <div class="row">
                     <div class="col-6 left">
-                      <h4 class="row-title">Virtual Account</h4>
-                      <h4 class="row-subtitle">BNI Virtual Account</h4>
+                      <h5>Waktu Pembayaran</h5>
                     </div>
                     <div class="col-6 right">
-                      <img src="../img/pembelian-formulir/bni.png" alt="" />
+                      <h5>Minggu, 12 Juni 2021 (16:00 WIB)</h5>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-6 left">
-                      <h4 class="row-title">Nomor Virtual Account</h4>
-                      <h4 class="row-subtitle">888298298928000</h4>
+                      <h5>Metode Pembayaran</h5>
                     </div>
                     <div class="col-6 right">
-                      <h5 class="icon-left">
-                        <span class="material-icons-round"> content_copy </span
-                        >Salin Nomor
+                      <img src="../img/pembelian-formulir/bni.png" alt="" />
+                      <h5>BNi Virtual Account</h5>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6 left">
+                      <h5>Status Pembayaran</h5>
+                    </div>
+                    <div class="col-6 right">
+                      <h5 class="icon-left status">
+                        <span class="material-icons-round"> cancel </span
+                        >Expired
                       </h5>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-6 left">
-                      <h4 class="row-title detail">Total Pembayaran</h4>
-                      <h4
-                        class="row-subtitle total-number"
-                        data-bs-toggle="tooltip"
-                        data-bs-placement="right"
-                        title="Pastikan Anda transfer sesuai nominal hingga 3 digit terakhir"
-                      >
-                        Rp. 365.000
-                      </h4>
+                      <h5>Biaya Formulir Pendaftaran (Cashback 20%)</h5>
                     </div>
                     <div class="col-6 right">
-                      <a id="expand-details">
-                        <h5 class="icon-right more">
-                          Detail Bayar
-                          <span class="material-icons-round">
-                            expand_more
-                          </span>
-                        </h5>
-                        <h5 class="icon-right less hidden">
-                          Ringkasan
-                          <span class="material-icons-round">
-                            expand_less
-                          </span>
-                        </h5>
-                      </a>
+                      <h5 class="number">Rp. 360.000</h5>
                     </div>
-                    <div class="col-12 rincian">
-                      <div class="row">
-                        <div class="col-8">
-                          <h5>Biaya Formulir Pendaftaran</h5>
-                        </div>
-                        <div class="col-4">
-                          <h4>Rp. 360.000</h4>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-8">
-                          <h5>Biaya Admin Pembayaran</h5>
-                        </div>
-                        <div class="col-4">
-                          <h4>Rp. 5.000</h4>
-                        </div>
-                      </div>
-
-                      <div class="row total">
-                        <div class="col-8">
-                          <h5>Total Pembayaran</h5>
-                        </div>
-                        <div class="col-4">
-                          <h4
-                            data-bs-toggle="tooltip"
-                            data-bs-placement="left"
-                            title="Pastikan Anda transfer sesuai nominal hingga 3 digit terakhir"
-                          >
-                            Rp. 365.000
-                          </h4>
-                        </div>
-                      </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6 left">
+                      <h5>Biaya Admin Pembayaran</h5>
+                    </div>
+                    <div class="col-6 right">
+                      <h5 class="number">Rp. 5.000</h5>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6 left">
+                      <h5 class="total">Total Pembayaran</h5>
+                    </div>
+                    <div class="col-6 right">
+                      <h5 class="number total">Rp. 365.000</h5>
                     </div>
                   </div>
                 </div>
 
-                <!-- for offline -->
-                <div class="col-12 col-md-10 transfer-bank waiting">
-                  <h4 class="sub-title">Ketentuan Transfer</h4>
-                  <div class="ketentuan-list">
-                    <div class="row ketentuan-item">
-                      <div class="col col-auto marker">
-                        <span class="material-icons-round"> trip_origin </span>
-                      </div>
-                      <div class="col content">
-                        <h5>
-                          Pembayaran dapat dilakukan melalui transfer ke
-                          rekening Bank BCA, Bank Mandiri, Bank Paninbank, Bank
-                          BNI, BANK BTN, Bank BTPN, Bank Muamalat atau Bank
-                          Bukopin.
-                        </h5>
-                        <div class="row banks">
-                          <div class="col-auto bank">
-                            <img src="../img/pembelian-formulir/bni.png" />
-                          </div>
-                          <div class="col-auto bank">
-                            <img src="../img/pembelian-formulir/mandiri.png" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row ketentuan-item">
-                      <div class="col col-auto marker">
-                        <span class="material-icons-round"> trip_origin </span>
-                      </div>
-                      <div class="col content">
-                        <h5>
-                          Pembayaran dengan angka yang tidak tepat akan
-                          menyebabkan verifikasi pembayaran menjadi terhambat.
-                        </h5>
-                      </div>
-                    </div>
-                    <div class="row ketentuan-item">
-                      <div class="col col-auto marker">
-                        <span class="material-icons-round"> trip_origin </span>
-                      </div>
-                      <div class="col content">
-                        <h5>
-                          Mohon transfer total pembayaran tepat hingga 3 digit
-                          terakhir untuk proses verifikasi.
-                        </h5>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- end of for offline -->
                 <div class="col-12 col-md-10 buttons">
                   <div class="row">
-                    <div class="col-6">
-                      <a
-                        class="button primary outline"
-                        type="button"
-                        data-bs-toggle="modal"
-                        data-bs-target="#modalKonfirmasiBatalTransaksi"
-                        data-bs-dismiss="modal"
-                      >
+                    <div class="col-12">
+                      <a class="button primary" type="button">
                         <div class="ripple js-ripple">
                           <span class="ripple__circle"></span>
                         </div>
-                        <p>Batalkan Transaksi</p>
+                        <p>Ulangi Pembayaran</p>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- or -->
+                  <!-- <div class="row">
+                    <div class="col-6">
+                      <a class="button primary outline" type="button">
+                        <div class="ripple js-ripple">
+                          <span class="ripple__circle"></span>
+                        </div>
+                        <p>Cetak Bukti Bayar</p>
                       </a>
                     </div>
                     <div class="col-6">
@@ -370,115 +309,11 @@
                         <div class="ripple js-ripple">
                           <span class="ripple__circle"></span>
                         </div>
-                        <p>Cek Status Pembayaran</p>
+                        <p>Lanjutkan Pendaftaran</p>
                       </a>
                     </div>
-                  </div>
+                  </div> -->
                 </div>
-
-                <!-- for online -->
-                <hr class="card-divider" />
-                <div class="col-12 col-md-10 cara-pembayaran">
-                  <h4 class="section-title">Petunjuk Pembayaran</h4>
-
-                  <div
-                    class="accordion accordion-flush"
-                    id="accordion-cara-pembayaran"
-                  >
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingOne">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseOne"
-                          aria-expanded="false"
-                          aria-controls="collapseOne"
-                        >
-                          <h5>ATM Mandiri</h5>
-                        </button>
-                      </h2>
-                      <div
-                        id="collapseOne"
-                        class="accordion-collapse collapse"
-                        data-bs-parent="#accordion-cara-pembayaran"
-                      >
-                        <div class="accordion-body">
-                          <ol
-                            class="
-                              list-group list-group-numbered list-group-flush
-                            "
-                          >
-                            <li class="list-group-item">
-                              <p>Masukkan Kartu ATM BCA & PIN</p>
-                            </li>
-                            <li class="list-group-item">
-                              <p>
-                                Pilih menu Transaksi Lainnya > Transfer > ke
-                                Rekening BCA Virtual Account
-                              </p>
-                            </li>
-                            <li class="list-group-item">
-                              <p>
-                                Masukkan 5 angka kode perusahaan untuk Tokopedia
-                                (80777) dan Nomor HP yang terdaftar di akun
-                                Tokopedia Anda (Contoh: 8077708612345xxx)
-                              </p>
-                            </li>
-                          </ol>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingTwo">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseTwo"
-                          aria-expanded="false"
-                          aria-controls="collapseTwo"
-                        >
-                          <h5>Livin' by Mandiri (mBanking)</h5>
-                        </button>
-                      </h2>
-                      <div
-                        id="collapseTwo"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="headingTwo"
-                        data-bs-parent="#accordion-cara-pembayaran"
-                      >
-                        <div class="accordion-body">ngeng</div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingThree">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseThree"
-                          aria-expanded="false"
-                          aria-controls="collapseThree"
-                        >
-                          <h5>ATM Mandiri</h5>
-                        </button>
-                      </h2>
-                      <div
-                        id="collapseThree"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="headingThree"
-                        data-bs-parent="#accordion-cara-pembayaran"
-                      >
-                        <div class="accordion-body">
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Culpa, quaerat.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- end of for online -->
               </div>
             </div>
           </div>
@@ -492,7 +327,7 @@
           <div class="contact-pendaftaran">
             <div class="row align-items-center">
               <div class="col-lg-8">
-                <div class="d-flex align-items-center">
+                <div class="text d-flex align-items-center">
                   <img src="../img/comp-pendaftaran/footer-image.svg" alt="" />
                   <div>
                     <h3>Anda Mengalami Kesulitan?</h3>

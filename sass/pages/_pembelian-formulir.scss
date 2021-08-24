@@ -412,7 +412,7 @@ main#pendaftaran {
         padding: 40px 0;
         img {
           margin: 16px 0 44px;
-          max-width: 100%;
+          max-width: 60%;
         }
         h2 {
           width: 320px;
@@ -788,6 +788,7 @@ main#pendaftaran {
           max-height: 100%;
           max-width: 100%;
           object-fit: cover;
+          border-radius: 6px;
         }
         .title {
           font-weight: 400;
@@ -948,6 +949,146 @@ main#pendaftaran {
             font-size: 0.722rem;
             line-height: 1.111rem;
             cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+// responsive
+@media (max-width: 991.98px) {
+  main#pendaftaran {
+    .main-pendaftaran {
+      .card-main-pendaftaran {
+        .info-jalur-pembayaran {
+          .col {
+            .row {
+              .col {
+                padding: 6px 12px;
+                h5 {
+                  margin-top: 6px;
+                }
+              }
+            }
+          }
+        }
+        .select-metode {
+          .title {
+            margin-bottom: 8px;
+          }
+          .select {
+            padding: 0;
+            .form-select-pmb {
+              width: calc(100% - 128px);
+            }
+            .button {
+              width: 112px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  main#pendaftaran {
+    .main-pendaftaran {
+      .card-main-pendaftaran {
+        .promo-voucher {
+          .voucher {
+            .col-12 {
+              &.left {
+                border: 1px solid #dadce0;
+                border-bottom: none;
+              }
+              &.right {
+                border: 1px solid #dadce0;
+                border-top: 2px dashed #dadce0;
+              }
+            }
+            &.active {
+              .col-12 {
+                &.left {
+                  border: 1px solid $color-primary;
+                  border-bottom: none;
+                }
+                &.right {
+                  border: 1px solid $color-primary;
+                  border-top: 2px dashed $color-primary;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .modal-pindah-jalur {
+    .modal-body {
+      .body-heading {
+        .alert-box {
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+        }
+      }
+      .jalur-list {
+        .jalur-row {
+          .col {
+            padding: 12px;
+          }
+          img {
+            max-height: 240px;
+          }
+          .title {
+            margin-bottom: 4px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  main#pendaftaran {
+    .main-pendaftaran {
+      .card-main-pendaftaran {
+        .pilihan-pembayaran {
+          .pilihan-list {
+            .pilihan-item {
+              .right {
+                img {
+                  max-width: 80px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .modal-pindah-jalur {
+    .modal-body {
+      .jalur-list {
+        .jalur-row {
+          .col {
+            padding: 12px 24px;
+          }
+          img {
+            max-height: 200px;
+          }
+          .more {
+            width: 100%;
+            .tag {
+              width: 100%;
+              max-width: 100%;
+            }
+            .button {
+              width: 100%;
+              max-width: 100%;
+            }
           }
         }
       }

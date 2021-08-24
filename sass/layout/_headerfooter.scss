@@ -358,6 +358,113 @@ footer {
         }
       }
     }
+    .contact-pendaftaran {
+      .text {
+        @media (max-width: 459.98px) {
+          flex-direction: column;
+        }
+      }
+
+      img {
+        width: 161px;
+        height: auto;
+        margin-right: 40px;
+        @media (max-width: 575.98px) {
+          width: 80px;
+          margin-right: 20px;
+        }
+        @media (max-width: 459.98px) {
+          margin-right: 0;
+          margin-bottom: 12px;
+        }
+      }
+      h3 {
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 1.778rem;
+        color: #404852;
+        margin-bottom: 8px;
+      }
+      p {
+        font-weight: normal;
+        font-size: 0.778rem;
+        line-height: 1.556rem;
+        letter-spacing: 0.346154px;
+        color: #7a7a7a;
+        margin: 0;
+      }
+      .cta-contact {
+        @media (max-width: 991.98px) {
+          margin-top: 16px;
+          justify-content: flex-end;
+        }
+        @media (max-width: 459.98px) {
+          justify-content: center;
+        }
+        @media (max-width: 359.98px) {
+          flex-direction: column;
+          align-items: center;
+        }
+        a {
+          text-decoration: none;
+          @media (max-width: 359.98px) {
+            width: 100%;
+          }
+        }
+        .btn-wa {
+          background: #0097a7;
+          border-radius: 8px;
+          text-decoration: none;
+          color: #fff;
+          padding: 18px 34px;
+          margin-right: 18px;
+          font-weight: 600;
+          font-size: 0.778rem;
+          line-height: 1.167rem;
+          letter-spacing: 0.25px;
+          text-transform: capitalize;
+          text-align: center;
+          &:hover {
+            transition: 200ms;
+            background-color: #0a8391;
+          }
+          @media (max-width: 767.98px) {
+            padding: 12px 16px;
+            margin-right: 12px;
+          }
+          @media (max-width: 359.98px) {
+            margin: 0;
+            margin-bottom: 8px;
+            width: 100%;
+          }
+        }
+        .btn-normal {
+          background: #fff;
+          border-radius: 8px;
+          text-decoration: none;
+          border: 1px solid #e0e2e3;
+          color: #7a7a7a;
+          padding: 18px 34px;
+          font-weight: 600;
+          font-size: 0.778rem;
+          line-height: 1.167rem;
+          letter-spacing: 0.25px;
+          text-transform: capitalize;
+          text-align: center;
+
+          &:hover {
+            transition: 200ms;
+            background-color: rgb(238, 237, 237);
+          }
+          @media (max-width: 767.98px) {
+            padding: 12px 16px;
+          }
+          @media (max-width: 359.98px) {
+            width: 100%;
+          }
+        }
+      }
+    }
     .footmark-pendaftaran {
       border-top: 1px solid #dedede;
       display: inline-flex;
@@ -366,14 +473,14 @@ footer {
       width: 100%;
       padding-top: 32px;
       margin-top: 40px;
-      .logo{
+      .logo {
         width: 30%;
-        img{
+        img {
           height: 55px;
           width: auto;
         }
       }
-      .copyright{
+      .copyright {
         width: 40%;
         text-align: center;
       }
