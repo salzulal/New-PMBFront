@@ -1,0 +1,245 @@
+main#pendaftaran {
+  .main-pendaftaran {
+    .card-main-pendaftaran {
+      .notify {
+        background: #fefefc;
+        box-shadow: 0px 30px 60px rgba(32, 56, 85, 0.06);
+        border-radius: 4px;
+        border-top: 4px solid $color-ternary;
+        padding: 24px 24px 20px;
+        position: relative;
+        overflow: hidden;
+        margin-top: 56px;
+        h5 {
+          display: flex;
+          align-items: center;
+          .material-icons-round {
+            margin-right: 16px;
+            color: $color-ternary;
+            font-size: 18px;
+          }
+        }
+      }
+      .kartu-peserta {
+        background: #fafafa;
+        border-radius: 16px;
+        margin-top: 44px -16px;
+        .kartu-img {
+          position: relative;
+          padding: 0 16px;
+          img {
+            width: 100%;
+            height: 100%;
+            min-width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+          }
+          .id {
+            position: absolute;
+            bottom: 28px;
+            left: 48px;
+            width: calc(100% - 96px);
+            h5 {
+              color: #fff;
+              font-weight: 500;
+              &.nim {
+                color: #ffffffa3;
+              }
+              &.name {
+                margin-top: 4px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// responsive
+@media (max-width: 991.98px) {
+  main#pendaftaran {
+    .main-pendaftaran {
+      .card-main-pendaftaran {
+        .info-jalur-pembayaran {
+          .col {
+            .row {
+              .col {
+                padding: 6px 12px;
+                h5 {
+                  margin-top: 6px;
+                }
+              }
+            }
+          }
+        }
+        .select-metode {
+          .title {
+            margin-bottom: 8px;
+          }
+          .select {
+            padding: 0;
+            .form-select-pmb {
+              width: calc(100% - 128px);
+            }
+            .button {
+              width: 112px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  main#pendaftaran {
+    .main-pendaftaran {
+      .card-main-pendaftaran {
+        hr.card-divider {
+          margin: 0 -32px;
+        }
+        .promo-voucher {
+          .voucher {
+            .col-12 {
+              &.left {
+                border: 1px solid #dadce0;
+                border-bottom: none;
+              }
+              &.right {
+                border: 1px solid #dadce0;
+                border-top: 2px dashed #dadce0;
+              }
+            }
+            &.active {
+              .col-12 {
+                &.left {
+                  border: 1px solid $color-primary;
+                  border-bottom: none;
+                }
+                &.right {
+                  border: 1px solid $color-primary;
+                  border-top: 2px dashed $color-primary;
+                }
+              }
+            }
+          }
+        }
+        .buttons {
+          .row {
+            .button {
+              min-height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .modal-pindah-jalur {
+    .modal-body {
+      .body-heading {
+        .alert-box {
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+        }
+      }
+      .jalur-list {
+        .jalur-row {
+          .col {
+            padding: 12px;
+          }
+          img {
+            max-height: 240px;
+          }
+          .title {
+            margin-bottom: 4px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  main#pendaftaran {
+    .main-pendaftaran {
+      .card-main-pendaftaran {
+        .pilihan-pembayaran {
+          .pilihan-list {
+            .pilihan-item {
+              .right {
+                img {
+                  max-width: 80px;
+                }
+              }
+            }
+          }
+        }
+        .buttons {
+          .row {
+            .col-12 {
+              padding: 6px 12px;
+            }
+          }
+        }
+        .payment-details {
+          .row {
+            .left {
+              .row-subtitle {
+                -ms-word-break: break-all;
+                word-break: break-all;
+                word-break: break-word;
+                -webkit-hyphens: auto;
+                -moz-hyphens: auto;
+                -ms-hyphens: auto;
+                hyphens: auto;
+              }
+            }
+            .right {
+              img {
+                width: 80px;
+                max-width: 100%;
+              }
+            }
+          }
+          &.recap {
+            .row {
+              .right {
+                img {
+                  width: 30px;
+                  max-width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .modal-pindah-jalur {
+    .modal-body {
+      .jalur-list {
+        .jalur-row {
+          .col {
+            padding: 12px 24px;
+          }
+          img {
+            max-height: 200px;
+          }
+          .more {
+            width: 100%;
+            .tag {
+              width: 100%;
+              max-width: 100%;
+            }
+            .button {
+              width: 100%;
+              max-width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
