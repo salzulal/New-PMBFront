@@ -118,7 +118,7 @@
             <div class="col-xl-10 offset-xl-1">
               <div class="card-main-pendaftaran">
                 <div class="step-pendaftaran">
-                  <div class="list-step active">
+                  <div class="list-step done">
                     <div class="icon">
                       <img src="../img/comp-pendaftaran/navigasi/user.svg" alt="" onload="SVGInject(this)">
                     </div>
@@ -127,7 +127,7 @@
                       <h3>Isi Data Umum</h3>
                     </div>
                   </div>
-                  <div class="list-step">
+                  <div class="list-step done">
                     <div class="icon">
                       <img src="../img/comp-pendaftaran/navigasi/document.svg" alt="" onload="SVGInject(this)">
                     </div>
@@ -136,7 +136,7 @@
                       <h3>Pembelian Formulir</h3>
                     </div>
                   </div>
-                  <div class="list-step">
+                  <div class="list-step done">
                     <div class="icon">
                       <img src="../img/comp-pendaftaran/navigasi/folder.svg" alt="" onload="SVGInject(this)">
                     </div>
@@ -145,7 +145,7 @@
                       <h3>Pengisian Berkas</h3>
                     </div>
                   </div>
-                  <div class="list-step">
+                  <div class="list-step done">
                     <div class="icon">
                       <img src="../img/comp-pendaftaran/navigasi/edit.svg" alt="" onload="SVGInject(this)">
                     </div>
@@ -154,7 +154,7 @@
                       <h3>Seleksi</h3>
                     </div>
                   </div>
-                  <div class="list-step">
+                  <div class="list-step done">
                     <div class="icon">
                       <img src="../img/comp-pendaftaran/navigasi/wallet.svg" alt="" onload="SVGInject(this)">
                     </div>
@@ -163,7 +163,7 @@
                       <h3>Biaya Kuliah</h3>
                     </div>
                   </div>
-                  <div class="list-step">
+                  <div class="list-step active">
                     <div class="icon">
                       <img src="../img/comp-pendaftaran/navigasi/archive.svg" alt="" onload="SVGInject(this)">
                     </div>
@@ -174,171 +174,90 @@
                   </div>
                 </div>
                 <div class="biodata">
-                  <div class="row">
-                    <div class="col-lg-12">
-                      <div class="title">
-                        <h2>Data Diri</h2>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="group">
-                          <input type="text" placeholder="Nama Lengkap" required="required" /><label>Nama Lengkap</label>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="group">
-                          <input type="email" placeholder="Email" required="required" /><label>Email</label>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <h2 class="title-form">Jenis Kelamin</h2>
-                      <div class="d-flex align-items-center">
-                        <div class="group-radio">
-                            <input type="radio" name="radio-group" id="male">
-                            <label for="male">Laki - Laki</label>
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="title">
+                          <h2>Berkas Pendaftaran</h2>
+                          <p>Terdapat 06 berkas yang harus dilengkapi</p>
                         </div>
-                        <div class="group-radio">
-                          <input type="radio" name="radio-group" id="female">
-                          <label for="female">Perempuan</label>
+                        <div class="alert-box">
+                          <img src="../img/comp-pendaftaran/notification.svg" alt="Icon">
+                          <p>Semua berkas telah <b>berhasil</b> di upload, silakan lanjutkan ke proses berikutnya</p>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="phone-number">
-                        <div class="city-select">
-                            <select name="citycode" id="citycode" value="+62" disabled>
-                                <option value="+62">+62</option>
-                            </select>
-                            <span class="material-icons-round">
-                                arrow_drop_down
-                            </span>
-                        </div>
-                        <div id="list-select">
-                            <div class="option" data-option="+62">Indonesia (+62)</div>
-                            <div class="option" data-option="+36">Hungaria (+36)</div>
-                            <div class="option" data-option="+52">Hongkong (+52)</div>
-                            <div class="option" data-option="+91">India (+91)</div>
-                            <div class="option" data-option="+44">Inggris Raya (+44)</div>
-                            <div class="option" data-option="+35">Irlandia (+35)</div>
-                        </div>
-                        <input type="number" placeholder="Handphone" required="required" />
-                        <label>Handphone</label>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="group date">
-                        <input type='text' data-language='id' id="jadwal-datepicker" placeholder="Tanggal Lahir" /><label>Tanggal Lahir</label>
-                        <span class="material-icons-round">
-                          event
-                        </span>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="group">
-                          <input type="text" placeholder="Alamat Domisili" required="required" /><label>Alamat Domisili</label>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="group form-select-pmb">
-                        <select class="select2-pmb-sekolah" id="placeholder-asal" data-placeholder="Asal Sekolah">
-                          <option></option>
-                          <option value="1">SMA Katolik ST. Louis 1 Surabaya</option>
-                          <option value="2">SMA Islam Jiwa Nala Surabaya</option>
-                          <option value="3">SMA Hang tuah 1 Surabaya</option>
-                          <option value="4">SMA Gema 45 Surabaya</option>
-                          <option value="5">SMA Bina Bangsa Surabaya</option>
-                        </select>
-                        <label>Asal Sekolah</label>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="group form-select-pmb">
-                        <select class="select2-pmb-sekolah" id="placeholder-jurusan" data-placeholder="Jurusan">
-                          <option></option>
-                          <option value="1">Jurusan 1</option>
-                          <option value="2">Jurusan 2</option>
-                          <option value="3">Jurusan 3</option>
-                        </select>
-                        <label>Jurusan</label>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="group form-select-pmb">
-                        <select class="select2-pmb-sekolah" id="placeholder-provinsi" data-placeholder="Provinsi">
-                          <option></option>
-                          <option value="1">Provinsi 1</option>
-                          <option value="2">Provinsi 2</option>
-                          <option value="3">Provinsi 3</option>
-                        </select>
-                        <label>Provinsi</label>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="group form-select-pmb">
-                        <select class="select2-pmb-sekolah" id="placeholder-kabupaten" data-placeholder="Kabupaten/Kota">
-                          <option></option>
-                          <option value="1">Kabupaten/Kota 1</option>
-                          <option value="2">Kabupaten/Kota 2</option>
-                          <option value="3">Kabupaten/Kota 3</option>
-                        </select>
-                        <label>Kabupaten/Kota</label>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="group form-select-pmb">
-                        <select class="select2-pmb" id="placeholder-thnlulus" data-placeholder="Tahun Lulus">
-                          <option></option>
-                          <option value="2020">2020</option>
-                          <option value="2021">2021</option>
-                        </select>
-                        <label>Tahun Lulus</label>
-                      </div>
-                    </div>
-                    <div class="col-lg-12">
-                      <div class="title">
-                        <h2>Program Studi</h2>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="group form-select-pmb">
-                        <select class="select2-pmb-sekolah" id="placeholder-pilihan1" data-placeholder="Pilihan Pertama">
-                          <option></option>
-                          <option value="1">S1 Prodi 1</option>
-                          <option value="2">S1 Prodi 2</option>
-                          <option value="3">S1 Prodi 3</option>
-                        </select>
-                        <label>Pilihan Pertama</label>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="group form-select-pmb">
-                        <select class="select2-pmb-sekolah" id="placeholder-pilihan2" data-placeholder="Pilihan Kedua">
-                          <option></option>
-                          <option value="1">S1 Prodi 1</option>
-                          <option value="2">S1 Prodi 2</option>
-                          <option value="3">S1 Prodi 3</option>
-                        </select>
-                        <label>Pilihan Kedua</label>
-                      </div>
-                    </div>
-                    <div class="col-lg-12">
-                      <div class="form-check-biodata">
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="ingatsaya">
-                          <label class="form-check-label" for="ingatsaya">
-                            Saya setuju dengan sadar menyatakan bahwa data yang dimasukkan benar adanya dan bisa dibuktikan secara hukum. Serta saya telah menyetujui dengan syarat dan ketentuan pendaftaran mahasiswa baru.
-                          </label>
+                      <div class="col-lg-5">
+                        <div class="contailer-list-upload">
+                          <div class="list-upload done">
+                            <img src="../img/comp-pendaftaran/check-green.svg" alt="">
+                            <h3>Bukti Biaya Daftar<span class="red">*</span></h3>
+                          </div>
+                          <div class="list-upload done">
+                            <img src="../img/comp-pendaftaran/check-green.svg" alt="">
+                            <h3>Pas Photo (3x4)<span class="red">*</span></h3>
+                          </div>
+                          <div class="list-upload done active">
+                            <img src="../img/comp-pendaftaran/check-green.svg" alt="">
+                            <h3>Legalisir SKHUN<span class="red">*</span></h3>
+                          </div>
+                          <div class="list-upload done">
+                            <img src="../img/comp-pendaftaran/check-green.svg" alt="">
+                            <h3>Kartu Tanda Penduduk (KTP)<span class="red">*</span></h3>
+                          </div>
+                          <div class="list-upload done">
+                            <img src="../img/comp-pendaftaran/check-green.svg" alt="">
+                            <h3>Raport Semester 1 - 4</h3>
+                          </div>
+                          <div class="list-upload done">
+                            <img src="../img/comp-pendaftaran/check-green.svg" alt="">
+                            <h3>Hasil Test Toefl</h3>
+                          </div>
                         </div>
                       </div>
-                      <div class="cta-pendaftaran">
-                          <a href="#"><div class="sebelum">
-                            <span class="material-icons-round">
-                            arrow_back
-                            </span>Sebelumnya</div></a>
-                          <a href="daftar-ulang-alamat.html"><div class="selanjutnya">Selanjutnya</div></a>
+                      <div class="col-lg-7">
+                        <h2 class="title-form-upload">Upload Legalisir SKHUN</h2>
+                        <label class="input-preview" id="input-preview" for="img">
+                          <div class="loading-input">
+                            <h4>Progress Upload <span id="percent"></span> ...</h4>
+                            <div class="file-size">
+                              <p id="filesize"></p><div class="dots"></div><p id="fileformat"></p>
+                            </div>
+                            <div class="progress-input"></div>
+                          </div>
+                          <div class="upload-input">
+                            <img src="../img/comp-pendaftaran/default-upload.png" alt="">
+                            <!-- <p>Drag & drop your file in here<br /> or click <b>UPLOAD</b></p> -->
+                            <p>Klik di dalam box untuk <b>UPLOAD</b></p>
+                            <div class="size-rule">
+                              Maks. file 10 MB with JPG, JPEG, or PDF format
+                            </div>
+                          </div>
+                          <div class="pdfFile">
+                            <img src="../img/comp-pendaftaran/pdf-default.svg" alt="">
+                            <!-- <p id="namaFile">File berhasil Diupload</p> -->
+                            <p>File berhasil Diupload</p>
+                          </div>
+                          <div id="action-file">
+                            <div class="right">
+                              <button type="button" onclick="deleteFile()"><img src="../img/comp-pendaftaran/delete-file.svg" alt=""></button>
+                              <button><img src="../img/comp-pendaftaran/download-image.svg" alt=""></a>
+                            </div>
+                          </div>
+                          <input class="input-preview__src" name="img" id="img" type="file"/>
+                        </label>
+                        <!-- <div class="preview-upload-image">
+                          
+                        </div> -->
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="cta-pendaftaran">
+                            <a href="#"><div class="sebelum">
+                              <span class="material-icons-round">
+                              arrow_back
+                              </span>Sebelumnya</div></a>
+                            <div data-bs-toggle="modal" data-bs-target="#modalBerkas" class="selanjutnya">Selanjutnya</div>
+                        </div>
                       </div>
                     </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -422,6 +341,55 @@
       </div>
     </footer>
 <!-- Modal Auth -->
+<div class="modal fade" id="modalBerkas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-small">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button
+            type="button"
+            class="btn-modal-close"
+            data-bs-dismiss="modal"
+          >
+            <span class="material-icons-round"> close </span>
+          </button>
+        </div>
+        <div class="modal-body with-illus">
+          <div class="ilustrasi">
+            <img
+              src="../img/comp-pendaftaran/ilustrasi-upload-berkas.svg"
+              alt=""
+            />
+          </div>
+          <h2>Konfirmasi Berkas</h2>
+          <h5>
+            Saat Anda menekan lanjutkan maka semua berkas yang di unggah tidak dapat diubah lagi, Yakin untuk melanjutkan?
+          </h5>
+          <div class="row buttons">
+            <div class="col-6">
+              <a
+                class="button gray outline"
+                type="button"
+                data-bs-dismiss="modal"
+              >
+                <div class="ripple js-ripple">
+                  <span class="ripple__circle"></span>
+                </div>
+                <p>Periksa Kembali</p>
+              </a>
+            </div>
+            <div class="col-6">
+              <a class="button primary" type="button" data-bs-dismiss="modal">
+                <div class="ripple js-ripple">
+                  <span class="ripple__circle"></span>
+                </div>
+                <p>Lanjutkan</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 <div class="modal fade" id="modalDaftar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
   <div class="modal-dialog modal-auth">
     <div class="modal-content">

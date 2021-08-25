@@ -6215,6 +6215,10 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .group input 
   width: 100%;
 }
 
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .group textarea {
+  width: 100%;
+}
+
 main#pendaftaran .main-pendaftaran .card-main-pendaftaran .biodata .group-radio {
   margin-bottom: 25px;
   margin-right: 20px;

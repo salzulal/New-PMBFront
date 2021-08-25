@@ -118,7 +118,7 @@
             <div class="col-xl-10 offset-xl-1">
               <div class="card-main-pendaftaran">
                 <div class="step-pendaftaran">
-                  <div class="list-step active">
+                  <div class="list-step done">
                     <div class="icon">
                       <img src="../img/comp-pendaftaran/navigasi/user.svg" alt="" onload="SVGInject(this)">
                     </div>
@@ -127,7 +127,7 @@
                       <h3>Isi Data Umum</h3>
                     </div>
                   </div>
-                  <div class="list-step">
+                  <div class="list-step done">
                     <div class="icon">
                       <img src="../img/comp-pendaftaran/navigasi/document.svg" alt="" onload="SVGInject(this)">
                     </div>
@@ -136,7 +136,7 @@
                       <h3>Pembelian Formulir</h3>
                     </div>
                   </div>
-                  <div class="list-step">
+                  <div class="list-step done">
                     <div class="icon">
                       <img src="../img/comp-pendaftaran/navigasi/folder.svg" alt="" onload="SVGInject(this)">
                     </div>
@@ -145,7 +145,7 @@
                       <h3>Pengisian Berkas</h3>
                     </div>
                   </div>
-                  <div class="list-step">
+                  <div class="list-step done">
                     <div class="icon">
                       <img src="../img/comp-pendaftaran/navigasi/edit.svg" alt="" onload="SVGInject(this)">
                     </div>
@@ -154,7 +154,7 @@
                       <h3>Seleksi</h3>
                     </div>
                   </div>
-                  <div class="list-step">
+                  <div class="list-step done">
                     <div class="icon">
                       <img src="../img/comp-pendaftaran/navigasi/wallet.svg" alt="" onload="SVGInject(this)">
                     </div>
@@ -163,7 +163,7 @@
                       <h3>Biaya Kuliah</h3>
                     </div>
                   </div>
-                  <div class="list-step">
+                  <div class="list-step active">
                     <div class="icon">
                       <img src="../img/comp-pendaftaran/navigasi/archive.svg" alt="" onload="SVGInject(this)">
                     </div>
@@ -180,162 +180,94 @@
                         <h2>Data Diri</h2>
                       </div>
                     </div>
-                    <div class="col-lg-6">
-                      <div class="group">
-                          <input type="text" placeholder="Nama Lengkap" required="required" /><label>Nama Lengkap</label>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="group">
-                          <input type="email" placeholder="Email" required="required" /><label>Email</label>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <h2 class="title-form">Jenis Kelamin</h2>
-                      <div class="d-flex align-items-center">
-                        <div class="group-radio">
-                            <input type="radio" name="radio-group" id="male">
-                            <label for="male">Laki - Laki</label>
-                        </div>
-                        <div class="group-radio">
-                          <input type="radio" name="radio-group" id="female">
-                          <label for="female">Perempuan</label>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="phone-number">
-                        <div class="city-select">
-                            <select name="citycode" id="citycode" value="+62" disabled>
-                                <option value="+62">+62</option>
-                            </select>
-                            <span class="material-icons-round">
-                                arrow_drop_down
-                            </span>
-                        </div>
-                        <div id="list-select">
-                            <div class="option" data-option="+62">Indonesia (+62)</div>
-                            <div class="option" data-option="+36">Hungaria (+36)</div>
-                            <div class="option" data-option="+52">Hongkong (+52)</div>
-                            <div class="option" data-option="+91">India (+91)</div>
-                            <div class="option" data-option="+44">Inggris Raya (+44)</div>
-                            <div class="option" data-option="+35">Irlandia (+35)</div>
-                        </div>
-                        <input type="number" placeholder="Handphone" required="required" />
-                        <label>Handphone</label>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="group date">
-                        <input type='text' data-language='id' id="jadwal-datepicker" placeholder="Tanggal Lahir" /><label>Tanggal Lahir</label>
-                        <span class="material-icons-round">
-                          event
-                        </span>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="group">
-                          <input type="text" placeholder="Alamat Domisili" required="required" /><label>Alamat Domisili</label>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="group form-select-pmb">
-                        <select class="select2-pmb-sekolah" id="placeholder-asal" data-placeholder="Asal Sekolah">
-                          <option></option>
-                          <option value="1">SMA Katolik ST. Louis 1 Surabaya</option>
-                          <option value="2">SMA Islam Jiwa Nala Surabaya</option>
-                          <option value="3">SMA Hang tuah 1 Surabaya</option>
-                          <option value="4">SMA Gema 45 Surabaya</option>
-                          <option value="5">SMA Bina Bangsa Surabaya</option>
-                        </select>
-                        <label>Asal Sekolah</label>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="group form-select-pmb">
-                        <select class="select2-pmb-sekolah" id="placeholder-jurusan" data-placeholder="Jurusan">
-                          <option></option>
-                          <option value="1">Jurusan 1</option>
-                          <option value="2">Jurusan 2</option>
-                          <option value="3">Jurusan 3</option>
-                        </select>
-                        <label>Jurusan</label>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="group form-select-pmb">
-                        <select class="select2-pmb-sekolah" id="placeholder-provinsi" data-placeholder="Provinsi">
-                          <option></option>
-                          <option value="1">Provinsi 1</option>
-                          <option value="2">Provinsi 2</option>
-                          <option value="3">Provinsi 3</option>
-                        </select>
-                        <label>Provinsi</label>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="group form-select-pmb">
-                        <select class="select2-pmb-sekolah" id="placeholder-kabupaten" data-placeholder="Kabupaten/Kota">
-                          <option></option>
-                          <option value="1">Kabupaten/Kota 1</option>
-                          <option value="2">Kabupaten/Kota 2</option>
-                          <option value="3">Kabupaten/Kota 3</option>
-                        </select>
-                        <label>Kabupaten/Kota</label>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="group form-select-pmb">
-                        <select class="select2-pmb" id="placeholder-thnlulus" data-placeholder="Tahun Lulus">
-                          <option></option>
-                          <option value="2020">2020</option>
-                          <option value="2021">2021</option>
-                        </select>
-                        <label>Tahun Lulus</label>
-                      </div>
-                    </div>
                     <div class="col-lg-12">
-                      <div class="title">
-                        <h2>Program Studi</h2>
+                      <div class="group">
+                          <textarea type="textarea" placeholder="Alamat Anda" required="required"></textarea><label>Alamat Anda</label>
                       </div>
                     </div>
                     <div class="col-lg-6">
-                      <div class="group form-select-pmb">
-                        <select class="select2-pmb-sekolah" id="placeholder-pilihan1" data-placeholder="Pilihan Pertama">
-                          <option></option>
-                          <option value="1">S1 Prodi 1</option>
-                          <option value="2">S1 Prodi 2</option>
-                          <option value="3">S1 Prodi 3</option>
-                        </select>
-                        <label>Pilihan Pertama</label>
-                      </div>
+                        <div class="group form-select-pmb">
+                          <select class="select2-pmb-sekolah" id="placeholder-kabupaten" data-placeholder="Kabupaten/Kota">
+                            <option></option>
+                            <option value="1">Kabupaten/Kota 1</option>
+                            <option value="2">Kabupaten/Kota 2</option>
+                            <option value="3">Kabupaten/Kota 3</option>
+                          </select>
+                          <label>Kabupaten/Kota</label>
+                        </div>
                     </div>
                     <div class="col-lg-6">
-                      <div class="group form-select-pmb">
-                        <select class="select2-pmb-sekolah" id="placeholder-pilihan2" data-placeholder="Pilihan Kedua">
-                          <option></option>
-                          <option value="1">S1 Prodi 1</option>
-                          <option value="2">S1 Prodi 2</option>
-                          <option value="3">S1 Prodi 3</option>
-                        </select>
-                        <label>Pilihan Kedua</label>
-                      </div>
+                        <div class="group form-select-pmb">
+                          <select class="select2-pmb-sekolah" id="placeholder-provinsi" data-placeholder="Provinsi">
+                            <option></option>
+                            <option value="1">Provinsi 1</option>
+                            <option value="2">Provinsi 2</option>
+                            <option value="3">Provinsi 3</option>
+                          </select>
+                          <label>Provinsi</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="group form-select-pmb">
+                          <select class="select2-pmb-sekolah" id="placeholder-kelurahan" data-placeholder="Kelurahan">
+                            <option></option>
+                            <option value="1">Kelurahan 1</option>
+                            <option value="2">Kelurahan 2</option>
+                            <option value="3">Kelurahan 3</option>
+                          </select>
+                          <label>Kelurahan</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="group form-select-pmb">
+                          <select class="select2-pmb-sekolah" id="placeholder-kecamatan" data-placeholder="Kecamatan">
+                            <option></option>
+                            <option value="1">Kecamatan 1</option>
+                            <option value="2">Kecamatan 2</option>
+                            <option value="3">Kecamatan 3</option>
+                          </select>
+                          <label>Kecamatan</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="group form-select-pmb">
+                          <select class="select2-pmb-sekolah" id="placeholder-dusun" data-placeholder="Dusun">
+                            <option></option>
+                            <option value="1">Dusun 1</option>
+                            <option value="2">Dusun 2</option>
+                            <option value="3">Dusun 3</option>
+                          </select>
+                          <label>Dusun</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="group">
+                            <input type="text" placeholder="RT / RW" required="required" /><label>RT / RW</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="group">
+                            <input type="text" placeholder="Kodepos" required="required" /><label>Kodepos</label>
+                        </div>
                     </div>
                     <div class="col-lg-12">
                       <div class="form-check-biodata">
-                        <div class="form-check">
+                        <!-- <div class="form-check">
                           <input class="form-check-input" type="checkbox" value="" id="ingatsaya">
                           <label class="form-check-label" for="ingatsaya">
                             Saya setuju dengan sadar menyatakan bahwa data yang dimasukkan benar adanya dan bisa dibuktikan secara hukum. Serta saya telah menyetujui dengan syarat dan ketentuan pendaftaran mahasiswa baru.
                           </label>
-                        </div>
+                        </div> -->
                       </div>
                       <div class="cta-pendaftaran">
-                          <a href="#"><div class="sebelum">
-                            <span class="material-icons-round">
-                            arrow_back
-                            </span>Sebelumnya</div></a>
-                          <a href="daftar-ulang-alamat.html"><div class="selanjutnya">Selanjutnya</div></a>
+                        <!-- <a href="#"><div class="lewati">lewati tahap ini</div></a> -->
+                          <div class="d-flex align-items-center">
+                              <a href="#"><div class="sebelum">
+                                <span class="material-icons-round">
+                                arrow_back
+                                </span>Sebelumnya</div></a>
+                              <a href="daftar-ulang-sekolah.html"><div class="selanjutnya">Selanjutnya</div></a>
+                          </div>
                       </div>
                     </div>
                   </div>
