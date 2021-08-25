@@ -9,7 +9,6 @@ $("#jadwal-datepicker").datepicker({
 // Access instance of plugin
 $("#jadwal-datepicker").data("datepicker");
 
-
 (function ($) {
   var Defaults = $.fn.select2.amd.require("select2/defaults");
 
@@ -112,7 +111,7 @@ $("#jadwal-datepicker").data("datepicker");
 
 $(".select2-pmb-sekolah").select2({
   dropdownPosition: "below",
-  theme: "classic"
+  theme: "classic",
   // containerCssClass : "select2-pmb-select",
   // minimumResultsForSearch: Infinity
 });
@@ -151,6 +150,30 @@ $("#btn-metode-pembayaran").click(function () {
   }
 });
 
+$("#expand-details").on("click", function () {
+  if ($("#expand-details").hasClass("active")) {
+    $("#expand-details").removeClass("active");
+    $("#expand-details .less").toggleClass("hidden");
+    $("#expand-details .more").toggleClass("hidden");
+    $(".payment-details .rincian").hide();
+    $(".payment-details .row-subtitle.total").show();
+    $(".payment-details .row-title.detail").html("Total Pembayaran");
+  } else {
+    $("#expand-details").addClass("active");
+    $("#expand-details .more").toggleClass("hidden");
+    $("#expand-details .less").toggleClass("hidden");
+    $(".payment-details .rincian").show();
+    $(".payment-details .row-subtitle.total").hide();
+    $(".payment-details .row-title.detail").html("Detail Pembayaran");
+  }
+});
+
+var tooltipTriggerList = [].slice.call(
+  document.querySelectorAll('[data-bs-toggle="tooltip"]')
+);
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl);
+});
 
 // Upload Image
 const progressBar = document.querySelector(".progress-input");

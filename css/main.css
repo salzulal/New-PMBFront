@@ -278,7 +278,7 @@ p {
   font-weight: normal;
   font-size: 13px;
   text-transform: uppercase;
-  color: #7A7A7A;
+  color: #7a7a7a;
 }
 
 .group-radio-square [type="radio"]:checked + label:before,
@@ -291,7 +291,7 @@ p {
   top: 50%;
   width: 44px;
   height: 44px;
-  border: 1px solid #F5F6F8;
+  border: 1px solid #f5f6f8;
   border-radius: 4px;
   background: transparent;
 }
@@ -451,7 +451,7 @@ p {
 .bs-tooltip-auto[data-popper-placement^="top"] .tooltip-arrow::before {
   top: -1px;
   border-width: 0.4rem 0.4rem 0;
-  border-top-color: #e1b878;
+  border-top-color: #222;
 }
 
 .bs-tooltip-end,
@@ -470,7 +470,7 @@ p {
 .bs-tooltip-auto[data-popper-placement^="right"] .tooltip-arrow::before {
   right: -1px;
   border-width: 0.4rem 0.4rem 0.4rem 0;
-  border-right-color: #e1b878;
+  border-right-color: #222;
 }
 
 .bs-tooltip-bottom,
@@ -487,7 +487,7 @@ p {
 .bs-tooltip-auto[data-popper-placement^="bottom"] .tooltip-arrow::before {
   bottom: -1px;
   border-width: 0 0.4rem 0.4rem;
-  border-bottom-color: #e1b878;
+  border-bottom-color: #222;
 }
 
 .bs-tooltip-start,
@@ -506,17 +506,39 @@ p {
 .bs-tooltip-auto[data-popper-placement^="left"] .tooltip-arrow::before {
   left: -1px;
   border-width: 0.4rem 0 0.4rem 0.4rem;
-  border-left-color: #e1b878;
+  border-left-color: #222;
 }
 
 .tooltip-inner {
   max-width: 260px;
   padding: 10px 16px;
-  color: #404852;
+  color: #fff;
   text-align: center;
-  background-color: #fff5ea;
-  border: 1px solid #e1b878;
+  background-color: #222;
+  border: 1px solid #222;
   border-radius: 8px;
+}
+
+.tooltip-orange.bs-tooltip-top .tooltip-arrow::before, .tooltip-orange.bs-tooltip-auto[data-popper-placement^="top"] .tooltip-arrow::before {
+  border-top-color: #e1b878 !important;
+}
+
+.tooltip-orange.bs-tooltip-end .tooltip-arrow::before, .tooltip-orange.bs-tooltip-auto[data-popper-placement^="right"] .tooltip-arrow::before {
+  border-right-color: #e1b878 !important;
+}
+
+.tooltip-orange.bs-tooltip-bottom .tooltip-arrow::before, .tooltip-orange.bs-tooltip-auto[data-popper-placement^="bottom"] .tooltip-arrow::before {
+  border-bottom-color: #e1b878 !important;
+}
+
+.tooltip-orange.bs-tooltip-start .tooltip-arrow::before, .tooltip-orange.bs-tooltip-auto[data-popper-placement^="left"] .tooltip-arrow::before {
+  border-left-color: #e1b878 !important;
+}
+
+.tooltip-orange .tooltip-inner {
+  color: #404852 !important;
+  background-color: #fff5ea !important;
+  border: 1px solid #e1b878 !important;
 }
 
 .button {
@@ -8047,12 +8069,12 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .notify h5 .material-i
 main#pendaftaran .main-pendaftaran .card-main-pendaftaran .kartu-peserta {
   background: #fafafa;
   border-radius: 16px;
-  margin-top: 44px -16px;
+  margin: 44px 0;
 }
 
 main#pendaftaran .main-pendaftaran .card-main-pendaftaran .kartu-peserta .kartu-img {
   position: relative;
-  padding: 0 16px;
+  padding: 0;
 }
 
 main#pendaftaran .main-pendaftaran .card-main-pendaftaran .kartu-peserta .kartu-img img {
@@ -8064,24 +8086,260 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .kartu-peserta .kartu-
      object-fit: cover;
 }
 
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .kartu-peserta .kartu-img .id {
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .kartu-peserta .kartu-img .overlay {
+  border-radius: 16px 0 0 16px;
   position: absolute;
-  bottom: 28px;
-  left: 48px;
-  width: calc(100% - 96px);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(65%, rgba(0, 0, 0, 0)), color-stop(95%, rgba(0, 0, 0, 0.85)), to(black));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 65%, rgba(0, 0, 0, 0.85) 95%, black 100%);
 }
 
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .kartu-peserta .kartu-img .id h5 {
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .kartu-peserta .kartu-img .overlay .id {
+  position: absolute;
+  bottom: 28px;
+  left: 32px;
+  width: calc(100% - 64px);
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .kartu-peserta .kartu-img .overlay .id h5 {
   color: #fff;
   font-weight: 500;
 }
 
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .kartu-peserta .kartu-img .id h5.nim {
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .kartu-peserta .kartu-img .overlay .id h5.nim {
   color: #ffffffa3;
 }
 
-main#pendaftaran .main-pendaftaran .card-main-pendaftaran .kartu-peserta .kartu-img .id h5.name {
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .kartu-peserta .kartu-img .overlay .id h5.name {
   margin-top: 4px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .kartu-peserta .kartu-content-wrapper {
+  padding: 48px 32px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .kartu-peserta .kartu-content-wrapper .content-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .kartu-peserta .kartu-content-wrapper .content-header .title {
+  font-weight: 500;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .kartu-peserta .kartu-content-wrapper .content-header .material-icons-outlined {
+  font-size: 1.111rem;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .kartu-peserta .kartu-content-wrapper .kartu-content .col-12 {
+  margin-top: 48px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .kartu-peserta .kartu-content-wrapper .kartu-content .col-12 p.label {
+  color: #7a7a7a;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .kartu-peserta .kartu-content-wrapper .kartu-content .col-12 p.label span {
+  margin-right: 10px;
+  font-size: 0.667rem;
+  line-height: 1rem;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .kartu-peserta .kartu-content-wrapper .kartu-content .col-12 h6 {
+  margin-top: 4px;
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .jadwal-seleksi .section-subtitle {
+  margin-top: 8px;
+  font-weight: 400;
+  color: #7a7a7a;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .jadwal-seleksi .section-subtitle b {
+  font-weight: 600;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .jadwal-seleksi .list-jadwal {
+  padding-top: 12px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .jadwal-seleksi .list-jadwal .row {
+  padding: 32px 0;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .jadwal-seleksi .list-jadwal .row:not(:last-child) {
+  border-bottom: 1px solid #eceff1cc;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .jadwal-seleksi .list-jadwal .row:last-child {
+  padding-bottom: 0;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .jadwal-seleksi .list-jadwal .row .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .jadwal-seleksi .list-jadwal .row .left .icon {
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 1.33rem;
+  background: #eceff1;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .jadwal-seleksi .list-jadwal .row .left .icon i {
+  font-size: 14px;
+  color: #5a45be;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .jadwal-seleksi .list-jadwal .row .left .text h5.name {
+  font-weight: 500;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .jadwal-seleksi .list-jadwal .row .left .text h5.time {
+  font-weight: 400;
+  margin-top: 4px;
+  color: #7a7a7a;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .jadwal-seleksi .list-jadwal .row .right .status {
+  width: 100%;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .jadwal-seleksi .list-jadwal .row .right .status.online a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #3656a1;
+  font-weight: 600;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .jadwal-seleksi .list-jadwal .row .right .status.online a .pmb-icon {
+  text-decoration: none;
+  font-size: 10px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .jadwal-seleksi .list-jadwal .row .right .status.online a .pmb-icon.pmb-zoom-icon {
+  color: #3656a1;
+  margin-right: 12px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .jadwal-seleksi .list-jadwal .row .right .status.online a .pmb-icon.pmb-icon-link-to {
+  margin-left: auto;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .jadwal-seleksi .list-jadwal .row .right .status.offline {
+  color: #f57c00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .jadwal-seleksi .list-jadwal .row .right .status.offline .material-icons-round {
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .jadwal-seleksi .list-jadwal .row .right .note {
+  margin-top: 10px;
+  font-weight: 400;
+  color: #7a7a7a;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .ilustrasi.seleksi {
+  padding-bottom: 0;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .ilustrasi.seleksi img {
+  margin-bottom: 24px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .waiting-hasil-seleksi {
+  text-align: center;
+  margin: 0 auto;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .waiting-hasil-seleksi .section-title {
+  margin-bottom: 12px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .waiting-hasil-seleksi .text {
+  font-weight: 400;
+  line-height: 1.445rem;
+  color: #7a7a7a;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .waiting-hasil-seleksi .alert-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff4f4;
+  border: 1px solid #f0d3d2;
+  border-radius: 8px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin-top: 36px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .waiting-hasil-seleksi .note {
+  margin-top: 12px;
+  text-align: left;
+  font-weight: 400;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .buttons {
+  margin-bottom: 100px;
 }
 
 @media (max-width: 991.98px) {

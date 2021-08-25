@@ -247,6 +247,7 @@
                         class="row-subtitle total-number"
                         data-bs-toggle="tooltip"
                         data-bs-placement="right"
+                        data-bs-custom-class="tooltip-orange"
                         title="Pastikan Anda transfer sesuai nominal hingga 3 digit terakhir"
                       >
                         Rp. 365.000
@@ -294,6 +295,7 @@
                           <h4
                             data-bs-toggle="tooltip"
                             data-bs-placement="left"
+                            data-bs-custom-class="tooltip-orange"
                             title="Pastikan Anda transfer sesuai nominal hingga 3 digit terakhir"
                           >
                             Rp. 365.000
@@ -1925,31 +1927,6 @@
     <script src="../js/pendaftaran.js"></script>
     <script>
       SVGInject(document.querySelectorAll("img.injectable"));
-
-      $("#expand-details").on("click", function () {
-        if ($("#expand-details").hasClass("active")) {
-          $("#expand-details").removeClass("active");
-          $("#expand-details .less").toggleClass("hidden");
-          $("#expand-details .more").toggleClass("hidden");
-          $(".payment-details .rincian").hide();
-          $(".payment-details .row-subtitle.total").show();
-          $(".payment-details .row-title.detail").html("Total Pembayaran");
-        } else {
-          $("#expand-details").addClass("active");
-          $("#expand-details .more").toggleClass("hidden");
-          $("#expand-details .less").toggleClass("hidden");
-          $(".payment-details .rincian").show();
-          $(".payment-details .row-subtitle.total").hide();
-          $(".payment-details .row-title.detail").html("Detail Pembayaran");
-        }
-      });
-
-      var tooltipTriggerList = [].slice.call(
-        document.querySelectorAll('[data-bs-toggle="tooltip"]')
-      );
-      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-        return new bootstrap.Tooltip(tooltipTriggerEl);
-      });
     </script>
   </body>
 </html>

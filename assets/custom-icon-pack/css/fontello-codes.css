@@ -18,3 +18,5 @@
 .pmb-time-icon:before { content: '\e822'; } /* '' */
 .pmb-search-icon-mobile:before { content: '\e823'; } /* '' */
 .pmb-close-icon:before { content: '\e824'; } /* '' */
+.pmb-zoom-icon:before { content: '\e867'; } /* '' */
+.pmb-icon-link-to:before { content: '\e868'; } /* '' */

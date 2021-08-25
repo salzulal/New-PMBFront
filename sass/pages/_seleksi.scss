@@ -23,10 +23,10 @@ main#pendaftaran {
       .kartu-peserta {
         background: #fafafa;
         border-radius: 16px;
-        margin-top: 44px -16px;
+        margin: 44px 0;
         .kartu-img {
           position: relative;
-          padding: 0 16px;
+          padding: 0;
           img {
             width: 100%;
             height: 100%;
@@ -34,23 +34,207 @@ main#pendaftaran {
             min-height: 100%;
             object-fit: cover;
           }
-          .id {
+          .overlay {
+            border-radius: 16px 0 0 16px;
             position: absolute;
-            bottom: 28px;
-            left: 48px;
-            width: calc(100% - 96px);
-            h5 {
-              color: #fff;
-              font-weight: 500;
-              &.nim {
-                color: #ffffffa3;
-              }
-              &.name {
-                margin-top: 4px;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background: linear-gradient(
+              180deg,
+              rgba(0, 0, 0, 0) 65%,
+              rgba(0, 0, 0, 0.85) 95%,
+              rgba(0, 0, 0, 1) 100%
+            );
+
+            .id {
+              position: absolute;
+              bottom: 28px;
+              left: 32px;
+              width: calc(100% - 64px);
+              h5 {
+                color: #fff;
+                font-weight: 500;
+                &.nim {
+                  color: #ffffffa3;
+                }
+                &.name {
+                  margin-top: 4px;
+                }
               }
             }
           }
         }
+        .kartu-content-wrapper {
+          padding: 48px 32px;
+          .content-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .title {
+              font-weight: 500;
+            }
+            .material-icons-outlined {
+              font-size: 1.111rem;
+              color: #000;
+              text-decoration: none;
+              cursor: pointer;
+            }
+          }
+          .kartu-content {
+            .col-12 {
+              margin-top: 48px;
+              p.label {
+                color: #7a7a7a;
+                align-items: center;
+                span {
+                  margin-right: 10px;
+                  font-size: 0.667rem;
+                  line-height: 1rem;
+                }
+              }
+              h6 {
+                margin-top: 4px;
+                font-weight: 400;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+              }
+            }
+          }
+        }
+      }
+      .jadwal-seleksi {
+        .section-subtitle {
+          margin-top: 8px;
+          font-weight: 400;
+          color: #7a7a7a;
+          b {
+            font-weight: 600;
+          }
+        }
+        .list-jadwal {
+          padding-top: 12px;
+          .row {
+            padding: 32px 0;
+            &:not(:last-child) {
+              border-bottom: 1px solid #eceff1cc;
+            }
+            &:last-child {
+              padding-bottom: 0;
+            }
+            .left {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              .icon {
+                min-width: 40px;
+                min-height: 40px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 1.33rem;
+                background: #eceff1;
+                i {
+                  font-size: 14px;
+                  color: #5a45be;
+                }
+              }
+              .text {
+                h5 {
+                  &.name {
+                    font-weight: 500;
+                  }
+                  &.time {
+                    font-weight: 400;
+                    margin-top: 4px;
+                    color: #7a7a7a;
+                  }
+                }
+              }
+            }
+            .right {
+              .status {
+                width: 100%;
+                &.online {
+                  a {
+                    display: flex;
+                    align-items: center;
+                    color: $color-primary;
+                    font-weight: 600;
+                    .pmb-icon {
+                      text-decoration: none;
+                      font-size: 10px;
+                      &.pmb-zoom-icon {
+                        color: $color-primary;
+                        margin-right: 12px;
+                      }
+                      &.pmb-icon-link-to {
+                        margin-left: auto;
+                      }
+                    }
+                  }
+                }
+                &.offline {
+                  color: $color-secondary;
+                  display: flex;
+                  align-items: center;
+                  .material-icons-round {
+                    font-size: 14px;
+                    margin-right: 10px;
+                  }
+                }
+              }
+              .note {
+                margin-top: 10px;
+                font-weight: 400;
+                color: #7a7a7a;
+              }
+            }
+          }
+        }
+      }
+      .ilustrasi {
+        &.seleksi {
+          img {
+            margin-bottom: 24px;
+          }
+          padding-bottom: 0;
+        }
+      }
+      .waiting-hasil-seleksi {
+        text-align: center;
+        margin: 0 auto;
+        .section-title {
+          margin-bottom: 12px;
+        }
+        .text {
+          font-weight: 400;
+          line-height: 1.445rem;
+          color: #7a7a7a;
+        }
+        .alert-box {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background: #fff4f4;
+          border: 1px solid #f0d3d2;
+          border-radius: 8px;
+          box-shadow: none;
+          margin-top: 36px;
+        }
+        .note {
+          margin-top: 12px;
+          text-align: left;
+          font-weight: 400;
+        }
+      }
+      .buttons {
+        margin-bottom: 100px;
       }
     }
   }
