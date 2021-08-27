@@ -138,7 +138,7 @@
                       <h3>Isi Data Umum</h3>
                     </div>
                   </div>
-                  <div class="list-step active">
+                  <div class="list-step done">
                     <div class="icon">
                       <img
                         src="../img/comp-pendaftaran/navigasi/document.svg"
@@ -151,7 +151,7 @@
                       <h3>Pembelian Formulir</h3>
                     </div>
                   </div>
-                  <div class="list-step">
+                  <div class="list-step done">
                     <div class="icon">
                       <img
                         src="../img/comp-pendaftaran/navigasi/folder.svg"
@@ -164,7 +164,7 @@
                       <h3>Pengisian Berkas</h3>
                     </div>
                   </div>
-                  <div class="list-step">
+                  <div class="list-step done">
                     <div class="icon">
                       <img
                         src="../img/comp-pendaftaran/navigasi/edit.svg"
@@ -177,7 +177,7 @@
                       <h3>Seleksi</h3>
                     </div>
                   </div>
-                  <div class="list-step">
+                  <div class="list-step active">
                     <div class="icon">
                       <img
                         src="../img/comp-pendaftaran/navigasi/wallet.svg"
@@ -204,123 +204,135 @@
                     </div>
                   </div>
                 </div>
-
-                <div class="row info-pembayaran">
-                  <div class="col col-12 col-md-10">
-                    <div class="row">
-                      <div class="col col-12 col-lg-5">
-                        <h6>
-                          Jalur Pendaftaran
-                          <a
-                            id="pindah-jalur"
-                            href=""
-                            data-bs-toggle="modal"
-                            data-bs-target="#modalPindahJalur"
-                            data-bs-dismiss="modal"
-                            >Ubah Jalur</a
-                          >
-                        </h6>
-                        <h5>Kelas Internasional 2021 Gelombang 02</h5>
-                      </div>
-                      <div class="col col-12 col-lg-4">
-                        <h6>Biaya Formulir</h6>
-                        <h5>Rp. 450.000</h5>
-                      </div>
-                      <div class="col col-12 col-lg-3">
-                        <h6>Sistem Kuliah</h6>
-                        <h5>Reguler (Pagi)</h5>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col img">
-                    <img
-                      src="../img/pembelian-formulir/ilustrasi-bg-pembayaran.svg"
-                      alt=""
-                    />
-                  </div>
+                <!-- <img
+                  class="bg"
+                  src="../img/pembelian-formulir/bg-ilustrasi.svg"
+                  alt=""
+                /> -->
+                <div class="ilustrasi">
+                  <img
+                    src="../img/pembelian-formulir/ilustrasi-waiting-payment.svg"
+                    alt=""
+                  />
+                  <h2>Segera Selesaikan Pembayaran Anda Sebelum</h2>
+                  <h3>Senin, 12 Juni 2021 (23:23 WIB)</h3>
                 </div>
 
-                <!-- hidden if single payment -->
-                <div class="row select-metode">
-                  <div class="col-12 col-lg-4 title">
-                    <h4>Metode Pembayaran</h4>
-                    <h5>Silakan pilih cara pembayaran</h5>
+                <div class="col-12 col-md-10 payment-details">
+                  <div class="row">
+                    <div class="col-6 left">
+                      <h4 class="row-title">Virtual Account</h4>
+                      <h4 class="row-subtitle">BNI Virtual Account</h4>
+                    </div>
+                    <div class="col-6 right">
+                      <img src="../img/pembelian-formulir/bni.png" alt="" />
+                    </div>
                   </div>
-                  <div class="col-12 col-lg-8 select">
-                    <div class="group form-select-pmb">
-                      <select
-                        class="select2-pmb"
-                        id="select-metode-pembayaran"
-                        data-placeholder="Metode Pembayaran"
+                  <div class="row">
+                    <div class="col-6 left">
+                      <h4 class="row-title">Nomor Virtual Account</h4>
+                      <h4 class="row-subtitle">888298298928000</h4>
+                    </div>
+                    <div class="col-6 right">
+                      <h5 class="icon-left">
+                        <span class="material-icons-round"> content_copy </span
+                        >Salin Nomor
+                      </h5>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6 left">
+                      <h4 class="row-title detail">Total Pembayaran</h4>
+                      <h4
+                        class="row-subtitle total-number"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="right"
+                        data-bs-custom-class="tooltip-orange"
+                        title="Pastikan Anda transfer sesuai nominal hingga 3 digit terakhir"
                       >
-                        <option></option>
-                        <option value="online">Online (Virtual Account)</option>
-                        <option value="offline">Offline (Transfer Bank)</option>
-                      </select>
+                        Rp. 365.000
+                      </h4>
                     </div>
-                    <a
-                      class="button primary"
-                      type="button"
-                      id="btn-metode-pembayaran"
-                    >
-                      <div class="ripple js-ripple">
-                        <span class="ripple__circle"></span>
+                    <div class="col-6 right">
+                      <a id="expand-details">
+                        <h5 class="icon-right more">
+                          Detail Bayar
+                          <span class="material-icons-round">
+                            expand_more
+                          </span>
+                        </h5>
+                        <h5 class="icon-right less hidden">
+                          Ringkasan
+                          <span class="material-icons-round">
+                            expand_less
+                          </span>
+                        </h5>
+                      </a>
+                    </div>
+                    <div class="col-12 rincian">
+                      <div class="row">
+                        <div class="col-8">
+                          <h5>Biaya Pembangunan Angsuran Ke-1</h5>
+                        </div>
+                        <div class="col-4">
+                          <h4>Rp. 4.500.000</h4>
+                        </div>
                       </div>
-                      <p>Pilih Metode</p>
-                    </a>
+                      <div class="row">
+                        <div class="col-8">
+                          <h5>Biaya Pembangunan Angsuran Ke-2</h5>
+                        </div>
+                        <div class="col-4">
+                          <h4>Rp. 4.500.000</h4>
+                        </div>
+                      </div>
+                      <div class="row discount">
+                        <div class="col-8">
+                          <h5>Biaya Kursus Bahasa (Potongan Voucher)</h5>
+                        </div>
+                        <div class="col-4">
+                          <h4>Rp. 900.000</h4>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-8">
+                          <h5>Biaya Seragam</h5>
+                        </div>
+                        <div class="col-4">
+                          <h4>Rp. 1.200.000</h4>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-8">
+                          <h5>Biaya Admin Pembayaran</h5>
+                        </div>
+                        <div class="col-4">
+                          <h4>Rp. 5.000</h4>
+                        </div>
+                      </div>
+
+                      <div class="row total">
+                        <div class="col-8">
+                          <h5>Total Pembayaran</h5>
+                        </div>
+                        <div class="col-4">
+                          <h4
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="left"
+                            data-bs-custom-class="tooltip-orange"
+                            title="Pastikan Anda transfer sesuai nominal hingga 3 digit terakhir"
+                          >
+                            Rp. 365.000
+                          </h4>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
-                <hr class="card-divider" id="metode-divider" />
-
-                <div class="pilihan-pembayaran">
-                  <h4 class="section-title">Pilihan Pembayaran</h4>
-
-                  <div class="pilihan-list">
-                    <div class="row pilihan-item">
-                      <div class="col-8 left">
-                        <span class="material-icons-round radio-icon">
-                          radio_button_unchecked
-                        </span>
-                        <div class="desc">
-                          <h6 class="name">BNI Virtual Account</h6>
-                          <h6 class="fee">Biaya admin Rp.5000</h6>
-                        </div>
-                      </div>
-                      <div class="col-4 right">
-                        <img src="../img/pembelian-formulir/bni.png" alt="" />
-                      </div>
-                    </div>
-                    <div class="row pilihan-item">
-                      <div class="col-8 left">
-                        <span class="material-icons-round radio-icon">
-                          radio_button_unchecked
-                        </span>
-                        <div class="desc">
-                          <h6 class="name">Mandiri Virtual Account</h6>
-                          <h6 class="fee">Biaya admin Rp.5000</h6>
-                        </div>
-                      </div>
-                      <div class="col-4 right">
-                        <img
-                          src="../img/pembelian-formulir/mandiri.png"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="transfer-bank">
-                  <h4 class="section-title">Daftar Transfer Bank</h4>
-                  <div class="row notify">
-                    <h5>
-                      <span class="material-icons-round"> notifications </span>
-                      Anda bisa membayar dengan transfer melalui ATM, Internet
-                      Banking & Mobile Banking.
-                    </h5>
-                  </div>
-                  <h5 class="sub-title">Ketentuan Lainnya</h5>
+                <!-- for offline -->
+                <div class="col-12 col-md-10 transfer-bank waiting">
+                  <h4 class="sub-title">Ketentuan Transfer</h4>
                   <div class="ketentuan-list">
                     <div class="row ketentuan-item">
                       <div class="col col-auto marker">
@@ -367,86 +379,137 @@
                     </div>
                   </div>
                 </div>
-
-                <hr class="card-divider" />
-
-                <div class="promo-voucher">
-                  <h4 class="section-title">Promo Voucher Pembayaran</h4>
-                  <div class="row voucher">
-                    <!-- or -->
-                    <!-- <div class="row voucher active"> -->
-                    <div class="col-12 col-md-6 left">
-                      <img
-                        src="../img/pembelian-formulir/icon/icon-voucher.svg"
-                        alt=""
-                      />
-                      <div class="text">
-                        <h6>Coba Terapkan Promo</h6>
-                        <h6 class="bottom">
-                          Gunakan promo terbaik yang Anda miliki
-                        </h6>
-                      </div>
-                    </div>
-                    <div class="col-12 col-md-6 right">
+                <!-- end of for offline -->
+                <div class="col-12 col-md-10 buttons">
+                  <div class="row">
+                    <div class="col col-12 col-sm-6">
                       <a
+                        class="button primary outline"
+                        type="button"
                         data-bs-toggle="modal"
-                        data-bs-target="#modalVoucher"
+                        data-bs-target="#modalKonfirmasiBatalTransaksi"
                         data-bs-dismiss="modal"
                       >
-                        <h5>Masukkan Voucher</h5>
-                        <i class="pmb-icon pmb-arrow-right">&#xe808;</i>
+                        <div class="ripple js-ripple">
+                          <span class="ripple__circle"></span>
+                        </div>
+                        <p>Batalkan Transaksi</p>
                       </a>
                     </div>
-                    <div class="cutouts">
-                      <div class="cutout top mid"></div>
-                      <div class="cutout bot mid"></div>
-                      <div class="cutout smid left"></div>
-                      <div class="cutout stop left"></div>
-                      <div class="cutout sbot left"></div>
-                      <div class="cutout smid right"></div>
-                      <div class="cutout stop right"></div>
-                      <div class="cutout sbot right"></div>
+                    <div class="col col-12 col-sm-6">
+                      <a class="button primary" type="button">
+                        <div class="ripple js-ripple">
+                          <span class="ripple__circle"></span>
+                        </div>
+                        <p>Cek Status Pembayaran</p>
+                      </a>
                     </div>
                   </div>
                 </div>
 
+                <!-- for online -->
                 <hr class="card-divider" />
+                <div class="col-12 col-md-10 cara-pembayaran">
+                  <h4 class="section-title">Petunjuk Pembayaran</h4>
 
-                <div class="detail-pembayaran">
-                  <h4 class="section-title">Detail Pembayaran</h4>
-                  <div class="list-detail">
-                    <div class="row item-pembayaran">
-                      <h5 class="col-6 col-sm-8 description">
-                        Biaya Formulir Pendaftaran
-                      </h5>
-                      <h4 class="col-6 col-sm-4 nominal">Rp. 450.000</h4>
+                  <div
+                    class="accordion accordion-flush"
+                    id="accordion-cara-pembayaran"
+                  >
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseOne"
+                          aria-expanded="false"
+                          aria-controls="collapseOne"
+                        >
+                          <h5>ATM Mandiri</h5>
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseOne"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordion-cara-pembayaran"
+                      >
+                        <div class="accordion-body">
+                          <ol
+                            class="
+                              list-group list-group-numbered list-group-flush
+                            "
+                          >
+                            <li class="list-group-item">
+                              <p>Masukkan Kartu ATM BCA & PIN</p>
+                            </li>
+                            <li class="list-group-item">
+                              <p>
+                                Pilih menu Transaksi Lainnya > Transfer > ke
+                                Rekening BCA Virtual Account
+                              </p>
+                            </li>
+                            <li class="list-group-item">
+                              <p>
+                                Masukkan 5 angka kode perusahaan untuk Tokopedia
+                                (80777) dan Nomor HP yang terdaftar di akun
+                                Tokopedia Anda (Contoh: 8077708612345xxx)
+                              </p>
+                            </li>
+                          </ol>
+                        </div>
+                      </div>
                     </div>
-                    <div class="row item-pembayaran">
-                      <h5 class="col-6 col-sm-8 description">
-                        Biaya Admin Pendaftaran
-                      </h5>
-                      <h4 class="col-6 col-sm-4 nominal">Rp. 5.000</h4>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo"
+                        >
+                          <h5>Livin' by Mandiri (mBanking)</h5>
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseTwo"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#accordion-cara-pembayaran"
+                      >
+                        <div class="accordion-body">ngeng</div>
+                      </div>
                     </div>
-                    <div class="row item-pembayaran total">
-                      <h5 class="col-6 col-sm-8 description">
-                        Total Biaya Dibayar
-                      </h5>
-                      <h4 class="col-6 col-sm-4 nominal">Rp. 455.000</h4>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseThree"
+                          aria-expanded="false"
+                          aria-controls="collapseThree"
+                        >
+                          <h5>ATM Mandiri</h5>
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseThree"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingThree"
+                        data-bs-parent="#accordion-cara-pembayaran"
+                      >
+                        <div class="accordion-body">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Culpa, quaerat.
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-
-                <div class="col-lg-12">
-                  <div class="cta-pendaftaran">
-                    <a href="#"
-                      ><div class="sebelum">
-                        <span class="material-icons-round"> arrow_back </span
-                        >Sebelumnya
-                      </div></a
-                    >
-                    <a href="#"><div class="selanjutnya">Selanjutnya</div></a>
-                  </div>
-                </div>
+                <!-- end of for online -->
               </div>
             </div>
           </div>
@@ -557,33 +620,29 @@
                 <h5>Perlu Anda Perhatikan!</h5>
                 <h6>
                   Saat Anda memilih untuk pindah jalur pendaftaran, maka Anda
-                  akan kembali lagi ke proses awal pendaftaran.
+                  akan kembal lagi ke proses awal pendaftaran.
                 </h6>
               </div>
             </div>
             <div class="jalur-list current">
               <h3>Jalur Anda Saat Ini</h3>
               <div class="row jalur-row">
-                <div class="col col-12 col-sm-4 col-md-2 img-jalur">
-                  <img src="../img/pembelian-formulir/img-jalur.svg" alt="" />
+                <div class="col col-2 img-jalur">
+                  <img src="../img/pembelian-formulir/img-jalur.png" alt="" />
                 </div>
-                <div
-                  class="col col-12 col-sm-8 col-md-4 detail jalur-pendaftaran"
-                >
+                <div class="col col-4 detail jalur-pendaftaran">
                   <h6 class="title">Jalur Pendaftaran</h6>
                   <h4 class="desc">Kelas Internasional 2021 Gelombang 02</h4>
                 </div>
-                <div class="col col-6 col-sm-4 col-md-2 detail sistem-kuliah">
+                <div class="col col-2 detail sistem-kuliah">
                   <h6 class="title">Sistem Kuliah</h6>
                   <h4 class="desc">Reguler (Pagi)</h4>
                 </div>
-                <div class="col col-6 col-sm-4 col-md-2 detail biaya-formulir">
+                <div class="col col-2 detail biaya-formulir">
                   <h6 class="title">Biaya Formulir</h6>
                   <h4 class="desc">Rp. 450.000</h4>
                 </div>
-                <div class="col col-12 col-sm-4 col-md-2 more">
-                  <h6 class="tag">Saat Ini</h6>
-                </div>
+                <div class="col col-2 more"><h6 class="tag">Saat Ini</h6></div>
               </div>
             </div>
             <hr class="body-divider" />
@@ -591,24 +650,22 @@
               <h3>Pilihan Jalur Lainnya</h3>
 
               <div class="row jalur-row">
-                <div class="col col-12 col-sm-4 col-md-2 img-jalur">
-                  <img src="../img/pembelian-formulir/img-jalur.svg" alt="" />
+                <div class="col col-2 img-jalur">
+                  <img src="../img/pembelian-formulir/img-jalur.png" alt="" />
                 </div>
-                <div
-                  class="col col-12 col-sm-8 col-md-4 detail jalur-pendaftaran"
-                >
+                <div class="col col-4 detail jalur-pendaftaran">
                   <h6 class="title">Jalur Pendaftaran</h6>
                   <h4 class="desc">Kelas Internasional 2021 Gelombang 02</h4>
                 </div>
-                <div class="col col-6 col-sm-4 col-md-2 detail sistem-kuliah">
+                <div class="col col-2 detail sistem-kuliah">
                   <h6 class="title">Sistem Kuliah</h6>
                   <h4 class="desc">Reguler (Pagi)</h4>
                 </div>
-                <div class="col col-6 col-sm-4 col-md-2 detail biaya-formulir">
+                <div class="col col-2 detail biaya-formulir">
                   <h6 class="title">Biaya Formulir</h6>
                   <h4 class="desc">Rp. 450.000</h4>
                 </div>
-                <div class="col col-12 col-sm-4 col-md-2 more">
+                <div class="col col-2 more">
                   <a
                     class="button secondary outline"
                     type="button"
@@ -626,24 +683,22 @@
                 </div>
               </div>
               <div class="row jalur-row">
-                <div class="col col-12 col-sm-4 col-md-2 img-jalur">
-                  <img src="../img/pembelian-formulir/img-jalur.svg" alt="" />
+                <div class="col col-2 img-jalur">
+                  <img src="../img/pembelian-formulir/img-jalur.png" alt="" />
                 </div>
-                <div
-                  class="col col-12 col-sm-8 col-md-4 detail jalur-pendaftaran"
-                >
+                <div class="col col-4 detail jalur-pendaftaran">
                   <h6 class="title">Jalur Pendaftaran</h6>
                   <h4 class="desc">Kelas Internasional 2021 Gelombang 02</h4>
                 </div>
-                <div class="col col-6 col-sm-4 col-md-2 detail sistem-kuliah">
+                <div class="col col-2 detail sistem-kuliah">
                   <h6 class="title">Sistem Kuliah</h6>
                   <h4 class="desc">Reguler (Pagi)</h4>
                 </div>
-                <div class="col col-6 col-sm-4 col-md-2 detail biaya-formulir">
+                <div class="col col-2 detail biaya-formulir">
                   <h6 class="title">Biaya Formulir</h6>
                   <h4 class="desc">Rp. 450.000</h4>
                 </div>
-                <div class="col col-12 col-sm-4 col-md-2 more">
+                <div class="col col-2 more">
                   <a
                     class="button secondary outline"
                     type="button"
@@ -661,24 +716,22 @@
                 </div>
               </div>
               <div class="row jalur-row">
-                <div class="col col-12 col-sm-4 col-md-2 img-jalur">
-                  <img src="../img/pembelian-formulir/img-jalur.svg" alt="" />
+                <div class="col col-2 img-jalur">
+                  <img src="../img/pembelian-formulir/img-jalur.png" alt="" />
                 </div>
-                <div
-                  class="col col-12 col-sm-8 col-md-4 detail jalur-pendaftaran"
-                >
+                <div class="col col-4 detail jalur-pendaftaran">
                   <h6 class="title">Jalur Pendaftaran</h6>
                   <h4 class="desc">Kelas Internasional 2021 Gelombang 02</h4>
                 </div>
-                <div class="col col-6 col-sm-4 col-md-2 detail sistem-kuliah">
+                <div class="col col-2 detail sistem-kuliah">
                   <h6 class="title">Sistem Kuliah</h6>
                   <h4 class="desc">Reguler (Pagi)</h4>
                 </div>
-                <div class="col col-6 col-sm-4 col-md-2 detail biaya-formulir">
+                <div class="col col-2 detail biaya-formulir">
                   <h6 class="title">Biaya Formulir</h6>
                   <h4 class="desc">Rp. 450.000</h4>
                 </div>
-                <div class="col col-12 col-sm-4 col-md-2 more">
+                <div class="col col-2 more">
                   <a
                     class="button secondary outline"
                     type="button"
@@ -696,24 +749,22 @@
                 </div>
               </div>
               <div class="row jalur-row">
-                <div class="col col-12 col-sm-4 col-md-2 img-jalur">
-                  <img src="../img/pembelian-formulir/img-jalur.svg" alt="" />
+                <div class="col col-2 img-jalur">
+                  <img src="../img/pembelian-formulir/img-jalur.png" alt="" />
                 </div>
-                <div
-                  class="col col-12 col-sm-8 col-md-4 detail jalur-pendaftaran"
-                >
+                <div class="col col-4 detail jalur-pendaftaran">
                   <h6 class="title">Jalur Pendaftaran</h6>
                   <h4 class="desc">Kelas Internasional 2021 Gelombang 02</h4>
                 </div>
-                <div class="col col-6 col-sm-4 col-md-2 detail sistem-kuliah">
+                <div class="col col-2 detail sistem-kuliah">
                   <h6 class="title">Sistem Kuliah</h6>
                   <h4 class="desc">Reguler (Pagi)</h4>
                 </div>
-                <div class="col col-6 col-sm-4 col-md-2 detail biaya-formulir">
+                <div class="col col-2 detail biaya-formulir">
                   <h6 class="title">Biaya Formulir</h6>
                   <h4 class="desc">Rp. 450.000</h4>
                 </div>
-                <div class="col col-12 col-sm-4 col-md-2 more">
+                <div class="col col-2 more">
                   <a
                     class="button secondary outline"
                     type="button"
@@ -731,24 +782,22 @@
                 </div>
               </div>
               <div class="row jalur-row">
-                <div class="col col-12 col-sm-4 col-md-2 img-jalur">
-                  <img src="../img/pembelian-formulir/img-jalur.svg" alt="" />
+                <div class="col col-2 img-jalur">
+                  <img src="../img/pembelian-formulir/img-jalur.png" alt="" />
                 </div>
-                <div
-                  class="col col-12 col-sm-8 col-md-4 detail jalur-pendaftaran"
-                >
+                <div class="col col-4 detail jalur-pendaftaran">
                   <h6 class="title">Jalur Pendaftaran</h6>
                   <h4 class="desc">Kelas Internasional 2021 Gelombang 02</h4>
                 </div>
-                <div class="col col-6 col-sm-4 col-md-2 detail sistem-kuliah">
+                <div class="col col-2 detail sistem-kuliah">
                   <h6 class="title">Sistem Kuliah</h6>
                   <h4 class="desc">Reguler (Pagi)</h4>
                 </div>
-                <div class="col col-6 col-sm-4 col-md-2 detail biaya-formulir">
+                <div class="col col-2 detail biaya-formulir">
                   <h6 class="title">Biaya Formulir</h6>
                   <h4 class="desc">Rp. 450.000</h4>
                 </div>
-                <div class="col col-12 col-sm-4 col-md-2 more">
+                <div class="col col-2 more">
                   <a
                     class="button secondary outline"
                     type="button"
@@ -766,24 +815,22 @@
                 </div>
               </div>
               <div class="row jalur-row">
-                <div class="col col-12 col-sm-4 col-md-2 img-jalur">
-                  <img src="../img/pembelian-formulir/img-jalur.svg" alt="" />
+                <div class="col col-2 img-jalur">
+                  <img src="../img/pembelian-formulir/img-jalur.png" alt="" />
                 </div>
-                <div
-                  class="col col-12 col-sm-8 col-md-4 detail jalur-pendaftaran"
-                >
+                <div class="col col-4 detail jalur-pendaftaran">
                   <h6 class="title">Jalur Pendaftaran</h6>
                   <h4 class="desc">Kelas Internasional 2021 Gelombang 02</h4>
                 </div>
-                <div class="col col-6 col-sm-4 col-md-2 detail sistem-kuliah">
+                <div class="col col-2 detail sistem-kuliah">
                   <h6 class="title">Sistem Kuliah</h6>
                   <h4 class="desc">Reguler (Pagi)</h4>
                 </div>
-                <div class="col col-6 col-sm-4 col-md-2 detail biaya-formulir">
+                <div class="col col-2 detail biaya-formulir">
                   <h6 class="title">Biaya Formulir</h6>
                   <h4 class="desc">Rp. 450.000</h4>
                 </div>
-                <div class="col col-12 col-sm-4 col-md-2 more">
+                <div class="col col-2 more">
                   <a
                     class="button secondary outline"
                     type="button"
