@@ -115,7 +115,19 @@ $(".select2-pmb-sekolah").select2({
   // containerCssClass : "select2-pmb-select",
   // minimumResultsForSearch: Infinity
 });
-
+$(".form-select-pmb").find('label').hide();
+$(".card-main-pendaftaran").on('change', '.select2-pmb-sekolah', function(){
+  if($(this).val() == "")
+    $(this).parent().find('label').hide();
+  else
+    $(this).parent().find('label').show();
+});
+$(".card-main-pendaftaran").on('change', '.select2-pmb', function(){
+  if($(this).val() == "")
+    $(this).parent().find('label').hide();
+  else
+    $(this).parent().find('label').show();
+});
 $(".card-main-pendaftaran").each(function () {
   $(this).find(".form-select-pmb #placeholder").data("placeholder");
 });
