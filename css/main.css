@@ -7558,6 +7558,109 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .cara-pembayaran .acco
   margin-right: 12px;
 }
 
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .kategori-biaya {
+  padding: 56px 0;
+  margin: 0;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .kategori-biaya .section-title {
+  margin-bottom: 16px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .kategori-biaya .nav-pills {
+  padding-right: 32px;
+  border-radius: 12px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .kategori-biaya .nav-pills .nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 14px 16px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .kategori-biaya .nav-pills .nav-link:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .kategori-biaya .nav-pills .nav-link .icon-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+  background: rgba(82, 82, 152, 0.12);
+  border-radius: 8px;
+  -webkit-transition: color 0.15s ease;
+  transition: color 0.15s ease;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .kategori-biaya .nav-pills .nav-link .icon-wrapper .material-icons-round {
+  font-size: 12px;
+  color: #525298;
+  -webkit-transition: color 0.15s ease;
+  transition: color 0.15s ease;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .kategori-biaya .nav-pills .nav-link h5 {
+  color: #404852;
+  font-weight: 400;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .kategori-biaya .nav-pills .nav-link.active {
+  background: #f5f6f8;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .kategori-biaya .nav-pills .nav-link.active .icon-wrapper {
+  background: #7849ff;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .kategori-biaya .nav-pills .nav-link.active .icon-wrapper .material-icons-round {
+  color: #fff;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .kategori-biaya .tab-content {
+  padding: 0 0 0 32px;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .kategori-biaya .tab-content .rincian-biaya {
+  padding: 18px 0;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .kategori-biaya .tab-content .rincian-biaya:not(:last-child) {
+  border-bottom: 1px solid #eceff1;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .kategori-biaya .tab-content .rincian-biaya .col-4 h5 {
+  font-weight: 400;
+  color: #7a7a7a;
+}
+
+main#pendaftaran .main-pendaftaran .card-main-pendaftaran .kategori-biaya .tab-content .rincian-biaya .col-4.number h5 {
+  font-weight: 500;
+  font-family: "DM Mono", sans-serif;
+  text-align: right;
+  color: #404852;
+}
+
 main#pendaftaran .main-pendaftaran .card-main-pendaftaran .ketentuan-perkuliahan {
   padding: 44px 0;
 }
@@ -7967,6 +8070,7 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .jenis-pembayaran .pil
   height: 16px;
   width: 16px;
   margin: 0;
+  cursor: pointer;
 }
 
 .modal-pilih-tagihan .modal-body .form-check-input:checked {
@@ -7999,6 +8103,7 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .jenis-pembayaran .pil
 }
 
 .modal-pilih-tagihan .modal-body .heading .form-check label {
+  cursor: pointer;
   margin-left: 16px;
 }
 
@@ -8021,6 +8126,7 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .jenis-pembayaran .pil
 
 .modal-pilih-tagihan .modal-body .heading .right a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .modal-pilih-tagihan .modal-body .heading .right a h5 {
@@ -8173,6 +8279,319 @@ main#pendaftaran .main-pendaftaran .card-main-pendaftaran .jenis-pembayaran .pil
 .modal-pilih-tagihan .modal-footer h5 span {
   font-weight: 700;
   opacity: 1;
+}
+
+.modal-bukti-bayar {
+  width: 954px;
+  max-width: 954px;
+}
+
+@media (max-width: 990.98px) {
+  .modal-bukti-bayar {
+    width: 100% !important;
+    max-width: 100% !important;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+}
+
+.modal-bukti-bayar .modal-content .modal-body {
+  padding: 0 !important;
+}
+
+.modal-bukti-bayar .modal-content .modal-body .invoice-header {
+  margin: 0;
+  padding: 0;
+  border-top: #3656a1 solid 6px;
+  border-radius: 8px;
+}
+
+.modal-bukti-bayar .modal-content .modal-body .invoice-header .left {
+  padding: 0;
+  margin-top: -6px;
+}
+
+.modal-bukti-bayar .modal-content .modal-body .invoice-header .left .logo-wrapper {
+  width: 100%;
+  min-height: 148px;
+  padding: 20px 56px;
+  background: #3656a1;
+  border-radius: 0px 0px 100px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.modal-bukti-bayar .modal-content .modal-body .invoice-header .left .logo-wrapper img {
+  height: 110px;
+  width: auto;
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.modal-bukti-bayar .modal-content .modal-body .invoice-header .left .campus-info {
+  padding: 16px 56px;
+}
+
+.modal-bukti-bayar .modal-content .modal-body .invoice-header .left .campus-info .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-bukti-bayar .modal-content .modal-body .invoice-header .left .campus-info .item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.modal-bukti-bayar .modal-content .modal-body .invoice-header .left .campus-info .item h6 {
+  color: #7a7a7a;
+  font-weight: 400;
+  max-width: 245px;
+}
+
+.modal-bukti-bayar .modal-content .modal-body .invoice-header .left .campus-info .item .material-icons-round {
+  color: #dedede;
+  margin-right: 16px;
+  font-size: 20px;
+}
+
+.modal-bukti-bayar .modal-content .modal-body .invoice-header .right {
+  margin-top: -6px;
+  padding: 56px;
+  text-align: right;
+}
+
+.modal-bukti-bayar .modal-content .modal-body .invoice-header .right .invoice.title {
+  font-size: 1.556rem;
+  line-height: 2.333rem;
+}
+
+.modal-bukti-bayar .modal-content .modal-body .invoice-header .right .invoice.code {
+  color: #3656a1;
+  font-weight: 500;
+  margin: 16px 0;
+}
+
+.modal-bukti-bayar .modal-content .modal-body .invoice-header .right .invoice.date {
+  color: #7a7a7a;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+
+.modal-bukti-bayar .modal-content .modal-body .invoice-header .right .invoice.method {
+  color: #7a7a7a;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.modal-bukti-bayar .modal-content .modal-body .invoice-header .right .invoice.method img {
+  margin-left: 4px;
+  height: 40px;
+  width: 80px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.modal-bukti-bayar .modal-content .modal-body .invoice-table {
+  margin: 56px 0;
+  border-top: 1px solid #eee;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.modal-bukti-bayar .modal-content .modal-body .invoice-table .col {
+  padding: 0;
+}
+
+.modal-bukti-bayar .modal-content .modal-body .invoice-table .table-heading {
+  margin: 0;
+  padding: 16px 56px;
+  background: #f7f9f9;
+}
+
+.modal-bukti-bayar .modal-content .modal-body .invoice-table .content-wrapper {
+  padding: 24px 56px;
+}
+
+.modal-bukti-bayar .modal-content .modal-body .invoice-table .content-wrapper .table-content {
+  margin: 0;
+  padding: 16px 0;
+}
+
+.modal-bukti-bayar .modal-content .modal-body .invoice-table .content-wrapper .table-content:not(:last-child) {
+  border-bottom: 1px solid #eceff1;
+}
+
+.modal-bukti-bayar .modal-content .modal-body .invoice-table .content-wrapper .table-content h5,
+.modal-bukti-bayar .modal-content .modal-body .invoice-table .content-wrapper .table-content h6 {
+  font-weight: 400;
+  color: #7a7a7a;
+}
+
+.modal-bukti-bayar .modal-content .modal-body .invoice-table .content-wrapper .table-content .number {
+  text-align: right;
+  font-family: "DM Mono", sans-serif;
+}
+
+.modal-bukti-bayar .modal-content .modal-body .invoice-table .content-wrapper .table-content .number.discount {
+  text-decoration: line-through;
+}
+
+.modal-bukti-bayar .modal-content .modal-body .invoice-table .table-total {
+  margin: 24px 56px 0;
+  border-top: 1px solid #cfd8dc;
+  padding: 40px 0;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.modal-bukti-bayar .modal-content .modal-body .invoice-table .table-total h5,
+.modal-bukti-bayar .modal-content .modal-body .invoice-table .table-total h4 {
+  font-weight: 500;
+}
+
+.modal-bukti-bayar .modal-content .modal-body .invoice-table .table-total .number {
+  text-align: right;
+  font-family: "DM Mono", sans-serif;
+}
+
+.modal-bukti-bayar .modal-content .modal-body .invoice-table .table-total .number h5 {
+  color: #3656a1;
+}
+
+.modal-bukti-bayar .modal-content .modal-body .invoice-footer {
+  margin: 0;
+  padding: 0 56px;
+}
+
+.modal-bukti-bayar .modal-content .modal-body .invoice-footer .col {
+  padding: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-bukti-bayar .modal-content .modal-body .invoice-footer .col .section-title {
+  margin-bottom: 20px;
+}
+
+.modal-bukti-bayar .modal-content .modal-body .invoice-footer .col ol {
+  padding-left: 22px;
+}
+
+.modal-bukti-bayar .modal-content .modal-body .invoice-footer .col ol li {
+  position: relative;
+  font-weight: 400;
+  font-size: 0.722rem;
+  line-height: 1rem;
+  color: #7a7a7a;
+  padding-left: 8px;
+}
+
+.modal-bukti-bayar .modal-content .modal-body .invoice-footer .col ol li:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.modal-bukti-bayar .modal-content .modal-body .invoice-footer .col ol li:before {
+  position: absolute;
+  left: -5px;
+}
+
+.modal-bukti-bayar .modal-content .modal-body .invoice-footer .col.signature {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.modal-bukti-bayar .modal-content .modal-body .invoice-footer .col.signature .date {
+  color: #7a7a7a;
+  font-weight: 400;
+}
+
+.modal-bukti-bayar .modal-content .modal-body .invoice-footer .col.signature .role {
+  color: #7a7a7a;
+  font-weight: 600;
+}
+
+.modal-bukti-bayar .modal-content .modal-body .invoice-footer .col.signature .name {
+  font-weight: name;
+}
+
+.modal-bukti-bayar .modal-content .modal-body .invoice-footer .col.signature img {
+  margin: 24px 0;
+  width: 150px;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.modal-bukti-bayar .modal-content .modal-body .buttons {
+  margin: 103px auto 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-bukti-bayar .modal-content .modal-body .buttons .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 68px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: 144px;
+  border-radius: 12px;
+  margin: 0 12px;
+}
+
+.modal-bukti-bayar .modal-content .modal-body .buttons .button p {
+  font-weight: 600;
+  font-size: 0.778rem;
+  line-height: 1.167rem;
 }
 
 .modal-small .modal-content {

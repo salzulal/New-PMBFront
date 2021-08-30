@@ -674,6 +674,83 @@ main#pendaftaran {
       }
 
       //// biaya kuliah
+
+      .kategori-biaya {
+        padding: 56px 0;
+        margin: 0;
+        .section-title {
+          margin-bottom: 16px;
+        }
+        .nav-pills {
+          padding-right: 32px;
+          border-radius: 12px;
+
+          .nav-link {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 14px 16px;
+            &:not(:last-child) {
+              margin-bottom: 16px;
+            }
+            .icon-wrapper {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 24px;
+              height: 24px;
+              margin-right: 16px;
+              background: rgba(82, 82, 152, 0.12);
+              border-radius: 8px;
+              transition: color 0.15s ease;
+              .material-icons-round {
+                font-size: 12px;
+                color: #525298;
+                transition: color 0.15s ease;
+              }
+            }
+            h5 {
+              color: $color-text;
+              font-weight: 400;
+            }
+            &.active {
+              background: #f5f6f8;
+              .icon-wrapper {
+                background: #7849ff;
+                .material-icons-round {
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+        .tab-content {
+          padding: 0 0 0 32px;
+          .rincian-biaya {
+            padding: 18px 0;
+            &:not(:last-child) {
+              border-bottom: 1px solid #eceff1;
+            }
+            .col-4 {
+              h5 {
+                font-weight: 400;
+                color: #7a7a7a;
+              }
+              &.number {
+                h5 {
+                  font-weight: 500;
+                  font-family: "DM Mono", sans-serif;
+                  text-align: right;
+                  color: $color-text;
+                }
+              }
+            }
+          }
+        }
+      }
+
       .ketentuan-perkuliahan {
         padding: 44px 0;
         .section-title {
@@ -981,6 +1058,7 @@ main#pendaftaran {
       height: 16px;
       width: 16px;
       margin: 0;
+      cursor: pointer;
       &:checked {
         background-color: $color-primary;
         border: none;
@@ -999,6 +1077,7 @@ main#pendaftaran {
         align-items: center;
         padding: 0;
         label {
+          cursor: pointer;
           margin-left: 16px;
           h5 {
             font-weight: 500;
@@ -1012,6 +1091,7 @@ main#pendaftaran {
         align-items: center;
         a {
           text-decoration: none;
+          cursor: pointer;
           h5 {
             color: $color-secondary;
           }
@@ -1129,6 +1209,232 @@ main#pendaftaran {
       span {
         font-weight: 700;
         opacity: 1;
+      }
+    }
+  }
+}
+
+.modal-bukti-bayar {
+  width: 954px;
+  max-width: 954px;
+  @media (max-width: 990.98px) {
+    width: 100% !important;
+    max-width: 100% !important;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  .modal-content {
+    .modal-body {
+      padding: 0 !important;
+      .invoice-header {
+        margin: 0;
+        padding: 0;
+        border-top: $color-primary solid 6px;
+        border-radius: 8px;
+        .left {
+          padding: 0;
+          margin-top: -6px;
+          .logo-wrapper {
+            width: 100%;
+            min-height: 148px;
+            padding: 20px 56px;
+            background: $color-primary;
+            border-radius: 0px 0px 100px 0px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            img {
+              height: 110px;
+              width: auto;
+              max-width: 100%;
+              object-fit: contain;
+            }
+          }
+          .campus-info {
+            padding: 16px 56px;
+            .item {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              &:not(:last-child) {
+                margin-bottom: 16px;
+              }
+              h6 {
+                color: #7a7a7a;
+                font-weight: 400;
+                max-width: 245px;
+              }
+              .material-icons-round {
+                color: #dedede;
+                margin-right: 16px;
+                font-size: 20px;
+              }
+            }
+          }
+        }
+        .right {
+          margin-top: -6px;
+          padding: 56px;
+          text-align: right;
+          .invoice {
+            &.title {
+              font-size: 1.556rem;
+              line-height: 2.333rem;
+            }
+            &.code {
+              color: $color-primary;
+              font-weight: 500;
+              margin: 16px 0;
+            }
+            &.date {
+              color: #7a7a7a;
+              font-weight: 400;
+              margin-bottom: 4px;
+            }
+            &.method {
+              color: #7a7a7a;
+              font-weight: 400;
+              display: flex;
+              align-items: center;
+              justify-content: flex-end;
+              img {
+                margin-left: 4px;
+                height: 40px;
+                width: 80px;
+                object-fit: contain;
+              }
+            }
+          }
+        }
+      }
+      .invoice-table {
+        margin: 56px 0;
+        border-top: 1px solid #eee;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        .col {
+          padding: 0;
+        }
+        .table-heading {
+          margin: 0;
+          padding: 16px 56px;
+          background: #f7f9f9;
+        }
+        .content-wrapper {
+          padding: 24px 56px;
+
+          .table-content {
+            margin: 0;
+            padding: 16px 0;
+            &:not(:last-child) {
+              border-bottom: 1px solid #eceff1;
+            }
+            h5,
+            h6 {
+              font-weight: 400;
+              color: #7a7a7a;
+            }
+            .number {
+              text-align: right;
+              font-family: "DM Mono", sans-serif;
+              &.discount {
+                text-decoration: line-through;
+              }
+            }
+          }
+        }
+        .table-total {
+          margin: 24px 56px 0;
+          border-top: 1px solid #cfd8dc;
+          padding: 40px 0;
+          justify-content: flex-end;
+          h5,
+          h4 {
+            font-weight: 500;
+          }
+          .number {
+            text-align: right;
+            font-family: "DM Mono", sans-serif;
+            h5 {
+              color: $color-primary;
+            }
+          }
+        }
+      }
+      .invoice-footer {
+        margin: 0;
+        padding: 0 56px;
+        .col {
+          padding: 0;
+          align-items: center;
+          .section-title {
+            margin-bottom: 20px;
+          }
+          ol {
+            padding-left: 22px;
+            li {
+              position: relative;
+              font-weight: 400;
+              font-size: 0.722rem; //13
+              line-height: 1rem;
+              color: #7a7a7a;
+              padding-left: 8px;
+              &:not(:last-child) {
+                margin-bottom: 16px;
+              }
+              &:before {
+                position: absolute;
+                left: -5px;
+              }
+            }
+          }
+          &.signature {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            .date {
+              color: #7a7a7a;
+              font-weight: 400;
+            }
+            .role {
+              color: #7a7a7a;
+              font-weight: 600;
+            }
+            .name {
+              font-weight: name;
+            }
+            img {
+              margin: 24px 0;
+              width: 150px;
+              height: 100px;
+              object-fit: contain;
+            }
+          }
+        }
+      }
+      .buttons {
+        margin: 103px auto 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 68px;
+          height: fit-content;
+          width: fit-content;
+          min-width: 144px;
+          border-radius: 12px;
+          margin: 0 12px;
+          p {
+            font-weight: 600;
+            font-size: 0.778rem; //14
+            line-height: 1.167rem;
+          }
+        }
       }
     }
   }

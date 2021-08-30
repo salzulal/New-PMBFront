@@ -224,94 +224,141 @@
                   </div>
                 </div>
 
-                <div class="d-flex align-items-start">
+                <div class="row kategori-biaya">
                   <div
-                    class="nav flex-column nav-pills me-3"
+                    class="nav flex-column nav-pills col-5"
                     id="v-pills-tab"
                     role="tablist"
                     aria-orientation="vertical"
                   >
+                    <h4 class="section-title">Kategori Biaya</h4>
                     <button
                       class="nav-link active"
-                      id="v-pills-home-tab"
+                      id="v-pills-1-tab"
                       data-bs-toggle="pill"
-                      data-bs-target="#v-pills-home"
+                      data-bs-target="#v-pills-1"
                       type="button"
                       role="tab"
-                      aria-controls="v-pills-home"
+                      aria-controls="v-pills-1"
                       aria-selected="true"
                     >
-                      Home
+                      <div class="icon-wrapper">
+                        <span class="material-icons-round">home</span>
+                      </div>
+                      <h5>Biaya Pembangunan</h5>
                     </button>
                     <button
                       class="nav-link"
-                      id="v-pills-profile-tab"
+                      id="v-pills-2-tab"
                       data-bs-toggle="pill"
-                      data-bs-target="#v-pills-profile"
+                      data-bs-target="#v-pills-2"
                       type="button"
                       role="tab"
-                      aria-controls="v-pills-profile"
+                      aria-controls="v-pills-2"
                       aria-selected="false"
                     >
-                      Profile
+                      <div class="icon-wrapper">
+                        <span class="material-icons-round">school</span>
+                      </div>
+                      <h5>Biaya Pendidikan Kuliah</h5>
                     </button>
                     <button
                       class="nav-link"
-                      id="v-pills-messages-tab"
+                      id="v-pills-3-tab"
                       data-bs-toggle="pill"
-                      data-bs-target="#v-pills-messages"
+                      data-bs-target="#v-pills-3"
                       type="button"
                       role="tab"
-                      aria-controls="v-pills-messages"
+                      aria-controls="v-pills-3"
                       aria-selected="false"
                     >
-                      Messages
-                    </button>
-                    <button
-                      class="nav-link"
-                      id="v-pills-settings-tab"
-                      data-bs-toggle="pill"
-                      data-bs-target="#v-pills-settings"
-                      type="button"
-                      role="tab"
-                      aria-controls="v-pills-settings"
-                      aria-selected="false"
-                    >
-                      Settings
+                      <div class="icon-wrapper">
+                        <span class="material-icons-round"
+                          >account_balance_wallet</span
+                        >
+                      </div>
+                      <h5>Biaya Tambahan Lain</h5>
                     </button>
                   </div>
-                  <div class="tab-content" id="v-pills-tabContent">
+                  <div class="tab-content col-7" id="v-pills-tabContent">
+                    <h4 class="section-title">Detail Biaya</h4>
                     <div
                       class="tab-pane fade show active"
-                      id="v-pills-home"
+                      id="v-pills-1"
                       role="tabpanel"
-                      aria-labelledby="v-pills-home-tab"
+                      aria-labelledby="v-pills-1-tab"
                     >
-                      1
+                      <div class="row rincian-biaya">
+                        <div class="col-4 nama"><h5>Angsuran ke-1</h5></div>
+                        <div class="col-4 number"><h5>Rp.3.500.000</h5></div>
+                        <div class="col-4 info"><h5>Daftar Ulang</h5></div>
+                      </div>
+                      <div class="row rincian-biaya">
+                        <div class="col-4 nama"><h5>Angsuran ke-2</h5></div>
+                        <div class="col-4 number"><h5>Rp.3.500.000</h5></div>
+                        <div class="col-4 info"><h5>Februari 2022</h5></div>
+                      </div>
+                      <div class="row rincian-biaya">
+                        <div class="col-4 nama"><h5>Angsuran ke-3</h5></div>
+                        <div class="col-4 number"><h5>Rp.3.500.000</h5></div>
+                        <div class="col-4 info"><h5>April 2022</h5></div>
+                      </div>
+                      <div class="row rincian-biaya total">
+                        <div class="col-4 nama"><h5>Total</h5></div>
+                        <div class="col-4 number"><h5>Rp.13.500.000</h5></div>
+                      </div>
                     </div>
                     <div
                       class="tab-pane fade"
-                      id="v-pills-profile"
+                      id="v-pills-2"
                       role="tabpanel"
-                      aria-labelledby="v-pills-profile-tab"
+                      aria-labelledby="v-pills-2-tab"
                     >
-                      2
+                      <div class="row rincian-biaya">
+                        <div class="col-4 nama"><h5>Angsuran ke-1</h5></div>
+                        <div class="col-4 number"><h5>Rp.3.500.000</h5></div>
+                        <div class="col-4 info"><h5>Daftar Ulang</h5></div>
+                      </div>
+                      <div class="row rincian-biaya">
+                        <div class="col-4 nama"><h5>Angsuran ke-2</h5></div>
+                        <div class="col-4 number"><h5>Rp.3.500.000</h5></div>
+                        <div class="col-4 info"><h5>Februari 2022</h5></div>
+                      </div>
+                      <div class="row rincian-biaya">
+                        <div class="col-4 nama"><h5>Angsuran ke-3</h5></div>
+                        <div class="col-4 number"><h5>Rp.3.500.000</h5></div>
+                        <div class="col-4 info"><h5>April 2022</h5></div>
+                      </div>
+                      <div class="row rincian-biaya total">
+                        <div class="col-4 nama"><h5>Total</h5></div>
+                        <div class="col-4 number"><h5>Rp.13.500.000</h5></div>
+                      </div>
                     </div>
                     <div
                       class="tab-pane fade"
-                      id="v-pills-messages"
+                      id="v-pills-3"
                       role="tabpanel"
-                      aria-labelledby="v-pills-messages-tab"
+                      aria-labelledby="v-pills-3-tab"
                     >
-                      3
-                    </div>
-                    <div
-                      class="tab-pane fade"
-                      id="v-pills-settings"
-                      role="tabpanel"
-                      aria-labelledby="v-pills-settings-tab"
-                    >
-                      4
+                      <div class="row rincian-biaya">
+                        <div class="col-4 nama"><h5>Angsuran ke-1</h5></div>
+                        <div class="col-4 number"><h5>Rp.3.500.000</h5></div>
+                        <div class="col-4 info"><h5>Daftar Ulang</h5></div>
+                      </div>
+                      <div class="row rincian-biaya">
+                        <div class="col-4 nama"><h5>Angsuran ke-2</h5></div>
+                        <div class="col-4 number"><h5>Rp.3.500.000</h5></div>
+                        <div class="col-4 info"><h5>Februari 2022</h5></div>
+                      </div>
+                      <div class="row rincian-biaya">
+                        <div class="col-4 nama"><h5>Angsuran ke-3</h5></div>
+                        <div class="col-4 number"><h5>Rp.3.500.000</h5></div>
+                        <div class="col-4 info"><h5>April 2022</h5></div>
+                      </div>
+                      <div class="row rincian-biaya total">
+                        <div class="col-4 nama"><h5>Total</h5></div>
+                        <div class="col-4 number"><h5>Rp.13.500.000</h5></div>
+                      </div>
                     </div>
                   </div>
                 </div>
