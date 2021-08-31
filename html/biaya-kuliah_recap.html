@@ -788,11 +788,11 @@
         <div class="modal-content">
           <div class="modal-body">
             <div class="row invoice-header">
-              <div class="col-6 left">
+              <div class="col-12 col-md-6 left">
                 <div class="logo-wrapper">
                   <img src="../img/pembelian-formulir/logo-kampus.png" alt="" />
                 </div>
-                <div class="campus-info">
+                <div class="campus-info d-none d-md-block">
                   <div class="item alamat">
                     <span class="material-icons-round">place</span>
                     <h6>Jl. K.H Mas Mansyur, Kav. 35 Jakarta Pusat 10220</h6>
@@ -803,7 +803,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6 right">
+              <div class="col-12 col-md-6 right">
                 <h1 class="invoice title">Invoice</h1>
                 <h5 class="invoice code">INV/20210701/MPL/1366343406</h5>
                 <h5 class="invoice date">
@@ -815,6 +815,7 @@
                 </h5>
               </div>
             </div>
+            <hr class="body-divider d-md-none" />
             <div
               class="invoice-table"
               style="
@@ -822,57 +823,148 @@
               "
             >
               <div class="row table-heading">
-                <div class="col col-5"><h5>Detail Pembayaran</h5></div>
-                <div class="col col-4 text-center"><h5>Angsuran Ke</h5></div>
-                <div class="col col-3 text-center"><h5>Sub Total</h5></div>
+                <div class="col col-6 col-md-5"><h5>Detail Pembayaran</h5></div>
+                <div class="col col-4 text-center d-none d-md-block">
+                  <h5>Angsuran Ke</h5>
+                </div>
+                <div class="col col-6 col-md-3 text-center">
+                  <h5>Sub Total</h5>
+                </div>
               </div>
+
               <div class="content-wrapper">
+                <!-- class 'duplicate' untuk pembayaran 1 item ke-dua-->
+                <!-- class 'single' untuk pembayaran lunas-->
                 <div class="row table-content">
-                  <div class="col col-5"><h6>A. Biaya Pembangunan</h6></div>
-                  <div class="col col-4 text-center"><h6>Angsuran 1</h6></div>
-                  <div class="col col-3 number"><h5>Rp.124.500.000</h5></div>
-                </div>
-                <div class="row table-content">
-                  <div class="col col-5"><h6></h6></div>
-                  <div class="col col-4 text-center"><h6>Angsuran 2</h6></div>
-                  <div class="col col-3 number"><h5>Rp.4.500.000</h5></div>
-                </div>
-                <div class="row table-content">
-                  <div class="col col-5">
-                    <h6>B. Biaya Pendidikan Kuliah</h6>
+                  <div class="col col-6 col-md-5 name">
+                    <h6>Biaya Pembangunan</h6>
                   </div>
-                  <div class="col col-4 text-center"><h6>Angsuran 1</h6></div>
-                  <div class="col col-3 number"><h5>Rp.3.500.000</h5></div>
+                  <div
+                    class="
+                      col col-6 col-md-4
+                      order-3 order-md-2
+                      text-center
+                      info
+                    "
+                  >
+                    <h6>Angsuran 1</h6>
+                  </div>
+                  <div class="col col-6 col-md-3 order-2 order-md-3 number">
+                    <h5>Rp.124.500.000</h5>
+                  </div>
+                </div>
+                <div class="row table-content duplicate">
+                  <div class="col col-6 col-md-5 name">
+                    <h6>Biaya Pembangunan</h6>
+                  </div>
+                  <div
+                    class="
+                      col col-6 col-md-4
+                      order-3 order-md-2
+                      text-center
+                      info
+                    "
+                  >
+                    <h6>Angsuran 2</h6>
+                  </div>
+                  <div class="col col-6 col-md-3 order-2 order-md-3 number">
+                    <h5>Rp.4.500.000</h5>
+                  </div>
                 </div>
                 <div class="row table-content">
-                  <div class="col col-5">
-                    <h6>C. Biaya Kursus Bahasa (Potongan 100%)</h6>
+                  <div class="col col-6 col-md-5 name">
+                    <h6>Biaya Pendidikan Kuliah</h6>
                   </div>
-                  <div class="col col-4 text-center"><h6>-</h6></div>
-                  <div class="col col-3 number discount">
+                  <div
+                    class="
+                      col col-6 col-md-4
+                      order-3 order-md-2
+                      text-center
+                      info
+                    "
+                  >
+                    <h6>Angsuran 1</h6>
+                  </div>
+                  <div class="col col-6 col-md-3 order-2 order-md-3 number">
+                    <h5>Rp.3.500.000</h5>
+                  </div>
+                </div>
+                <div class="row table-content single">
+                  <div class="col col-6 col-md-5 name">
+                    <h6>Biaya Kursus Bahasa (Potongan 100%)</h6>
+                  </div>
+                  <div
+                    class="
+                      col col-6 col-md-4
+                      order-3 order-md-2
+                      text-center
+                      info
+                    "
+                  >
+                    <h6>-</h6>
+                  </div>
+                  <div
+                    class="
+                      col col-6 col-md-3
+                      order-2 order-md-3
+                      number
+                      discount
+                    "
+                  >
                     <h5>Rp.900.000</h5>
                   </div>
                 </div>
-                <div class="row table-content">
-                  <div class="col col-5"><h6>D. Biaya Seragam</h6></div>
-                  <div class="col col-4 text-center"><h6>-</h6></div>
-                  <div class="col col-3 number"><h5>Rp.1.200.000</h5></div>
+                <div class="row table-content single">
+                  <div class="col col-6 col-md-5 name">
+                    <h6>Biaya Seragam</h6>
+                  </div>
+                  <div
+                    class="
+                      col col-6 col-md-4
+                      order-3 order-md-2
+                      text-center
+                      info
+                    "
+                  >
+                    <h6>-</h6>
+                  </div>
+                  <div class="col col-6 col-md-3 order-2 order-md-3 number">
+                    <h5>Rp.1.200.000</h5>
+                  </div>
                 </div>
-                <div class="row table-content">
-                  <div class="col col-5"><h6>E. Biaya Admin</h6></div>
-                  <div class="col col-4 text-center"><h6>-</h6></div>
-                  <div class="col col-3 number"><h5>Rp.50.000</h5></div>
+                <div class="row table-content single">
+                  <div class="col col-6 col-md-5 name">
+                    <h6>Biaya Admin</h6>
+                  </div>
+                  <div
+                    class="
+                      col col-6 col-md-4
+                      order-3 order-md-2
+                      text-center
+                      info
+                    "
+                  >
+                    <h6>-</h6>
+                  </div>
+                  <div class="col col-6 col-md-3 order-2 order-md-3 number">
+                    <h5>Rp.50.000</h5>
+                  </div>
                 </div>
               </div>
               <div class="row table-total">
-                <div class="col col-4 text-center">
+                <div class="col col-6 col-md-4 text-center">
                   <h5>Total Pembayaran</h5>
                 </div>
-                <div class="col col-3 number"><h4>Rp. 13.705.000</h4></div>
+                <div class="col col-6 col-md-3 number">
+                  <h4>Rp. 13.705.000</h4>
+                </div>
               </div>
             </div>
+
+            <hr class="body-divider d-md-none" />
+
             <div class="row invoice-footer">
-              <div class="col col-9 keterangan">
+              <div class="col col-12 col-sm-6 col-md-9 keterangan">
                 <h4 class="section-title">Keterangan:</h4>
                 <ol class="">
                   <li>Bukti pembayaran ini sah sebagaimana mestinya</li>
@@ -883,13 +975,15 @@
                   <li>Harap simpan dengan baik bukti pembayaran ini</li>
                 </ol>
               </div>
-              <div class="col col-3 signature">
+              <div class="col col-12 col-sm-6 col-md-3 signature">
                 <h6 class="date">Surabaya, 27 Juli 2021</h6>
                 <h6 class="role">Keuangan</h6>
                 <img src="../img/pembelian-formulir/signature.png" alt="" />
                 <h6 class="name">Prof. Dr. Leslie Alexander M.TI.</h6>
               </div>
             </div>
+            <hr class="body-divider d-md-none" />
+
             <div class="buttons">
               <a
                 class="button gray outline"

@@ -16,26 +16,26 @@ main#pendaftaran {
     min-height: 340px;
     display: flex;
     padding: 80px 0;
-    @media (max-width: 576px) {
+    @media (max-width: 575.98px) {
       padding: 32px 0;
       min-height: 150px;
     }
     h1 {
       font-weight: 900;
-      font-size: 36px;
-      line-height: 50px;
+      font-size: 2rem;
+      line-height: 2.778rem;
       text-transform: capitalize;
       font-family: $font-mulish;
       color: #ffffff;
-      @media (max-width: 576px) {
-        font-size: 18px;
-        line-height: 26px;
+      @media (max-width: 575.98px) {
+        font-size: 1.2rem;
+        line-height: 1.733rem;
       }
     }
   }
   .main-pendaftaran {
     margin-top: -6rem;
-    @media (max-width: 576px) {
+    @media (max-width: 575.98px) {
       margin-top: 0;
     }
     .card-main-pendaftaran {
@@ -45,7 +45,7 @@ main#pendaftaran {
       box-sizing: border-box;
       box-shadow: 0px 44px 60px rgba(32, 56, 85, 0.08);
       border-radius: 8px;
-      @media (max-width: 576px) {
+      @media (max-width: 575.98px) {
         border: none;
         box-shadow: none;
         padding: 0;
@@ -58,7 +58,7 @@ main#pendaftaran {
         padding: 22px 32px;
         border-radius: 24px;
         width: 100%;
-        @media (max-width: 576px) {
+        @media (max-width: 575.98px) {
           margin-top: -2.5rem;
         }
         .list-step {
@@ -68,7 +68,7 @@ main#pendaftaran {
           padding: 0 12px;
           border-right: 1px solid #eceff1;
           border-left: 1px solid #eceff1;
-          @media (max-width: 576px) {
+          @media (max-width: 991.98px) {
             display: none;
             border: none;
           }
@@ -118,7 +118,7 @@ main#pendaftaran {
           }
           &.active {
             width: 100%;
-            @media (max-width: 576px) {
+            @media (max-width: 991.98px) {
               display: flex;
             }
             .icon {
@@ -162,15 +162,15 @@ main#pendaftaran {
             margin-left: 20px;
             label {
               font-weight: 500;
-              font-size: 12px;
-              line-height: 14px;
+              font-size: 0.667rem; //12
+              line-height: 0.778rem;
               color: #5f30e2;
               margin-bottom: 4px;
             }
             h3 {
               font-weight: 600;
-              font-size: 14px;
-              line-height: 18px;
+              font-size: 0.778rem; //14
+              line-height: 1rem;
               text-transform: capitalize;
               color: #404852;
               margin-bottom: 0;
@@ -183,8 +183,8 @@ main#pendaftaran {
         .title {
           h2 {
             font-weight: 600;
-            font-size: 16px;
-            line-height: 24px;
+            font-size: 0.889rem; //16
+            line-height: 1.333rem;
             letter-spacing: 0.25px;
             text-transform: capitalize;
             color: #404852;
@@ -192,8 +192,8 @@ main#pendaftaran {
           }
           p {
             font-weight: normal;
-            font-size: 14px;
-            line-height: 24px;
+            font-size: 0.778rem; //14
+            line-height: 1.167rem;
             margin: 0;
             color: #7a7a7a;
           }
@@ -204,15 +204,15 @@ main#pendaftaran {
         }
         .title-form {
           font-weight: normal;
-          font-size: 13px;
-          line-height: 20px;
+          font-size: 0.722rem; //13
+          line-height: 1rem;
           margin-bottom: 12px;
           color: #404852;
         }
         .title-form-upload {
           font-weight: 500;
-          font-size: 14px;
-          line-height: 24px;
+          font-size: 0.778rem; //14
+          line-height: 1.167rem;
           text-transform: capitalize;
           color: #404852;
           margin-bottom: 16px;
@@ -234,7 +234,7 @@ main#pendaftaran {
           input {
             width: 100%;
           }
-          textarea{
+          textarea {
             width: 100%;
           }
         }
@@ -248,8 +248,8 @@ main#pendaftaran {
         .form-check-biodata {
           margin-bottom: 100px;
           .form-check-input:checked {
-            background-color: #3656a1;
-            border-color: #3656a1;
+            background-color: $color-primary;
+            border-color: $color-primary;
             box-shadow: none;
           }
           input {
@@ -285,26 +285,29 @@ main#pendaftaran {
             border-radius: 4px;
             display: flex;
             align-items: center;
-            img {
+
+            .material-icons-round {
               display: none;
               margin-right: 8px;
+              font-size: 16px;
+              color: $color-ternary;
             }
 
             h3 {
               font-weight: normal;
-              font-size: 14px;
-              line-height: 24px;
+              font-size: 0.778rem; //14
+              line-height: 1.167rem;
               color: #7a7a7a;
               margin: 0;
             }
             &:hover {
               h3 {
-                color: #1959a9;
+                color: $color-primary;
                 transition: 200ms;
               }
             }
             &.done {
-              img {
+              .material-icons-round {
                 display: block;
               }
             }
@@ -316,7 +319,7 @@ main#pendaftaran {
               );
               h3 {
                 font-weight: 600;
-                color: #1959a9;
+                color: $color-primary;
               }
             }
           }
@@ -338,14 +341,14 @@ main#pendaftaran {
             width: 100%;
           }
         }
-        .lewati{
+        .lewati {
           font-weight: 500;
-          font-size: 14px;
-          line-height: 21px;
+          font-size: 0.778rem; //14
+          line-height: 1.167rem;
           letter-spacing: 0.25px;
           text-decoration-line: underline;
           text-transform: capitalize;
-          color: #F57C00;
+          color: #f57c00;
         }
         .selanjutnya {
           cursor: pointer;
@@ -407,26 +410,27 @@ main#pendaftaran {
   background: #fefefc;
   box-shadow: 0px 30px 60px rgba(32, 56, 85, 0.06);
   border-radius: 4px;
-  border-top: 4px solid #00a0ac;
-  padding: 20px 24px;
+  border-top: 4px solid $color-ternary;
+  padding: 24px 24px 20px;
   display: flex;
   align-items: center;
-  img {
-    width: 14px;
-    height: 14px;
+
+  .material-icons-round {
+    font-size: 18px;
+    color: $color-ternary;
     margin-right: 16px;
   }
   p {
     font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 0.778rem; //14
+    line-height: 1.167rem;
     letter-spacing: 0.25px;
     color: #7a7a7a;
     margin: 0;
   }
 }
 .red {
-  color: #e53935;
+  color: $color-danger;
 }
 
 .input-preview__src {
@@ -450,8 +454,8 @@ main#pendaftaran {
   transition: ease-in-out 200ms;
   margin-bottom: 80px;
   &:hover {
-    border-color: #1959a9;
-    background-color: #F2F7FE;
+    border-color: $color-primary;
+    background-color: #f2f7fe;
   }
   .upload-input {
     text-align: center;
@@ -462,21 +466,21 @@ main#pendaftaran {
     }
     p {
       font-weight: normal;
-      font-size: 13px;
-      line-height: 22px;
+      font-size: 0.722rem; //13
+      line-height: 1rem;
       text-align: center;
       color: #7a7a7a;
       b {
         font-weight: 600;
         text-decoration: underline;
-        color: #1959a9;
+        color: $color-primary;
       }
     }
     .size-rule {
       margin-top: 60px;
       font-weight: normal;
-      font-size: 12px;
-      line-height: 18px;
+      font-size: 0.667rem; //12
+      line-height: 1rem;
       text-align: center;
       color: #e53935;
     }
@@ -491,21 +495,21 @@ main#pendaftaran {
     }
     p {
       font-weight: 500;
-      font-size: 13px;
-      line-height: 20px;
+      font-size: 0.722rem; //13
+      line-height: 1rem;
       text-transform: capitalize;
       color: #404852;
       b {
         font-weight: 600;
         text-decoration: underline;
-        color: #1959a9;
+        color: $color-primary;
       }
     }
     .size-rule {
       margin-top: 60px;
       font-weight: normal;
-      font-size: 12px;
-      line-height: 18px;
+      font-size: 0.667rem; //12
+      line-height: 1rem;
       text-align: center;
       color: #e53935;
     }
@@ -519,8 +523,8 @@ main#pendaftaran {
     display: none;
     h4 {
       font-weight: 600;
-      font-size: 14px;
-      line-height: 21px;
+      font-size: 0.778rem; //14
+      line-height: 1.167rem;
       color: #ffffff;
       margin-bottom: 6px;
       padding-left: 20px;
@@ -546,8 +550,8 @@ main#pendaftaran {
         color: #fff;
         margin: 0;
         font-weight: normal;
-        font-size: 12px;
-        line-height: 14px;
+        font-size: 0.667rem; //12
+        line-height: 0.778rem;
         color: #ffffff;
         opacity: 0.5;
       }
@@ -572,33 +576,37 @@ main#pendaftaran {
   //   font-size: 1em;
   // }
 }
-.has-file{
-  background-color: #C4C4C4;
+.has-file {
+  background-color: #c4c4c4;
   border: none;
   &:hover {
-    background-color: #C4C4C4 !important;
+    background-color: #c4c4c4 !important;
   }
 }
 #action-file {
   display: none;
-  .right{
+  .right {
     position: absolute;
     top: 10px;
     right: 10px;
     display: block;
-    button{
-      display: block;
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       margin-bottom: 6px;
-      img{
-        width: 24px;
-        height: 24px;
+      width: 24px;
+      height: 24px;
+      border-radius: 4px;
+      background: rgba(33, 33, 33, 0.4);
+      .material-icons-round {
+        font-size: 14px;
+        color: #fff;
       }
-      background-color: transparent;
       border: none;
     }
   }
-  .left{
-
+  .left {
   }
 }
 .has-image {
@@ -627,8 +635,8 @@ main#pendaftaran {
   justify-content: space-between;
   p {
     font-weight: normal;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 0.778rem; //14
+    line-height: 1.167rem;
     color: #404852;
     margin: 0;
   }
